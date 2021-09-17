@@ -16,7 +16,7 @@
 
 ---
 
-* Paul Boniol, Themis Palpanas, Mohammed Meftah, Emmanuel Remy. GraphAn: Graph-based Subsequence Anomaly Detection. Proceedings of the VLDB Endowment (PVLDB) Journal, 2020.
+* Paul Boniol, Themis Palpanas, Mohammed Meftah, Emmanuel Remy. **GraphAn: Graph-based Subsequence Anomaly Detection**. Proceedings of the VLDB Endowment (PVLDB) Journal, 2020.
 
 ---
 
