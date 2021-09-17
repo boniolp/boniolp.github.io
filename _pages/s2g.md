@@ -10,7 +10,7 @@ The experimental results, on the largest set of synthetic and real datasets used
 
 ## Papers
 
-| Research paper | [Series2Graph: Graph-based Subsequence Anomaly Detection in Time Series, PVLDB (2020)](https://boniolp.github.io/paulboniol/assets/pdf/s2g.pdf) | [bibtex](https://boniolp.github.io/paulboniol/assets/pdf/s2g.bibtex) |
-| Demonstration paper | [GraphAn: Graph-based Subsequence Anomaly Detection, demo PVLDB (2020)](https://boniolp.github.io/paulboniol/assets/pdf/s2g.pdf) | [bibtex](https://boniolp.github.io/paulboniol/assets/pdf/s2g.bibtex) |
+| Research paper | [Series2Graph: Graph-based Subsequence Anomaly Detection in Time Series, PVLDB (2020)](https://boniolp.github.io/paulboniol/assets/pdf/Series2Graph.pdf) | [bibtex](https://boniolp.github.io/paulboniol/assets/pdf/Series2Graph.txt) |
+| Demonstration paper | [GraphAn: Graph-based Subsequence Anomaly Detection, demo PVLDB (2020)](https://boniolp.github.io/paulboniol/assets/pdf/Graphan.pdf) | [bibtex](https://boniolp.github.io/paulboniol/assets/pdf/Graphan.txt) |
 
 [Back to main page](https://boniolp.github.io/paulboniol)
