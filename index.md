@@ -1,3 +1,7 @@
+## Intro
+
+I am a Ph.D. student at the University of Paris and EDF R&D, working with Prof. Themis Palpanas, Emmanuel Remy, and Mohammed Meftah. Before that, I got my bachelor’s and master’s degrees in computer science and applied mathematics from Grenoble INP ENSIMAG engineering school. Finally, before starting my Ph.D., I worked as a research engineer at the computer science lab of Ecole Polytechnique in Prof. Michalis Vazirgiannis's team.
+
 ## Publications
 
 ### Journals
@@ -55,4 +59,10 @@
 * Paul Boniol, Themis Palpanas, Michele Linardi, Federico Roncallo, Mohammed Meftah, Emmanuel Remy. **Determination d'etats de sante de systemes equipes de capteurs**. FR2003946, 2020.
 
 ---
+
+## Services
+
+Reviewer for: IEEE TKDE, DAMI, VLDBJ
+External Reviewer for: SIGKDD, EDBT, PVLDB.
+
 
