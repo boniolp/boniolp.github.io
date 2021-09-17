@@ -12,19 +12,19 @@ My research interest lies in the intersections between (i). massive data series 
 
 ---
 
-* Paul Boniol, John Paparrizos, Themis Palpanas, Michael J. Franklin. **SAND: Streaming Subsequence Anomaly Detection**. Proceedings of the VLDB Endowment (PVLDB) Journal, 2021.
+* Paul Boniol, John Paparrizos, Themis Palpanas, Michael J. Franklin. **SAND: Streaming Subsequence Anomaly Detection**. Proceedings of the VLDB Endowment (PVLDB) Journal, 2021. [More info...](https://boniolp.github.io/paulboniol/sand)
 
 ---
 
-* Paul Boniol, John Paparrizos, Themis Palpanas, Michael J. Franklin. **SAND in Action: Subsequence Anomaly Detection for Streams**. Proceedings of the VLDB Endowment (PVLDB) Journal, 2021.
+* Paul Boniol, John Paparrizos, Themis Palpanas, Michael J. Franklin. **SAND in Action: Subsequence Anomaly Detection for Streams**. Proceedings of the VLDB Endowment (PVLDB) Journal, 2021. [More info...](https://boniolp.github.io/paulboniol/sand)
 
 --- 
 
-* Paul Boniol, Michele Linardi, Federico Roncallo, Themis Palpanas, Mohammed Meftah. Emmanuel Remy. **Unsupervised and Scalable Subsequence Anomaly Detection in Large Data Series**. International Journal on Very Large Data Bases (VLDBJ), 2021.
+* Paul Boniol, Michele Linardi, Federico Roncallo, Themis Palpanas, Mohammed Meftah. Emmanuel Remy. **Unsupervised and Scalable Subsequence Anomaly Detection in Large Data Series**. International Journal on Very Large Data Bases (VLDBJ), 2021. [More info...](https://boniolp.github.io/paulboniol/norma)
 
 ---
 
-* Paul Boniol, Themis Palpanas, Mohammed Meftah, Emmanuel Remy. **GraphAn: Graph-based Subsequence Anomaly Detection**. Proceedings of the VLDB Endowment (PVLDB) Journal, 2020.
+* Paul Boniol, Themis Palpanas, Mohammed Meftah, Emmanuel Remy. **GraphAn: Graph-based Subsequence Anomaly Detection**. Proceedings of the VLDB Endowment (PVLDB) Journal, 2020. [More info...](https://boniolp.github.io/paulboniol/s2g)
 
 ---
 
@@ -44,11 +44,11 @@ My research interest lies in the intersections between (i). massive data series 
 
 ---
 
-* Paul Boniol, Michele Linardi, Federico Roncallo, Themis Palpanas. **Automated Anomaly Detection in Large Sequences**. IEEE International Conference on Data Engineering (ICDE), Dallas, TX, USA, April 2020.
+* Paul Boniol, Michele Linardi, Federico Roncallo, Themis Palpanas. **Automated Anomaly Detection in Large Sequences**. IEEE International Conference on Data Engineering (ICDE), Dallas, TX, USA, April 2020. [More info...](https://boniolp.github.io/paulboniol/norma)
 
 ---
 
-* Paul Boniol, Michele Linardi, Federico Roncallo, Themis Palpanas. **SAD: An Unsupervised System for Subsequence Anomaly Detection**. IEEE International Conference on Data Engineering (ICDE), Dallas, TX, USA, April 2020.
+* Paul Boniol, Michele Linardi, Federico Roncallo, Themis Palpanas. **SAD: An Unsupervised System for Subsequence Anomaly Detection**. IEEE International Conference on Data Engineering (ICDE), Dallas, TX, USA, April 2020. [More info...](https://boniolp.github.io/paulboniol/norma)
 
 ---
 
