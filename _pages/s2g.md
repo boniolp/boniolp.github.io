@@ -13,6 +13,8 @@ redirect_from:
 ---
 
 # Series2Graph: Graph-based Subsequence Anomaly Detection in Time Series
+Paul Boniol, Themis Palpanas, Mohammed Meftah, Emmanuel Remy
+
 
 ![Drag Racing](https://boniolp.github.io/paulboniol/assets/img/full_process_sumary_new.jpg)
 
