@@ -3,15 +3,25 @@
 ## Journals
 
 ---
+
 Paul Boniol, John Paparrizos, Themis Palpanas, Michael J. Franklin. SAND: Streaming Subsequence Anomaly Detection. Proceedings of the VLDB Endowment (PVLDB) Journal, 2021.
+
 ---
+
 Paul Boniol, John Paparrizos, Themis Palpanas, Michael J. Franklin. SAND in Action: Subsequence Anomaly Detection for Streams. Proceedings of the VLDB Endowment (PVLDB) Journal, 2021.
+
 --- 
+
 Paul Boniol, Michele Linardi, Federico Roncallo, Themis Palpanas, Mohammed Meftah. Emmanuel Remy. Unsupervised and Scalable Subsequence Anomaly Detection in Large Data Series. International Journal on Very Large Data Bases (VLDBJ), 2021.
+
 ---
+
 Paul Boniol, Themis Palpanas, Mohammed Meftah, Emmanuel Remy. GraphAn: Graph-based Subsequence Anomaly Detection. Proceedings of the VLDB Endowment (PVLDB) Journal, 2020.
+
 ---
+
 Paul Boniol, Themis Palpanas. Series2Graph: Graph-based Subsequence Anomaly Detection for Time Series. Proceedings of the VLDB Endowment (PVLDB) Journal 13(11), 2020.
+
 ---
 
 ## Conferences
