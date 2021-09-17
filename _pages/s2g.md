@@ -4,7 +4,7 @@ hidden: true
 classes: wide
 # layout: single-hf
 # layout: single
-layout: single-comments
+layout: default
 title: "Series2Graph: Graph-based Subsequence Anomaly Detection in Time Series"
 author_profile: true
 redirect_from: 
