@@ -1,3 +1,17 @@
+---
+permalink: /s2g
+hidden: true
+classes: wide
+# layout: single-hf
+# layout: single
+layout: single-comments
+title: "Series2Graph: Graph-based Subsequence Anomaly Detection in Time Series"
+author_profile: true
+redirect_from: 
+  - /s2g
+  - /s2g.html
+---
+
 # Series2Graph: Graph-based Subsequence Anomaly Detection in Time Series
 
 ## Abstract
