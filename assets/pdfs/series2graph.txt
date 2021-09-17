@@ -1,0 +1,9 @@
+@article{Series2GraphPaper,
+  author    = {Paul Boniol and
+               Themis Palpanas},
+  title     = {Series2Graph: Graph-based Subsequence Anomaly Detection for Time Series},
+  journal   = {{PVLDB}},
+  volume    = {13},
+  number    = {11},
+  year      = {2020}
+}

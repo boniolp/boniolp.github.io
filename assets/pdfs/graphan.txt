@@ -1,0 +1,11 @@
+@article{GraphAn,
+  author    = {Paul Boniol and
+               Themis Palpanas and 
+               Mohammed Meftah and 
+               Emmanuel Remy},
+  title     = {GraphAn: Graph-based Subsequence Anomaly Detection},
+  journal   = {{PVLDB}},
+  volume    = {13},
+  number    = {11},
+  year      = {2020}
+}
