@@ -1,0 +1,1 @@
+@INPROCEEDINGS{9101752,  author={P. {Boniol} and M. {Linardi} and F. {Roncallo} and T. {Palpanas}},  booktitle={2020 IEEE 36th International Conference on Data Engineering (ICDE)},   title={SAD: An Unsupervised System for Subsequence Anomaly Detection},   year={2020},  volume={},  number={},  pages={1778-1781},  doi={10.1109/ICDE48307.2020.00168}}

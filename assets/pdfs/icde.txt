@@ -1,0 +1,1 @@
+@INPROCEEDINGS{9101523,  author={P. {Boniol} and M. {Linardi} and F. {Roncallo} and T. {Palpanas}},  booktitle={2020 IEEE 36th International Conference on Data Engineering (ICDE)},   title={Automated Anomaly Detection in Large Sequences},   year={2020},  volume={},  number={},  pages={1834-1837},  doi={10.1109/ICDE48307.2020.00182}}
