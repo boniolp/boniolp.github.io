@@ -3,3 +3,26 @@ title: Paul Boniol
 description: PhD student at University of Paris
 logo: https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=zbHpNGUAAAAJ&citpid=14
 show_downloads: false
+
+include:
+  - _pages
+
+defaults:
+  # _posts
+  # - scope:
+  #     path: ""
+  #     type: posts
+  #   values:
+  #     layout: single
+  #     author_profile: true
+  #     read_time: true
+  #     comments: # true
+  #     share: true
+  #     related: true
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      # layout: header_free
+      layout: single
