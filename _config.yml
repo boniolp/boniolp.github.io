@@ -25,4 +25,4 @@ defaults:
       type: pages
     values:
       # layout: header_free
-      layout: single
+      layout: default
