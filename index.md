@@ -28,7 +28,7 @@ My research interest lies in the intersections between (i). massive data series 
 
 ---
 
-* Paul Boniol, Themis Palpanas. **Series2Graph: Graph-based Subsequence Anomaly Detection for Time Series**. Proceedings of the VLDB Endowment (PVLDB) Journal 13(11), 2020.
+* Paul Boniol, Themis Palpanas. **Series2Graph: Graph-based Subsequence Anomaly Detection for Time Series**. Proceedings of the VLDB Endowment (PVLDB) Journal 13(11), 2020. [More info...](https://boniolp.github.io/paulboniol/_pages/s2g.md)
 
 ---
 
