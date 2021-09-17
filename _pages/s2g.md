@@ -16,7 +16,7 @@ redirect_from:
 Paul Boniol, Themis Palpanas, Mohammed Meftah, Emmanuel Remy
 
 
-![Drag Racing](https://boniolp.github.io/paulboniol/assets/img/full_process_sumary_new.jpg)
+![Drag Racing](https://boniolp.github.io/paulboniol/assets/img/full_process_sumary_s2g.jpg)
 
 ## Abstract
 
