@@ -1,6 +1,6 @@
 ## Publications
 
-## Journals
+### Journals
 
 ---
 
@@ -24,7 +24,7 @@
 
 ---
 
-## Conferences
+### Conferences
 
 ---
 
