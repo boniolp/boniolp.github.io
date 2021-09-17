@@ -43,3 +43,16 @@
 * Paul Boniol, Michele Linardi, Federico Roncallo, Themis Palpanas. **SAD: An Unsupervised System for Subsequence Anomaly Detection**. IEEE International Conference on Data Engineering (ICDE), Dallas, TX, USA, April 2020.
 
 ---
+
+### Patents
+
+---
+
+* Paul Boniol, Themis Palpanas, Mohammed Meftah, Emmanuel Remy. **Determination de l'etat de sante d'un systeme a partir d'un reseau de sequences temporelles mesurees**. FR2005261, 2020.
+
+---
+
+* Paul Boniol, Themis Palpanas, Michele Linardi, Federico Roncallo, Mohammed Meftah, Emmanuel Remy. **Determination d'etats de sante de systemes equipes de capteurs**. FR2003946, 2020.
+
+---
+
