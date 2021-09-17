@@ -1,0 +1,8 @@
+@article{SAND,
+  author    = {P. Boniol and J. Paparrizos and T. Palpanas and M. J. Franklin},
+  title     = {SAND: Streaming Subsequence Anomaly Detection},
+  journal   = {{PVLDB}},
+  volume    = {14},
+  number    = {10},
+  year      = {2021}
+}
