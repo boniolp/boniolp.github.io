@@ -1,3 +1,17 @@
+---
+permalink: /publi
+hidden: true
+classes: wide
+# layout: single-hf
+# layout: single
+layout: default
+title: "Publications"
+author_profile: true
+redirect_from: 
+  - /publi
+  - /publi.html
+---
+
 ## Publications
 
 ### Journals
