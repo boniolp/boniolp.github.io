@@ -1,0 +1,28 @@
+@inproceedings{DBLP:conf/kdd/BoniolPXHAV20,
+  author    = {Paul Boniol and
+               George Panagopoulos and
+               Christos Xypolopoulos and
+               Rajaa El Hamdani and
+               David Restrepo Amariles and
+               Michalis Vazirgiannis},
+  editor    = {Nikolaos Aletras and
+               Ion Androutsopoulos and
+               Leslie Barrett and
+               Adam Meyers and
+               Daniel Preotiuc{-}Pietro},
+  title     = {Performance in the Courtroom: Automated Processing and Visualization
+               of Appeal Court Decisions in France},
+  booktitle = {Proceedings of the Natural Legal Language Processing Workshop 2020
+               co-located with the 26th {ACM} {SIGKDD} International Conference on
+               Knowledge Discovery {\&} Data Mining {(KDD} 2020), Virtual Workshop,
+               August 24, 2020},
+  series    = {{CEUR} Workshop Proceedings},
+  volume    = {2645},
+  pages     = {11--17},
+  publisher = {CEUR-WS.org},
+  year      = {2020},
+  url       = {http://ceur-ws.org/Vol-2645/paper2.pdf},
+  timestamp = {Mon, 17 Aug 2020 18:32:38 +0200},
+  biburl    = {https://dblp.org/rec/conf/kdd/BoniolPXHAV20.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
