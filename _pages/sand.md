@@ -16,7 +16,7 @@ redirect_from:
 Paul Boniol, John Paparrizos, Themis Palpanas, Micheal Franklin
 
 
-![Drag Racing](https://boniolp.github.io/paulboniol/assets/img/full_process_sumary_sand.jpg)
+![sand](https://boniolp.github.io/paulboniol/assets/img/full_process_sumary_sand.jpg)
 
 ## Abstract
 
