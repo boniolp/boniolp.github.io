@@ -16,7 +16,7 @@ redirect_from:
 Paul Boniol, Michele Linardi, Federico Roncallo, Themis Palpanas, Mohammed Meftah, Emmanuel Remy
 
 
-![Drag Racing](https://boniolp.github.io/paulboniol/assets/img/full_process_sumary_norma.jpg)
+![norma](https://boniolp.github.io/paulboniol/assets/img/full_process_sumary_norma.jpg)
 
 ## Abstract
 
