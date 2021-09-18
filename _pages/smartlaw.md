@@ -13,7 +13,7 @@ redirect_from:
 ---
 
 # Performance in the Courtroom: Automated Processing and Visualization of Appeal Court Decisions in France
-Paul Boniol, John Paparrizos, Themis Palpanas, Micheal Franklin
+Paul Boniol, George Panagopoulos, Christos Xypolopoulos, Rajaa El Hamdani, David Restrepo Amariles, Michalis Vazirgiannis
 
 
 ![Drag Racing](https://boniolp.github.io/paulboniol/assets/img/smartlaw.png)
