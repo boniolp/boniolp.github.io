@@ -16,7 +16,7 @@ redirect_from:
 Paul Boniol, George Panagopoulos, Christos Xypolopoulos, Rajaa El Hamdani, David Restrepo Amariles, Michalis Vazirgiannis
 
 
-![Drag Racing](https://boniolp.github.io/paulboniol/assets/img/smartlaw.png)
+![Drag Racing](https://boniolp.github.io/paulboniol/assets/img/smartlaw.jpg)
 
 ## Abstract
 
