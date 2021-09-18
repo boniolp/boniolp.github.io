@@ -9,12 +9,12 @@ My research interest lies in the intersections between (i). massive data series 
 
 ## Services
 
-External Reviewer for international journals: 
+Invited external reviewer for international journals: 
 - [IEEE TKDE](https://www.computer.org/csdl/journal/tk)
 - [DAMI](https://www.springer.com/journal/10618) 
 - [VLDBJ](https://www.springer.com/journal/778?gclid=Cj0KCQjwnJaKBhDgARIsAHmvz6eZA8fQqLcDqKS55NPBccTvpFOi9I5RHOq5ZqKLIxX6p9MwkpjQTgsaAmx7EALw_wcB)
 
-External Reviewer for: 
+Invited external reviewer for international conferences: 
 - [SIGKDD](https://www.kdd.org/) 
 - [EDBT](https://www.edbt.org/)
 - [PVLDB](https://www.vldb.org/)
