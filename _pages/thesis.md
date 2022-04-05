@@ -24,7 +24,7 @@ redirect_from:
 * **[Bernd Amann](https://www.lip6.fr/actualite/personnes-fiche.php?ident=P200)**, Professor, Sorbonne Université - LIP6 
 * **[Michalis Vazirgiannis](http://www.lix.polytechnique.fr/Labo/Michalis.Vazirgiannis/)**, Professeur, Ecole Polytechnique - LIX
 * **[Themis Palpanas](https://helios2.mi.parisdescartes.fr/~themisp/home.html)**, Professor, Université de Paris, LIPADE
-* **Mohammed Meftah**, Research engineer, EDF R&D
+* **[Mohammed Meftah](https://www.linkedin.com/in/meftahdatascientist/?originalSubdomain=fr)**, Research engineer, EDF R&D
 * **Emmanuel Remy**, Research engineer, EDF R&D
 
 ***
