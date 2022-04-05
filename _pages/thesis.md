@@ -12,8 +12,6 @@ redirect_from:
   - /thesis.html
 ---
 
-![thesis](https://boniolp.github.io/paulboniol/assets/img/illustration_1.jpg)
-
 # Detection of Anomalies and Identification of their Precursors in Large Data Series Collections
 
 ### Presented by Paul Boniol on November 29 2021
@@ -36,7 +34,7 @@ Thesis: [Detection of Anomalies and Identification of their Precursors in Large 
 
 ## Chapter 2: Background and Related Work
 
-<img src="https://boniolp.github.io/paulboniol/assets/img/illustration_2.jpg" alt="Chapter2" width="100"/>
+<img src="https://boniolp.github.io/paulboniol/assets/img/illustration_2.jpg" alt="Chapter2" width="150"/>
 
 ### Summary
 
@@ -44,7 +42,7 @@ In this chapter, we define the relevant taxonomy related to data series and anom
 
 ## Chapter 3: Unsupervised Subseqence Anomaly Detection
 
-![thesis](https://boniolp.github.io/paulboniol/assets/img/illustration_3.jpg)
+<img src="https://boniolp.github.io/paulboniol/assets/img/illustration_3.jpg" alt="Chapter3" width="150"/>
 
 ### Summary
 
@@ -53,7 +51,7 @@ Unsupervised subsequence anomaly (or outlier) detection in long sequences is an 
 
 ## Chapter 4: Streaming Subseqence Anomaly Detection
 
-![thesis](https://boniolp.github.io/paulboniol/assets/img/illustration_4.jpg)
+<img src="https://boniolp.github.io/paulboniol/assets/img/illustration_4.jpg" alt="Chapter4" width="150"/>
 
 ### Summary
 
@@ -61,7 +59,7 @@ In the previous chapter, we tackled the unsupervised subsequence anomaly detecti
 
 ## Chapter 5: Supervised Identification of precursors of anomaly
 
-![thesis](https://boniolp.github.io/paulboniol/assets/img/illustration_5.jpg)
+<img src="https://boniolp.github.io/paulboniol/assets/img/illustration_5.jpg" alt="Chapter5" width="150"/>
 
 ### Summary
 
@@ -69,7 +67,7 @@ In the previous chapter, anomalies were considered unknown. However, one can con
 
 ## Chapter 6: Pump Vibration Case
 
-![thesis](https://boniolp.github.io/paulboniol/assets/img/illustration_6.jpg)
+<img src="https://boniolp.github.io/paulboniol/assets/img/illustration_6.jpg" alt="Chapter6" width="150"/>
 
 ### Summary
 
