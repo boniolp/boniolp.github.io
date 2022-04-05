@@ -8,8 +8,8 @@ layout: default
 title: "Detection of Anomalies and Identification of their Precursors in Large Data Series Collections"
 author_profile: true
 redirect_from: 
-  - /norma
-  - /norma.html
+  - /thesis
+  - /thesis.html
 ---
 
 
