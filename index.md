@@ -1,12 +1,14 @@
 ## Short bio
 
+<p style='text-align: justify;'>
 I am a Postdoctoral researcher at the University of Paris in the LIPADE lab. I completed my Ph.D. at the University of Paris and EDF R&D, working with [Prof. Themis Palpanas](http://helios.mi.parisdescartes.fr/~themisp/), Emmanuel Remy, and Mohammed Meftah. Before that, I got my bachelor’s and master’s degrees in computer science and applied mathematics from Grenoble INP ENSIMAG engineering school. Finally, before starting my Ph.D., I worked as a research engineer at the computer science lab of Ecole Polytechnique in [Prof. Michalis Vazirgiannis](http://www.lix.polytechnique.fr/Labo/Michalis.Vazirgiannis/)'s team.
-
+</p>
 My research interest lies in the intersections between:
 -  Massive data series analytics and management systems. 
 -  Unsupervised and supervised anomaly detection methods for large data series.
 -  Machine learning for data series classification.
 
+***
 
 ## Education
 
@@ -23,6 +25,8 @@ My research interest lies in the intersections between:
 - **2016-2017:** *Exchange Program (Master), Trinity College Dublin, SCSS*
   - School of computer science and statistics 
   - (First Honor grade for First and second Semester)
+
+***
 
 ## Experiences
 
@@ -46,6 +50,7 @@ My research interest lies in the intersections between:
   - Design of translator gloves for sign language. Development of a functional prototype using Arduino. Machine learning (KNN-classifier) and data acquisition code (Arduino tools for online data acquisition) done in C++. [More info...](http://fablab.ensimag.fr/index.php/Projet_Fablab_2016_Boniol_Demaegdt_Mallet)
 
 
+***
 
 ## Services
 
