@@ -16,6 +16,8 @@ redirect_from:
 
 ### Presented by Paul Boniol on November 29 2021
 
+***
+
 ## Jury
 * **Karine Zeitouni**, Professor, Université de Versailles - DAVID
 * **Germain Forestier**, Professor, Université Haute-Alsace - ENSISA
@@ -25,6 +27,7 @@ redirect_from:
 * **Mohammed Meftah**, Research engineer, EDF R&D
 * **Emmanuel Remy**, Research engineer, EDF R&D
 
+***
 
 ## Abstract
 <p style='text-align: justify;'>
