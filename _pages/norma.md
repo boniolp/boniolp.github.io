@@ -19,7 +19,7 @@ Paul Boniol, Michele Linardi, Federico Roncallo, Themis Palpanas, Mohammed Mefta
 ![norma](https://boniolp.github.io/paulboniol/assets/img/full_process_sumary_norma.jpg)
 
 ## Abstract
-
+<p style='text-align: justify;'>
 Subsequence anomaly (or outlier) detection in long sequences is an important problem with applications in a wide range of domains. 
 However, the approaches that have been proposed so far in the literature have severe limitations: 
 they either require prior domain knowledge, or become cumbersome and expensive to use in situations with recurrent anomalies of the same type. 
@@ -27,7 +27,7 @@ In this work, we address these problems, and propose NormA, a novel approach, su
 NormA is based on a new data series primitive, which permits to detect anomalies based on their (dis)similarity to a model that represents normal behavior. 
 The experimental results on several real datasets demonstrate that the proposed approach correctly identifies all single and recurrent anomalies of various types, with no prior knowledge of the characteristics of these anomalies (except for their length). 
 Moreover, it outperforms by a large margin the current state-of-the art algorithms in terms of accuracy, while being orders of magnitude faster.
-
+</p>
 ![example](https://boniolp.github.io/paulboniol/assets/img/figure_norma_example.jpg)
 
 ## Papers
