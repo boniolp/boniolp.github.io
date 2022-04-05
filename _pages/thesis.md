@@ -51,7 +51,7 @@ Unsupervised subsequence anomaly (or outlier) detection in long sequences is an 
 
 ## Chapter 4: Streaming Subseqence Anomaly Detection
 <p align="center">
-<img src="https://boniolp.github.io/paulboniol/assets/img/illustration_4.jpg" alt="Chapter4" width="300"/>
+<img src="https://boniolp.github.io/paulboniol/assets/img/illustration_4.jpg" alt="Chapter4" width="370"/>
 </p>
 ### Summary
 
@@ -59,7 +59,7 @@ In the previous chapter, we tackled the unsupervised subsequence anomaly detecti
 
 ## Chapter 5: Supervised Identification of precursors of anomaly
 <p align="center">
-<img src="https://boniolp.github.io/paulboniol/assets/img/illustration_5.jpg" alt="Chapter5" width="300"/>
+<img src="https://boniolp.github.io/paulboniol/assets/img/illustration_5.jpg" alt="Chapter5" width="370"/>
 </p>
 ### Summary
 
@@ -67,7 +67,7 @@ In the previous chapter, anomalies were considered unknown. However, one can con
 
 ## Chapter 6: Pump Vibration Case
 <p align="center">
-<img src="https://boniolp.github.io/paulboniol/assets/img/illustration_6.jpg" alt="Chapter6" width="300"/>
+<img src="https://boniolp.github.io/paulboniol/assets/img/illustration_6.jpg" alt="Chapter6" width="370"/>
 </p>
 ### Summary
 
