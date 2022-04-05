@@ -19,11 +19,11 @@ redirect_from:
 ***
 
 ## Jury
-* **Karine Zeitouni**, Professor, Université de Versailles - DAVID
-* **Germain Forestier**, Professor, Université Haute-Alsace - ENSISA
-* **Bernd Amann**, Professor, Sorbonne Université - LIP6 
-* **Michalis Vazirgiannis**, Professeur, Ecole Polytechnique - LIX
-* **Themis Palpanas**, Professor, Université de Paris, LIPADE
+* **[Karine Zeitouni](https://pages.david.uvsq.fr/kzeitouni/)**, Professor, Université de Versailles - DAVID
+* **[Germain Forestier](https://germain-forestier.info/)**, Professor, Université Haute-Alsace - ENSISA
+* **[Bernd Amann](https://www.lip6.fr/actualite/personnes-fiche.php?ident=P200)**, Professor, Sorbonne Université - LIP6 
+* **[Michalis Vazirgiannis](http://www.lix.polytechnique.fr/Labo/Michalis.Vazirgiannis/)**, Professeur, Ecole Polytechnique - LIX
+* **[Themis Palpanas](https://helios2.mi.parisdescartes.fr/~themisp/home.html)**, Professor, Université de Paris, LIPADE
 * **Mohammed Meftah**, Research engineer, EDF R&D
 * **Emmanuel Remy**, Research engineer, EDF R&D
 
