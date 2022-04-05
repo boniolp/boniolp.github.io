@@ -16,6 +16,11 @@ redirect_from:
 
 ### Journals
 
+
+---
+
+* John Paparrizos, Yuhao Kang, Paul Boniol, Ruey S. Tsay, Themis Palpanas, Michael J. Franklin. **TSB-UAD An End-to-End Benchmark Suite for Univariate Time Series Anomaly Detection**. Proceedings of the VLDB Endowment (PVLDB) Journal, 2022.
+
 ---
 
 * Paul Boniol, John Paparrizos, Themis Palpanas, Michael J. Franklin. **SAND: Streaming Subsequence Anomaly Detection**. Proceedings of the VLDB Endowment (PVLDB) Journal, 2021. [More info...](https://boniolp.github.io/paulboniol/sand)
@@ -23,6 +28,10 @@ redirect_from:
 ---
 
 * Paul Boniol, John Paparrizos, Themis Palpanas, Michael J. Franklin. **SAND in Action: Subsequence Anomaly Detection for Streams**. Proceedings of the VLDB Endowment (PVLDB) Journal, 2021. [More info...](https://boniolp.github.io/paulboniol/sand)
+
+--- 
+
+* David Restrepo Armiles, Pablo Marcello Baquero, Paul Boniol, Rajaa El Hamdani, Michalis Vazirgiannis. **Computional Indicators in the Legal Profession: Can Artificial Intelligence Measure Lawers' Performance**. Journal of Law, Technology and Policy, 2021.
 
 --- 
 
@@ -42,11 +51,19 @@ redirect_from:
 
 ---
 
-* Paul Boniol, George Panagopoulos, Christos Xypolopoulos, Rajaa El Hamdani, David Restrepo Amariles, Michalis Vazirgiannis. **Performance in the Courtroom: Automated Processing and Visualization of Appeal Court Decisions in France**. NLLP Workshop, KDD, San Diego, CA, USA, August 2020: 11-17
+* Paul Boniol, Mohammed Meftah, Emmanuel Remy, Themis Palpanas. **dCAM: Dimension-wise Class Activation Map for Explaining Multivariate Data Series Classification**. In Proceedings of the 2022 International Conferenceon Management of Data(SIGMOD’22), 2022
+
+---
+
+* Paul Boniol, George Panagopoulos, Christos Xypolopoulos, Rajaa El Hamdani, David Restrepo Amariles, Michalis Vazirgiannis. **Performance in the Courtroom: Automated Processing and Visualization of Appeal Court Decisions in France**. NLLP Workshop, KDD, San Diego, CA, USA, August 2020: 11-17 [More info...](https://boniolp.github.io/paulboniol/smartlaw)
 
 ---
 
 * Paul Boniol (supervised by Themis Palpanas, Mohammed Meftah, Emmanuel Remy). **Unsupervised Subsequence Anomaly Detection in Large Sequences**. Very Large Data Bases (VLDB) PhD Workshop, Tokyo, Japan, August 2020.
+
+---
+
+* Paul Boniol, Themis Palpanas. **Subsequence Anomaly Detection with Series2Graph**. BDA, 2020. [More info...](https://boniolp.github.io/paulboniol/s2g)
 
 ---
 
