@@ -31,7 +31,7 @@ redirect_from:
 
 --- 
 
-* David Restrepo Armiles, Pablo Marcello Baquero, Paul Boniol, Rajaa El Hamdani, Michalis Vazirgiannis. **Computional Indicators in the Legal Profession: Can Artificial Intelligence Measure Lawers' Performance**. Journal of Law, Technology and Policy, 2021.
+* David Restrepo Armiles, Pablo Marcello Baquero, Paul Boniol, Rajaa El Hamdani, Michalis Vazirgiannis. **Computional Indicators in the Legal Profession: Can Artificial Intelligence Measure Lawers' Performance**. Journal of Law, Technology and Policy, 2021. [More info...](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3974526)
 
 --- 
 
