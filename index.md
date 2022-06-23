@@ -51,7 +51,16 @@ My research interest lies in the intersections between:
 
 ***
 
+## Awards
+
+- INFORSID 2022 PhD prize
+
+***
+
 ## Services
+
+Program committee member for:
+- [EDBT 2023](http://edbticdt2023.cs.uoi.gr/)
 
 Invited external reviewer for international journals: 
 - [IEEE TKDE](https://www.computer.org/csdl/journal/tk)
