@@ -60,7 +60,9 @@ My research interest lies in the intersections between:
 ## Services
 
 Program committee member for:
-- [EDBT 2023](http://edbticdt2023.cs.uoi.gr/)
+- [IJCAI 2022](https://ijcai-22.org/#): AI4TS workshop
+- [EDBT 2023](http://edbticdt2023.cs.uoi.gr/): Research track
+- [ICDE 2023](https://icde2023.ics.uci.edu/): industry and applicatiopn track
 
 Invited external reviewer for international journals: 
 - [IEEE TKDE](https://www.computer.org/csdl/journal/tk)
