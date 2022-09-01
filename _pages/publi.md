@@ -16,13 +16,18 @@ redirect_from:
 
 ### Journals
 
----
-
-* Paul Boniol, John Paparrizos, Yuhao Kang, Themis Palpanas, Ruey Tsay, Aaron J. Elmore, Michael J. Franklin. **Theseus: Navigating the Labyrinth of Subsequence Anomaly Detection.** Proceedings of the VLDB Endowment (PVLDB) Journal, 2022.
 
 ---
 
-* John Paparrizos, Yuhao Kang, Paul Boniol, Ruey S. Tsay, Themis Palpanas, Michael J. Franklin. **TSB-UAD An End-to-End Benchmark Suite for Univariate Time Series Anomaly Detection**. Proceedings of the VLDB Endowment (PVLDB) Journal, 2022.
+* John Paparrizos, Paul Boniol, Themis Palpanas, Ruey Tsay, Aaron J. Elmore, Michael J. Franklin. **Volume Under the Surface: A New Accuracy Evaluation Measure for Time-Series Anomaly Detection.** Proceedings of the VLDB Endowment (PVLDB) Journal, 2022.
+
+---
+
+* Paul Boniol, John Paparrizos, Yuhao Kang, Themis Palpanas, Ruey Tsay, Aaron J. Elmore, Michael J. Franklin. **Theseus: Navigating the Labyrinth of Subsequence Anomaly Detection.** Proceedings of the VLDB Endowment (PVLDB) Journal, 2022. [More info...](https://helios2.mi.parisdescartes.fr/~themisp/publications/pvldb22-theseus.pdf)
+
+---
+
+* John Paparrizos, Yuhao Kang, Paul Boniol, Ruey S. Tsay, Themis Palpanas, Michael J. Franklin. **TSB-UAD An End-to-End Benchmark Suite for Univariate Time Series Anomaly Detection**. Proceedings of the VLDB Endowment (PVLDB) Journal, 2022. [More info...]([https://boniolp.github.io/paulboniol/sand](https://www.researchgate.net/publication/361483861_TSB-UAD_an_end-to-end_benchmark_suite_for_univariate_time-series_anomaly_detection))
 
 ---
 
@@ -54,7 +59,7 @@ redirect_from:
 
 ---
 
-* Paul Boniol, Mohammed Meftah, Emmanuel Remy, Themis Palpanas. **dCAM: Dimension-wise Class Activation Map for Explaining Multivariate Data Series Classification**. In Proceedings of the 2022 International Conference on Management of Data (SIGMOD’22), 2022
+* Paul Boniol, Mohammed Meftah, Emmanuel Remy, Themis Palpanas. **dCAM: Dimension-wise Class Activation Map for Explaining Multivariate Data Series Classification**. In Proceedings of the 2022 International Conference on Management of Data (SIGMOD’22), 2022. [More info...](https://www.researchgate.net/publication/361416963_dCAM_Dimension-wise_Class_Activation_Map_for_Explaining_Multivariate_Data_Series_Classification)
 
 ---
 
