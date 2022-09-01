@@ -27,7 +27,7 @@ redirect_from:
 
 ---
 
-* John Paparrizos, Yuhao Kang, Paul Boniol, Ruey S. Tsay, Themis Palpanas, Michael J. Franklin. **TSB-UAD An End-to-End Benchmark Suite for Univariate Time Series Anomaly Detection**. Proceedings of the VLDB Endowment (PVLDB) Journal, 2022. [More info...]([https://boniolp.github.io/paulboniol/sand](https://www.researchgate.net/publication/361483861_TSB-UAD_an_end-to-end_benchmark_suite_for_univariate_time-series_anomaly_detection))
+* John Paparrizos, Yuhao Kang, Paul Boniol, Ruey S. Tsay, Themis Palpanas, Michael J. Franklin. **TSB-UAD An End-to-End Benchmark Suite for Univariate Time Series Anomaly Detection**. Proceedings of the VLDB Endowment (PVLDB) Journal, 2022. [More info...](https://www.researchgate.net/publication/361483861_TSB-UAD_an_end-to-end_benchmark_suite_for_univariate_time-series_anomaly_detection)
 
 ---
 
