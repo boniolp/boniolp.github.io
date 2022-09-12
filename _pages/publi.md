@@ -23,7 +23,7 @@ redirect_from:
 
 ---
 
-* Paul Boniol, John Paparrizos, Yuhao Kang, Themis Palpanas, Ruey Tsay, Aaron J. Elmore, Michael J. Franklin. **Theseus: Navigating the Labyrinth of Subsequence Anomaly Detection.** Proceedings of the VLDB Endowment (PVLDB) Journal, 2022. [More info...](https://helios2.mi.parisdescartes.fr/~themisp/publications/pvldb22-theseus.pdf)
+* Paul Boniol, John Paparrizos, Yuhao Kang, Themis Palpanas, Ruey Tsay, Aaron J. Elmore, Michael J. Franklin. **Theseus: Navigating the Labyrinth of Subsequence Anomaly Detection.** Proceedings of the VLDB Endowment (PVLDB) Journal, 2022. [More info...](https://www.researchgate.net/publication/363480726_Theseus_Navigating_the_Labyrinth_of_Time-Series_Anomaly_Detection)
 
 ---
 
