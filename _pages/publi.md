@@ -19,7 +19,7 @@ redirect_from:
 
 ---
 
-* John Paparrizos, Paul Boniol, Themis Palpanas, Ruey Tsay, Aaron J. Elmore, Michael J. Franklin. **Volume Under the Surface: A New Accuracy Evaluation Measure for Time-Series Anomaly Detection.** Proceedings of the VLDB Endowment (PVLDB) Journal, 2022.
+* John Paparrizos, Paul Boniol, Themis Palpanas, Ruey Tsay, Aaron J. Elmore, Michael J. Franklin. **Volume Under the Surface: A New Accuracy Evaluation Measure for Time-Series Anomaly Detection.** Proceedings of the VLDB Endowment (PVLDB) Journal, 2022. [More info...](https://www.researchgate.net/publication/363485317_Volume_Under_the_Surface_A_New_Accuracy_Evaluation_Measure_for_Time-Series_Anomaly_Detection)
 
 ---
 
