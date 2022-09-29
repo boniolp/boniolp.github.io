@@ -59,7 +59,7 @@ redirect_from:
 
 ---
 
-* Paul Boniol, Mohammed Meftah, Emmanuel Remy, Themis Palpanas. **dCAM: Dimension-wise Class Activation Map for Explaining Multivariate Data Series Classification**. In Proceedings of the 2022 International Conference on Management of Data (SIGMOD’22), 2022. [More info...](https://www.researchgate.net/publication/361416963_dCAM_Dimension-wise_Class_Activation_Map_for_Explaining_Multivariate_Data_Series_Classification)
+* Paul Boniol, Mohammed Meftah, Emmanuel Remy, Themis Palpanas. **dCAM: Dimension-wise Class Activation Map for Explaining Multivariate Data Series Classification**. In Proceedings of the 2022 International Conference on Management of Data (SIGMOD’22), 2022. [More info...](https://boniolp.github.io/paulboniol/dcam)
 
 ---
 
