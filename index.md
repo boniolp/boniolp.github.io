@@ -7,6 +7,16 @@ My research interest lies in the intersections between:
 -  Unsupervised and supervised anomaly detection methods for large data series.
 -  Machine learning for data series classification.
 
+
+***
+
+## Awards
+
+- [INFORSID 2022 PhD prize](http://inforsid.fr/laureatprixthese.php)
+- Paul Caseau 2022 PhD prize
+- Lambdamu congress "research and industry" 2022 prize
+- BDA 2022 PHD prize
+
 ***
 
 ## Education
@@ -29,6 +39,17 @@ My research interest lies in the intersections between:
 
 ## Experiences
 
+- **October 2022:** *Visiting Researcher, European Gravitational Observatory (EGO), the VIRGO collaboration*
+  - Research project:
+     - Geo-localization of noises using data series from fiber-acoustic sensors positioned at one of the building of the VIRGO interferometer. Collaboration with Akis Gkaitatzis and Prof. Stavros Katsanevas.
+
+- **2022-now:** *Postdoctoral researcher, Université Paris Cité, LIPADE*
+  - Research projects:
+    - Benchmarking and large scale evaluation of anomaly detection methods for univariate time series. Collaboration with Dr John Paparrizos and Prof. Michael J. Franklin from the University of Chicago.
+    - Precursors detection and time series classification for the prediction of le Piton de la fournaise volcano. Colaboration with the Institut de Physique du Globe de Paris (IPGP).
+    - Ensembling unsupervised anomaly detection methods with a supervised model selection method. Evaluation on large univariate time series benchmark.
+ 
+
 - **2017-2018:** *Research engineer, Ecole Polytechnique, LIX*
   - Research projects:
     - **COM4U**:  Analysis of retail data using unsupervised learning techniques in order to discover causality links between external events and web behaviors. Collaboration with start-up Realytics. Graph mining, url clustering, time series clustering. Implementation in Python. 
@@ -47,16 +68,6 @@ My research interest lies in the intersections between:
 
 - **2016:** *Fablab project, Grenoble INP*
   - Design of translator gloves for sign language. Development of a functional prototype using Arduino. Machine learning (KNN-classifier) and data acquisition code (Arduino tools for online data acquisition) done in C++. [More info...](http://fablab.ensimag.fr/index.php/Projet_Fablab_2016_Boniol_Demaegdt_Mallet)
-
-
-***
-
-## Awards
-
-- [INFORSID 2022 PhD prize](http://inforsid.fr/laureatprixthese.php)
-- Paul Caseau 2022 PhD prize
-- Lambdamu congress "research and industry" 2022 prize
-- BDA 2022 PHD prize
 
 ***
 
