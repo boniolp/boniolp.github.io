@@ -56,6 +56,7 @@ My research interest lies in the intersections between:
 - [INFORSID 2022 PhD prize](http://inforsid.fr/laureatprixthese.php)
 - Paul Caseau 2022 PhD prize
 - Lambdamu congress "research and industry" 2022 prize
+- BDA 2022 PHD prize
 
 ***
 
