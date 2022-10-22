@@ -60,7 +60,7 @@ My research interest lies in the intersections between:
 
 ***
 
-## Services
+## Service
 
 Program committee member for:
 - [IJCAI 2022](https://ijcai-22.org/#): AI4TS workshop
