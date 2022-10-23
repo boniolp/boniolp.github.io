@@ -13,12 +13,12 @@ header {
   }
 }
 
-/* Navbar container */
+/* Navbar container width: 100%; */
 .navbar {
   overflow: hidden;
   background-color: #C0C0C0;
   font-family: Arial;
-  width: 100%;
+  position: relative;
   position: fixed;
   top: 0;
   
