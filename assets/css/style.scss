@@ -19,7 +19,6 @@ body {
 
 /* Navbar container width: 100%; */
 .navbar {
-  overflow: hidden;
   background-color: #C0C0C0;
   font-family: Arial;
   position: relative;
@@ -28,6 +27,10 @@ body {
   left: 0;
   right: 0;
   
+}
+
+.navbar-right {
+  float: right;
 }
 
 /* Links inside the navbar */
