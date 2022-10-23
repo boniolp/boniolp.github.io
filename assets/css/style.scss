@@ -13,6 +13,10 @@ header {
   }
 }
 
+body {
+  padding: 100px;
+}
+
 /* Navbar container width: 100%; */
 .navbar {
   overflow: hidden;
@@ -21,12 +25,14 @@ header {
   position: relative;
   position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   
 }
 
 /* Links inside the navbar */
 .navbar a {
-  float: right;
+  float: left;
   font-size: 16px;
   color: #000000;
   text-align: center;
@@ -37,7 +43,6 @@ header {
 /* The dropdown container */
 .dropdown {
   float: left;
-  overflow: hidden;
 }
 
 /* Dropdown button */
