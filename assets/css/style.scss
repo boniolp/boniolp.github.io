@@ -12,22 +12,21 @@ header {
     text-align: left;
   }
 }
-body {
-    padding-top: 65px;
-}
+
 /* Navbar container */
 .navbar {
   overflow: hidden;
   background-color: #C0C0C0;
   font-family: Arial;
-  float: right;
   width: 100%;
+  position: fixed;
+  top: 0;
   
 }
 
 /* Links inside the navbar */
 .navbar a {
-  float: left;
+  float: right;
   font-size: 14px;
   color: #000000;
   text-align: center;
@@ -46,7 +45,7 @@ body {
   font-size: 16px;
   border: none;
   outline: none;
-  color: white;
+  color: black;
   padding: 14px 16px;
   background-color: inherit;
   font-family: inherit; /* Important for vertical align on mobile phones */
