@@ -13,7 +13,7 @@ My research interest lies in the intersections between:
 ## Awards
 
 - [INFORSID 2022 PhD prize](http://inforsid.fr/laureatprixthese.php)
-- Paul Caseau 2022 PhD prize
+- [Paul Caseau 2022 PhD prize](https://www.edf.fr/groupe-edf/inventer-lavenir-de-lenergie/rd-un-savoir-faire-mondial/toutes-les-actualites-de-la-rd/2022-qui-sont-les-laureats-du-prix-de-these-paul-caseau)
 - Lambdamu congress "research and industry" 2022 prize
 - BDA 2022 PHD prize
 
