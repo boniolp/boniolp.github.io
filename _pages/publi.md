@@ -57,6 +57,11 @@ redirect_from:
 
 ### Conferences
 
+
+---
+
+* Paul Boniol, Mohammed Meftah, Emmanuel Remy, Themis Palpanas. **Détection d'anomalies et identification de leurs précurseurs dans des larges collections de séries temporelles - Application à un matériel de centrales EDF**. In Congrès Lambda Mu 23, 2022. [More info...](https://www.researchgate.net/publication/365489339_Detection_d'anomalies_et_identification_de_leurs_precurseurs_dans_des_larges_collections_de_series_temporelles_-_Application_a_un_materiel_de_centrales_EDF)
+
 ---
 
 * Paul Boniol, Mohammed Meftah, Emmanuel Remy, Themis Palpanas. **dCAM: Dimension-wise Class Activation Map for Explaining Multivariate Data Series Classification**. In Proceedings of the 2022 International Conference on Management of Data (SIGMOD’22), 2022. [More info...](https://boniolp.github.io/paulboniol/dcam)
