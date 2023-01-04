@@ -60,7 +60,7 @@ redirect_from:
 
 ---
 
-* Paul Boniol, Mohammed Meftah, Emmanuel Remy, Themis Palpanas. **Détection d'anomalies et identification de leurs précurseurs dans des larges collections de séries temporelles - Application à un matériel de centrales EDF**. In Congrès Lambda Mu 23, 2022. [More info...](https://www.researchgate.net/publication/365489339_Detection_d'anomalies_et_identification_de_leurs_precurseurs_dans_des_larges_collections_de_series_temporelles_-_Application_a_un_materiel_de_centrales_EDF)
+* Paul Boniol, Mohammed Meftah, Emmanuel Remy, Themis Palpanas. **Détection d'anomalies et identification de leurs précurseurs dans des larges collections de séries temporelles - Application à un matériel de centrales EDF**. In Congrès Lambda Mu 23, 2022. [More info...](https://boniolp.github.io/paulboniol/assets/pdfs/lambda-mu-conference-IEEE-format.pdf)
 
 ---
 
