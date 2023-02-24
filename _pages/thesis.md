@@ -35,6 +35,9 @@ Extensive collections of data series are becoming a reality in a large number of
 </p>
 **Thesis (pdf)**: [Detection of Anomalies and Identification of their Precursors in Large Data Series Collections](https://helios2.mi.parisdescartes.fr/~themisp/publications/PaulBoniol-PhdThesis-2021.pdf)
 
+This interview gives you a brief overview of my work during my Ph.D.
+[![An overview of my work during my Ph.D.](https://img.youtube.com/vi/DEihnx9Sa48/0.jpg)](https://www.youtube.com/watch?v=DEihnx9Sa48)
+
 ***
 
 ## Chapter 2: Background and Related Work
