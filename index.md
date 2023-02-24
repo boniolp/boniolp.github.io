@@ -8,6 +8,10 @@ My research interest lies in the intersections between:
 -  Machine learning for data series classification.
 
 
+This interview gives you a brief overview of my work during my Ph.D.
+[![An overview of my work during my Ph.D.](https://img.youtube.com/vi/DEihnx9Sa48/0.jpg)](https://www.youtube.com/watch?v=DEihnx9Sa48)
+
+
 ***
 
 ## Awards
