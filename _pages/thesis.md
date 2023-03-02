@@ -42,7 +42,7 @@ This interview gives you a brief overview of my work during my Ph.D.
 
 ## Chapter 2: Background and Related Work
 <p align="center">
-<img src="https://boniolp.github.io/paulboniol/assets/img/illustration_2.jpg" alt="Chapter2" width="300"/>
+<img src="https://boniolp.github.io/assets/img/illustration_2.jpg" alt="Chapter2" width="300"/>
 </p>
 ### Summary
 <p style='text-align: justify;'>
@@ -53,7 +53,7 @@ In this chapter, we define the relevant taxonomy related to data series and anom
 
 ## Chapter 3: Unsupervised Subseqence Anomaly Detection
 <p align="center">
-<img src="https://boniolp.github.io/paulboniol/assets/img/illustration_3.jpg" alt="Chapter3" width="300"/>
+<img src="https://boniolp.github.io/assets/img/illustration_3.jpg" alt="Chapter3" width="300"/>
 </p>
 ### Summary
 <p style='text-align: justify;'>
@@ -62,15 +62,15 @@ Unsupervised subsequence anomaly (or outlier) detection in long sequences is an 
 
 ### Related Publications
 
-* Paul Boniol, Michele Linardi, Federico Roncallo, Themis Palpanas, Mohammed Meftah. Emmanuel Remy. **Unsupervised and Scalable Subsequence Anomaly Detection in Large Data Series**. International Journal on Very Large Data Bases (VLDBJ), 2021. [More info...](https://boniolp.github.io/paulboniol/norma)
+* Paul Boniol, Michele Linardi, Federico Roncallo, Themis Palpanas, Mohammed Meftah. Emmanuel Remy. **Unsupervised and Scalable Subsequence Anomaly Detection in Large Data Series**. International Journal on Very Large Data Bases (VLDBJ), 2021. [More info...](https://boniolp.github.io/norma)
 
-* Paul Boniol, Themis Palpanas. **Series2Graph: Graph-based Subsequence Anomaly Detection for Time Series**. Proceedings of the VLDB Endowment (PVLDB) Journal 13(11), 2020. [More info...](https://boniolp.github.io/paulboniol/s2g)
+* Paul Boniol, Themis Palpanas. **Series2Graph: Graph-based Subsequence Anomaly Detection for Time Series**. Proceedings of the VLDB Endowment (PVLDB) Journal 13(11), 2020. [More info...](https://boniolp.github.io/s2g)
 
-* Paul Boniol, Michele Linardi, Federico Roncallo, Themis Palpanas. **Automated Anomaly Detection in Large Sequences**. IEEE International Conference on Data Engineering (ICDE), Dallas, TX, USA, April 2020. [More info...](https://boniolp.github.io/paulboniol/norma)
+* Paul Boniol, Michele Linardi, Federico Roncallo, Themis Palpanas. **Automated Anomaly Detection in Large Sequences**. IEEE International Conference on Data Engineering (ICDE), Dallas, TX, USA, April 2020. [More info...](https://boniolp.github.io/norma)
 
-* Paul Boniol, Michele Linardi, Federico Roncallo, Themis Palpanas. **SAD: An Unsupervised System for Subsequence Anomaly Detection**. IEEE International Conference on Data Engineering (ICDE), Dallas, TX, USA, April 2020. [More info...](https://boniolp.github.io/paulboniol/norma)
+* Paul Boniol, Michele Linardi, Federico Roncallo, Themis Palpanas. **SAD: An Unsupervised System for Subsequence Anomaly Detection**. IEEE International Conference on Data Engineering (ICDE), Dallas, TX, USA, April 2020. [More info...](https://boniolp.github.io/norma)
 
-* Paul Boniol, Themis Palpanas, Mohammed Meftah, Emmanuel Remy. **GraphAn: Graph-based Subsequence Anomaly Detection**. Proceedings of the VLDB Endowment (PVLDB) Journal, 2020. [More info...](https://boniolp.github.io/paulboniol/s2g)
+* Paul Boniol, Themis Palpanas, Mohammed Meftah, Emmanuel Remy. **GraphAn: Graph-based Subsequence Anomaly Detection**. Proceedings of the VLDB Endowment (PVLDB) Journal, 2020. [More info...](https://boniolp.github.io/s2g)
 
 * Paul Boniol (supervised by Themis Palpanas, Mohammed Meftah, Emmanuel Remy). **Unsupervised Subsequence Anomaly Detection in Large Sequences**. Very Large Data Bases (VLDB) PhD Workshop, Tokyo, Japan, August 2020.
 
@@ -78,7 +78,7 @@ Unsupervised subsequence anomaly (or outlier) detection in long sequences is an 
 
 ## Chapter 4: Streaming Subseqence Anomaly Detection
 <p align="center">
-<img src="https://boniolp.github.io/paulboniol/assets/img/illustration_4.jpg" alt="Chapter4" width="370"/>
+<img src="https://boniolp.github.io/assets/img/illustration_4.jpg" alt="Chapter4" width="370"/>
 </p>
 ### Summary
 <p style='text-align: justify;'>
@@ -87,15 +87,15 @@ In the previous chapter, we tackled the unsupervised subsequence anomaly detecti
 
 ### Related Publications
 
-* Paul Boniol, John Paparrizos, Themis Palpanas, Michael J. Franklin. **SAND: Streaming Subsequence Anomaly Detection**. Proceedings of the VLDB Endowment (PVLDB) Journal, 2021. [More info...](https://boniolp.github.io/paulboniol/sand)
+* Paul Boniol, John Paparrizos, Themis Palpanas, Michael J. Franklin. **SAND: Streaming Subsequence Anomaly Detection**. Proceedings of the VLDB Endowment (PVLDB) Journal, 2021. [More info...](https://boniolp.github.io/sand)
 
-* Paul Boniol, John Paparrizos, Themis Palpanas, Michael J. Franklin. **SAND in Action: Subsequence Anomaly Detection for Streams**. Proceedings of the VLDB Endowment (PVLDB) Journal, 2021. [More info...](https://boniolp.github.io/paulboniol/sand)
+* Paul Boniol, John Paparrizos, Themis Palpanas, Michael J. Franklin. **SAND in Action: Subsequence Anomaly Detection for Streams**. Proceedings of the VLDB Endowment (PVLDB) Journal, 2021. [More info...](https://boniolp.github.io/sand)
 
 ***
 
 ## Chapter 5: Supervised Identification of precursors of anomaly
 <p align="center">
-<img src="https://boniolp.github.io/paulboniol/assets/img/illustration_5.jpg" alt="Chapter5" width="370"/>
+<img src="https://boniolp.github.io/assets/img/illustration_5.jpg" alt="Chapter5" width="370"/>
 </p>
 ### Summary
 <p style='text-align: justify;'>
@@ -110,7 +110,7 @@ In the previous chapter, anomalies were considered unknown. However, one can con
 
 ## Chapter 6: Pump Vibration Case
 <p align="center">
-<img src="https://boniolp.github.io/paulboniol/assets/img/illustration_6.jpg" alt="Chapter6" width="370"/>
+<img src="https://boniolp.github.io/assets/img/illustration_6.jpg" alt="Chapter6" width="370"/>
 </p>
 ### Summary
 <p style='text-align: justify;'>
@@ -123,4 +123,4 @@ In this chapter, we illustrate the applicability and the interest of our develop
 
 ***
 
-[Back to main page](https://boniolp.github.io/paulboniol)
+[Back to main page](https://boniolp.github.io/)
