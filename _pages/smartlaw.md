@@ -16,7 +16,7 @@ redirect_from:
 Paul Boniol, George Panagopoulos, Christos Xypolopoulos, Rajaa El Hamdani, David Restrepo Amariles, Michalis Vazirgiannis
 
 
-![smartlaw](https://boniolp.github.io/paulboniol/assets/img/smartlaw.jpg)
+![smartlaw](https://boniolp.github.io/assets/img/smartlaw.jpg)
 
 ## Abstract
 
@@ -29,6 +29,6 @@ We also perform community detection in the network of judgments and propose metr
 </p>
 ## Papers
 
-| Research paper | [Performance in the Courtroom: Automated Processing and Visualization of Appeal Court Decisions in France, NLLP (KDD) (2020)](http://ceur-ws.org/Vol-2645/paper2.pdf) | [bibtex](https://boniolp.github.io/paulboniol/assets/pdfs/smartlaw.txt) |
+| Research paper | [Performance in the Courtroom: Automated Processing and Visualization of Appeal Court Decisions in France, NLLP (KDD) (2020)](http://ceur-ws.org/Vol-2645/paper2.pdf) | [bibtex](https://boniolp.github.io/assets/pdfs/smartlaw.txt) |
 
-[Back to main page](https://boniolp.github.io/paulboniol)
+[Back to main page](https://boniolp.github.io/)
