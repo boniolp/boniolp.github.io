@@ -16,7 +16,7 @@ redirect_from:
 Paul Boniol, Mohammed Meftah, Emmanuel Remy, Themis Palpanas
 
 
-![dcam example](https://boniolp.github.io/paulboniol/assets/img/dcam_example.jpg)
+![dcam example](https://boniolp.github.io/assets/img/dcam_example.jpg)
 
 ## Abstract
 <p style='text-align: justify;'>
@@ -38,4 +38,4 @@ Data series classification is an important and challenging problem in data scien
 | Research paper | [dCAM: Dimension-wise Class Activation Map for Explaining Multivariate Data Series Classification, SIGMOD (2022)](https://www.researchgate.net/publication/361416963_dCAM_Dimension-wise_Class_Activation_Map_for_Explaining_Multivariate_Data_Series_Classification) | [bibtex](https://dblp.org/rec/conf/sigmod/BoniolMRP22.html?view=bibtex) |
 | data and source code | [dCAM website](https://helios2.mi.parisdescartes.fr/~themisp/dCAM/) |  |
 
-[Back to main page](https://boniolp.github.io/paulboniol)
+[Back to main page](https://boniolp.github.io/)
