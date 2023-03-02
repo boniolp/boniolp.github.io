@@ -16,7 +16,7 @@ redirect_from:
 Paul Boniol, John Paparrizos, Themis Palpanas, Micheal Franklin
 
 
-![sand](https://boniolp.github.io/paulboniol/assets/img/full_process_sumary_sand.jpg)
+![sand](https://boniolp.github.io/assets/img/full_process_sumary_sand.jpg)
 
 ## Abstract
 <p style='text-align: justify;'>
@@ -31,7 +31,7 @@ In addition, SAND outperforms by a large margin the current state-of-the-art alg
 </p>
 ## Papers
 
-| Research paper | [SAND: Streaming Subsequence Anomaly Detection, PVLDB (2021)](https://boniolp.github.io/paulboniol/assets/pdfs/SAND.pdf) | [bibtex](https://boniolp.github.io/paulboniol/assets/pdfs/SAND.txt) |
-| Demonstration paper | [SAND in action: Subsequence Anomaly Detection for Streams, PVLDB (2021)](https://boniolp.github.io/paulboniol/assets/pdfs/SANDdemo.pdf) | [bibtex](https://boniolp.github.io/paulboniol/assets/pdfs/SANDdemo.txt) |
+| Research paper | [SAND: Streaming Subsequence Anomaly Detection, PVLDB (2021)](https://boniolp.github.io/assets/pdfs/SAND.pdf) | [bibtex](https://boniolp.github.io/assets/pdfs/SAND.txt) |
+| Demonstration paper | [SAND in action: Subsequence Anomaly Detection for Streams, PVLDB (2021)](https://boniolp.github.io/assets/pdfs/SANDdemo.pdf) | [bibtex](https://boniolp.github.io/assets/pdfs/SANDdemo.txt) |
 
-[Back to main page](https://boniolp.github.io/paulboniol)
+[Back to main page](https://boniolp.github.io/)
