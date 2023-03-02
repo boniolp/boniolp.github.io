@@ -31,11 +31,11 @@ redirect_from:
 
 ---
 
-* Paul Boniol, John Paparrizos, Themis Palpanas, Michael J. Franklin. **SAND: Streaming Subsequence Anomaly Detection**. Proceedings of the VLDB Endowment (PVLDB) Journal, 2021. [More info...](https://boniolp.github.io/paulboniol/sand)
+* Paul Boniol, John Paparrizos, Themis Palpanas, Michael J. Franklin. **SAND: Streaming Subsequence Anomaly Detection**. Proceedings of the VLDB Endowment (PVLDB) Journal, 2021. [More info...](https://boniolp.github.io/sand)
 
 ---
 
-* Paul Boniol, John Paparrizos, Themis Palpanas, Michael J. Franklin. **SAND in Action: Subsequence Anomaly Detection for Streams**. Proceedings of the VLDB Endowment (PVLDB) Journal, 2021. [More info...](https://boniolp.github.io/paulboniol/sand)
+* Paul Boniol, John Paparrizos, Themis Palpanas, Michael J. Franklin. **SAND in Action: Subsequence Anomaly Detection for Streams**. Proceedings of the VLDB Endowment (PVLDB) Journal, 2021. [More info...](https://boniolp.github.io/sand)
 
 --- 
 
@@ -43,15 +43,15 @@ redirect_from:
 
 --- 
 
-* Paul Boniol, Michele Linardi, Federico Roncallo, Themis Palpanas, Mohammed Meftah. Emmanuel Remy. **Unsupervised and Scalable Subsequence Anomaly Detection in Large Data Series**. International Journal on Very Large Data Bases (VLDBJ), 2021. [More info...](https://boniolp.github.io/paulboniol/norma)
+* Paul Boniol, Michele Linardi, Federico Roncallo, Themis Palpanas, Mohammed Meftah. Emmanuel Remy. **Unsupervised and Scalable Subsequence Anomaly Detection in Large Data Series**. International Journal on Very Large Data Bases (VLDBJ), 2021. [More info...](https://boniolp.github.io/norma)
 
 ---
 
-* Paul Boniol, Themis Palpanas, Mohammed Meftah, Emmanuel Remy. **GraphAn: Graph-based Subsequence Anomaly Detection**. Proceedings of the VLDB Endowment (PVLDB) Journal, 2020. [More info...](https://boniolp.github.io/paulboniol/s2g)
+* Paul Boniol, Themis Palpanas, Mohammed Meftah, Emmanuel Remy. **GraphAn: Graph-based Subsequence Anomaly Detection**. Proceedings of the VLDB Endowment (PVLDB) Journal, 2020. [More info...](https://boniolp.github.io/s2g)
 
 ---
 
-* Paul Boniol, Themis Palpanas. **Series2Graph: Graph-based Subsequence Anomaly Detection for Time Series**. Proceedings of the VLDB Endowment (PVLDB) Journal 13(11), 2020. [More info...](https://boniolp.github.io/paulboniol/s2g)
+* Paul Boniol, Themis Palpanas. **Series2Graph: Graph-based Subsequence Anomaly Detection for Time Series**. Proceedings of the VLDB Endowment (PVLDB) Journal 13(11), 2020. [More info...](https://boniolp.github.io/s2g)
 
 ---
 
@@ -60,15 +60,15 @@ redirect_from:
 
 ---
 
-* Paul Boniol, Mohammed Meftah, Emmanuel Remy, Themis Palpanas. **Détection d'anomalies et identification de leurs précurseurs dans des larges collections de séries temporelles - Application à un matériel de centrales EDF**. In Congrès Lambda Mu 23, 2022. [More info...](https://boniolp.github.io/paulboniol/assets/pdfs/lambda-mu-conference-IEEE-format.pdf)
+* Paul Boniol, Mohammed Meftah, Emmanuel Remy, Themis Palpanas. **Détection d'anomalies et identification de leurs précurseurs dans des larges collections de séries temporelles - Application à un matériel de centrales EDF**. In Congrès Lambda Mu 23, 2022. [More info...](https://boniolp.github.io/assets/pdfs/lambda-mu-conference-IEEE-format.pdf)
 
 ---
 
-* Paul Boniol, Mohammed Meftah, Emmanuel Remy, Themis Palpanas. **dCAM: Dimension-wise Class Activation Map for Explaining Multivariate Data Series Classification**. In Proceedings of the 2022 International Conference on Management of Data (SIGMOD’22), 2022. [More info...](https://boniolp.github.io/paulboniol/dcam)
+* Paul Boniol, Mohammed Meftah, Emmanuel Remy, Themis Palpanas. **dCAM: Dimension-wise Class Activation Map for Explaining Multivariate Data Series Classification**. In Proceedings of the 2022 International Conference on Management of Data (SIGMOD’22), 2022. [More info...](https://boniolp.github.io/dcam)
 
 ---
 
-* Paul Boniol, George Panagopoulos, Christos Xypolopoulos, Rajaa El Hamdani, David Restrepo Amariles, Michalis Vazirgiannis. **Performance in the Courtroom: Automated Processing and Visualization of Appeal Court Decisions in France**. NLLP Workshop, KDD, San Diego, CA, USA, August 2020: 11-17 [More info...](https://boniolp.github.io/paulboniol/smartlaw)
+* Paul Boniol, George Panagopoulos, Christos Xypolopoulos, Rajaa El Hamdani, David Restrepo Amariles, Michalis Vazirgiannis. **Performance in the Courtroom: Automated Processing and Visualization of Appeal Court Decisions in France**. NLLP Workshop, KDD, San Diego, CA, USA, August 2020: 11-17 [More info...](https://boniolp.github.io/smartlaw)
 
 ---
 
@@ -76,15 +76,15 @@ redirect_from:
 
 ---
 
-* Paul Boniol, Themis Palpanas. **Subsequence Anomaly Detection with Series2Graph**. BDA, 2020. [More info...](https://boniolp.github.io/paulboniol/s2g)
+* Paul Boniol, Themis Palpanas. **Subsequence Anomaly Detection with Series2Graph**. BDA, 2020. [More info...](https://boniolp.github.io/s2g)
 
 ---
 
-* Paul Boniol, Michele Linardi, Federico Roncallo, Themis Palpanas. **Automated Anomaly Detection in Large Sequences**. IEEE International Conference on Data Engineering (ICDE), Dallas, TX, USA, April 2020. [More info...](https://boniolp.github.io/paulboniol/norma)
+* Paul Boniol, Michele Linardi, Federico Roncallo, Themis Palpanas. **Automated Anomaly Detection in Large Sequences**. IEEE International Conference on Data Engineering (ICDE), Dallas, TX, USA, April 2020. [More info...](https://boniolp.github.io/norma)
 
 ---
 
-* Paul Boniol, Michele Linardi, Federico Roncallo, Themis Palpanas. **SAD: An Unsupervised System for Subsequence Anomaly Detection**. IEEE International Conference on Data Engineering (ICDE), Dallas, TX, USA, April 2020. [More info...](https://boniolp.github.io/paulboniol/norma)
+* Paul Boniol, Michele Linardi, Federico Roncallo, Themis Palpanas. **SAD: An Unsupervised System for Subsequence Anomaly Detection**. IEEE International Conference on Data Engineering (ICDE), Dallas, TX, USA, April 2020. [More info...](https://boniolp.github.io/norma)
 
 ---
 
