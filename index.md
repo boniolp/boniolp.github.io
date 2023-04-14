@@ -1,6 +1,6 @@
 ## Short bio
 
-I am a Postdoctoral researcher at the University of Paris in the LIPADE lab. I completed my Ph.D. at the University of Paris and EDF R&D, working with [Prof. Themis Palpanas](http://helios.mi.parisdescartes.fr/~themisp/), Emmanuel Remy, and Mohammed Meftah. Before that, I got my bachelor’s and master’s degrees in computer science and applied mathematics from Grenoble INP ENSIMAG engineering school. Finally, before starting my Ph.D., I worked as a research engineer at the computer science lab of Ecole Polytechnique in [Prof. Michalis Vazirgiannis](http://www.lix.polytechnique.fr/Labo/Michalis.Vazirgiannis/)'s team.
+I am a Postdoctoral researcher at Ecole Normale Supérieure (ENS) Paris Saclay (Centre Borelli) in the team of [Prof. Laurent Oudre](http://www.laurentoudre.fr/). Previously, I have been Postdoctoral researcher at the University of Paris in the LIPADE lab. I completed my Ph.D. at the University of Paris and EDF R&D, working with [Prof. Themis Palpanas](http://helios.mi.parisdescartes.fr/~themisp/), Emmanuel Remy, and Mohammed Meftah. During my Ph.D., I did an internship at the Universty of Chicago under the supervision of [Prof. Michael J. Franklin](https://cs.uchicago.edu/people/michael-franklin/) and [Prof. John Paparrizos](https://www.paparrizos.org/). Before that, I got my bachelor’s and master’s degrees in computer science and applied mathematics from Grenoble INP ENSIMAG engineering school. Finally, before starting my Ph.D., I worked as a research engineer at the computer science lab of Ecole Polytechnique in [Prof. Michalis Vazirgiannis](http://www.lix.polytechnique.fr/Labo/Michalis.Vazirgiannis/)'s team.
 
 My research interest lies in the intersections between:
 -  Massive data series analytics and management systems. 
@@ -11,21 +11,27 @@ My research interest lies in the intersections between:
 
 ## Awards
 
-- [INFORSID 2022 PhD prize](http://inforsid.fr/laureatprixthese.php)
-- [Paul Caseau 2022 PhD prize](https://www.edf.fr/groupe-edf/inventer-lavenir-de-lenergie/rd-un-savoir-faire-mondial/toutes-les-actualites-de-la-rd/2022-qui-sont-les-laureats-du-prix-de-these-paul-caseau)
+- [INFORSID 2022 Ph.D. prize](http://inforsid.fr/laureatprixthese.php)
+- [Paul Caseau 2022 Ph.D. prize](https://www.edf.fr/groupe-edf/inventer-lavenir-de-lenergie/rd-un-savoir-faire-mondial/toutes-les-actualites-de-la-rd/2022-qui-sont-les-laureats-du-prix-de-these-paul-caseau)
 - [Lambdamu congress "research and industry" 2022 prize](https://www.imdr-lambdamu.eu/842_p_57532/lambda-mu-d-or.html)
-- [BDA 2022 PHD prize](https://bdav.irisa.fr/prix/)
+- [BDA 2022 Ph.D. prize](https://bdav.irisa.fr/prix/)
 
 ***
 
 ## Education
 
-- **2019-2021**: *PH.D. student, University of Paris, EDF R&D*
+- **2019-2021**: *Ph.D. student, University of Paris, EDF R&D*
   - Analysis of very large multivariate time series using unsupervised learning methods in order to detect anomalies and support predictive maintenance. Collaboration with the National French Electricity company (EDF).
-  - Supervision: 
+  - Advisors: 
     - [Prof. Themis Palpanas](http://helios.mi.parisdescartes.fr/~themisp/) 
     - Emmanuel Remy
     - Mohammed Meftah
+
+- **2020**: *Visiting PH.D. student, University of Chicago*
+  - Evaluating a possible extension of subsequence clustering and anomaly detection methods for streaming data series.
+  - Advisors:
+    - [Prof. Michael J. Franklin](https://cs.uchicago.edu/people/michael-franklin/)
+    - [Prof. John Paparrizos](https://www.paparrizos.org/)
 
 - **2014-2017:** *Master and Bachelor degree, Grenoble INP, ENSIMAG*
   - Engineering and Computer Science School 
@@ -40,7 +46,7 @@ My research interest lies in the intersections between:
 
 - **October 2022:** *Visiting Researcher, European Gravitational Observatory (EGO), the VIRGO collaboration*
   - Research project:
-     - Geo-localization of noises using data series from fiber-acoustic sensors positioned at one of the building of the VIRGO interferometer. Collaboration with Akis Gkaitatzis and Prof. Stavros Katsanevas.
+     - Geo-localization of noises using data series from fiber-acoustic sensors positioned at one of the building of the VIRGO interferometer. Collaboration with Dr. Stamatios Gkaitatzis and Prof. Stavros Katsanevas.
 
 - **2022-now:** *Postdoctoral researcher, Université Paris Cité, LIPADE*
   - Research projects:
