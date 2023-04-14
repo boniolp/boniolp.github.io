@@ -70,6 +70,7 @@ redirect_from:
 ---
 
 * Adrien Petralia, Philippe Charpentier, Paul Boniol, Themis Palpanas. **Appliance Detection Using Very Low-Frequency Smart Meter Time Series**. ACM International Conference on Future Energy Systems (e-Energy), Orlando, FL (USA), June 2023.
+
 ---
 
 * Paul Boniol, Mohammed Meftah, Emmanuel Remy, Themis Palpanas. **Détection d'anomalies et identification de leurs précurseurs dans des larges collections de séries temporelles - Application à un matériel de centrales EDF**. In Congrès Lambda Mu 23, 2022. [More info...](https://boniolp.github.io/assets/pdfs/lambda-mu-conference-IEEE-format.pdf)
