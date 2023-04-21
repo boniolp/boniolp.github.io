@@ -44,11 +44,13 @@ My research interest lies in the intersections between:
 
 ## Experiences
 
+- **2023-now:** *Postdoctoral researcher, Ecole Normale Supérieurs (ENS) Paris Saclay, Centre Borelli*
+
 - **October 2022:** *Visiting Researcher, European Gravitational Observatory (EGO), the VIRGO collaboration*
   - Research project:
      - Geo-localization of noises using data series from fiber-acoustic sensors positioned at one of the building of the VIRGO interferometer. Collaboration with Dr. Stamatios Gkaitatzis and Prof. Stavros Katsanevas.
 
-- **2022-now:** *Postdoctoral researcher, Université Paris Cité, LIPADE*
+- **2022-2023:** *Postdoctoral researcher, Université Paris Cité, LIPADE*
   - Research projects:
     - Benchmarking and large scale evaluation of anomaly detection methods for univariate time series. Collaboration with Dr John Paparrizos and Prof. Michael J. Franklin from the University of Chicago.
     - Precursors detection and time series classification for the prediction of le Piton de la fournaise volcano. Colaboration with the Institut de Physique du Globe de Paris (IPGP).
