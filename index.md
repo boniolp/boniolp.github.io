@@ -78,6 +78,18 @@ My research interest lies in the intersections between:
 
 ***
 
+## Talks
+
+- **From Anomaly Detection to Precursors Discovery in Time Series**, MLMDA Seminar at ENS Paris Saclay, Centre Borelli (January 2023)
+- **Unsupervised Subsequences Anomaly Detection and Precursors Identification for Very Large Time Series**, Seminar at VALDA team, INRIA (November 2022)
+- **Automated Anomaly Detection for Very Large Time Series**, Invited talk for Forum ORAP : Le PEPR Numpex « Numérique pour l’Exascale » (November 2022)
+- **Detection of Anomalies and Identification of their Precursors in Large Data Series Collections**, Seminar at CEDAR team, INRIA, (November 2022)
+- **Unsupervised Detection of Abnormal Subsequences in the Context of Large Data Series Collections**, Seminar at BD team, LIP6 (September 2022)
+- **Abnormal Subsequence Detection for Large Collections of Time Series**, Seminar at ZENITH team, INRIA (September 2022)
+- **Anomalies Detection and Prediction for Very Large Data Series**, Invited talk for INFORSID PhD prize (May 2022)
+- **Easy, Accurate, and Fast Complex Analytics on Big Data Series Collections: Similarity Search and Subsequence Anomaly Detection**, Seminar at DEWA R&D (May 2021)
+ 
+
 ## Service
 
 Program committee member for:
