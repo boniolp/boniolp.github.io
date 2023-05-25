@@ -79,7 +79,8 @@ My research interest lies in the intersections between:
 ***
 
 ## Talks
-
+- **Dimension-wise Class Activation Map for Explaining Multivariate Data Series Classification**, , GDR CNRS MaDICS Symposium (May 2023)
+- **Detection of Anomalies and Identification of their Precursors in Large Data Series Collections**, GDR CNRS MaDICS Symposium (May 2023)
 - **From Anomaly Detection to Precursors Discovery in Time Series**, MLMDA Seminar at ENS Paris Saclay, Centre Borelli (January 2023)
 - **Unsupervised Subsequences Anomaly Detection and Precursors Identification for Very Large Time Series**, Seminar at VALDA team, INRIA (November 2022)
 - **Automated Anomaly Detection for Very Large Time Series**, Invited talk for Forum ORAP : Le PEPR Numpex « Numérique pour l’Exascale » (November 2022)
