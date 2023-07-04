@@ -117,7 +117,7 @@ Invited external reviewer for international conferences:
 
 Thanks to all the students I had the chance to supervise:
 
-- Jose Lucas De Melo Costa (Master student from CentraleSupélec, Université Paris-Saclay, France)
-- Emmanouil Sylligardos (Master student from the University of Crete, Greece)
-- Marine Bruel (Bachelor student from École Centrale de Lille, France)
-- Ashwin Krishna (Bachelor Student from IIT Madras, India)
+- Jose Lucas De Melo Costa (MSc student from CentraleSupélec, France)
+- Emmanouil Sylligardos (MSc student from the University of Crete, Greece)
+- Marine Bruel (BSc student from École Centrale de Lille, France)
+- Ashwin Krishna (BSc Student from IIT Madras, India)
