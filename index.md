@@ -21,7 +21,7 @@ My research interest lies in the intersections between:
 ## Education
 
 - **2019-2021**: *Ph.D. student, University of Paris, EDF R&D*
-  - Analysis of very large multivariate time series using unsupervised learning methods in order to detect anomalies and support predictive maintenance. Collaboration with the National French Electricity company (EDF).
+  - Analysis of very large multivariate time series using unsupervised learning methods in order to detect anomalies and support predictive maintenance. Collaboration with the National French Electricity Company (EDF).
   - Advisors: 
     - [Prof. Themis Palpanas](http://helios.mi.parisdescartes.fr/~themisp/) 
     - Emmanuel Remy
@@ -37,8 +37,8 @@ My research interest lies in the intersections between:
   - Engineering and Computer Science School 
 
 - **2016-2017:** *Exchange Program (Master), Trinity College Dublin, SCSS*
-  - School of computer science and statistics 
-  - (First Honor grade for First and second Semester)
+  - School of Computer Science and Statistics 
+  - (First Honor grade for First and Second Semester)
 
 ***
 
@@ -48,12 +48,12 @@ My research interest lies in the intersections between:
 
 - **October 2022:** *Visiting Researcher, European Gravitational Observatory (EGO), the VIRGO collaboration*
   - Research project:
-     - Geo-localization of noises using data series from fiber-acoustic sensors positioned at one of the building of the VIRGO interferometer. Collaboration with Dr. Stamatios Gkaitatzis and Prof. Stavros Katsanevas.
+     - Geo-localization of noises using data series from fiber-acoustic sensors positioned at one of the buildings of the VIRGO interferometer. Collaboration with Dr. Stamatios Gkaitatzis and Prof. Stavros Katsanevas.
 
 - **2022-2023:** *Postdoctoral researcher, Université Paris Cité, LIPADE*
   - Research projects:
-    - Benchmarking and large scale evaluation of anomaly detection methods for univariate time series. Collaboration with Dr John Paparrizos and Prof. Michael J. Franklin from the University of Chicago.
-    - Precursors detection and time series classification for the prediction of le Piton de la fournaise volcano. Colaboration with the Institut de Physique du Globe de Paris (IPGP).
+    - Benchmarking and large-scale evaluation of anomaly detection methods for univariate time series. Collaboration with Dr. John Paparrizos and Prof. Michael J. Franklin from the University of Chicago.
+    - Precursors detection and time series classification for the prediction of le Piton de la fournaise volcano. Collaboration with the Institut de Physique du Globe de Paris (IPGP).
     - Ensembling unsupervised anomaly detection methods with a supervised model selection method. Evaluation on large univariate time series benchmark.
  
 
@@ -61,7 +61,7 @@ My research interest lies in the intersections between:
   - Research projects:
     - **COM4U**:  Analysis of retail data using unsupervised learning techniques in order to discover causality links between external events and web behaviors. Collaboration with start-up Realytics. Graph mining, url clustering, time series clustering. Implementation in Python. 
 
-    - **SMARTLAW**: Analysis of law textual data using unsupervised technique in order to estimate the difficulty and the type of trial in the court of justice of France. Collaboration with the law faculty of the HEC Paris business school. Text mining, Graph modeling, Graph mining, k-core analysis. Implementation in Python.
+    - **SMARTLAW**: Analysis of textual law data using unsupervised techniques in order to estimate the difficulty and the type of trial in the Court of Justice of France. Collaboration with the law faculty of the HEC Paris business school. Text mining, Graph modeling, Graph mining, k-core analysis. Implementation in Python.
   - Supervision:
     - [Prof. Michalis Vazirgiannis](http://www.lix.polytechnique.fr/Labo/Michalis.Vazirgiannis/)
 
@@ -71,7 +71,7 @@ My research interest lies in the intersections between:
     - [Prof. Themis Palpanas](http://helios.mi.parisdescartes.fr/~themisp/) 
 
 - **2016:** *Research intern, IRT Saint-Exupery*
-  - Implementation of an avoidance rover protection system (ARP) in C from an Event-B model. Formal verification of the code using frama-c, why3 based ACSL language.
+  - Implementation of an avoidance rover protection system (ARP) in C from an Event-B model. Formal verification of the code using frama-c, why3-based ACSL language.
 
 - **2016:** *Fablab project, Grenoble INP*
   - Design of translator gloves for sign language. Development of a functional prototype using Arduino. Machine learning (KNN-classifier) and data acquisition code (Arduino tools for online data acquisition) done in C++. [More info...](http://fablab.ensimag.fr/index.php/Projet_Fablab_2016_Boniol_Demaegdt_Mallet)
@@ -89,19 +89,22 @@ My research interest lies in the intersections between:
 - **Abnormal Subsequence Detection for Large Collections of Time Series**, Seminar at ZENITH team, INRIA (September 2022)
 - **Anomalies Detection and Prediction for Very Large Data Series**, Invited talk for INFORSID PhD prize (May 2022)
 - **Easy, Accurate, and Fast Complex Analytics on Big Data Series Collections: Similarity Search and Subsequence Anomaly Detection**, Seminar at DEWA R&D (May 2021)
- 
+
+*** 
 
 ## Service
 
 Program committee member for:
-- [IJCAI 2022](https://ijcai-22.org/#): AI4TS workshop
+- [DSSA 2023](https://gradsci.github.io/): Special Session: Graph Data Science and Applications
 - [EDBT 2023](http://edbticdt2023.cs.uoi.gr/): Research track
-- [ICDE 2023](https://icde2023.ics.uci.edu/): industry and applicatiopn track
+- [ICDE 2023](https://icde2023.ics.uci.edu/): industry and application track
+- [IJCAI 2022](https://ijcai-22.org/#): AI4TS workshop
 
-Invited external reviewer for international journals: 
+Reviewer for international journals: 
+- [Knowledge and Information Systems](https://www.springer.com/journal/10115)
 - [IEEE TKDE](https://www.computer.org/csdl/journal/tk)
-- [DAMI](https://www.springer.com/journal/10618) 
-- [VLDBJ](https://www.springer.com/journal/778?gclid=Cj0KCQjwnJaKBhDgARIsAHmvz6eZA8fQqLcDqKS55NPBccTvpFOi9I5RHOq5ZqKLIxX6p9MwkpjQTgsaAmx7EALw_wcB)
+- [Data Mining and Knowledge Discovery](https://www.springer.com/journal/10618) 
+- [The VLDB Journal](https://www.springer.com/journal/778?gclid=Cj0KCQjwnJaKBhDgARIsAHmvz6eZA8fQqLcDqKS55NPBccTvpFOi9I5RHOq5ZqKLIxX6p9MwkpjQTgsaAmx7EALw_wcB)
 
 Invited external reviewer for international conferences: 
 - [SIGKDD](https://www.kdd.org/) 
