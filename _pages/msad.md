@@ -16,8 +16,9 @@ redirect_from:
 Emmanouil Sylligardos, Paul Boniol, John Paparrizos, Panos Trahanias, Themis Palpanas
 
 <p align="center">
-<img src="https://github.com/boniolp/MSAD/blob/main/assets/figures/3_pipeline.jpg" alt="Evaluation pipeline" width="570"/>
+<img src="https://boniolp.github.io/assets/img/msad_pipeline.jpg" alt="Evaluation pipeline" width="570"/>
 </p>
+
 
 ## Abstract
 <p style='text-align: justify;'>
@@ -36,7 +37,7 @@ Anomaly detection is a fundamental task for time-series analytics with important
 </p>
 
 <p align="center">
-<img src="https://github.com/boniolp/MSAD/blob/main/assets/figures/1_intro_fig.jpg" alt="Overall results" width="570"/>
+<img src="https://boniolp.github.io/assets/img/msad_intro_fig.jpg" alt="Overall results" width="570"/>
 </p>
 
 
