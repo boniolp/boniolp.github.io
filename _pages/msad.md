@@ -15,8 +15,9 @@ redirect_from:
 # Choose Wisely: An Extensive Evaluation of Model Selection for Anomaly Detection in Time Series
 Emmanouil Sylligardos, Paul Boniol, John Paparrizos, Panos Trahanias, Themis Palpanas
 
-
-![s2g framwork](https://boniolp.github.io/assets/img/msad_pipeline.jpg)
+<p align="center">
+<img src="https://github.com/boniolp/MSAD/blob/main/assets/figures/3_pipeline.jpg" alt="Evaluation pipeline" width="570"/>
+</p>
 
 ## Abstract
 <p style='text-align: justify;'>
@@ -33,7 +34,11 @@ Anomaly detection is a fundamental task for time-series analytics with important
   classification algorithms for anomaly detection, and represents a strong baseline that can then be used to guide the model selection step in general 
   AutoML pipelines.
 </p>
-![example s2g](https://boniolp.github.io/assets/img/msad_res.jpg)
+
+<p align="center">
+<img src="https://github.com/boniolp/MSAD/blob/main/assets/figures/1_intro_fig.jpg" alt="Overall results" width="570"/>
+</p>
+
 
 ## Papers
 
