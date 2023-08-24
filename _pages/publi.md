@@ -28,6 +28,10 @@ redirect_from:
 
 ---
 
+* Emmanouil Sylligardos, Paul Boniol, John Paparrizos, Panos Trahanias, Themis Palpanas. **Choose Wisely: An Extensive Evaluation of Model Selection for Anomaly Detection in Time Series.** Proceedings of the VLDB Endowment (PVLDB) Journal, 2023. [More info...](https://www.researchgate.net/publication/373337385_Choose_Wisely_An_Extensive_Evaluation_of_Model_Selection_for_Anomaly_Detection_in_Time_Series)
+
+---
+
 * John Paparrizos, Paul Boniol, Themis Palpanas, Ruey Tsay, Aaron J. Elmore, Michael J. Franklin. **Volume Under the Surface: A New Accuracy Evaluation Measure for Time-Series Anomaly Detection.** Proceedings of the VLDB Endowment (PVLDB) Journal, 2022. [More info...](https://www.researchgate.net/publication/363485317_Volume_Under_the_Surface_A_New_Accuracy_Evaluation_Measure_for_Time-Series_Anomaly_Detection)
 
 ---
