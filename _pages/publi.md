@@ -28,7 +28,7 @@ redirect_from:
 
 ---
 
-* Emmanouil Sylligardos, Paul Boniol, John Paparrizos, Panos Trahanias, Themis Palpanas. **Choose Wisely: An Extensive Evaluation of Model Selection for Anomaly Detection in Time Series.** Proceedings of the VLDB Endowment (PVLDB) Journal, 2023. [More info...](https://www.researchgate.net/publication/373337385_Choose_Wisely_An_Extensive_Evaluation_of_Model_Selection_for_Anomaly_Detection_in_Time_Series)
+* Emmanouil Sylligardos, Paul Boniol, John Paparrizos, Panos Trahanias, Themis Palpanas. **Choose Wisely: An Extensive Evaluation of Model Selection for Anomaly Detection in Time Series.** Proceedings of the VLDB Endowment (PVLDB) Journal, 2023. [More info...](https://boniolp.github.io/msad)
 
 ---
 
