@@ -1,0 +1,10 @@
+@article{boniolMSAD2023,
+  title={Choose Wisely: An Extensive Evaluation of Model Selection for Anomaly Detection in Time Series},
+  author={Sylligardos, Emmanouil and Boniol, Paul and Paparrizos, John and Trahanias, Panos and Palpanas, Themis},
+  journal={Proceedings of the VLDB Endowment},
+  volume={16},
+  number={11},
+  pages={3418--3432},
+  year={2023},
+  publisher={VLDB Endowment}
+}
