@@ -100,11 +100,11 @@ Program committee member for:
 - [IJCAI 2022](https://ijcai-22.org/#): AI4TS workshop
 
 Reviewer for international journals: 
-- [Knowledge and Information Systems](https://www.springer.com/journal/10115)
-- [IEEE TKDE](https://www.computer.org/csdl/journal/tk)
+- [Knowledge and Information Systems (KAIS)](https://www.springer.com/journal/10115)
+- [IEEE Transactions on Knowledge and Data Engineering (TKDE)](https://www.computer.org/csdl/journal/tk)
 - [Data Mining and Knowledge Discovery](https://www.springer.com/journal/10618) 
-- [The VLDB Journal](https://www.springer.com/journal/778?gclid=Cj0KCQjwnJaKBhDgARIsAHmvz6eZA8fQqLcDqKS55NPBccTvpFOi9I5RHOq5ZqKLIxX6p9MwkpjQTgsaAmx7EALw_wcB)
-- [ACM Transactions on Intelligent Systems and Technology](https://dl.acm.org/journal/tist)
+- [The VLDB Journal](https://www.springer.com/journal/778)
+- [ACM Transactions on Intelligent Systems and Technology (TIST)](https://dl.acm.org/journal/tist)
 
 Invited external reviewer for international conferences: 
 - [SIGKDD](https://www.kdd.org/) 
