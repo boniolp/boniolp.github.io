@@ -104,6 +104,7 @@ Reviewer for international journals:
 - [IEEE TKDE](https://www.computer.org/csdl/journal/tk)
 - [Data Mining and Knowledge Discovery](https://www.springer.com/journal/10618) 
 - [The VLDB Journal](https://www.springer.com/journal/778?gclid=Cj0KCQjwnJaKBhDgARIsAHmvz6eZA8fQqLcDqKS55NPBccTvpFOi9I5RHOq5ZqKLIxX6p9MwkpjQTgsaAmx7EALw_wcB)
+- [ACM Transactions on Intelligent Systems and Technology](https://dl.acm.org/journal/tist)
 
 Invited external reviewer for international conferences: 
 - [SIGKDD](https://www.kdd.org/) 
