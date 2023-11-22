@@ -94,6 +94,8 @@ My research interest lies in the intersections between:
 ## Service
 
 Program committee member for:
+- [EDBT 2025](https://edbticdt2025.upc.edu/?contents=EDBT_Committee.html): Research track
+- [ICDE 2024](https://multisa2024.org/#organizers): Multisa Workshop
 - [DSSA 2023](https://gradsci.github.io/): Special Session: Graph Data Science and Applications
 - [EDBT 2023](http://edbticdt2023.cs.uoi.gr/): Research track
 - [ICDE 2023](https://icde2023.ics.uci.edu/): industry and application track
