@@ -109,10 +109,18 @@ redirect_from:
 
 ---
 
-* Paul Boniol, Themis Palpanas, Mohammed Meftah, Emmanuel Remy. **Determination de l'etat de sante d'un systeme a partir d'un reseau de sequences temporelles mesurees**. FR2005261, 2020.
+* Paul Boniol, Themis Palpanas, Michele Linardi, Federico Roncallo, Mohammed Meftah, Emmanuel Remy. **Determination of Health Status of Systems Equipped with Sensors**. US Patent 11471113, 2022.
 
 ---
 
-* Paul Boniol, Themis Palpanas, Michele Linardi, Federico Roncallo, Mohammed Meftah, Emmanuel Remy. **Determination d'etats de sante de systemes equipes de capteurs**. FR2003946, 2020.
+* Paul Boniol, Themis Palpanas, Mohammed Meftah, Emmanuel Remy. **Determining the State of Health of a System on the Basis of a Network of Measured Time Sequences**. European Patent WO2021233758, 2021.
+
+---
+
+* Paul Boniol, Themis Palpanas, Mohammed Meftah, Emmanuel Remy. **Determination de l'etat de sante d'un systeme a partir d'un reseau de sequences temporelles mesurees**. French Patent FR2005261, 2020.
+
+---
+
+* Paul Boniol, Themis Palpanas, Michele Linardi, Federico Roncallo, Mohammed Meftah, Emmanuel Remy. **Determination d'etats de sante de systemes equipes de capteurs**. French Patent FR2003946, 2020.
 
 ---
