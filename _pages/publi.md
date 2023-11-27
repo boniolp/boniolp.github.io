@@ -28,6 +28,10 @@ redirect_from:
 
 ---
 
+* Paul Boniol, Mohammed Meftah, Emmanuel Remy, Bruno Didier, Themis Palpanas. **dCNN/dCAM: Anomaly Precursors Discovery in Multivariate Time Series with Deep Convolutional Neural Networks**. Data-Centric Engineering (DCE) Journal, 2023. [More info...](https://boniolp.github.io/dcam)
+
+---
+
 * Emmanouil Sylligardos, Paul Boniol, John Paparrizos, Panos Trahanias, Themis Palpanas. **Choose Wisely: An Extensive Evaluation of Model Selection for Anomaly Detection in Time Series.** Proceedings of the VLDB Endowment (PVLDB) Journal, 2023. [More info...](https://boniolp.github.io/msad)
 
 ---
