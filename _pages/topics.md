@@ -17,8 +17,8 @@ redirect_from:
 
 ## Internships
 
-* [From Neural Network to Temporal Logic: A Global Explainability Method for Time Series](https://github.com/boniolp/boniolp.github.io/blob/gh-pages/assets/topics/internship_topic_explanation.pdf) (6 months internship at Inria Paris Center and Ecole normale supérieure)
-* [Graph Representation for Multivariate Time Series Analytics](https://github.com/boniolp/boniolp.github.io/blob/gh-pages/assets/topics/internship_topic_graph.pdf) (6 months internship at Inria Paris Center and Ecole normale supérieure)
+* [From Neural Network to Temporal Logic: A Global Explainability Method for Time Series](https://boniolp.github.io/assets/topics/internship_topic_explanation.pdf) (6 months internship at Inria Paris Center and Ecole normale supérieure)
+* [Graph Representation for Multivariate Time Series Analytics](https://boniolp.github.io/assets/topics/internship_topic_graph.pdf) (6 months internship at Inria Paris Center and Ecole normale supérieure)
 
 ***
 
