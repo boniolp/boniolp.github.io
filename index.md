@@ -9,6 +9,8 @@ My research interest lies in the intersections between:
 -  Unsupervised and supervised anomaly detection methods for large data series.
 -  Machine learning for data series classification.
 
+**NEWS**: I am looking for Master's and Bachelor's interns! You may find internship research topics [here](https://boniolp.github.io/topics).
+
 ***
 
 ## Education
