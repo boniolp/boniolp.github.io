@@ -30,6 +30,7 @@ redirect_from:
 - [Data Mining and Knowledge Discovery](https://www.springer.com/journal/10618) 
 - [The VLDB Journal](https://www.springer.com/journal/778)
 - [ACM Transactions on Intelligent Systems and Technology (TIST)](https://dl.acm.org/journal/tist)
+- [ACM Journal of Data and Information Quality (JDIQ)](https://dl.acm.org/journal/jdiq)
 
 ***
 
