@@ -27,7 +27,8 @@ redirect_from:
 
 ### Homework:
 
-Select one paper among those listed below:
+Select one research paper (among the list of papers below), summarize it, explain the method and the results in your own words and comment on its strengths and limitations.
+
 
 - Consistency Tradeoffs in Modern Distributed Database System. [pdf]()
 - Bigtable: A Distributed Storage System for Structured Data. [pdf]()
