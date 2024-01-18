@@ -40,4 +40,6 @@ Select one research paper (among the list of papers below), summarize it, explai
 
 ### Project:
 
-Select one paper among those listed below:
+Select one research paper (among the list of papers below), replicate it, re-implement the method, reproduce the experimental results (**optional** Evaluate it on a new case) and present your results in a defense.
+![image](https://github.com/boniolp/boniolp.github.io/assets/15717626/be70be0b-4b40-4782-bd4f-f8ffdf8cfd2a)
+
