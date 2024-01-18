@@ -16,27 +16,27 @@ redirect_from:
 
 ### Lectures:
 
-  - Lecture 1: Introduction. [Slides]()
-  - Lecture 2: ACID vs BASE and Column-family Databases. [Slides]()
-  - Lecture 3: Document-oriented Databases. [Slides]()
-  - Lecture 4: Graph Databases. [Slides]()
-  - Lecture 5: Information Retrieval, an introduction. [Slides]()
-  - Lecture 6: Information Retrieval applied to Time series. [Slides]()
-  - Lecture 7: Time series indexing. [Slides]()
-  - Lecture 8: Open challenges and recent works. [Slides]()
+  - **Lecture 1**: [Introduction]()
+  - **Lecture 2**: [ACID vs BASE and Column-family Databases]()
+  - **Lecture 3**: [Document-oriented Databases]()
+  - **Lecture 4**: [Graph Databases]()
+  - **Lecture 5**: [Information Retrieval, an introduction]()
+  - **Lecture 6**: [Information Retrieval applied to Time series]()
+  - **Lecture 7**: [Time series indexing]()
+  - **Lecture 8**: [Open challenges and recent works]()
 
 ### Homework:
 
 **Select one research paper** (among the list of papers below), **summarize** it, **explain** the method and the results in your own words and **comment** on its strengths and limitations.
 
 
-- Consistency Tradeoffs in Modern Distributed Database System. [pdf]()
-- Bigtable: A Distributed Storage System for Structured Data. [pdf]()
-- Chord: A scalable Peer-to-peer Lookup Service for Internet Applications. [pdf]()
-- C-Store: A Column-oriented DBMS. [pdf]()
-- Consistent Hashing and Random Trees: Distributed Caching Protocols for Relieving Hot Spots on the World Wide Web. [pdf]()
-- Provenance-Based Algorithms for Rich Queries over Graph Databases. [pdf]()
-- A Name-Based Mapping Scheme for Rendezvous. [pdf]()
+- [Consistency Tradeoffs in Modern Distributed Database System]()
+- [Bigtable: A Distributed Storage System for Structured Data]()
+- [Chord: A scalable Peer-to-peer Lookup Service for Internet Applications]()
+- [C-Store: A Column-oriented DBMS]()
+- [Consistent Hashing and Random Trees: Distributed Caching Protocols for Relieving Hot Spots on the World Wide Web]()
+- [Provenance-Based Algorithms for Rich Queries over Graph Databases]()
+- [A Name-Based Mapping Scheme for Rendezvous]()
 
 ### Project:
 
