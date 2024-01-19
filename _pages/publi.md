@@ -27,7 +27,7 @@ redirect_from:
 
 ---
 
-* Sylvain W. Combettes, Paul Boniol, Antoine Mazarguil, Danping Wang, Diego Vaquero-Ramos, Marion Chauveau, Laurent Oudre, Nicolas Vayatis, Pierre-Paul Vidal, Alexandra Roren, Marie-Martine Lefèvre-Colau. **Arm-CODA: A Data Set of Upper-limb Human Movement During Routine Examination**. Image Processing Online (IPOL) Journal, 2024. [More info...](https://www.ipol.im/pub/pre/494/preprint.pdf)
+* Sylvain W. Combettes, Paul Boniol, Antoine Mazarguil, Danping Wang, Diego Vaquero-Ramos, Marion Chauveau, Laurent Oudre, Nicolas Vayatis, Pierre-Paul Vidal, Alexandra Roren, Marie-Martine Lefèvre-Colau. **Arm-CODA: A Data Set of Upper-limb Human Movement During Routine Examination**. Image Processing Online (IPOL) Journal, 2024. [More info...](https://www.ipol.im/pub/art/2024/494/)
 
 ---
 
