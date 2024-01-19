@@ -14,7 +14,7 @@ redirect_from:
 
 ## IASD Master: NoSQL
 
-This course is highly insperated from previous courses of other professors and researchers listed below:
+This course is highly inspired from previous courses of other professors and researchers listed below:
 
 - Maude Manouvrier, [SQL,NoSQL,NewSQL](https://www.lamsade.dauphine.fr/~manouvri/NoSQL/CoursNoSQL_MM.html)
 - Philippe Rigaux, [BDpedia](http://b3d.bdpedia.fr/)
