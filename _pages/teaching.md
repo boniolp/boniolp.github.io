@@ -14,6 +14,14 @@ redirect_from:
 
 ## IASD Master: NoSQL
 
+This course is highly insperated from previous courses of other professors and researchers listed below:
+
+- Maude Manouvrier, [SQL,NoSQL,NewSQL](https://www.lamsade.dauphine.fr/~manouvri/NoSQL/CoursNoSQL_MM.html)
+- Philippe Rigaux, [BDpedia](http://b3d.bdpedia.fr/)
+- Themis Palpanas, [Time Series Management](https://helios2.mi.parisdescartes.fr/~themisp/)
+- Regis Behmo and Nicolas Travers, [Openclassroom NoSQL course](https://openclassrooms.com/fr/courses/4462426-maitrisez-les-bases-de-donnees-nosql)
+
+
 ### Lectures:
 
   - **Lecture 1**: [Introduction]()
