@@ -25,8 +25,8 @@ This course is highly inspired from previous courses of other professors and res
 ### Lectures:
 
   - **Lecture 1**: [Introduction](https://drive.google.com/file/d/1sAldypwUI9LoX3R_zX5h8y_Uw4cN8h6F/view?usp=sharing)
-  - **Lecture 2**: [ACID vs BASE and Column-family Databases]()
-  - **Lecture 3**: [Document-oriented Databases]()
+  - **Lecture 2**: [ACID vs BASE and Column-family Databases](https://drive.google.com/file/d/1v-fMnARx9l0r-KKJ7A844b2cBhRfcOc5/view?usp=sharing)
+  - **Lecture 3**: [Column-family and Document-oriented Databases]()
   - **Lecture 4**: [Graph Databases]()
   - **Lecture 5**: [Information Retrieval, an introduction]()
   - **Lecture 6**: [Information Retrieval applied to Time series]()
