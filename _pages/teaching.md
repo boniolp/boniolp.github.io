@@ -50,5 +50,9 @@ This course is highly inspired from previous courses of other professors and res
 
 **Select one research paper** (among the list of papers below), **replicate** it, **re-implement** the method, **reproduce** some of the experimental results (**optional** Evaluate it on a new case) and **present** your results in a defense.
 
-- To be announced 
+- [Debunking Four Long-Standing Misconceptions of Time-Series Distance Measures (2020)](https://www.paparrizos.org/papers/PaparrizosSIGMOD20.pdf)
+- [Exact indexing of dynamic time warping (2005)](https://link.springer.com/article/10.1007/s10115-004-0154-9)
+- [A Symbolic Representation of Time Series, with Implications for Streaming Algorithms (2003)](https://www.cs.ucr.edu/~eamonn/SAX.pdf)
+- [iSAX: Indexing and Mining Terabyte Sized Time Series (2008)](https://www.cs.ucr.edu/~eamonn/iSAX.pdf)
+- [Accelerating Similarity Search for Elastic Measures: A Study and New Generalization of Lower Bounding Distances (2023)](https://www.paparrizos.org/papers/PaparrizosVLDB23.pdf)
 
