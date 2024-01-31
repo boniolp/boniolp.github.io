@@ -35,7 +35,7 @@ This course is highly inspired from previous courses of other professors and res
 
 ### Homework:
 
-**Select one research paper** (among the list of papers below), **summarize** it, **explain** the method and the results in your own words and **comment** on its strengths and limitations.
+**Select one research paper** (among the list of papers below), **summarize** it, **explain** the method and the results in your own words and **comment** on its strengths and limitations. You may find more details [here](https://inriafr-my.sharepoint.com/:b:/g/personal/paul_boniol_inria_fr/EQoRH4g7iZ5Hh50oC6TIKjIBcYBtRBmE9mjMSH-f8D7avw?e=HpxTJv).
 
 
 - [Consistency Tradeoffs in Modern Distributed Database System](https://www.cs.umd.edu/~abadi/papers/abadi-pacelc.pdf)
