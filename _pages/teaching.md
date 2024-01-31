@@ -48,7 +48,7 @@ This course is highly inspired from previous courses of other professors and res
 
 ### Project:
 
-**Select one research paper** (among the list of papers below), **replicate** it, **re-implement** the method, **reproduce** some of the experimental results (**optional** Evaluate it on a new case) and **present** your results in a defense.
+**Select one research paper** (among the list of papers below), **replicate** it, **re-implement** the method, **reproduce** some of the experimental results (**optional** Evaluate it on a new case) and **present** your results in a defense. You may find more information [here](https://inriafr-my.sharepoint.com/:b:/g/personal/paul_boniol_inria_fr/Eem4fIYmF5FNpUQuevp60tsBcNHdr6Vcvm9wlEqdbOnyeA?e=vnf0H4).
 
 - [Debunking Four Long-Standing Misconceptions of Time-Series Distance Measures (2020)](https://www.paparrizos.org/papers/PaparrizosSIGMOD20.pdf)
 - [Exact indexing of dynamic time warping (2005)](https://link.springer.com/article/10.1007/s10115-004-0154-9)
