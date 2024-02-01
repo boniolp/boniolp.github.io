@@ -26,8 +26,8 @@ This course is highly inspired from previous courses of other professors and res
 
   - **Lecture 1**: [Introduction](https://inriafr-my.sharepoint.com/:b:/g/personal/paul_boniol_inria_fr/Ebq5u4Z5Z9JGnORYXlVR4L0BCdBPQSaDSEv9Msr_JaDTAg?e=EG1PvD)
   - **Lecture 2**: [ACID vs BASE and Column-family Databases](https://inriafr-my.sharepoint.com/:b:/g/personal/paul_boniol_inria_fr/EXMxhj8ZExJEpLJCxxUjkcYBSiB30vd7GaZ5dPt8kB6MoA?e=HujPWF)
-  - **Lecture 3**: [Column-family and Document-oriented Databases]()
-  - **Lecture 4**: [Graph Databases]()
+  - **Lecture 3**: [Column-family and Document-oriented Databases](), [MongoDB: Practice Session]()
+  - **Lecture 4**: [Graph Databases](), [Neo4j: Practice Session]()
   - **Lecture 5**: [Information Retrieval, an introduction]()
   - **Lecture 6**: [Information Retrieval applied to Time series]()
   - **Lecture 7**: [Time series indexing]()
