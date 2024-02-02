@@ -12,13 +12,11 @@ My research interest lies in the intersections between:
 
 ## Students
 
+- Emmanouil Sylligardos, PhD student. 2024-now (Co-advised with Pierre Senellart)
+
+### Former Students
+
 Thanks to all the students I had the chance to supervise.
-
-### Ph.D. Students
-
-- Emmanouil Sylligardos. 2024-now (Co-supervised with Pierre Senellart)
-
-### Master and Bachelor Students
 
 - Jose Lucas De Melo Costa (MSc student from CentraleSupélec, France). 2022
 - Emmanouil Sylligardos (MSc student from the University of Crete, Greece). 2022-2023
