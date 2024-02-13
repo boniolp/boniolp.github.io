@@ -39,5 +39,6 @@ Data series classification is an important and challenging problem in data scien
 | Journal Version | [dCNN/dCAM: Anomaly Precursors Discovery in Multivariate Time Series with Deep Convolutional Neural Networks, DCE (2023)](https://www.researchgate.net/publication/376477657_dCNNdCAM_anomaly_precursors_discovery_in_multivariate_time_series_with_deep_convolutional_neural_networks) |  |
 | data  | [dCAM website](https://helios2.mi.parisdescartes.fr/~themisp/dCAM/) |  |
 | code  | [GitHub repo](https://github.com/boniolp/dCAM) |  |
+| ACM SIGMOD ARI | [Reproducibility report](https://reproducibility.sigmod.org/rep_rep/2023/Carbone-SIGMODReproReport23.pdf) | |
 
 [Back to main page](https://boniolp.github.io/)
