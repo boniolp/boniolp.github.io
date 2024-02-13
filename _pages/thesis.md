@@ -119,7 +119,7 @@ In this chapter, we illustrate the applicability and the interest of our develop
 
 ### Related Publications
 
-* Paul Boniol, Mohammed Meftah, Emmanuel Remy, Themis Palpanas. **dCNN/dCAM: Anomaly Precursors Discovery in multivariate Time series with Deep Convolutional Neural Network**. (_In preparation_)
+* Paul Boniol, Mohammed Meftah, Emmanuel Remy, Bruno Didier, Themis Palpanas. **dCNN/dCAM: Anomaly Precursors Discovery in Multivariate Time Series with Deep Convolutional Neural Networks**. Data-Centric Engineering (DCE) Journal, 2023. [More info...](https://boniolp.github.io/dcam)
 
 ***
 
