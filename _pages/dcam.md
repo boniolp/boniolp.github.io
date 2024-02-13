@@ -36,6 +36,8 @@ Data series classification is an important and challenging problem in data scien
 ## Papers
 
 | Research paper | [dCAM: Dimension-wise Class Activation Map for Explaining Multivariate Data Series Classification, SIGMOD (2022)](https://www.researchgate.net/publication/361416963_dCAM_Dimension-wise_Class_Activation_Map_for_Explaining_Multivariate_Data_Series_Classification) | [bibtex](https://dblp.org/rec/conf/sigmod/BoniolMRP22.html?view=bibtex) |
-| data and source code | [dCAM website](https://helios2.mi.parisdescartes.fr/~themisp/dCAM/) |  |
+| Journal Version | [dCNN/dCAM: Anomaly Precursors Discovery in Multivariate Time Series with Deep Convolutional Neural Networks, DCE (2023)](https://www.researchgate.net/publication/376477657_dCNNdCAM_anomaly_precursors_discovery_in_multivariate_time_series_with_deep_convolutional_neural_networks) |  |
+| data  | [dCAM website](https://helios2.mi.parisdescartes.fr/~themisp/dCAM/) |  |
+| code  | [GitHub repo](https://github.com/boniolp/dCAM) |  |
 
 [Back to main page](https://boniolp.github.io/)
