@@ -80,7 +80,7 @@ redirect_from:
 
 ---
 
-* Adrien Petralia, Philippe Charpentier, Paul Boniol, Themis Palpanas. **Appliance Detection Using Very Low-Frequency Smart Meter Time Series**. ACM International Conference on Future Energy Systems (e-Energy), Orlando, FL (USA), June 2023.
+* Adrien Petralia, Philippe Charpentier, Paul Boniol, Themis Palpanas. **Appliance Detection Using Very Low-Frequency Smart Meter Time Series**. ACM International Conference on Future Energy Systems (e-Energy), Orlando, FL (USA), June 2023. [More info...](https://www.researchgate.net/publication/370654257_Appliance_Detection_Using_Very_Low-Frequency_Smart_Meter_Time_Series)
 
 ---
 
