@@ -18,7 +18,7 @@ redirect_from:
 
 ---
 
-* Paul Boniol, John Paparrizos, Themis Palpanas. **New Trends in Time Series Anomaly Detection** International Conference on Extending Database Technology (EDBT), Ioannina, Greece, March 2023. [More info...](https://helios2.mi.parisdescartes.fr/~themisp/publications/edbt23-TimeSeriesAnomalyDetection-BoniolPaparrizosPalpanas-summary.pdf), [Slides](https://boniolp.github.io/assets/pdfs/EDBT_tutorial.pdf)
+* Paul Boniol, John Paparrizos, Themis Palpanas. **New Trends in Time Series Anomaly Detection** International Conference on Extending Database Technology (EDBT), Ioannina, Greece, March 2023. [More info...](https://helios2.mi.parisdescartes.fr/~themisp/publications/edbt23-TimeSeriesAnomalyDetection-BoniolPaparrizosPalpanas-summary.pdf), [Slides](https://boniolp.github.io/assets/pdfs/EDBT_tutorial.pdf), [Video](https://www.youtube.com/watch?v=96869qimXAA&t=1s)
 
 ---
 
