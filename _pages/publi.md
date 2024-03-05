@@ -80,6 +80,14 @@ redirect_from:
 
 ---
 
+* Paul Boniol, Emmanouil Sylligardos, John Paparrizos, Panos Trahanias, Themis Palpanas.. **ADecimo: Model Selection for Time Series Anomaly Detection**. IEEE International Conference on Data Engineering (ICDE), Utrecht, Netherlands, May 2024. [More info...]()
+
+---
+
+* Sylvain W. Combettes, Paul Boniol, Charles Truong, Laurent Oudre. **d_{symb} playground: an interactive tool to explore large multivariate time series datasets**. IEEE International Conference on Data Engineering (ICDE), Utrecht, Netherlands, May 2024. [More info...](http://www.laurentoudre.fr/publis/dsymb_demo.pdf)
+
+---
+
 * Adrien Petralia, Philippe Charpentier, Paul Boniol, Themis Palpanas. **Appliance Detection Using Very Low-Frequency Smart Meter Time Series**. ACM International Conference on Future Energy Systems (e-Energy), Orlando, FL (USA), June 2023. [More info...](https://www.researchgate.net/publication/370654257_Appliance_Detection_Using_Very_Low-Frequency_Smart_Meter_Time_Series)
 
 ---
