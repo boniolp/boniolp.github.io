@@ -30,7 +30,7 @@ This course is highly inspired from previous courses of other professors and res
   - **Lecture 4**: [Document-oriented Databases and Graph Databases](https://inriafr-my.sharepoint.com/:b:/g/personal/paul_boniol_inria_fr/EQGk-4OlDj5Er3BIoXXEFaQBRLl_514gfegq_LpWY1B0kw?e=bWoIkp)
   - **Lecture 5**: [Graph Databases](https://inriafr-my.sharepoint.com/:b:/g/personal/paul_boniol_inria_fr/EdXdrysN9WJOpxnoGj-bl54BfcF6z3CUR2wN94FeZ6BuvQ?e=o7b0mC), [Neo4j: Practice Session](https://inriafr-my.sharepoint.com/:b:/g/personal/paul_boniol_inria_fr/EauuWVurG29AoVbMV_zXDD0Bo3j9_Cas_vS5_V892Vjr8g?e=8zIxQD)
   - **Lecture 6**: [Information Retrieval: an introduction](https://inriafr-my.sharepoint.com/:b:/g/personal/paul_boniol_inria_fr/EQq9KkXUXPlGsSsexlbyZsoBEo4y1Ws77egYIcfcQ61sqw?e=ueX9Av)
-  - **Lecture 7**: [Time series indexing]()
+  - **Lecture 7**: [Time series similarity search](https://inriafr-my.sharepoint.com/:b:/g/personal/paul_boniol_inria_fr/EQ7ThT7dhmZDl41XZ5qHycABr23yzsKy8XIIMzHqX6V2NA?e=guwOma)
   - **Lecture 8**: [Open challenges and recent works]()
 
 ### Homework:
