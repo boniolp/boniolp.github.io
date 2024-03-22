@@ -31,7 +31,7 @@ This course is highly inspired from previous courses of other professors and res
   - **Lecture 5**: [Graph Databases](https://inriafr-my.sharepoint.com/:b:/g/personal/paul_boniol_inria_fr/EdXdrysN9WJOpxnoGj-bl54BfcF6z3CUR2wN94FeZ6BuvQ?e=o7b0mC), [Neo4j: Practice Session](https://inriafr-my.sharepoint.com/:b:/g/personal/paul_boniol_inria_fr/EauuWVurG29AoVbMV_zXDD0Bo3j9_Cas_vS5_V892Vjr8g?e=8zIxQD)
   - **Lecture 6**: [Information Retrieval: an introduction](https://inriafr-my.sharepoint.com/:b:/g/personal/paul_boniol_inria_fr/EQq9KkXUXPlGsSsexlbyZsoBEo4y1Ws77egYIcfcQ61sqw?e=ueX9Av)
   - **Lecture 7**: [Time series similarity search I](https://inriafr-my.sharepoint.com/:b:/g/personal/paul_boniol_inria_fr/EUd4NrJkou5Dirlv2zr4LpoBalZ6R4qDasjRKm55KLdYOg?e=x239Ns)
-  - **Lecture 8**: [Time series similarity search II](https://inriafr-my.sharepoint.com/:b:/g/personal/paul_boniol_inria_fr/EdQScDl8QtZGs_s2y9vOFNUBuEDywRdeJx-cwLwdURhfEA?e=2pbnwe)
+  - **Lecture 8**: [Time series similarity search II](https://inriafr-my.sharepoint.com/:b:/g/personal/paul_boniol_inria_fr/EbydUalEuYBKlqbTEO4EYtEBburplL0j_7mTB5VzzBNhyQ?e=E3NYSa)
 
 ### Homework:
 
