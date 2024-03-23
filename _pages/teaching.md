@@ -25,10 +25,10 @@ This course is highly inspired from previous courses of other professors and res
 ### Lectures:
 
   - **Lecture 1**: [Systems 1: Introduction](https://inriafr-my.sharepoint.com/:b:/g/personal/paul_boniol_inria_fr/Ebq5u4Z5Z9JGnORYXlVR4L0BCdBPQSaDSEv9Msr_JaDTAg?e=EG1PvD)
-  - **Lecture 2**: [Systems 2: ACID vs BASE and Column-family Databases](https://inriafr-my.sharepoint.com/:b:/g/personal/paul_boniol_inria_fr/EXMxhj8ZExJEpLJCxxUjkcYBSiB30vd7GaZ5dPt8kB6MoA?e=HujPWF)
-  - **Lecture 3**: [Systems 3: Column-family and Document-oriented Databases](https://inriafr-my.sharepoint.com/:b:/g/personal/paul_boniol_inria_fr/EU171De_ny9InXe1DVmYYj8Bp2Vn-dlwzM2fLEMejX_8jg?e=Jd2711)
-  - **Lecture 4**: [Systems 4: Document-oriented Databases and Graph Databases](https://inriafr-my.sharepoint.com/:b:/g/personal/paul_boniol_inria_fr/EQGk-4OlDj5Er3BIoXXEFaQBRLl_514gfegq_LpWY1B0kw?e=bWoIkp)
-  - **Lecture 5**: [Systems 5: Graph Databases](https://inriafr-my.sharepoint.com/:b:/g/personal/paul_boniol_inria_fr/EdXdrysN9WJOpxnoGj-bl54BfcF6z3CUR2wN94FeZ6BuvQ?e=o7b0mC)
+  - **Lecture 2**: [Systems 2: ACID vs BASE and Column-family Databases (part 1)](https://inriafr-my.sharepoint.com/:b:/g/personal/paul_boniol_inria_fr/EXMxhj8ZExJEpLJCxxUjkcYBSiB30vd7GaZ5dPt8kB6MoA?e=HujPWF)
+  - **Lecture 3**: [Systems 3: Column-family (part 2) and Document-oriented Databases (part 1)](https://inriafr-my.sharepoint.com/:b:/g/personal/paul_boniol_inria_fr/EU171De_ny9InXe1DVmYYj8Bp2Vn-dlwzM2fLEMejX_8jg?e=Jd2711)
+  - **Lecture 4**: [Systems 4: Document-oriented (part 2) Databases and Graph Databases (part 1)](https://inriafr-my.sharepoint.com/:b:/g/personal/paul_boniol_inria_fr/EQGk-4OlDj5Er3BIoXXEFaQBRLl_514gfegq_LpWY1B0kw?e=bWoIkp)
+  - **Lecture 5**: [Systems 5: Graph Databases (part 2)](https://inriafr-my.sharepoint.com/:b:/g/personal/paul_boniol_inria_fr/EdXdrysN9WJOpxnoGj-bl54BfcF6z3CUR2wN94FeZ6BuvQ?e=o7b0mC)
   - **Lecture 6**: [Similarity Search 1: an introduction](https://inriafr-my.sharepoint.com/:b:/g/personal/paul_boniol_inria_fr/EQq9KkXUXPlGsSsexlbyZsoBEo4y1Ws77egYIcfcQ61sqw?e=ueX9Av)
   - **Lecture 7**: [Similarity Search 2: Time series representation and lower bounds](https://inriafr-my.sharepoint.com/:b:/g/personal/paul_boniol_inria_fr/EUd4NrJkou5Dirlv2zr4LpoBalZ6R4qDasjRKm55KLdYOg?e=x239Ns)
   - **Lecture 8**: [Similarity Search 3: Dynamic Time Warping and Indexing](https://inriafr-my.sharepoint.com/:b:/g/personal/paul_boniol_inria_fr/EbydUalEuYBKlqbTEO4EYtEBburplL0j_7mTB5VzzBNhyQ?e=E3NYSa)
