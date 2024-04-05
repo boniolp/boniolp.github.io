@@ -15,7 +15,7 @@ redirect_from:
 ## Academic Year 2023-2024
 
 - NoSQL Databases, Graduate Course (IASD Master, PSL University)
-- Time Series Anomaly Detection, Graduate Course (International Summer School on Internet of Things - ISSIOT, Salerno, Italy)
+- Time Series Anomaly Detection, Graduate Course (International School on Internet of Things - ISIOT, Salerno, Italy)
 
 ## Academic Year 2022-2023
 
