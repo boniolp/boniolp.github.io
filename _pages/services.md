@@ -14,15 +14,22 @@ redirect_from:
 
 ## Program committee member
 #### 2025
+
 - [International Conference on Very Large DataBases (VLDB) 2025](https://www.vldb.org/pvldb/volumes/18/review-board): Research track
 - [International Conference on Extending Data Base Technology (EDBT) 2025](https://edbticdt2025.upc.edu/?contents=EDBT_Committee.html): Research track
+
 #### 2024
+
 - [IEEE International Conference on Data Engineering (ICDE) 2024](https://multisa2024.org/#organizers): Multisa Workshop
+
 #### 2023
+
 - [IEEE International Conference on Data Science and Advanced Analytics (DSAA) 2023](https://gradsci.github.io/): Special Session: Graph Data Science and Applications
 - [International Conference on Extending Data Base Technology (EDBT) 2023](http://edbticdt2023.cs.uoi.gr/): Research track
 - [IEEE International Conference on Data Engineering (ICDE) 2023](https://icde2023.ics.uci.edu/): industry and application track
+
 #### 2022
+
 - [International Joint Conferences on Artificial Intelligence (IJCAI) 2022](https://ijcai-22.org/#): AI4TS workshop
 
 ***
