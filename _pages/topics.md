@@ -17,8 +17,7 @@ redirect_from:
 
 ## Internships
 
-* [From Neural Network to Temporal Logic: A Global Explainability Method for Time Series](https://boniolp.github.io/assets/topics/internship_topic_explanation.pdf) (6 months internship at Inria Paris Center and Ecole normale supérieure)
-* [Graph Representation for Multivariate Time Series Analytics](https://boniolp.github.io/assets/topics/internship_topic_graph.pdf) (6 months internship at Inria Paris Center and Ecole normale supérieure)
+* [Time series anomaly detection in electrical power plant sensors](https://boniolp.github.io/assets/topics/EDF_topic.pdf) (6 months internship at EDF R&D (Chatou) and Inria Ecole normale supérieure, Paris)
 
 ***
 
