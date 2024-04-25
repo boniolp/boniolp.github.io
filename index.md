@@ -9,6 +9,9 @@ My research interest lies in the intersections between:
 -  Unsupervised and supervised anomaly detection methods for large time series.
 -  Machine learning for time series analytics.
 
+## News
+
+I am looking for an intern starting in september. More info [here](https://boniolp.github.io/topics).
 
 ## Students
 
