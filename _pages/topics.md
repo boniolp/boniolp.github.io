@@ -17,7 +17,7 @@ redirect_from:
 
 ## Internships
 
-* [Time series anomaly detection in electrical power plant sensors](https://boniolp.github.io/assets/topics/EDF_topic.pdf) (6 months internship at EDF R&D (Chatou) and Inria Ecole normale supérieure, Paris)
+* [Time series anomaly detection in electrical power plant sensors](https://boniolp.github.io/assets/topics/EDF_topic.pdf) (6 months internship at EDF R&D and Ecole normale supérieure, Paris)
 
 ***
 
