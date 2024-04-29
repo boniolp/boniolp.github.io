@@ -11,7 +11,7 @@ My research interest lies in the intersections between:
 
 ## News
 
-I am looking for an intern starting in september. More info [here](https://boniolp.github.io/topics).
+I am looking for an intern starting in september. You may find more info [here](https://boniolp.github.io/topics).
 
 ## Students
 
