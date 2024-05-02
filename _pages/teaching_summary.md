@@ -20,5 +20,5 @@ redirect_from:
 ## Academic Year 2022-2023
 
 - BrevetAI, (Université Paris-Saclay)
-  - Member of a team designing of a MOOC introducing AI for first-year bachelor students in non-related fields to AI.
+  - Member of a team designing a MOOC introducing AI for first-year bachelor students in non-related fields to AI.
 - Programming project group supervision, Mathematics and Conputer Science Bachelor (Université Paris Cité)
