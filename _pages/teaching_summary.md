@@ -16,6 +16,7 @@ redirect_from:
 
 - NoSQL Databases, Graduate Course (IASD Master, PSL University, Paris, France)
 - Time Series Anomaly Detection, Graduate Course (International School on Internet of Things - ISIOT, Salerno, Italy)
+- Time Series Analytics, lecture and Hands-on sessions ([diiP Summer School 2024 - dSDS](https://indico.in2p3.fr/event/32533/)) 
 
 ## Academic Year 2022-2023
 
