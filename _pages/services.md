@@ -19,7 +19,7 @@ redirect_from:
 - [International Conference on Extending Data Base Technology (EDBT) 2025](https://edbticdt2025.upc.edu/?contents=EDBT_Committee.html): Research track
 
 #### 2024
-
+- [IEEE International Conference on Data Science and Advanced Analytics (DSAA) 2024](https://dsaa2024.dsaa.co/index.html): Applications Track
 - [IEEE International Conference on Data Engineering (ICDE) 2024](https://multisa2024.org/#organizers): Multisa Workshop
 
 #### 2023
