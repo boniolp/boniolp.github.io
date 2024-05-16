@@ -95,7 +95,7 @@ redirect_from:
 #### 2024
 ---
 
-* Paul Boniol, Emmanouil Sylligardos, John Paparrizos, Panos Trahanias, Themis Palpanas.. **ADecimo: Model Selection for Time Series Anomaly Detection**. IEEE International Conference on Data Engineering (ICDE), Utrecht, Netherlands, May 2024. [More info...](https://www.researchgate.net/publication/380546995_ADecimo_Model_Selection_for_Time_Series_Anomaly_Detection). <span style="color:red">Best Runner Up Demo Award</span>
+* Paul Boniol, Emmanouil Sylligardos, John Paparrizos, Panos Trahanias, Themis Palpanas.. **ADecimo: Model Selection for Time Series Anomaly Detection**. IEEE International Conference on Data Engineering (ICDE), Utrecht, Netherlands, May 2024. [More info...](https://www.researchgate.net/publication/380546995_ADecimo_Model_Selection_for_Time_Series_Anomaly_Detection). **Best Runner Up Demo Award**
 
 ---
 
