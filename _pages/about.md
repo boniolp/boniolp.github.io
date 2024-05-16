@@ -13,6 +13,7 @@ redirect_from:
 ---
 
 ## Awards
+- IEEE ICDE 2024 Best Runner Up Demo Award
 - [Paul Caseau 2022 award](https://www.edf.fr/groupe-edf/inventer-lavenir-de-lenergie/rd-un-savoir-faire-mondial/toutes-les-actualites-de-la-rd/2022-qui-sont-les-laureats-du-prix-de-these-paul-caseau)
 - [Lambdamu congress "research and industry" 2022 prize](https://www.imdr-lambdamu.eu/842_p_57532/lambda-mu-d-or.html)
 - [BDA 2022 Ph.D. prize](https://bdav.irisa.fr/prix/)
