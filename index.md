@@ -10,8 +10,8 @@ My research interest lies in the intersections between:
 -  Machine learning for time series analytics.
 
 ## News
-
-I am looking for an intern starting in september. You may find more info [here](https://boniolp.github.io/topics).
+- Our demo paper [ADecimo: Model Selection for Time Series Anomaly Detection](https://www.researchgate.net/publication/380546995_ADecimo_Model_Selection_for_Time_Series_Anomaly_Detection) won the "Best Demonstration Runner Up" award at the ICDE 2024 conference! 
+- I am looking for an intern starting in september. You may find more info [here](https://boniolp.github.io/topics).
 
 ## Students
 
