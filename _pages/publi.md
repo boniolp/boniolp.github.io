@@ -18,7 +18,7 @@ redirect_from:
 #### 2024
 ---
 
-* Paul Boniol, John Paparrizos, Themis Palpanas. **An Interactive Dive into Time-Series Anomaly Detection** IEEE International Conference on Data Engineering (ICDE), Utrecht, Netherlands, May 2024. [More info...](), [Slides](), [Video]()
+* Paul Boniol, John Paparrizos, Themis Palpanas. **An Interactive Dive into Time-Series Anomaly Detection** IEEE International Conference on Data Engineering (ICDE), Utrecht, Netherlands, May 2024. [More info...](), [Slides](https://www.paparrizos.org/papers/BoniolICDE24.pdf)
 
 ---
 #### 2023
