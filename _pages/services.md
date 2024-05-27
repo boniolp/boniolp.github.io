@@ -21,7 +21,7 @@ redirect_from:
 #### 2024
 - [IEEE International Conference on Data Science and Advanced Analytics (DSAA) 2024](https://dsaa2024.dsaa.co/index.html): Applications Track
 - [IEEE International Conference on Data Engineering (ICDE) 2024](https://multisa2024.org/#organizers): Multisa Workshop
-- 40èmes journées de la conférence BDA Gestion de Données 2024
+- [40èmes journées de la conférence BDA Gestion de Données 2024](https://bda2024.sciencesconf.org/resource/page/id/3)
 
 #### 2023
 
