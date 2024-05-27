@@ -23,7 +23,7 @@ starting from the core definitions and taxonomies related to time series and ano
 to an extensive description of the anomaly detection methods proposed by different communities in the literature. 
 We will then present new benchmarks capturing diverse domains and applications for the purpose of evaluating anomaly detection methods. 
 We will then conclude on Ensembling and Model Selection for time series anomaly detection, 
-discussing different strategies applicable to automatically selecting the appropriate methods for a specific time series. The slides of this lecture can be found [here]()*
+discussing different strategies applicable to automatically selecting the appropriate methods for a specific time series. The slides of this lecture can be found [here]().*
 
 
 ### Lecture 2: A deep dive into time series anomaly detection evaluation measures
@@ -36,4 +36,4 @@ information retrieval measures, such as Precision, Recall, and Fscore, to assess
 the anomaly score to mark each point as an anomaly or not. However, mapping discrete labels into continuous data introduces 
 unavoidable shortcomings, complicating the evaluation of range-based contextual and collective anomalies. In this talk, we 
 will dive into the existing evaluation measures to properly compare anomaly detection methods for time series. Finally, we 
-will discuss how evaluation measures can be compared and evaluated. The slides of this lecture can be found [here]()* 
+will discuss how evaluation measures can be compared and evaluated. The slides of this lecture can be found [here]().* 
