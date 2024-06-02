@@ -18,6 +18,10 @@ redirect_from:
 #### 2024
 ---
 
+* Qinghua Liu, Paul Boniol, John Paparrizos, Themis Palpanas. **Time-Series Anomaly Detection: Overview and New Trends** Proceedings of the VLDB Endowment (PVLDB) Journal, 2024.
+
+---
+
 * Paul Boniol, John Paparrizos, Themis Palpanas. **An Interactive Dive into Time-Series Anomaly Detection** IEEE International Conference on Data Engineering (ICDE), Utrecht, Netherlands, May 2024. [More info...](https://www.researchgate.net/publication/380910317_An_Interactive_Dive_into_Time-Series_Anomaly_Detection), [Slides](https://www.paparrizos.org/papers/BoniolICDE24.pdf)
 
 ---
