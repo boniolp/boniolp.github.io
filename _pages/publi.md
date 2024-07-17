@@ -15,6 +15,7 @@ redirect_from:
 ## Publications
 
 ### 2024
+---
 
 #### Tutorials
 
@@ -34,6 +35,7 @@ redirect_from:
 
 ---
 ### 2023
+---
 
 #### Tutorials
 
@@ -50,8 +52,8 @@ redirect_from:
 * Adrien Petralia, Philippe Charpentier, Paul Boniol, Themis Palpanas. **Appliance Detection Using Very Low-Frequency Smart Meter Time Series**. ACM International Conference on Future Energy Systems (e-Energy), Orlando, FL (USA), June 2023. [More info...](https://www.researchgate.net/publication/370654257_Appliance_Detection_Using_Very_Low-Frequency_Smart_Meter_Time_Series)
 
 ---
-
 ### 2022
+---
 
 #### Journals
 
@@ -72,8 +74,8 @@ redirect_from:
 * Paul Boniol, Themis Palpanas, Michele Linardi, Federico Roncallo, Mohammed Meftah, Emmanuel Remy. **Determination of Health Status of Systems Equipped with Sensors**. US Patent 11471113, 2022.
 
 ---
-
 ### 2021
+---
 
 #### Journals
 
@@ -90,8 +92,8 @@ redirect_from:
 * Paul Boniol, Themis Palpanas, Mohammed Meftah, Emmanuel Remy. **Determining the State of Health of a System on the Basis of a Network of Measured Time Sequences**. European Patent WO2021233758, 2021.
 
 ---
-
 ### 2020
+---
 
 #### Journals
 
