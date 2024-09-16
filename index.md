@@ -16,12 +16,14 @@ My research interest lies in the intersections between:
 
 ## Students
 
-- Emmanouil Sylligardos, PhD student. 2024-now (Co-advised with Pierre Senellart)
-- Haoming Lin, MSc student (EPFL, switzerland). 2024-now (Co-advised with Michael Thomazo)
+- Emmanouil Sylligardos, PhD student (Co-advised with Pierre Senellart). *Feb 2024-now*
+- Felix Chevalli, PhD student (Co-advised with Michaël Thomazo). *Oct 2024-now*
+- Aleksander Gautier, MSc student (Telecom-Paris, France). *Sep 2024 - now*
 
 ### Former Students
 
-- Jose Lucas De Melo Costa, MSc student (CentraleSupélec, France). 2022
-- Emmanouil Sylligardos, MSc student (University of Crete, Greece). 2022-2023
-- Marine Bruel, BSc student (École Centrale de Lille, France). 2023
-- Ashwin Krishna, BSc Student (IIT Madras, India). 2023
+- Jose Lucas De Melo Costa, MSc student (CentraleSupélec, France). *Jun 2022 - Aug 2022* 
+- Emmanouil Sylligardos, MSc student (University of Crete, Greece). *Sep 2022- Mar 2023*
+- Marine Bruel, BSc student (École Centrale de Lille, France). *Feb 2023 - Apr 2023*
+- Ashwin Krishna, BSc Student (IIT Madras, India). *Apr 2023 - Jul 2023*
+- Haoming Lin, MSc student (EPFL, switzerland). *Apr 2024 - Sep 2024*
