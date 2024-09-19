@@ -12,6 +12,10 @@ redirect_from:
   - /teaching-activities.html
 ---
 
+## Academic Year 2024-2025
+
+- NoSQL Databases, Graduate Course (IASD Master, PSL University, Paris, France).
+
 ## Academic Year 2023-2024
 
 - NoSQL Databases, Graduate Course (IASD Master, PSL University, Paris, France).
