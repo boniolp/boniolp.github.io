@@ -21,6 +21,8 @@ redirect_from:
 - NoSQL Databases, Graduate Course (IASD Master, PSL University, Paris, France).
 - [Time Series Anomaly Detection](https://boniolp.github.io/salerno-lecture-2024), Graduate Course (International Summer School on Internet of Things - ISSIOT, Salerno, Italy).
 - [Time Series Anomaly Detection](https://boniolp.github.io/Diip-summer-school-2024), lecture and Hands-on sessions ([diiP Summer School 2024 - dSDS](https://indico.in2p3.fr/event/32533/)).
+- BrevetAI, (Université Paris-Saclay)
+  - Member of a team designing a MOOC introducing AI for first-year bachelor students in non-related fields to AI.
 
 ## Academic Year 2022-2023
 
