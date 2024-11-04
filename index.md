@@ -10,6 +10,7 @@ My research interest lies in the intersections between:
 -  Machine learning for time series analytics.
 
 ## News
+- Thanks to the [ML4Jets 2024](https://indico.cern.ch/event/1386125/) organizers for inviting me to give a talk on [Model selection and Time Series Anomaly Detection](https://indico.cern.ch/event/1386125/timetable/?view=standard). You may find the slides [here](https://inriafr-my.sharepoint.com/:b:/g/personal/paul_boniol_inria_fr/Ee_QyfkiTNZNqX4W1G-XBIoBaMBp4vp66SZF2E1Q1WaFww?e=rB2OaO).
 - Thanks to the [AALTD 2024](https://ecml-aaltd.github.io/aaltd2024/people.html) organizers for inviting me to give a talk on [Time Series Anomaly Detection](https://ecml-aaltd.github.io/aaltd2024/invitedtalk.html). You may find the slides [here](https://inriafr-my.sharepoint.com/:b:/g/personal/paul_boniol_inria_fr/EVgVym7YIuZDplH6M-pWXhQBHxmngwVVWCkEfU4o7HwIBQ?e=ETRUuI).
 - You may find [here](https://wp.sigmod.org/?p=3739) our new SIGMOD blog post on Time series anomaly detection!
 - Our demo paper [ADecimo: Model Selection for Time Series Anomaly Detection](https://www.researchgate.net/publication/380546995_ADecimo_Model_Selection_for_Time_Series_Anomaly_Detection) won the "Best Demonstration Runner Up" award at the ICDE 2024 conference! 
