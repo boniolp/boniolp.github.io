@@ -20,6 +20,7 @@ My research interest lies in the intersections between:
 - [Emmanouil Sylligardos](https://www.linkedin.com/in/emmanouil-sylligardos/?originalSubdomain=gr), PhD student (Co-advised with Pierre Senellart). *Feb 2024-now*
 - [Felix Chevalli](https://felix.chavelli.fr/), PhD student (Co-advised with Michaël Thomazo). *Oct 2024-now*
 - [Aleksander Gautier](https://www.linkedin.com/in/aleksander-gautier/?originalSubdomain=fr), MSc student (Telecom-Paris, France). *Sep 2024 - now*
+- [Roberto Stanzione](https://www.researchgate.net/profile/Roberto-Stanzione), Visiting PhD student (Università degli Studi di Salerno, Italy). *Nov 2024 - now*
 
 ### Former Students
 
