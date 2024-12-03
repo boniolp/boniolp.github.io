@@ -18,6 +18,7 @@ redirect_from:
 - [International Conference on Very Large DataBases (VLDB) 2025](https://www.vldb.org/pvldb/volumes/18/review-board): Research track
 - [International Conference on Extending Data Base Technology (EDBT) 2025](https://edbticdt2025.upc.edu/?contents=EDBT_Committee.html): Research track
 - [IEEE International Conference on Data Engineering (ICDE) 2025](https://ieee-icde.org/2025/call-for-industry-and-application/): industry and application track
+- [IEEE International Conference on Data Engineering (ICDE) 2025](): Multisa Workshop
 
 #### 2024
 - [IEEE International Conference on Data Science and Advanced Analytics (DSAA) 2024](https://dsaa2024.dsaa.co/index.html): Applications Track
