@@ -15,9 +15,9 @@ redirect_from:
 # Internship and Ph.D. proposal
 
 
-## Internships
+## Internships (2025)
 
-* [Time series anomaly detection in electrical power plant sensors](https://boniolp.github.io/assets/topics/EDF_topic.pdf) (6 months internship at EDF R&D and Ecole normale supérieure, Paris)
+* [Advanced methodology for nanoparticle detection in spICP-ToF-MS time series](https://boniolp.github.io/assets/topics/IPGP_topic.pdf) (6 months internship at IPGP and Ecole normale supérieure, Paris)
 
 ***
 
