@@ -14,7 +14,7 @@ redirect_from:
 
 ## Academic Year 2024-2025
 
-- NoSQL Databases, Graduate Course (IASD Master, PSL University, Paris, France).
+- [NoSQL Databases](https://boniolp.github.io/teaching-nosql-2025), Graduate Course (IASD Master, PSL University, Paris, France).
 - Time Series Anomaly Detection, Graduate Course ([Summer school on Artificial Intelligence for Aerospace](https://spaceraise.academy/) - GSSI, L'Aquila, Italy)
 
 ## Academic Year 2023-2024
