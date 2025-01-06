@@ -48,7 +48,6 @@ This course is highly inspired from previous courses of other professors and res
 - [Chord: A scalable Peer-to-peer Lookup Service for Internet Applications](https://pdos.csail.mit.edu/papers/chord:sigcomm01/chord_sigcomm.pdf)
 - [C-Store: A Column-oriented DBMS](https://web.stanford.edu/class/cs345d-01/rl/cstore.pdf)
 - [Consistent Hashing and Random Trees: Distributed Caching Protocols for Relieving Hot Spots on the World Wide Web](https://www.cs.princeton.edu/courses/archive/fall09/cos518/papers/chash.pdf)
-- [Provenance-Based Algorithms for Rich Queries over Graph Databases](https://inria.hal.science/hal-03140067/document)
 - [A Name-Based Mapping Scheme for Rendezvous](https://www.eecs.umich.edu/techreports/cse/96/CSE-TR-316-96.pdf)
 
 ### Project:
@@ -59,4 +58,3 @@ This course is highly inspired from previous courses of other professors and res
 - [Exact indexing of dynamic time warping (2005)](https://link.springer.com/article/10.1007/s10115-004-0154-9)
 - [A Symbolic Representation of Time Series, with Implications for Streaming Algorithms (2003)](https://www.cs.ucr.edu/~eamonn/SAX.pdf)
 - [iSAX: Indexing and Mining Terabyte Sized Time Series (2008)](https://www.cs.ucr.edu/~eamonn/iSAX.pdf)
-- [Accelerating Similarity Search for Elastic Measures: A Study and New Generalization of Lower Bounding Distances (2023)](https://www.paparrizos.org/papers/PaparrizosVLDB23.pdf)
