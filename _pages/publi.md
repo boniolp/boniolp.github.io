@@ -14,6 +14,17 @@ redirect_from:
 
 ## Publications
 
+### 2025
+---
+
+#### Conferences
+
+* Paul Boniol, Donato Tiano, Angela Bonifati, Themis Palpanas. **Graphint: Graph-based Time Series Clustering Visualisation Tool** IEEE International Conference on Data Engineering (ICDE), Hong Kong SAR, China, May 2025.
+
+* Adrien Petralia, Paul Boniol, Philippe Charpentier, Themis Palpanas. **DeviceScope: An Interactive App to Detect and Localize Appliance Patterns in Electricity Consumption Time Series** IEEE International Conference on Data Engineering (ICDE), Hong Kong SAR, China, May 2025.
+
+---
+
 ### 2024
 ---
 
