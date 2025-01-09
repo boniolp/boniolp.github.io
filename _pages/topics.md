@@ -21,4 +21,6 @@ redirect_from:
 
 ***
 
-## Ph.D.
+## Ph.D. (April 2025)
+
+* [Détection non-supervisée d’anomalies dans des flux continus de séries temporelles multivariées](https://boniolp.github.io/assets/topics/These2025-CIFRE.pdf), (CIFRE with EDF research lab)
