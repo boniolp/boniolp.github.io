@@ -25,7 +25,7 @@ This course is highly inspired from previous courses of other professors and res
 ### Lectures:
 
   - **Lecture 1**: [Systems 1: Introduction](https://inriafr-my.sharepoint.com/:b:/g/personal/paul_boniol_inria_fr/Ebq5u4Z5Z9JGnORYXlVR4L0BCdBPQSaDSEv9Msr_JaDTAg?e=EG1PvD)
-  - **Lecture 2**: Systems 2: ACID vs BASE and Column-family Databases
+  - **Lecture 2**: [Systems 2: ACID vs BASE and Column-family Databases](https://inriafr-my.sharepoint.com/:b:/g/personal/paul_boniol_inria_fr/EXMxhj8ZExJEpLJCxxUjkcYBSiB30vd7GaZ5dPt8kB6MoA)
   - **Lecture 3**: Systems 3: Column-family and Document-oriented Databases
   - **Lecture 4**: Systems 4: Document-oriented Databases and Graph Databases
   - **Lecture 5**: Systems 5: Graph Databases
