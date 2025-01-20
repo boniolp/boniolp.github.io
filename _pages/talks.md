@@ -17,7 +17,7 @@ redirect_from:
 #### 2024
 
 - **Time Series Anomaly Detection: Overview and New Trends**, Keynote for ML4Jets International Conference (November 2024). [More Info](https://indico.cern.ch/event/1386125/), [Slides](https://inriafr-my.sharepoint.com/:b:/g/personal/paul_boniol_inria_fr/Ee_QyfkiTNZNqX4W1G-XBIoBSfncOW0PE7JvmtnFi-P8fw?e=bXhFjq), [Video](https://indico.cern.ch/event/1386125/contributions/6209715/attachments/2959820/5224750/08ML4Jets24_BoniolPaul.mp4).
-- **Anomaly Detection in Time Seires**, keynote for AALTD workshop at ECML / PKDD 2024 (September 2024). [More info](https://ecml-aaltd.github.io/aaltd2024/invitedtalk.html), [Slides](https://inriafr-my.sharepoint.com/:b:/g/personal/paul_boniol_inria_fr/EVgVym7YIuZDplH6M-pWXhQBHxmngwVVWCkEfU4o7HwIBQ?e=gowRFc).
+- **Anomaly Detection in Time Seires**, keynote for AALTD workshop at ECML / PKDD 2024 (September 2024). [More info](https://ecml-aaltd.github.io/aaltd2024/invitedtalk.html), [Slides](https://inriafr-my.sharepoint.com/:b:/g/personal/paul_boniol_inria_fr/EVgVym7YIuZDplH6M-pWXhQBbzymeUGk296LNZ56_kITYw).
 
 #### 2023
 
