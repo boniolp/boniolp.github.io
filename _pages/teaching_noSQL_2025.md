@@ -34,7 +34,7 @@ This course is highly inspired from previous courses of other professors and res
   - **Lecture 8**: Similarity Search 3: Dynamic Time Warping and Indexing
 
 #### Practice Sessions
-- MongoDB: Practice Session
+- MongoDB: [Practice Session](https://inriafr-my.sharepoint.com/:b:/g/personal/paul_boniol_inria_fr/EcBctc-MzBZNrc2SdR3-9F8B4IMGR-DFDrJY0U_9gvk-fQ?e=aZsCfl)
 - Neo4j: Practice Session
 
 
