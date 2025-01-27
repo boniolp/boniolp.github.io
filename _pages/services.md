@@ -16,7 +16,7 @@ redirect_from:
 
 #### 2026
 
-- International Conference on Very Large DataBases (VLDB) 2025: Research track
+- International Conference on Very Large DataBases (VLDB) 2026: Research track
 
 #### 2025
 
