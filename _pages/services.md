@@ -13,6 +13,11 @@ redirect_from:
 ---
 
 ## Program committee member
+
+#### 2026
+
+- International Conference on Very Large DataBases (VLDB) 2025: Research track
+
 #### 2025
 
 - [International Conference on Very Large DataBases (VLDB) 2025](https://www.vldb.org/pvldb/volumes/18/review-board): Research track
