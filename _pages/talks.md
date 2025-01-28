@@ -16,7 +16,7 @@ redirect_from:
 
 #### 2025
 
-- **An introduction to Time series anomaly detection (a data-driven perspective)**, Guest speaker for SIDOS at EGC 2025. [More Info](https://sites.google.com/view/sidos2025/home), [Slides](https://inriafr-my.sharepoint.com/:b:/g/personal/paul_boniol_inria_fr/EVaUZdWPfW5Lq4g537toVPkBHkemnMw0bf6BUP4Ks8us9Q). 
+- **An introduction to Time series anomaly detection (a data-driven perspective)**, Invited speaker for SIDOS at EGC 2025. [More Info](https://sites.google.com/view/sidos2025/home), [Slides](https://inriafr-my.sharepoint.com/:b:/g/personal/paul_boniol_inria_fr/EVaUZdWPfW5Lq4g537toVPkBHkemnMw0bf6BUP4Ks8us9Q). 
 
 #### 2024
 
