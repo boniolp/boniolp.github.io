@@ -14,6 +14,10 @@ redirect_from:
 
 # Invited Talks and Seminars
 
+#### 2025
+
+- **An introduction to Time series anomaly detection (a data-driven perspective)**, Guest speaker for SIDOS at EGC 2025. [More Info](https://sites.google.com/view/sidos2025/home), [Slides](https://inriafr-my.sharepoint.com/:b:/g/personal/paul_boniol_inria_fr/EVaUZdWPfW5Lq4g537toVPkBHkemnMw0bf6BUP4Ks8us9Q). 
+
 #### 2024
 
 - **Time Series Anomaly Detection: Overview and New Trends**, Keynote for ML4Jets International Conference (November 2024). [More Info](https://indico.cern.ch/event/1386125/), [Slides](https://inriafr-my.sharepoint.com/:b:/g/personal/paul_boniol_inria_fr/Ee_QyfkiTNZNqX4W1G-XBIoBSfncOW0PE7JvmtnFi-P8fw?e=bXhFjq), [Video](https://indico.cern.ch/event/1386125/contributions/6209715/attachments/2959820/5224750/08ML4Jets24_BoniolPaul.mp4).
