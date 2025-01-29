@@ -19,7 +19,7 @@ redirect_from:
 
 #### Conferences
 
-* Paul Boniol, Donato Tiano, Angela Bonifati, Themis Palpanas. **Graphint: Graph-based Time Series Clustering Visualisation Tool** IEEE International Conference on Data Engineering (ICDE), Hong Kong SAR, China, May 2025.
+* Paul Boniol, Donato Tiano, Angela Bonifati, Themis Palpanas. **Graphint: Graph-based Time Series Clustering Visualisation Tool** IEEE International Conference on Data Engineering (ICDE), Hong Kong SAR, China, May 2025. [Live demonstration](https://graphit.streamlit.app/).
 
 * Adrien Petralia, Paul Boniol, Philippe Charpentier, Themis Palpanas. **DeviceScope: An Interactive App to Detect and Localize Appliance Patterns in Electricity Consumption Time Series** IEEE International Conference on Data Engineering (ICDE), Hong Kong SAR, China, May 2025.
 
@@ -40,9 +40,9 @@ redirect_from:
 
 #### Conferences
 
-* Paul Boniol, Emmanouil Sylligardos, John Paparrizos, Panos Trahanias, Themis Palpanas.. **ADecimo: Model Selection for Time Series Anomaly Detection**. IEEE International Conference on Data Engineering (ICDE), Utrecht, Netherlands, May 2024. [More info...](https://www.researchgate.net/publication/380546995_ADecimo_Model_Selection_for_Time_Series_Anomaly_Detection). **Best Runner Up Demo Award**
+* Paul Boniol, Emmanouil Sylligardos, John Paparrizos, Panos Trahanias, Themis Palpanas.. **ADecimo: Model Selection for Time Series Anomaly Detection**. IEEE International Conference on Data Engineering (ICDE), Utrecht, Netherlands, May 2024. [More info...](https://www.researchgate.net/publication/380546995_ADecimo_Model_Selection_for_Time_Series_Anomaly_Detection), [Live demonstration](https://adecimots.streamlit.app/). **Best Runner Up Demo Award**
 
-* Sylvain W. Combettes, Paul Boniol, Charles Truong, Laurent Oudre. **d_{symb} playground: an interactive tool to explore large multivariate time series datasets**. IEEE International Conference on Data Engineering (ICDE), Utrecht, Netherlands, May 2024. [More info...](http://www.laurentoudre.fr/publis/dsymb_demo.pdf)
+* Sylvain W. Combettes, Paul Boniol, Charles Truong, Laurent Oudre. **d_{symb} playground: an interactive tool to explore large multivariate time series datasets**. IEEE International Conference on Data Engineering (ICDE), Utrecht, Netherlands, May 2024. [More info...](http://www.laurentoudre.fr/publis/dsymb_demo.pdf), [Live demonstration](https://dsymb-playground.streamlit.app/).
 
 ---
 ### 2023
