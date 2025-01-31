@@ -27,7 +27,7 @@ This course is highly inspired from previous courses of other professors and res
   - **Lecture 1**: [Systems 1: Introduction](https://inriafr-my.sharepoint.com/:b:/g/personal/paul_boniol_inria_fr/Ebq5u4Z5Z9JGnORYXlVR4L0BCdBPQSaDSEv9Msr_JaDTAg?e=EG1PvD)
   - **Lecture 2**: [Systems 2: ACID vs BASE and Column-family Databases](https://inriafr-my.sharepoint.com/:b:/g/personal/paul_boniol_inria_fr/EXMxhj8ZExJEpLJCxxUjkcYBSiB30vd7GaZ5dPt8kB6MoA)
   - **Lecture 3**: [Systems 3: Column-family and Document-oriented Databases](https://inriafr-my.sharepoint.com/:b:/g/personal/paul_boniol_inria_fr/EU171De_ny9InXe1DVmYYj8Bp2Vn-dlwzM2fLEMejX_8jg?e=YgicqI)
-  - **Lecture 4**: Systems 4: Document-oriented Databases and Graph Databases
+  - **Lecture 4**: [Systems 4: Document-oriented Databases and Graph Databases](https://inriafr-my.sharepoint.com/:b:/g/personal/paul_boniol_inria_fr/EQGk-4OlDj5Er3BIoXXEFaQBRLl_514gfegq_LpWY1B0kw)
   - **Lecture 5**: Systems 5: Graph Databases
   - **Lecture 6**: Similarity Search 1: an introduction
   - **Lecture 7**: Similarity Search 2: Time series representation and lower bounds
