@@ -23,6 +23,7 @@ My research interest lies in the intersections between:
 - [Felix Chevalli](https://felix.chavelli.fr/), PhD student (Co-advised with Michaël Thomazo). *Oct 2024-now*
 - [Aleksander Gautier](https://www.linkedin.com/in/aleksander-gautier/?originalSubdomain=fr), MSc student (Telecom-Paris, France). *Sep 2024 - now*
 - [Roberto Stanzione](https://www.researchgate.net/profile/Roberto-Stanzione), Visiting PhD student (Università degli Studi di Salerno, Italy). *Nov 2024 - now*
+- [Adam Rozzio](https://www.linkedin.com/in/adam-rozzio-4088a1272/?originalSubdomain=fr), MSc student (ENS Paris-Saclay, France). *Feb 2025 - now*
 
 ### Former Students
 
