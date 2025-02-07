@@ -35,7 +35,7 @@ This course is highly inspired from previous courses of other professors and res
 
 #### Practice Sessions
 - MongoDB: [Practice Session](https://inriafr-my.sharepoint.com/:b:/g/personal/paul_boniol_inria_fr/EcBctc-MzBZNrc2SdR3-9F8B4IMGR-DFDrJY0U_9gvk-fQ?e=aZsCfl)
-- Neo4j: Practice Session
+- Neo4j: [Practice Session](https://inriafr-my.sharepoint.com/:b:/g/personal/paul_boniol_inria_fr/EauuWVurG29AoVbMV_zXDD0Bo3j9_Cas_vS5_V892Vjr8g)
 
 
 ### Homework:
