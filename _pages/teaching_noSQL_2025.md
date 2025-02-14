@@ -29,7 +29,7 @@ This course is highly inspired from previous courses of other professors and res
   - **Lecture 3**: [Systems 3: Column-family and Document-oriented Databases](https://inriafr-my.sharepoint.com/:b:/g/personal/paul_boniol_inria_fr/EU171De_ny9InXe1DVmYYj8Bp2Vn-dlwzM2fLEMejX_8jg?e=YgicqI)
   - **Lecture 4**: [Systems 4: Document-oriented Databases and Graph Databases](https://inriafr-my.sharepoint.com/:b:/g/personal/paul_boniol_inria_fr/EQGk-4OlDj5Er3BIoXXEFaQBRLl_514gfegq_LpWY1B0kw)
   - **Lecture 5**: [Systems 5: Graph Databases](https://inriafr-my.sharepoint.com/:b:/g/personal/paul_boniol_inria_fr/EaS3lG-wW2lDvz-aJaJrboYB69ACtWFd-1wSeMB1xjI7XA)
-  - **Lecture 6**: Similarity Search 1: an introduction
+  - **Lecture 6**: [Similarity Search 1: an introduction](https://inriafr-my.sharepoint.com/:b:/g/personal/paul_boniol_inria_fr/EQq9KkXUXPlGsSsexlbyZsoBEo4y1Ws77egYIcfcQ61sqw)
   - **Lecture 7**: Similarity Search 2: Time series representation and lower bounds
   - **Lecture 8**: Similarity Search 3: Dynamic Time Warping and Indexing
 
