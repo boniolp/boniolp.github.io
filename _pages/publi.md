@@ -17,11 +17,19 @@ redirect_from:
 ### 2025
 ---
 
+#### Journals
+
+* Paul Boniol, Ashwin Krishna, Marine Bruel, Qinghua Liu, Mingyi Huang, Themis Palpanas, Ruey Tsay, Aaron Elmore, Michael J. Franklin, John Paparrizos. **VUS: Effective and Efficient Accuracy Measures for Time-Series Anomaly Detection**. International Journal on Very Large Data Bases (VLDBJ), 2025.
+
 #### Conferences
 
-* Paul Boniol, Donato Tiano, Angela Bonifati, Themis Palpanas. **Graphint: Graph-based Time Series Clustering Visualisation Tool** IEEE International Conference on Data Engineering (ICDE), Hong Kong SAR, China, May 2025. [Live demonstration](https://graphit.streamlit.app/).
+* Paul Boniol, Donato Tiano, Angela Bonifati, Themis Palpanas. **Graphint: Graph-based Time Series Clustering Visualisation Tool**. IEEE International Conference on Data Engineering (ICDE), Hong Kong SAR, China, May 2025. [Live demonstration](https://graphit.streamlit.app/).
 
-* Adrien Petralia, Paul Boniol, Philippe Charpentier, Themis Palpanas. **DeviceScope: An Interactive App to Detect and Localize Appliance Patterns in Electricity Consumption Time Series** IEEE International Conference on Data Engineering (ICDE), Hong Kong SAR, China, May 2025.
+* Adrien Petralia, Paul Boniol, Philippe Charpentier, Themis Palpanas. **DeviceScope: An Interactive App to Detect and Localize Appliance Patterns in Electricity Consumption Time Series**. IEEE International Conference on Data Engineering (ICDE), Hong Kong SAR, China, May 2025.
+
+#### Preprints
+
+* Paul Boniol, Qinghua Liu, Mingyi Huang, Themis Palpanas, John Paparrizos. **Dive into Time-Series Anomaly Detection: A Decade Review**. Arxiv. [More info](https://arxiv.org/abs/2412.20512).
 
 ---
 
