@@ -54,6 +54,10 @@ redirect_from:
 
 * Sylvain W. Combettes, Paul Boniol, Charles Truong, Laurent Oudre. **d_{symb} playground: an interactive tool to explore large multivariate time series datasets**. IEEE International Conference on Data Engineering (ICDE), Utrecht, Netherlands, May 2024. [More info...](http://www.laurentoudre.fr/publis/dsymb_demo.pdf), [Live demonstration](https://dsymb-playground.streamlit.app/).
 
+#### Others
+
+* Paul Boniol, Themis Palpanas. **Time Series Anomaly Detection**. ACM SIGMOD Blog, July 2024. [More info...](https://wp.sigmod.org/?p=3739)
+
 ---
 ### 2023
 ---
