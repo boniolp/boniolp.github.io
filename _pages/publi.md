@@ -21,7 +21,7 @@ redirect_from:
 
 * Paul Boniol, Donato Tiano, Angela Bonifati, Themis Palpanas. **k-Graph: A Graph Embedding for Interpretable Time Series Clustering**. IEEE Transactions on Knowledge and Data Engineering (TKDE), 2025. [Code](https://github.com/boniolp/kGraph), [Preprint](https://arxiv.org/pdf/2502.13049).
 
-* Paul Boniol, Ashwin Krishna, Marine Bruel, Qinghua Liu, Mingyi Huang, Themis Palpanas, Ruey Tsay, Aaron Elmore, Michael J. Franklin, John Paparrizos. **VUS: Effective and Efficient Accuracy Measures for Time-Series Anomaly Detection**. International Journal on Very Large Data Bases (VLDBJ), 2025. [Code](https://github.com/TheDatumOrg/VUS)
+* Paul Boniol, Ashwin Krishna, Marine Bruel, Qinghua Liu, Mingyi Huang, Themis Palpanas, Ruey Tsay, Aaron Elmore, Michael J. Franklin, John Paparrizos. **VUS: Effective and Efficient Accuracy Measures for Time-Series Anomaly Detection**. International Journal on Very Large Data Bases (VLDBJ), 2025. [Code](https://github.com/TheDatumOrg/VUS), [Preprint](https://arxiv.org/abs/2502.13318)
 
 #### Conferences
 
