@@ -29,4 +29,4 @@ redirect_from:
 
 - [BrevetAI](https://www.dataia.eu/formations/brevetai-acculturation-lia), (Université Paris-Saclay)
   - Member of a team designing a MOOC introducing AI for first-year bachelor students in non-related fields to AI.
-- Programming project group supervision, Mathematics and Conputer Science Bachelor (Université Paris Cité)
+- Programming project group supervision, Mathematics and Computer Science Bachelor (Université Paris Cité)
