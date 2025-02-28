@@ -31,7 +31,7 @@ This course is highly inspired from previous courses of other professors and res
   - **Lecture 5**: [Systems 5: Graph Databases](https://inriafr-my.sharepoint.com/:b:/g/personal/paul_boniol_inria_fr/EaS3lG-wW2lDvz-aJaJrboYB69ACtWFd-1wSeMB1xjI7XA)
   - **Lecture 6**: [Similarity Search 1: an introduction](https://inriafr-my.sharepoint.com/:b:/g/personal/paul_boniol_inria_fr/EQq9KkXUXPlGsSsexlbyZsoBEo4y1Ws77egYIcfcQ61sqw)
   - **Lecture 7**: [Similarity Search 2: Time series representation and lower bounds](https://inriafr-my.sharepoint.com/:b:/g/personal/paul_boniol_inria_fr/EUd4NrJkou5Dirlv2zr4LpoBalZ6R4qDasjRKm55KLdYOg)
-  - **Lecture 8**: Similarity Search 3: Dynamic Time Warping and Indexing
+  - **Lecture 8**: [Similarity Search 3: Dynamic Time Warping and Indexing](https://inriafr-my.sharepoint.com/:b:/g/personal/paul_boniol_inria_fr/ES2fnL5eeixGrD8JQbk6p38BtrxM_zvufMJ_aNMG0zSb8A?e=ktJ3b2)
 
 #### Practice Sessions
 - MongoDB: [Practice Session](https://inriafr-my.sharepoint.com/:b:/g/personal/paul_boniol_inria_fr/EcBctc-MzBZNrc2SdR3-9F8B4IMGR-DFDrJY0U_9gvk-fQ?e=aZsCfl)
