@@ -19,7 +19,7 @@ redirect_from:
 
 #### Journals
 
-* Valerio Guerrini, Thibaut Germain, Charles Truong, Laurent Oudre, Paul Boniol **Time Series Motif Discovery: A Comprehensive Evaluation**. Proceedings of the VLDB Endowment (PVLDB) Journal, 2025.
+* Valerio Guerrini, Thibaut Germain, Charles Truong, Laurent Oudre, Paul Boniol. **Time Series Motif Discovery: A Comprehensive Evaluation**. Proceedings of the VLDB Endowment (PVLDB) Journal, 2025.
 
 * Paul Boniol, Donato Tiano, Angela Bonifati, Themis Palpanas. **k-Graph: A Graph Embedding for Interpretable Time Series Clustering**. IEEE Transactions on Knowledge and Data Engineering (TKDE), 2025. [Code](https://github.com/boniolp/kGraph), [Preprint](https://arxiv.org/pdf/2502.13049).
 
