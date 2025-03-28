@@ -27,6 +27,8 @@ redirect_from:
 
 #### Conferences
 
+* Adrien Petralia, Paul Boniol, Philippe Charpentier, Themis Palpanas. **Few Labels are all you need: A Weakly Supervised Framework for Appliance Localization in Smart-Meter Series.** In IEEE International Conference on Data Engineering (ICDE), Hong Kong SAR, China, May 2025.
+
 * Paul Boniol, Donato Tiano, Angela Bonifati, Themis Palpanas. **Graphint: Graph-based Time Series Clustering Visualisation Tool**. IEEE International Conference on Data Engineering (ICDE), Hong Kong SAR, China, May 2025. [Live demonstration](https://graphit.streamlit.app/), [Code](https://github.com/boniolp/graphit).
 
 * Adrien Petralia, Paul Boniol, Philippe Charpentier, Themis Palpanas. **DeviceScope: An Interactive App to Detect and Localize Appliance Patterns in Electricity Consumption Time Series**. IEEE International Conference on Data Engineering (ICDE), Hong Kong SAR, China, May 2025.
