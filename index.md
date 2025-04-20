@@ -20,7 +20,7 @@ My research interest lies in the intersections between:
 ## Students
 
 - [Emmanouil Sylligardos](https://www.linkedin.com/in/emmanouil-sylligardos/?originalSubdomain=gr), PhD student (Co-advised with Pierre Senellart). *Feb 2024-now*
-- [Felix Chevalli](https://felix.chavelli.fr/), PhD student (Co-advised with Michaël Thomazo). *Oct 2024-now*
+- [Felix Chavelli](https://felix.chavelli.fr/), PhD student (Co-advised with Michaël Thomazo). *Oct 2024-now*
 - [Roberto Stanzione](https://www.researchgate.net/profile/Roberto-Stanzione), Visiting PhD student (Università degli Studi di Salerno, Italy). *Nov 2024 - now*
 - [Adam Rozzio](https://www.linkedin.com/in/adam-rozzio-4088a1272/?originalSubdomain=fr), MSc student (ENS Paris-Saclay, France). *Feb 2025 - now*
 
