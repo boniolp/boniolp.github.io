@@ -16,8 +16,8 @@ redirect_from:
 
 #### 2025
 
-- IEEE International Conference on Big Data (IEEE BigData 2025): **Chair of the Industrial & Government Track**
-- International Workshop on Multivariate Time Series Analytics (MulTiSA) 2025: **Panel Chair**
+- [IEEE International Conference on Big Data (IEEE BigData 2025)](https://conferences.cis.um.edu.mo/ieeebigdata2025/organization_committee.html): **Chair of the Industrial & Government Track**
+- [International Workshop on Multivariate Time Series Analytics (MulTiSA) 2025](https://multisa2025.github.io/): **Panel Chair**
 
 ## Program committee member
 
