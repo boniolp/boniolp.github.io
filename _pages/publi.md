@@ -17,6 +17,10 @@ redirect_from:
 ### 2025
 ---
 
+#### Tutorials
+
+* Qinghua Liu, Paul Boniol, John Paparrizos, Themis Palpanas. **Advances in Time-Series Anomaly Detection**. The 34th International Joint Conference on Artificial Intelligence (IJCAI-25), 2025.
+
 #### Journals
 
 * Valerio Guerrini, Thibaut Germain, Charles Truong, Laurent Oudre, Paul Boniol. **Time Series Motif Discovery: A Comprehensive Evaluation**. Proceedings of the VLDB Endowment (PVLDB) Journal, 2025. [Code](https://github.com/grrvlr/TSMD)
