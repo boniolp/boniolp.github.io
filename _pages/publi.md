@@ -19,6 +19,8 @@ redirect_from:
 
 #### Tutorials
 
+* Qinghua Liu, Paul Boniol, John Paparrizos, Themis Palpanas. **Advances in Time-Series Anomaly Detection**. ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD), Toronto, Canada, August 2025.
+
 * Qinghua Liu, Paul Boniol, John Paparrizos, Themis Palpanas. **Advances in Time-Series Anomaly Detection**. The 34th International Joint Conference on Artificial Intelligence (IJCAI-25), Montreal, Canada, August 2025.
 
 #### Journals
