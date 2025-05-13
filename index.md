@@ -21,7 +21,6 @@ My research interest lies in the intersections between:
 
 - [Emmanouil Sylligardos](https://www.linkedin.com/in/emmanouil-sylligardos/?originalSubdomain=gr), PhD student (Co-advised with Pierre Senellart). *Feb 2024-now*
 - [Felix Chavelli](https://felix.chavelli.fr/), PhD student (Co-advised with Michaël Thomazo). *Oct 2024-now*
-- [Roberto Stanzione](https://www.researchgate.net/profile/Roberto-Stanzione), Visiting PhD student (Università degli Studi di Salerno, Italy). *Nov 2024 - now*
 - [Adam Rozzio](https://www.linkedin.com/in/adam-rozzio-4088a1272/?originalSubdomain=fr), MSc student (ENS Paris-Saclay, France). *Feb 2025 - now*
 
 ### Former Students
@@ -32,3 +31,4 @@ My research interest lies in the intersections between:
 - [Ashwin Krishna](https://www.linkedin.com/in/ashwin-k-krishna-070a57202/?originalSubdomain=in), BSc Student (IIT Madras, India). *Apr 2023 - Jul 2023*
 - [Haoming Lin](https://www.linkedin.com/in/haoming-lin-505099223/?originalSubdomain=ch), MSc student (EPFL, switzerland). *Apr 2024 - Sep 2024*
 - [Aleksander Gautier](https://www.linkedin.com/in/aleksander-gautier/?originalSubdomain=fr), MSc student (Telecom-Paris, France). *Sep 2024 - Mar 2025*
+- [Roberto Stanzione](https://www.researchgate.net/profile/Roberto-Stanzione), Visiting PhD student (Università degli Studi di Salerno, Italy). *Nov 2024 - May 2025*
