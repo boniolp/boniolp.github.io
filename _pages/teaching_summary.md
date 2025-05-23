@@ -25,6 +25,7 @@ redirect_from:
 - [Time Series Anomaly Detection](https://boniolp.github.io/Diip-summer-school-2024), lecture and Hands-on sessions ([diiP Summer School 2024 - dSDS](https://indico.in2p3.fr/event/32533/)).
 - [BrevetAI](https://www.dataia.eu/formations/brevetai-acculturation-lia), (Université Paris-Saclay)
   - Member of a team designing a MOOC introducing AI for first-year bachelor students in non-related fields to AI.
+  - Newspaper article on Le Monde: ["A l’université Paris-Saclay, les étudiants expérimentent l’IA"](https://www.lemonde.fr/campus/article/2025/04/12/plus-elles-seront-utilisees-plus-elles-seront-performantes-a-l-universite-paris-saclay-les-etudiants-experimentent-l-ia_6594615_4401467.html)
 
 ## Academic Year 2022-2023
 
