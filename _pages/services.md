@@ -23,7 +23,7 @@ redirect_from:
 
 #### 2026
 
-- International Conference on Very Large DataBases (VLDB) 2026: Research track
+- [International Conference on Very Large DataBases (VLDB) 2026](https://vldb.org/2026/officers.html): Research track
 - IEEE International Conference on Data Engineering (ICDE) 2026: Research track
 
 #### 2025
@@ -32,7 +32,7 @@ redirect_from:
 - [International Conference on Extending Data Base Technology (EDBT) 2025](https://edbticdt2025.upc.edu/?contents=EDBT_Committee.html): Research track
 - [IEEE International Conference on Data Engineering (ICDE) 2025](https://ieee-icde.org/2025/call-for-industry-and-application/): industry and application track
 - [IEEE International Conference on Data Engineering (ICDE) 2025](https://multisa2025.github.io/): Multisa Workshop
-- [41èmes journées de la conférence BDA Gestion de Données 2025]()
+- [41èmes journées de la conférence BDA Gestion de Données 2025](https://bda2025.sciencesconf.org/resource/page/id/7)
 
 #### 2024
 - [IEEE International Conference on Data Science and Advanced Analytics (DSAA) 2024](https://dsaa2024.dsaa.co/index.html): Applications Track
