@@ -17,7 +17,7 @@ redirect_from:
 #### 2025
 
 - [IEEE International Conference on Big Data (IEEE BigData 2025)](https://conferences.cis.um.edu.mo/ieeebigdata2025/organization_committee.html): **Chair of the Industrial & Government Track**
-- [International Workshop on Multivariate Time Series Analytics (MulTiSA) 2025](https://multisa2025.github.io/): **Panel Chair**
+- [International Workshop on Multivariate Time Series Analytics (MulTiSA) 2025](https://multisa2025.github.io/): **Panel Chair** [![Slides](https://img.icons8.com/material-outlined/20/000000/presentation.png)](https://inriafr-my.sharepoint.com/:b:/g/personal/paul_boniol_inria_fr/EUB1Lw1I0fpEqSSouGnCBPIBNIqm4bnB6dM_yAyip84NQg)
 
 ## Program committee member
 
