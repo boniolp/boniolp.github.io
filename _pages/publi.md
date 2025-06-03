@@ -43,6 +43,12 @@ redirect_from:
 
 * Paul Boniol, Qinghua Liu, Mingyi Huang, Themis Palpanas, John Paparrizos. **Dive into Time-Series Anomaly Detection: A Decade Review**. Arxiv. [![PDF](https://img.icons8.com/color/20/000000/pdf.png)](https://arxiv.org/abs/2412.20512)
 
+#### Patents
+
+* Adrien Petralia, Paul Boniol, Themis Palpanas, Philippe Charpentier. **Determination d'une activation au cours du temps d'un equipement donne au sein d'un ensemble d'equipements a partir de donnees collectees**. French Patent FR2504769, 2025.
+
+
+
 ---
 
 ### 2024
