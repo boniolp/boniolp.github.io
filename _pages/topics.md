@@ -12,18 +12,27 @@ redirect_from:
   - /topics.html
 ---
 
-# Internship and Ph.D. proposal
+# Internship, Ph.D., Postdocs, and Research Engineer positions
 
+Feel free to contact me if you are interested in one of the positions below.
 
-## Internships (2025)
+## Postdoc.
 
-* [Advanced methodology for nanoparticle detection in spICP-ToF-MS time series](https://boniolp.github.io/assets/topics/IPGP_topic.pdf) (6 months internship at IPGP and Ecole normale supérieure, Paris)
-
-* [Renforcement des méthodes de désagrégation des séries temporelles de
-consommation électrique par Active Learning](https://boniolp.github.io/assets/topics/PROPOSITION_STAGE_ACTIVE_LEARNING_EDF.pdf) (6 months internship at EDF and Inria/ENS)
+* [October 2025]: Multivariate and Streaming Time Series Management and Analysis (Inria, Ecole normale supérieure, Paris, Scality)
 
 ***
 
-## Ph.D. (April 2025)
+## Ph.D.
 
-* [Détection non-supervisée d’anomalies dans des flux continus de séries temporelles multivariées](https://boniolp.github.io/assets/topics/These2025-CIFRE.pdf), (CIFRE with EDF research lab)
+***
+
+## Research Engineer.
+
+* [October 2025]: Development of methods for multivariate and streaming time series management and analysis (Inria, Ecole normale supérieure, Paris, Scality)
+
+***
+
+## Internships (September 2025)
+
+* [September 2025]: [Advanced methodology for nanoparticle detection in spICP-ToF-MS time series](https://boniolp.github.io/assets/topics/IPGP_topic.pdf) (6 months internship at IPGP and Ecole normale supérieure, Paris)
+
