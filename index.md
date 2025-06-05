@@ -9,7 +9,7 @@ My research interest lies in the intersections between:
 -  Unsupervised and supervised anomaly detection methods for large time series.
 -  Machine learning for time series analytics.
 
-## 🚀 Join Our Team
+## Join Our Team
 
 We are currently hiring! Explore exciting **open positions** in our team at **ENS/Inria Paris**, including opportunities for a **Postdoc**, **Research Engineer**, and **Internship**.
 
