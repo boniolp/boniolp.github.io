@@ -13,7 +13,7 @@ My research interest lies in the intersections between:
 
 We are currently hiring! Explore exciting **open positions** in our team at **ENS/Inria Paris**, including opportunities for a **Postdoc**, **Research Engineer**, and **Internship**.
 
-👉 [View Open Positions & Apply »]([./positions.html](https://boniolp.github.io/topics))
+👉 [View Open Positions & Apply]([./positions.html](https://boniolp.github.io/topics))
 
 ## News
 
