@@ -24,7 +24,7 @@ redirect_from:
 #### 2026
 
 - [International Conference on Very Large DataBases (VLDB) 2026](https://vldb.org/2026/officers.html): Research track
-- IEEE International Conference on Data Engineering (ICDE) 2026: Research track
+- [IEEE International Conference on Data Engineering (ICDE) 2026](https://icde2026.github.io/pc-chairs.html): Research track
 
 #### 2025
 
