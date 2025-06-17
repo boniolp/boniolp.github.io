@@ -77,8 +77,5 @@ redirect_from:
 - **2016:** *Research intern, IRT Saint-Exupery*
   - Implementation of an avoidance rover protection system (ARP) in C from an Event-B model. Formal verification of the code using frama-c, why3-based ACSL language.
 
-- **2016:** *Fablab project, Grenoble INP*
-  - Design of translator gloves for sign language. Development of a functional prototype using Arduino. Machine learning (KNN-classifier) and data acquisition code (Arduino tools for online data acquisition) done in C++. [More info...](http://fablab.ensimag.fr/index.php/Projet_Fablab_2016_Boniol_Demaegdt_Mallet)
-
 ***
 
