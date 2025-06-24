@@ -28,6 +28,7 @@ We are currently hiring! Explore exciting **open positions** in our team at **EN
 - [Emmanouil Sylligardos](https://www.linkedin.com/in/emmanouil-sylligardos/?originalSubdomain=gr), PhD student (Co-advised with Pierre Senellart). *Feb 2024-now*
 - [Felix Chavelli](https://felix.chavelli.fr/), PhD student (Co-advised with Michaël Thomazo). *Oct 2024-now*
 - [Adam Rozzio](https://www.linkedin.com/in/adam-rozzio-4088a1272/?originalSubdomain=fr), MSc student (ENS Paris-Saclay, France). *Feb 2025 - now*
+- [Magali Parrino](), PhD student (Co-advised with Pierre Senellart). *July 2025 - now*
 
 ### Former Students
 
