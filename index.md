@@ -23,19 +23,4 @@ We are currently hiring! Explore exciting **open positions** in our team at **EN
 - **[Sep. 2024]** Thanks to the [AALTD 2024](https://ecml-aaltd.github.io/aaltd2024/people.html) organizers for inviting me to give a talk on [Time Series Anomaly Detection](https://ecml-aaltd.github.io/aaltd2024/invitedtalk.html). You may find the slides [here](https://inriafr-my.sharepoint.com/:b:/g/personal/paul_boniol_inria_fr/EVgVym7YIuZDplH6M-pWXhQBbzymeUGk296LNZ56_kITYw).
 - **[Jul. 2024]** You may find [here](https://wp.sigmod.org/?p=3739) our new SIGMOD blog post on Time series anomaly detection!
 
-## Students
 
-- [Emmanouil Sylligardos](https://www.linkedin.com/in/emmanouil-sylligardos/?originalSubdomain=gr), PhD student (Co-advised with Pierre Senellart). *Feb 2024-now*
-- [Felix Chavelli](https://felix.chavelli.fr/), PhD student (Co-advised with Michaël Thomazo). *Oct 2024-now*
-- [Adam Rozzio](https://www.linkedin.com/in/adam-rozzio-4088a1272/?originalSubdomain=fr), MSc student (ENS Paris-Saclay, France). *Feb 2025 - now*
-- [Magali Parrino](), PhD student (Co-advised with Pierre Senellart). *July 2025 - now*
-
-### Former Students
-
-- [Roberto Stanzione](https://www.researchgate.net/profile/Roberto-Stanzione), Visiting PhD student (Università degli Studi di Salerno, Italy). *Nov 2024 - May 2025*
-- [Aleksander Gautier](https://www.linkedin.com/in/aleksander-gautier/?originalSubdomain=fr), MSc student (Telecom-Paris, France). *Sep 2024 - Mar 2025*
-- [Haoming Lin](https://www.linkedin.com/in/haoming-lin-505099223/?originalSubdomain=ch), MSc student (EPFL, Switzerland). *Apr 2024 - Sep 2024*
-- [Ashwin Krishna](https://www.linkedin.com/in/ashwin-k-krishna-070a57202/?originalSubdomain=in), BSc Student (IIT Madras, India). *Apr 2023 - Jul 2023*
-- [Marine Bruel](https://www.linkedin.com/in/marine-bruel-228902250/?originalSubdomain=fr), BSc student (École Centrale de Lille, France). *Feb 2023 - Apr 2023*
-- [Emmanouil Sylligardos](https://www.linkedin.com/in/emmanouil-sylligardos/?originalSubdomain=gr), MSc student (University of Crete, Greece). *Sep 2022- Mar 2023*
-- [Jose Lucas De Melo Costa](https://www.linkedin.com/in/jose-melo-costa/?originalSubdomain=br), MSc student (CentraleSupélec, France). *Jun 2022 - Aug 2022* 
