@@ -64,6 +64,8 @@ redirect_from:
 
 ## Invited external reviewer for international conferences
 
+- [Conference on Neural Information Processing Systems (NeurIPS)](https://neurips.cc/)
+- [European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML-PKDD)](https://ecmlpkdd.org/)
 - [ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD)](https://www.kdd.org/) 
 - [International Conference on Extending Data Base Technology (EDBT)](https://www.edbt.org/)
 - [International Conference on Very Large DataBases (VLDB)](https://www.vldb.org/)
