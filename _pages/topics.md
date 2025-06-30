@@ -74,37 +74,3 @@ Flexible — ideally Fall 2025.
 To apply, please send me your CV and a brief motivation letter.
 
 ***
-
-## 📢 Internship Opportunity – ENS & IPGP Paris  
-- **Title:** Advanced Methodology for Nanoparticle Detection in spICP-ToF-MS Time Series  
-- **Location:** IPGP & École Normale Supérieure (ENS), Paris, France  
-- **Duration:** 6 months  
-- **Start Date:** September 2025
-
-### Internship Overview
-We are offering a **6-month research internship** focused on developing advanced methodologies for **nanoparticle detection** in **time series data** obtained from **single particle ICP Time-of-Flight Mass Spectrometry (spICP-ToF-MS)**.
-
-The internship is a collaboration between **IPGP (Institut de Physique du Globe de Paris)** and **ENS**, and offers a multidisciplinary environment at the interface of **geochemistry**, **machine learning**, and **data science**.
-
-[View PDF with full details](https://boniolp.github.io/assets/topics/IPGP_topic.pdf)
-
-### Scientific Objectives
-The main goal is to improve the detection and characterization of nanoparticles from complex mass spectrometry time series by:
-- Exploring new data analysis methodologies
-- Addressing challenges of noise, temporal misalignments, resolution, and sparsity
-- Developing prototypes for real-time or batch data processing
-
-### Technical Scope
-- Peak detection and classification
-- Machine learning for time series analysis
-- Data management pipelines for time series
-- Implementing tools in Python
-
-### Candidate Profile
-- Master’s student (M1/M2 or equivalent) in **Computer Science**, or related field
-- Strong interest in data analysis and interdisciplinary research
-- Background in time series analysis is a plus
-- Programming experience (e.g., Python, C, C++)
-
-### 📩 How to Apply
-Interested candidates should send me a CV and a short motivation letter.
