@@ -19,7 +19,7 @@ redirect_from:
 
 #### Tutorials
 
-* John Paparrizos, Paul Boniol, Qinghua Liu, Themis Palpanas. **Advances in Time-Series Anomaly Detection: Algorithms, Benchmarks, and Evaluation Measures**. ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD), Toronto, Canada, August 2025. [![PDF](https://img.icons8.com/color/20/000000/pdf.png)](https://www.paparrizos.org/papers/PaparrizosSIGKDD25.pdf) [![Website](https://img.icons8.com/ios-filled/20/000000/internet--v1.png)](https://thedatumorg.github.io/TSAD-Tutorial/)
+* John Paparrizos, Paul Boniol, Qinghua Liu, Themis Palpanas. **Advances in Time-Series Anomaly Detection: Algorithms, Benchmarks, and Evaluation Measures**. ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD), Toronto, Canada, August 2025. [![PDF](https://img.icons8.com/color/20/000000/pdf.png)](https://www.paparrizos.org/papers/PaparrizosSIGKDD25.pdf) [![Website](https://img.icons8.com/ios-filled/20/000000/internet--v1.png)](https://thedatumorg.github.io/TSAD-Tutorial/) [![Slides](https://img.icons8.com/material-outlined/20/000000/presentation.png)](https://helios2.mi.parisdescartes.fr/~themisp/publications/kdd25-TimeSeriesAnomalyDetection-PaparrizosBoniolQinghuaPalpanas.pdf)
 
 * Qinghua Liu, Paul Boniol, John Paparrizos, Themis Palpanas. **Advances in Time-Series Anomaly Detection**. The 34th International Joint Conference on Artificial Intelligence (IJCAI-25), Montreal, Canada, August 2025.
 
