@@ -11,16 +11,13 @@ My research interest lies in the intersections between:
 
 ## Join Our Team
 
-We are currently hiring! Explore exciting **open positions** in our team at **ENS/Inria Paris**, including opportunities for a **Postdoc**, **Research Engineer**, and **Internship**.
-
-👉 [View Open Positions & Apply](https://boniolp.github.io/topics)
+Although we don’t currently have any open positions, we’re always happy to receive spontaneous applications. Please note that funding opportunities may be limited.
 
 ## News
-
+- **[Aug. 2025]** We have released an interactive taxonomy on time series anomaly detection. Explore it on [GitHub](https://github.com/boniolp/TSADtaxonomy) or directly via the [webpage](https://boniolp.github.io/TSADtaxonomy/)
 - **[May. 2025]** Thanks to the [SPACERAISE](https://spaceraise.academy/) organizers for inviting me to give two lectures on Time Series Analytics. You may find the slides [here](https://boniolp.github.io/GSSI-2025).
 - **[Jan. 2025]** Thanks to the [SIDOS workshop](https://sites.google.com/view/sidos2025/home) organizers for inviting me to give a talk on Time Series Anomaly Detection. You may find the slides [here](https://inriafr-my.sharepoint.com/:b:/g/personal/paul_boniol_inria_fr/EVaUZdWPfW5Lq4g537toVPkBHkemnMw0bf6BUP4Ks8us9Q).
 - **[Nov. 2024]** Thanks to the [ML4Jets 2024](https://indico.cern.ch/event/1386125/) organizers for inviting me to give a talk on [Model selection and Time Series Anomaly Detection](https://indico.cern.ch/event/1386125/timetable/?view=standard). You may find the slides [here](https://inriafr-my.sharepoint.com/:b:/g/personal/paul_boniol_inria_fr/Ee_QyfkiTNZNqX4W1G-XBIoBSfncOW0PE7JvmtnFi-P8fw) and a video [here](https://indico.cern.ch/event/1386125/contributions/6209715/attachments/2959820/5224750/08ML4Jets24_BoniolPaul.mp4).
 - **[Sep. 2024]** Thanks to the [AALTD 2024](https://ecml-aaltd.github.io/aaltd2024/people.html) organizers for inviting me to give a talk on [Time Series Anomaly Detection](https://ecml-aaltd.github.io/aaltd2024/invitedtalk.html). You may find the slides [here](https://inriafr-my.sharepoint.com/:b:/g/personal/paul_boniol_inria_fr/EVgVym7YIuZDplH6M-pWXhQBbzymeUGk296LNZ56_kITYw).
-- **[Jul. 2024]** You may find [here](https://wp.sigmod.org/?p=3739) our new SIGMOD blog post on Time series anomaly detection!
 
 
