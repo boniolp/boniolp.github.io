@@ -33,6 +33,7 @@ redirect_from:
 - [IEEE International Conference on Data Engineering (ICDE) 2025](https://ieee-icde.org/2025/call-for-industry-and-application/): industry and application track
 - [IEEE International Conference on Data Engineering (ICDE) 2025](https://multisa2025.github.io/): Multisa Workshop
 - [41èmes journées de la conférence BDA Gestion de Données 2025](https://bda2025.sciencesconf.org/resource/page/id/7)
+- [NeurIPS 2025 Workshop BERT2S](https://berts-workshop.github.io/)
 
 #### 2024
 - [IEEE International Conference on Data Science and Advanced Analytics (DSAA) 2024](https://dsaa2024.dsaa.co/index.html): Applications Track
