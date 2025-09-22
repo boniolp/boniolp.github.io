@@ -33,6 +33,8 @@ redirect_from:
 
 #### Conferences
 
+* Felix Chavelli, Michaël Thomazo, Paul Boniol. **Toward Interpretable Evaluation Measures for Time Series Segmentation.** in The Thirty-Nine Conference on Neural Information Processing Systems (NeurIPS 2025), San Diego, USA, December 2025.
+
 * Adrien Petralia, Paul Boniol, Philippe Charpentier, Themis Palpanas. **Few Labels are all you need: A Weakly Supervised Framework for Appliance Localization in Smart-Meter Series.** In IEEE International Conference on Data Engineering (ICDE), Hong Kong SAR, China, May 2025. [![GitHub Repo](https://img.icons8.com/ios-glyphs/20/000000/github.png)](https://github.com/adrienpetralia/CamAL) [![PDF](https://img.icons8.com/color/20/000000/pdf.png)](https://helios2.mi.parisdescartes.fr/~themisp/publications/icde25-camal.pdf)
 
 * Paul Boniol, Donato Tiano, Angela Bonifati, Themis Palpanas. **Graphint: Graph-based Time Series Clustering Visualisation Tool**. IEEE International Conference on Data Engineering (ICDE), Hong Kong SAR, China, May 2025. [![GitHub Repo](https://img.icons8.com/ios-glyphs/20/000000/github.png)](https://github.com/boniolp/graphit) [![PDF](https://img.icons8.com/color/20/000000/pdf.png)](https://arxiv.org/abs/2503.07698) [![Web App](https://img.icons8.com/ios-filled/20/000000/monitor.png)](https://graphint.streamlit.app/)
