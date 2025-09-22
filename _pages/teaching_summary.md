@@ -17,6 +17,7 @@ redirect_from:
 - [NoSQL Databases](https://boniolp.github.io/teaching-nosql-2025), Graduate Course (IASD Master, PSL University, Paris, France).
 - Database, Undergraduate Course (Ecole Normale Supérieure, Paris, France): *Lecture "Storage and Indexing" only*
 - [Time Series Anomaly Detection](https://boniolp.github.io/GSSI-2025), Graduate Course ([Summer school on Artificial Intelligence for Aerospace](https://spaceraise.academy/) - GSSI, L'Aquila, Italy)
+- [Time Series Anomaly Detection: Foundations and Practices](https://sites.google.com/view/twinodis-summerschool1/home), Graduate Course (TwinODIS 1st Summer School, FORTH-ICS, Heraklion, Greece)
 
 ## Academic Year 2023-2024
 
