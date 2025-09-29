@@ -43,15 +43,16 @@ Within VALDA, I am supervising the following students and researchers:
 # Former Students and Researchers
 
 ## Visiting Students and Researchers
+
+- [Paolo Lindia](https://scalab.dimes.unical.it/lindia/)
+  - Visiting PhD student (University of Calabria, Italy)
+  - *April 2025 - Sep 2025*
 - [Roberto Stanzione](https://www.researchgate.net/profile/Roberto-Stanzione)
   - Visiting PhD student (Università degli Studi di Salerno, Italy)
   - *Nov 2024 - May 2025*
 
 ## Interns
 
-- [Paolo Lindia](https://scalab.dimes.unical.it/lindia/)
-  - Visiting PhD student (University of Calabria, Italy)
-  - *April 2025 - Sep 2025*
 - [Vijay Venkatesh Murugan]()
   - MSc student (Institut Polytechnique de Paris, France)
   - Collaboration with Mickaël Tharaud (IPGP)
