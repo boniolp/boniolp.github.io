@@ -32,18 +32,11 @@ Within VALDA, I am supervising the following students and researchers:
   - Topic: *Unsupervised detection of anomalies in continuous streams of multivariate time series*
   - *July 2025 - now*
 
-## Visiting Students and Researchers
+## Research Engineers
 
-- [Paolo Lindia](https://scalab.dimes.unical.it/lindia/)
-  - Visiting PhD student (University of Calabria, Italy)
-  - *April 2025 - now*
-
-## Interns
-
-- [Vijay Venkatesh Murugan]()
-  - MSc student (Institut Polytechnique de Paris, France)
-  - Collaboration with Mickaël Tharaud (IPGP)
-  - *Jul 2025 - now* 
+- [Louis Chanaron](https://www.linkedin.com/in/louis-chanaron-b7112924b/)
+  - Inria Research Engineer
+  - *Oct 2025 - now*
 
 ---
 
@@ -56,6 +49,13 @@ Within VALDA, I am supervising the following students and researchers:
 
 ## Interns
 
+- [Paolo Lindia](https://scalab.dimes.unical.it/lindia/)
+  - Visiting PhD student (University of Calabria, Italy)
+  - *April 2025 - Sep 2025*
+- [Vijay Venkatesh Murugan]()
+  - MSc student (Institut Polytechnique de Paris, France)
+  - Collaboration with Mickaël Tharaud (IPGP)
+  - *Jul 2025 - Sep 2025*
 - [Yash Krishnani](https://www.linkedin.com/in/yash-krishnani-73776623b/?originalSubdomain=in)
   - BSc Student (Indian Institute of Technology Bombay, India)
   - *May 2025 - July 2025*
