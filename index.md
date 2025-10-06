@@ -14,6 +14,7 @@ My research interest lies in the intersections between:
 Although we don’t currently have any open positions, we’re always happy to receive spontaneous applications. Please note that funding opportunities may be limited.
 
 ## News
+- **[Oct. 2025]** Thanks to the [TwinODIS](https://sites.google.com/view/twinodis-summerschool1/home) organizers for inviting me to give three lectures on time series anomaly detection. You may find the slides [here](https://boniolp.github.io/TwinODIS).
 - **[Aug. 2025]** We have released an interactive taxonomy on time series anomaly detection. Explore it on [GitHub](https://github.com/boniolp/TSADtaxonomy) or directly via the [webpage](https://boniolp.github.io/TSADtaxonomy/)
 - **[May. 2025]** Thanks to the [SPACERAISE](https://spaceraise.academy/) organizers for inviting me to give two lectures on Time Series Analytics. You may find the slides [here](https://boniolp.github.io/GSSI-2025).
 - **[Jan. 2025]** Thanks to the [SIDOS workshop](https://sites.google.com/view/sidos2025/home) organizers for inviting me to give a talk on Time Series Anomaly Detection. You may find the slides [here](https://inriafr-my.sharepoint.com/:b:/g/personal/paul_boniol_inria_fr/EVaUZdWPfW5Lq4g537toVPkBHkemnMw0bf6BUP4Ks8us9Q).
