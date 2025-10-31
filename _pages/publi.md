@@ -25,7 +25,7 @@ redirect_from:
 
 #### Journals
 
-* Emmanouil Sylligardos, John Paparrizos, Themis Palpanas, Pierre Senellart, Paul Boniol. **MSAD: A Deep Dive into Model Selection for Time Series Anomaly Detection.** International Journal on Very Large Data Bases (VLDBJ), 2025.
+* Emmanouil Sylligardos, John Paparrizos, Themis Palpanas, Pierre Senellart, Paul Boniol. **MSAD: A Deep Dive into Model Selection for Time Series Anomaly Detection.** International Journal on Very Large Data Bases (VLDBJ), 2025. [![GitHub Repo](https://img.icons8.com/ios-glyphs/20/000000/github.png)](https://github.com/boniolp/MSAD) [![PDF](https://img.icons8.com/color/20/000000/pdf.png)](https://arxiv.org/abs/2510.26643)
 
 * Valerio Guerrini, Thibaut Germain, Charles Truong, Laurent Oudre, Paul Boniol. **Time Series Motif Discovery: A Comprehensive Evaluation**. Proceedings of the VLDB Endowment (PVLDB) Journal, 2025. [![GitHub Repo](https://img.icons8.com/ios-glyphs/20/000000/github.png)](https://github.com/grrvlr/TSMD) [![PDF](https://img.icons8.com/color/20/000000/pdf.png)](https://www.laurentoudre.fr/publis/VLDB2025.pdf)
 
