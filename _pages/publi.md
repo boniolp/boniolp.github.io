@@ -35,6 +35,8 @@ redirect_from:
 
 #### Conferences
 
+* Ngoc-Thanh Nguyen, Astrid Marie Skalvik, Emmanouil Sylligardos, Rogardt Heldal, Patrizio Pelliccione, Paul Boniol, Themis Palpanas, Sverre Jakob Alvsvag. **Interpretable Multivariate Anomaly Detector Selection for Automatic Marine Data Quality Control**. In IEEE International Conference on Big Data (IEEE BigData), Macau, China, December 2025. 
+
 * Felix Chavelli, Michaël Thomazo, Paul Boniol. **Toward Interpretable Evaluation Measures for Time Series Segmentation.** in The Thirty-Nine Conference on Neural Information Processing Systems (NeurIPS 2025), San Diego, USA, December 2025. [![GitHub Repo](https://img.icons8.com/ios-glyphs/20/000000/github.png)](https://github.com/fchavelli/seg-eval/) [![PDF](https://img.icons8.com/color/20/000000/pdf.png)](https://arxiv.org/pdf/2510.23261v1)
 
 * Adrien Petralia, Paul Boniol, Philippe Charpentier, Themis Palpanas. **Few Labels are all you need: A Weakly Supervised Framework for Appliance Localization in Smart-Meter Series.** In IEEE International Conference on Data Engineering (ICDE), Hong Kong SAR, China, May 2025. [![GitHub Repo](https://img.icons8.com/ios-glyphs/20/000000/github.png)](https://github.com/adrienpetralia/CamAL) [![PDF](https://img.icons8.com/color/20/000000/pdf.png)](https://helios2.mi.parisdescartes.fr/~themisp/publications/icde25-camal.pdf)
