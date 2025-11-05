@@ -14,6 +14,15 @@ redirect_from:
 
 ## Publications
 
+### 2026
+---
+
+#### Tutorials
+
+* John Paparrizos, Paul Boniol, Qinghua Liu, Themis Palpanas. **A Comprehensive Guide to Time-Series Anomaly Detection**. International Conference on Web Search and Data Mining (WSDM), Boise, ID (USA), February 2026.
+
+---
+
 ### 2025
 ---
 
