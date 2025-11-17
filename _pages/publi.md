@@ -21,6 +21,10 @@ redirect_from:
 
 * John Paparrizos, Paul Boniol, Qinghua Liu, Themis Palpanas. **A Comprehensive Guide to Time-Series Anomaly Detection**. International Conference on Web Search and Data Mining (WSDM), Boise, ID (USA), February 2026.
 
+#### Conferences
+
+* Felix Chavelli, Michaël Thomazo, Paul Boniol. **Vers des mesures d’évaluation interprétables pour la segmentation de séries temporelles**. 26ème Conférence Francophone sur l'Extraction et la Gestion des Connaissances (EGC 2026), Anglet, January 2026.
+
 ---
 
 ### 2025
