@@ -19,7 +19,7 @@ Feel free to contact me (paul.boniol@inria.fr) if you are interested in one of t
 
 ***
 
-## 🔬 [Research Internship Position at Inria/ENS Paris]()
+## 🔬 [Research Internship Position at Inria/ENS Paris](https://boniolp.github.io/assets/topics/stage_M2_2026.pdf)
 
 ### Role: Master's Research Intern – Time Series Interpretable Analytics
 
@@ -36,21 +36,20 @@ This internship is a hands-on project aimed at designing and prototyping a novel
 
 ### Key Objectives & Responsibilities
 
-- Framework Design: Design the hierarchical aggregation mechanism for constructing a multi-scale, nearest-neighbor graph representation of time series subsequences.
-- Prototyping & Implementation: Implement the segmentation framework using Python, utilizing scientific libraries like NumPy and PyTorch.
-- Evaluation: Rigorously evaluate the method using specialized interpretable segmentation measures, quantifying the inherent trade-off between explanatory power and segmentation accuracy.
-- Documentation: Maintain high code quality, comprehensive documentation, and contribute to scientific communication.
+- **Framework Design**: Design the hierarchical aggregation mechanism for constructing a multi-scale, nearest-neighbor graph representation of time series subsequences.
+- **Prototyping & Implementation**: Implement the segmentation framework using Python, utilizing scientific libraries like NumPy and PyTorch.
+- **Evaluation**: Rigorously evaluate the method using specialized interpretable segmentation measures, quantifying the inherent trade-off between explanatory power and segmentation accuracy.
+- **Documentation**: Maintain high code quality, comprehensive documentation, and contribute to scientific communication.
 
 ###  Candidate Profile
 
-Education: Master's student (M2 or equivalent) in Computer Science, Applied Mathematics, Data Science, or a related technical field.
-
-Technical Skills:
-
-- Strong programming proficiency in Python.
-- Experience with core scientific libraries (NumPy, PyTorch, scikit-learn).
-- Solid theoretical background in Machine Learning, Algorithms, and Statistics.
-- Personal Attributes: Proven autonomy, scientific curiosity, and excellent communication skills (English required; French is a plus).
+- Education:
+  - Master's student (M2 or equivalent) in Computer Science, Applied Mathematics, Data Science, or a related technical field.
+- Technical Skills:
+  - Strong programming proficiency in Python.
+  - Experience with core scientific libraries (NumPy, PyTorch, scikit-learn).
+  - Solid theoretical background in Machine Learning, Algorithms, and Statistics.
+  - Personal Attributes: Proven autonomy, scientific curiosity, and excellent communication skills (English required; French is a plus).
 
 ### Start Date
 - Flexible
