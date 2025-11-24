@@ -15,7 +15,7 @@ redirect_from:
 # Invited Talks and Seminars
 
 #### 2025
-
+- **Time Series Anomaly Detection: The Road to Automatic Solutions**, Invited Speaker at the 3rd Macau Symposium on Data Science.
 - **Anomaly Detection in Time Series: Overview and New Trends**, Invited speaker at Orange Innovation, [Slides](https://inriafr-my.sharepoint.com/:b:/g/personal/paul_boniol_inria_fr/EdxWO0aQzA5EunhAeY0H6oABeI-Ge6VrK8CNKBhzP4RuWA?e=MBbmhV).
 - **An introduction to Time series anomaly detection (a data-driven perspective)**, Invited speaker for SIDOS at EGC 2025. [More Info](https://sites.google.com/view/sidos2025/home), [Slides](https://inriafr-my.sharepoint.com/:b:/g/personal/paul_boniol_inria_fr/EVaUZdWPfW5Lq4g537toVPkBHkemnMw0bf6BUP4Ks8us9Q). 
 
