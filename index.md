@@ -11,7 +11,7 @@ My research interest lies in the intersections between:
 
 ## Join Our Team
 
-Although we don’t currently have any open positions, we’re always happy to receive spontaneous applications. Please note that funding opportunities may be limited.
+We currently have open positions. Please check [here](https://boniolp.github.io/topics) for more information.
 
 ## News
 - **[Oct. 2025]** Thanks to the [TwinODIS](https://sites.google.com/view/twinodis-summerschool1/home) organizers for inviting me to give three lectures on time series anomaly detection. You may find the slides [here](https://boniolp.github.io/TwinODIS).
