@@ -16,61 +16,53 @@ redirect_from:
 
 Feel free to contact me (paul.boniol@inria.fr) if you are interested in one of the positions below.
 
-## 📢 Postdoctoral Position at Inria/ENS Paris  
-- **Topic:** Multivariate and Streaming Time Series Management and Analysis  
-- **Location:** École Normale Supérieure (ENS), Paris, France  
-- **Host Institution:** Inria & ENS  
-- **Duration:** 2 years  
-- **Project:** Part of the **i-Demo Cyberté** collaboration with **Scality**  
-
-### Project Description
-We are seeking a highly motivated **Postdoctoral Researcher** to join a dynamic team working at the intersection of **data management**, **streaming analytics**, and **machine learning** for **multivariate time series**. The position is hosted at ENS Paris, within a collaboration between **Inria** and **Scality** under the **i-Demo Cyberté** project.
-
-The overarching goal is to design and develop novel methods, models, and systems for **efficient management**, **indexing**, and **real-time analysis** of large-scale multivariate time series data, with applications in **cybersecurity**, **infrastructure monitoring**, and **intelligent storage systems**.
-
-### Candidate Profile
-- Ph.D. in Computer Science, Data Science, or a related field
-- Strong background in time series analysis, streaming systems, data management, or machine learning
-- Experience with large-scale data platforms is a plus
-
-### Start Date
-Flexible — ideally Fall 2025.
-
-### 📩 How to Apply
-Interested candidates should send me a CV, a short motivation letter.
 
 ***
 
-## 📢 Research Engineer Position at Inria/ENS Paris  
-- **Role:** Research Engineer – Time Series Systems
-- **Location:** École Normale Supérieure (ENS), Paris, France  
-- **Host Institution:** Inria & ENS  
-- **Duration:** 2 years  
-- **Project:** i-Demo **Cyberté** collaboration with **Scality**
+## 🔬 [Research Internship Position at Inria/ENS Paris]()
+
+### Role: Master's Research Intern – Time Series Interpretable Analytics
+
+- Location: École Normale Supérieure (ENS), Paris, France
+- Host Institution: Inria Paris & ENS-PSL (VALDA Team)
+- Duration: 6 months (Flexible, targeting February–July 2026)
+- Project: Interpretable Segmentation Framework for Time Series
 
 ### Position Overview
-We are hiring a **Research Engineer** to support the development and deployment of research prototypes and experimental platforms in the context of **multivariate and streaming time series** analysis. This position is part of the **Cyberté** i-Demo project, conducted in partnership with **Scality**, and hosted at **ENS Paris** in collaboration with **Inria**.
 
-You will work closely with a **Postdoctoral Researcher** and the broader project team to implement novel algorithms, manage data pipelines, and contribute to the validation and benchmarking of research outcomes.
+We are seeking a highly motivated Master's Research Intern to contribute to cutting-edge research in Interpretable Machine Learning for Time Series Analytics. You will be part of the VALDA team at Inria/ENS Paris, focusing on reconciling predictive performance with model transparency in complex temporal data.
 
-### Responsibilities
-- Design and implement efficient pipelines for ingesting and processing multivariate time series data
-- Build and maintain prototypes and experimental tools for time series indexing, querying, and anomaly detection
-- Collaborate on the integration of research outputs into scalable systems
-- Support reproducible research: code quality, documentation, and experiment tracking
-- Interface with industry partner Scality to align development with practical needs
+This internship is a hands-on project aimed at designing and prototyping a novel framework for interpretable time series segmentation. The work involves leveraging hierarchical graph-based structures (inspired by HNSW) to build a multi-scale representation of time series data.
 
-### Desired Skills
-- Master's degree (or equivalent experience) in Computer Science, Data Engineering, Data Science, or related field
-- Solid programming skills (Python, C++, or Java)
-- Familiarity with time series management and analytics systems
-- Experience in systems development, benchmarking, or data engineering is a strong plus
+### Key Objectives & Responsibilities
 
+- Framework Design: Design the hierarchical aggregation mechanism for constructing a multi-scale, nearest-neighbor graph representation of time series subsequences.
+- Prototyping & Implementation: Implement the segmentation framework using Python, utilizing scientific libraries like NumPy and PyTorch.
+- Evaluation: Rigorously evaluate the method using specialized interpretable segmentation measures, quantifying the inherent trade-off between explanatory power and segmentation accuracy.
+- Documentation: Maintain high code quality, comprehensive documentation, and contribute to scientific communication.
+
+###  Candidate Profile
+
+Education: Master's student (M2 or equivalent) in Computer Science, Applied Mathematics, Data Science, or a related technical field.
+
+Technical Skills:
+
+- Strong programming proficiency in Python.
+- Experience with core scientific libraries (NumPy, PyTorch, scikit-learn).
+- Solid theoretical background in Machine Learning, Algorithms, and Statistics.
+- Personal Attributes: Proven autonomy, scientific curiosity, and excellent communication skills (English required; French is a plus).
 
 ### Start Date
-Flexible — ideally Fall 2025.
+- Flexible
+- targeting February 2026.
 
-### 📩 How to Apply
-To apply, please send me your CV and a brief motivation letter.
+### Application Process
+
+Please send a detailed CV and a brief Statement of Interest to:
+
+- Félix Chavelli: felix.chavelli@inria.fr
+- Michael Thomazo: michael.thomazo@inria.fr
+- Paul Boniol: paul.boniol@inria.fr
+
 
 ***
