@@ -17,16 +17,22 @@ redirect_from:
 I am a researcher at Inria, member of the [VALDA](https://team.inria.fr/valda/) project-team, which is a joint team between Inria Paris, École Normale Supérieure, and CNRS.
 Within VALDA, I am supervising the following students and researchers:
 
+## Postdoctoral researcher
+
+- [Roberto Stanzione]()
+  - Postdoctoral researcher
+  - *Jan 2026 - now*
+
 ## Ph.D. Students
 
 - [Emmanouil Sylligardos](https://www.linkedin.com/in/emmanouil-sylligardos/?originalSubdomain=gr)
   - PhD student (Co-advised with Pierre Senellart)
   - Topic: *Accuracy and Execution Time Trade-off in Ensembling and Model Selection for Time Series Analytics*
-  - *Feb 2024-now*
+  - *Feb 2024 - now*
 - [Felix Chavelli](https://felix.chavelli.fr/)
   - PhD student (Co-advised with Michaël Thomazo)
   - Topic: *Graph Representation for Multivariate Time Series Analytics*
-  - *Oct 2024-now*
+  - *Oct 2024 - now*
 - [Magali Parrino](https://www.linkedin.com/in/magali-parrino-89127021a/?originalSubdomain=fr)
   - PhD student (CIFRE Ph.D. Co-advised with Pierre Senellart)
   - Topic: *Unsupervised detection of anomalies in continuous streams of multivariate time series*
@@ -37,6 +43,12 @@ Within VALDA, I am supervising the following students and researchers:
 - [Louis Chanaron](https://www.linkedin.com/in/louis-chanaron-b7112924b/)
   - Inria Research Engineer
   - *Oct 2025 - now*
+
+## Visiting Students and Researchers
+
+- [Thi Hoai Thu Doan](https://www.gssi.it/people/students/students-computer-science/item/24586-doan-thi-hoai-thu)
+  - Visiting PhD student (Gran Sasso Science Institute, Italy)
+  -  *Jan 2026 - now*
 
 ---
 
