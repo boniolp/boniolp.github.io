@@ -14,6 +14,7 @@ My research interest lies in the intersections between:
 We currently have open positions. Please check [here](https://boniolp.github.io/topics) for more information.
 
 ## News
+- **[Dec. 2025]** Thanks to the [3rd Macau Symposium on Data Science](https://dss.cds.ici.um.edu.mo/2025-landing-page/invited-speakers/) organizers for inviting me to give a talk on Automatic solutions for time series anomaly detection.
 - **[Oct. 2025]** Thanks to the [TwinODIS](https://sites.google.com/view/twinodis-summerschool1/home) organizers for inviting me to give three lectures on time series anomaly detection. You may find the slides [here](https://boniolp.github.io/TwinODIS).
 - **[Aug. 2025]** We have released an interactive taxonomy on time series anomaly detection. Explore it on [GitHub](https://github.com/boniolp/TSADtaxonomy) or directly via the [webpage](https://boniolp.github.io/TSADtaxonomy/)
 - **[May. 2025]** Thanks to the [SPACERAISE](https://spaceraise.academy/) organizers for inviting me to give two lectures on Time Series Analytics. You may find the slides [here](https://boniolp.github.io/GSSI-2025).
