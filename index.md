@@ -9,6 +9,8 @@ My research interest lies in the intersections between:
 -  Unsupervised and supervised anomaly detection methods for large time series.
 -  Machine learning for time series analytics.
 
+Outside of my research, I enjoy drawing. You can find some of my recent work [here](https://polbauni.etsy.com).
+
 ## Join Our Team
 
 We currently have open positions. Please check [here](https://boniolp.github.io/topics) for more information.
