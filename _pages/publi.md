@@ -23,7 +23,7 @@ redirect_from:
 
 #### Conferences
 
-* Felix Chavelli, Michaël Thomazo, Paul Boniol. **Vers des mesures d’évaluation interprétables pour la segmentation de séries temporelles**. 26ème Conférence Francophone sur l'Extraction et la Gestion des Connaissances (EGC 2026), Anglet, January 2026.
+* Felix Chavelli, Michaël Thomazo, Paul Boniol. **Vers des mesures d’évaluation interprétables pour la segmentation de séries temporelles**. 26ème Conférence Francophone sur l'Extraction et la Gestion des Connaissances (EGC 2026), Anglet, January 2026. [![PDF](https://img.icons8.com/color/20/000000/pdf.png)](https://editions-rnti.fr/?inprocid=1003113)
 
 ---
 
