@@ -29,6 +29,7 @@ redirect_from:
 
 - [International Conference on Very Large DataBases (VLDB) 2026](https://vldb.org/2026/officers.html): Research track
 - [IEEE International Conference on Data Engineering (ICDE) 2026](https://icde2026.github.io/pc-chairs.html): Research track
+- [ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (SIGKDD) 2026](https://kdd2026.kdd.org/)
 - [European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML-PKDD) 2026](https://ecmlpkdd.org/2026/submissions-ads-track/): Applied Data Science Track
 
 #### 2025
@@ -36,6 +37,8 @@ redirect_from:
 - [International Conference on Very Large DataBases (VLDB) 2025](https://www.vldb.org/pvldb/volumes/18/review-board): Research track
 - [International Conference on Extending Data Base Technology (EDBT) 2025](https://edbticdt2025.upc.edu/?contents=EDBT_Committee.html): Research track
 - [IEEE International Conference on Data Engineering (ICDE) 2025](https://ieee-icde.org/2025/call-for-industry-and-application/): industry and application track
+- [Conference on Neural Information Processing Systems (NeurIPS) 2025](https://neurips.cc/)
+- [European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML-PKDD) 2025](https://ecmlpkdd.org/2025/submissions-ads-track/): Applied Data Science Track
 - [IEEE International Conference on Data Engineering (ICDE) 2025](https://multisa2025.github.io/): Multisa Workshop
 - [41èmes journées de la conférence BDA Gestion de Données 2025](https://bda2025.sciencesconf.org/resource/page/id/7)
 - [NeurIPS 2025 Workshop BERT2S](https://berts-workshop.github.io/)
@@ -70,7 +73,6 @@ redirect_from:
 
 ## Invited external reviewer for international conferences
 
-- [Conference on Neural Information Processing Systems (NeurIPS)](https://neurips.cc/)
 - [European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML-PKDD)](https://ecmlpkdd.org/)
 - [ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD)](https://www.kdd.org/) 
 - [International Conference on Extending Data Base Technology (EDBT)](https://www.edbt.org/)
