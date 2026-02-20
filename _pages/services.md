@@ -21,10 +21,15 @@ redirect_from:
 
 ## Program committee member
 
+#### 2027
+
+- [International Conference on Very Large DataBases (VLDB) 2027](https://vldb.org/2027/officers.html): Research track
+
 #### 2026
 
 - [International Conference on Very Large DataBases (VLDB) 2026](https://vldb.org/2026/officers.html): Research track
 - [IEEE International Conference on Data Engineering (ICDE) 2026](https://icde2026.github.io/pc-chairs.html): Research track
+- [European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML-PKDD) 2026](https://ecmlpkdd.org/2026/submissions-ads-track/): Applied Data Science Track
 
 #### 2025
 
