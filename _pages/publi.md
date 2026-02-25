@@ -21,7 +21,13 @@ redirect_from:
 
 * John Paparrizos, Paul Boniol, Qinghua Liu, Themis Palpanas. **A Comprehensive Guide to Time-Series Anomaly Detection**. International Conference on Web Search and Data Mining (WSDM), Boise, ID (USA), February 2026.  [![PDF](https://img.icons8.com/color/20/000000/pdf.png)](https://helios2.mi.parisdescartes.fr/~themisp/publications/wsdm26-anomaliedetection-summary.pdf)
 
+#### Journals
+
+* Mingyi Huang, Qinghua Liu, Paul Boniol, John Paparrizos. **HYDRA: A Multi-Level Hierarchy-Driven Approach for Robust Anomaly Detection in Time Series**. Proceedings of the ACM Management of Data (PACMMOD) Journal, 2026; presented at ACM SIG International conference on Management of Data / Principles of Database Systems (SIGMOD/PODS), Bengaluru, India, June 2026. 
+
 #### Conferences
+
+* Nicolas Vautier, Paul Caron, Nardi Xhepi, Félicie Bizeul, Manel Boumghar, Christophe Degouy, Paul Boniol. **From Benchmarks to Production: Transferring Time Series Anomaly Detection Methods for Electricity Production Monitoring**. In IEEE International Conference on Data Engineering (ICDE), Montreal, Canada, May 2026.
 
 * Felix Chavelli, Michaël Thomazo, Paul Boniol. **Vers des mesures d’évaluation interprétables pour la segmentation de séries temporelles**. 26ème Conférence Francophone sur l'Extraction et la Gestion des Connaissances (EGC 2026), Anglet, January 2026. [![PDF](https://img.icons8.com/color/20/000000/pdf.png)](https://editions-rnti.fr/?inprocid=1003113)
 
