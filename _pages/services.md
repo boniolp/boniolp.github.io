@@ -28,8 +28,10 @@ redirect_from:
 #### 2026
 
 - [International Conference on Very Large DataBases (VLDB) 2026](https://vldb.org/2026/officers.html): Research track
+- [International Conference on Very Large DataBases (VLDB) 2026](https://vldb.org/2026/call-for-demonstrations.html): Demonstration track 
 - [IEEE International Conference on Data Engineering (ICDE) 2026](https://icde2026.github.io/pc-chairs.html): Research track
-- [ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (SIGKDD) 2026](https://kdd2026.kdd.org/)
+- [ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (SIGKDD) 2026](https://kdd2026.kdd.org/): Research track (Cycle 2)
+- - [ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (SIGKDD) 2026](https://kdd2026.kdd.org/): Datasets and Benchmark track (Cycle 2)
 - [European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML-PKDD) 2026](https://ecmlpkdd.org/2026/submissions-ads-track/): Applied Data Science Track
 
 #### 2025
