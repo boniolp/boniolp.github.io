@@ -27,6 +27,8 @@ redirect_from:
 
 #### Conferences
 
+* Mingyi Huang, Qinghua Liu, Paul Boniol, John Paparrizos. **GlassboxAD: An Interactive System for Dissecting Hierarchical Time-Series Anomaly Detection**. In Companion of the 2026 International Conference on Management of Data (SIGMOD/PODS '26), Bengaluru, India, June 2026.
+
 * Nicolas Vautier, Paul Caron, Nardi Xhepi, Félicie Bizeul, Manel Boumghar, Christophe Degouy, Paul Boniol. **From Benchmarks to Production: Transferring Time Series Anomaly Detection Methods for Electricity Production Monitoring**. In IEEE International Conference on Data Engineering (ICDE), Montreal, Canada, May 2026.
 
 * Felix Chavelli, Michaël Thomazo, Paul Boniol. **Vers des mesures d’évaluation interprétables pour la segmentation de séries temporelles**. 26ème Conférence Francophone sur l'Extraction et la Gestion des Connaissances (EGC 2026), Anglet, January 2026. [![PDF](https://img.icons8.com/color/20/000000/pdf.png)](https://editions-rnti.fr/?inprocid=1003113)
