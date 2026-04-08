@@ -15,6 +15,7 @@ redirect_from:
 ## Academic Year 2025-2026
 
 - [Time Series Anomaly Detection: Foundations and Practices](https://boniolp.github.io/TwinODIS), Graduate Course ([TwinODIS 1st Summer School](https://sites.google.com/view/twinodis-summerschool1/home), FORTH-ICS, Heraklion, Greece)
+- Database, Undergraduate Course (Ecole Normale Supérieure, Paris, France): *Lecture "Storage and Indexing" only*
 
 ## Academic Year 2024-2025
 
