@@ -39,6 +39,7 @@ redirect_from:
 - [ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (SIGKDD) 2026](https://kdd2026.kdd.org/): Datasets and Benchmark track (Cycle 2)
 - [European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML-PKDD) 2026](https://ecmlpkdd.org/2026/submissions-ads-track/): Applied Data Science Track
 - [Conference on Neural Information Processing Systems (NeurIPS) 2026](https://neurips.cc/)
+- [42èmes journées de la conférence BDA Gestion de Données 2026]()
 
 #### 2025
 
