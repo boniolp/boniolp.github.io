@@ -14,6 +14,10 @@ redirect_from:
 
 ## Conference Organization
 
+#### 2026
+
+- [42èmes journées de la conférence BDA Gestion de Données 2026](): **Chair of the demonstration Track**
+
 #### 2025
 
 - [IEEE International Conference on Big Data (IEEE BigData 2025)](https://conferences.cis.um.edu.mo/ieeebigdata2025/organization_committee.html): **Chair of the Industrial & Government Track**
@@ -24,6 +28,7 @@ redirect_from:
 #### 2027
 
 - [International Conference on Very Large DataBases (VLDB) 2027](https://vldb.org/2027/officers.html): Research track
+- [IEEE International Conference on Data Engineering (ICDE) 2027](): Research track
 
 #### 2026
 
