@@ -16,6 +16,7 @@ redirect_from:
 
 - [Time Series Anomaly Detection: Foundations and Practices](https://boniolp.github.io/TwinODIS), Graduate Course ([TwinODIS 1st Summer School](https://sites.google.com/view/twinodis-summerschool1/home), FORTH-ICS, Heraklion, Greece)
 - Database, Undergraduate Course (Ecole Normale Supérieure, Paris, France): *Lecture "Storage and Indexing" only*
+- [Time Series Anomaly Detection](https://boniolp.github.io/GSSI-2026), Graduate Course ([Summer school on Artificial Intelligence for Aerospace](https://spaceraise.academy/) - GSSI, L'Aquila, Italy)
 
 ## Academic Year 2024-2025
 
