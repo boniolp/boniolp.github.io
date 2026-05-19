@@ -44,18 +44,14 @@ Within VALDA, I am supervising the following students and researchers:
   - Inria Research Engineer
   - *Oct 2025 - now*
 
-## Visiting Students and Researchers
-
-- [Thi Hoai Thu Doan](https://www.gssi.it/people/students/students-computer-science/item/24586-doan-thi-hoai-thu)
-  - Visiting PhD student (Gran Sasso Science Institute, Italy)
-  -  *Jan 2026 - now*
-
 ---
 
 # Former Students and Researchers
 
 ## Visiting Students and Researchers
-
+- [Thi Hoai Thu Doan](https://www.gssi.it/people/students/students-computer-science/item/24586-doan-thi-hoai-thu)
+  - Visiting PhD student (Gran Sasso Science Institute, Italy)
+  -  *Jan 2026 - Mar 2026*
 - [Paolo Lindia](https://scalab.dimes.unical.it/lindia/)
   - Visiting PhD student (University of Calabria, Italy)
   - *April 2025 - Sep 2025*
