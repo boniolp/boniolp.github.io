@@ -23,15 +23,19 @@ redirect_from:
 
 #### Journals
 
-* Mingyi Huang, Qinghua Liu, Paul Boniol, John Paparrizos. **HYDRA: A Multi-Level Hierarchy-Driven Approach for Robust Anomaly Detection in Time Series**. Proceedings of the ACM Management of Data (PACMMOD) Journal, 2026; presented at ACM SIG International conference on Management of Data / Principles of Database Systems (SIGMOD/PODS), Bengaluru, India, June 2026. 
+* Mingyi Huang, Qinghua Liu, Paul Boniol, John Paparrizos. **HYDRA: A Multi-Level Hierarchy-Driven Approach for Robust Anomaly Detection in Time Series**. Proceedings of the ACM Management of Data (PACMMOD) Journal, 2026; presented at ACM SIG International conference on Management of Data / Principles of Database Systems (SIGMOD/PODS), Bengaluru, India, June 2026. [![GitHub Repo](https://img.icons8.com/ios-glyphs/20/000000/github.png)](https://github.com/TheDatumOrg/HYDRA) [![PDF](https://img.icons8.com/color/20/000000/pdf.png)]()
 
 #### Conferences
 
-* Mingyi Huang, Qinghua Liu, Paul Boniol, John Paparrizos. **GlassboxAD: An Interactive System for Dissecting Hierarchical Time-Series Anomaly Detection**. In Companion of the 2026 International Conference on Management of Data (SIGMOD/PODS '26), Bengaluru, India, June 2026.
+* Magali Parrino, Antoine Ajenjo, Emmanuel Remy, Pierre Stephan, Pierre Senellart, Paul Boniol. **In a Streaming World, Should You Stand Still? A Comprehensive Benchmark of Anomaly Detection in Streams**. ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD), Jeju, Korea, August 2026. [![GitHub Repo](https://img.icons8.com/ios-glyphs/20/000000/github.png)](https://github.com/magaliparrino/StrAD) [![PDF](https://img.icons8.com/color/20/000000/pdf.png)]()
 
-* Nicolas Vautier, Paul Caron, Nardi Xhepi, Félicie Bizeul, Manel Boumghar, Christophe Degouy, Paul Boniol. **From Benchmarks to Production: Transferring Time Series Anomaly Detection Methods for Electricity Production Monitoring**. In IEEE International Conference on Data Engineering (ICDE), Montreal, Canada, May 2026. [![GitHub Repo](https://img.icons8.com/ios-glyphs/20/000000/github.png)](https://github.com/VautierNicolas/TAMIS)
+* Felix Chavelli, Michaël Thomazo, Paul Boniol. **Toward Interpretable Evaluation Measures for Time Series Segmentation.** Conférence sur l'Apprentissage automatique (CAp), Montpellier, France, July 2026. [![GitHub Repo](https://img.icons8.com/ios-glyphs/20/000000/github.png)](https://github.com/fchavelli/seg-eval/) [![PDF](https://img.icons8.com/color/20/000000/pdf.png)](https://arxiv.org/pdf/2510.23261v1)
 
-* Felix Chavelli, Michaël Thomazo, Paul Boniol. **Vers des mesures d’évaluation interprétables pour la segmentation de séries temporelles**. 26ème Conférence Francophone sur l'Extraction et la Gestion des Connaissances (EGC 2026), Anglet, January 2026. [![PDF](https://img.icons8.com/color/20/000000/pdf.png)](https://editions-rnti.fr/?inprocid=1003113)
+* Mingyi Huang, Qinghua Liu, Paul Boniol, John Paparrizos. **GlassboxAD: An Interactive System for Dissecting Hierarchical Time-Series Anomaly Detection**. In Companion of the 2026 International Conference on Management of Data (SIGMOD/PODS '26), Bengaluru, India, June 2026. [![GitHub Repo](https://img.icons8.com/ios-glyphs/20/000000/github.png)]() [![PDF](https://img.icons8.com/color/20/000000/pdf.png)]()
+
+* Nicolas Vautier, Paul Caron, Nardi Xhepi, Félicie Bizeul, Manel Boumghar, Christophe Degouy, Paul Boniol. **From Benchmarks to Production: Transferring Time Series Anomaly Detection Methods for Electricity Production Monitoring**. In IEEE International Conference on Data Engineering (ICDE), Montreal, Canada, May 2026. [![GitHub Repo](https://img.icons8.com/ios-glyphs/20/000000/github.png)](https://github.com/VautierNicolas/TAMIS) [![PDF](https://img.icons8.com/color/20/000000/pdf.png)](https://inria.hal.science/hal-05630277)
+
+* Felix Chavelli, Michaël Thomazo, Paul Boniol. **Vers des mesures d’évaluation interprétables pour la segmentation de séries temporelles**. 26ème Conférence Francophone sur l'Extraction et la Gestion des Connaissances (EGC 2026), Anglet, January 2026. [![GitHub Repo](https://img.icons8.com/ios-glyphs/20/000000/github.png)](https://github.com/fchavelli/seg-eval/) [![PDF](https://img.icons8.com/color/20/000000/pdf.png)](https://editions-rnti.fr/?inprocid=1003113)
 
 ---
 
