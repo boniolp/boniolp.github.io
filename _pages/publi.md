@@ -29,6 +29,12 @@ redirect_from:
 
 * Magali Parrino, Antoine Ajenjo, Emmanuel Remy, Pierre Stephan, Pierre Senellart, Paul Boniol. **In a Streaming World, Should You Stand Still? A Comprehensive Benchmark of Anomaly Detection in Streams**. ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD), Jeju, Korea, August 2026. [![GitHub Repo](https://img.icons8.com/ios-glyphs/20/000000/github.png)](https://github.com/magaliparrino/StrAD) [![PDF](https://img.icons8.com/color/20/000000/pdf.png)]()
 
+
+* Félix Chavelli, Arik Ermshaus, Fan Yang, Patrick Schäfer, John Paparrizos, Paul Boniol. **tsseg: An Interactive Toolkit for Time Series Segmentation**. European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML-PKDD), Naples, Italy, September 2026. [![GitHub Repo](https://img.icons8.com/ios-glyphs/20/000000/github.png)](https://github.com/fchavelli/tsseg/) [![PDF](https://img.icons8.com/color/20/000000/pdf.png)]()
+
+
+* Magali Parrino, Antoine Ajenjo, Emmanuel Remy, Pierre Stephan, Paul Boniol. **What Streaming Anomaly Detection Finds (and Misses) in Industrial Time Series**. European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML-PKDD), Naples, Italy, September 2026. [![GitHub Repo](https://img.icons8.com/ios-glyphs/20/000000/github.png)](https://github.com/magaliparrino/StrAD) [![PDF](https://img.icons8.com/color/20/000000/pdf.png)]()
+
 * Felix Chavelli, Michaël Thomazo, Paul Boniol. **Toward Interpretable Evaluation Measures for Time Series Segmentation.** Conférence sur l'Apprentissage automatique (CAp), Montpellier, France, July 2026. [![GitHub Repo](https://img.icons8.com/ios-glyphs/20/000000/github.png)](https://github.com/fchavelli/seg-eval/) [![PDF](https://img.icons8.com/color/20/000000/pdf.png)](https://arxiv.org/pdf/2510.23261v1)
 
 * Mingyi Huang, Qinghua Liu, Paul Boniol, John Paparrizos. **GlassboxAD: An Interactive System for Dissecting Hierarchical Time-Series Anomaly Detection**. In Companion of the 2026 International Conference on Management of Data (SIGMOD/PODS '26), Bengaluru, India, June 2026. [![GitHub Repo](https://img.icons8.com/ios-glyphs/20/000000/github.png)]() [![PDF](https://img.icons8.com/color/20/000000/pdf.png)]()
