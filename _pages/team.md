@@ -44,6 +44,18 @@ Within VALDA, I am supervising the following students and researchers:
   - Inria Research Engineer
   - *Oct 2025 - now*
 
+## Interns
+
+- [Vijay Venkatesh Murugan]()
+  - MSc student (Institut Polytechnique de Paris, France)
+  - Collaboration with Mickaël Tharaud (IPGP)
+  - *June 2026 - now*
+
+- [El Mehdi El Kasmi](https://www.linkedin.com/in/el-mehdi-el-kasmi-70840b291/)
+  - MSc student (Mines Paris PSL, France)
+  - Co-supervision with Roberto Stanzione (Inria/ENS)
+  - *June 2026 - now*
+
 ---
 
 # Former Students and Researchers
