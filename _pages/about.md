@@ -15,7 +15,7 @@ redirect_from:
 ## Awards
 - [Listed as VLDB 2026 distinguished reviewers](https://vldb.org/2026/conference-awards.html)
 - [Listed as KDD 2026 best reviewers for the research track](https://kdd2026.kdd.org/kdd-best-reviewers/#research)
-- [Listed in EDBT 2025 program committee honorable mentions](https://edbticdt2025.upc.edu/?contents=honorable-mentions-EDBT.html)
+- [Listed as EDBT 2025 program committee honorable mentions](https://edbticdt2025.upc.edu/?contents=honorable-mentions-EDBT.html)
 - [IEEE ICDE 2024 Best Runner-Up Demo Award](https://icde2024.github.io/awards.html)
 - [Paul Caseau 2022 award](https://www.edf.fr/groupe-edf/inventer-lavenir-de-lenergie/rd-un-savoir-faire-mondial/toutes-les-actualites-de-la-rd/2022-qui-sont-les-laureats-du-prix-de-these-paul-caseau)
 - [Lambdamu congress "research and industry" 2022 prize](https://www.imdr-lambdamu.eu/lambda-mu-dor23)
