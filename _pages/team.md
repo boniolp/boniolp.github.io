@@ -14,7 +14,7 @@ redirect_from:
 
 # Team and Students
 
-I am a researcher at Inria, member of the [VALDA](https://team.inria.fr/valda/) project-team, which is a joint team between Inria Paris, École Normale Supérieure, and CNRS.
+I am a researcher at Inria and a member of the [VALDA](https://team.inria.fr/valda/) project team, a joint team between Inria Paris, École Normale Supérieure, and CNRS.
 Within VALDA, I am supervising the following students and researchers:
 
 ## Postdoctoral researcher
@@ -34,7 +34,7 @@ Within VALDA, I am supervising the following students and researchers:
   - Topic: *Graph Representation for Multivariate Time Series Analytics*
   - *Oct 2024 - now*
 - [Magali Parrino](https://www.linkedin.com/in/magali-parrino-89127021a/?originalSubdomain=fr)
-  - PhD student (CIFRE Ph.D. Co-advised with Pierre Senellart)
+  - PhD student (CIFRE Ph.D. co-advised with Pierre Senellart)
   - Topic: *Unsupervised detection of anomalies in continuous streams of multivariate time series*
   - *July 2025 - now*
 
@@ -51,10 +51,6 @@ Within VALDA, I am supervising the following students and researchers:
   - Collaboration with Mickaël Tharaud (IPGP)
   - *June 2026 - now*
 
-- [El Mehdi El Kasmi](https://www.linkedin.com/in/el-mehdi-el-kasmi-70840b291/)
-  - MSc student (Mines Paris PSL, France)
-  - Co-supervision with Roberto Stanzione (Inria/ENS)
-  - *June 2026 - now*
 
 ---
 
@@ -73,6 +69,10 @@ Within VALDA, I am supervising the following students and researchers:
 
 ## Interns
 
+- [El Mehdi El Kasmi](https://www.linkedin.com/in/el-mehdi-el-kasmi-70840b291/)
+  - MSc student (Mines Paris PSL, France)
+  - Co-supervision with Roberto Stanzione (Inria/ENS)
+  - *June 2026 - August 2026*
 - [Vijay Venkatesh Murugan]()
   - MSc student (Institut Polytechnique de Paris, France)
   - Collaboration with Mickaël Tharaud (IPGP)
