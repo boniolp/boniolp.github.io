@@ -12,6 +12,11 @@ redirect_from:
   - /teaching-activities.html
 ---
 
+## Academic Year 2026-2027
+
+- [Data acquisition, extraction, and storage](), Graduate Course (IASD Master, PSL University, Paris, France).
+- [Databases](), Undergraduate Course (International Bachelor of Science in AI, PSL University, Paris, France).
+
 ## Academic Year 2025-2026
 
 - [Time Series Anomaly Detection: Foundations and Practices](https://boniolp.github.io/TwinODIS), Graduate Course ([TwinODIS 1st Summer School](https://sites.google.com/view/twinodis-summerschool1/home), FORTH-ICS, Heraklion, Greece)
