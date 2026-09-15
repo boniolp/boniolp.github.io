@@ -14,14 +14,6 @@ redirect_from:
 
 ## IASD Master: Data acquisition, extraction, and storage
 
-This course is highly inspired by previous courses of other professors and researchers listed below:
-
-- Pierre Senellart, [Data acquisition, extraction, and storage (2025–2026)](https://pierre.senellart.com/enseignement/2025-2026/data-acquisition/)
-- Philippe Rigaux, [BDpedia](http://b3d.bdpedia.fr/)
-- Themis Palpanas, [Time Series Management](https://helios2.mi.parisdescartes.fr/~themisp/)
-- Regis Behmo and Nicolas Travers, [Openclassroom NoSQL course](https://openclassrooms.com/fr/courses/4462426-maitrisez-les-bases-de-donnees-nosql)
-- Maude Manouvrier, [SQL,NoSQL,NewSQL](https://www.lamsade.dauphine.fr/~manouvri/NoSQL/CoursNoSQL_MM.html)
-- Avi Silberschatz, Henry F. Korth, and S. Sudarshan, [Database System Concepts](https://www.db-book.com/slides-dir/index.html)
 
 
 
@@ -46,4 +38,16 @@ This course is highly inspired by previous courses of other professors and resea
 | Lab 1 | Querying Document-oriented Databases | [![PDF](https://img.icons8.com/color/20/000000/pdf.png)]() | [![Jupyter Notebook Icon](https://img.icons8.com/ios-filled/20/jupyter.png)]() | [![Data Icon](https://img.icons8.com/ios-filled/20/database.png)]() |
 | Lab 2 | Time Series Similarity Search        | [![PDF](https://img.icons8.com/color/20/000000/pdf.png)]() | [![Jupyter Notebook Icon](https://img.icons8.com/ios-filled/20/jupyter.png)]() | [![Data Icon](https://img.icons8.com/ios-filled/20/database.png)]() |
 
+### External Ressources
+
+This course is highly inspired by previous courses of other professors and researchers listed below:
+
+| Author(s)            | Title                                | Link |
+|-----------|--------------------------------------------------------|------------------------------------------------------------|
+| Pierre Senellart | Data acquisition, extraction, and storage (2025–2026) | [![Link](https://img.icons8.com/sf-regular/20/link.png)](https://pierre.senellart.com/enseignement/2025-2026/data-acquisition/) |
+| Philippe Rigaux | BDpedia | [![Link](https://img.icons8.com/sf-regular/20/link.png)](http://b3d.bdpedia.fr/) |
+| Themis Palpanas | Time Series Management | [![Link](https://img.icons8.com/sf-regular/20/link.png)](https://helios2.mi.parisdescartes.fr/~themisp/) |
+| R. Behmo, N. Travers | Openclassroom NoSQL course | [![Link](https://img.icons8.com/sf-regular/20/link.png)](https://openclassrooms.com/fr/courses/4462426-maitrisez-les-bases-de-donnees-nosql) |
+| Maude Manouvrier | SQL,NoSQL,NewSQL | [![Link](https://img.icons8.com/sf-regular/20/link.png)](https://www.lamsade.dauphine.fr/~manouvri/NoSQL/CoursNoSQL_MM.html) |
+| A. Silberschatz, H. F. Korth, S. Sudarshan | Database System Concepts | [![Link](https://img.icons8.com/sf-regular/20/link.png)](https://www.db-book.com/slides-dir/index.html) |
 
