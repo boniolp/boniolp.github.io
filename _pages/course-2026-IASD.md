@@ -14,7 +14,7 @@ redirect_from:
 
 ## IASD Master: Data acquisition, extraction, and storage
 
-This course is highly inspired from previous courses of other professors and researchers listed below:
+This course is highly inspired by previous courses of other professors and researchers listed below:
 
 - Pierre Senellart, [Data acquisition, extraction, and storage (2025–2026)](https://pierre.senellart.com/enseignement/2025-2026/data-acquisition/)
 - Philippe Rigaux, [BDpedia](http://b3d.bdpedia.fr/)
@@ -41,9 +41,9 @@ This course is highly inspired from previous courses of other professors and res
 #### Practice Sessions
 
 
-| Session            | Title                                | PDF                                                        |
-|--------------------|--------------------------------------|------------------------------------------------------------|
-| Practice Session 1 | System in Practice: MongoDB          | [![PDF](https://img.icons8.com/color/20/000000/pdf.png)]() |
-| Practice Session 1 | Extraction in Practice: Time Series  | [![PDF](https://img.icons8.com/color/20/000000/pdf.png)]() |
+| Session            | Title                                | topic                                                      | Notebook                                                             | Data |
+|--------------------|--------------------------------------|------------------------------------------------------------|---------------------------------------------------------------------------|------|
+| Lab 1 | Querying Document-oriented Databases | [![PDF](https://img.icons8.com/color/20/000000/pdf.png)]() | [![Jupyter Notebook Icon](https://img.icons8.com/ios-filled/20/jupyter.png)]() | [![Data Icon](https://img.icons8.com/ios-filled/20/database.png)]() |
+| Lab 2 | Time Series Similarity Search        | [![PDF](https://img.icons8.com/color/20/000000/pdf.png)]() | [![Jupyter Notebook Icon](https://img.icons8.com/ios-filled/20/jupyter.png)]() | [![Data Icon](https://img.icons8.com/ios-filled/20/database.png)]() |
 
 
