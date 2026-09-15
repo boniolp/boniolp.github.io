@@ -14,7 +14,7 @@ redirect_from:
 
 ## Academic Year 2026-2027
 
-- [Data acquisition, extraction, and storage](), Graduate Course (IASD Master, PSL University, Paris, France).
+- [Data acquisition, extraction, and storage](https://boniolp.github.io/acquisition-extraction-and-storage-2026), Graduate Course (IASD Master, PSL University, Paris, France).
 - [Databases](), Undergraduate Course (International Bachelor of Science in AI, PSL University, Paris, France).
 
 ## Academic Year 2025-2026
