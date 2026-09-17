@@ -23,16 +23,16 @@ include a mix of lectures and practical sessions.
 
 Each lecture has two 1.5 h parts (with a 15 min break in between), starts at 9 am and ends at 12.15 pm.
 
-| Session   | Title                                                  | PDF                                                        |
-|-----------|--------------------------------------------------------|------------------------------------------------------------|
-| Sep. 18 | Introduction: data acquisition and searching the web   | [![PDF](https://img.icons8.com/color/20/000000/pdf.png)]() |
-| Sep. 25 | Data storage: from hardware to databases               | [![PDF](https://img.icons8.com/color/20/000000/pdf.png)]() |
-| Oct. 02 | Foundations of relational and non-relational databases | [![PDF](https://img.icons8.com/color/20/000000/pdf.png)]() |
-| Oct. 09 | Handling complex data: document and graph databases    | [![PDF](https://img.icons8.com/color/20/000000/pdf.png)]() |
-| Oct. 16 | Data extraction: foundations of similarity search      | [![PDF](https://img.icons8.com/color/20/000000/pdf.png)]() |
-| Oct. 23 | Multi-dimensional similarity search                    | [![PDF](https://img.icons8.com/color/20/000000/pdf.png)]() |
-| Oct. 30 | Exact versus approximate search                        | [![PDF](https://img.icons8.com/color/20/000000/pdf.png)]() |
-| Nov. 06 | Conclusion: beyond similarity-based query              | [![PDF](https://img.icons8.com/color/20/000000/pdf.png)]() |
+| Session   | Title                                                  | PDF                                                        | Exercices |
+|-----------|--------------------------------------------------------|------------------------------------------------------------|-----------|
+| Sep. 18 | Introduction: data acquisition and searching the web   | [![PDF](https://img.icons8.com/color/20/000000/pdf.png)](https://colab.research.google.com/drive/1Wb7JQgthWjckedXKfal-ZNHclOErhdUT?usp=sharing) | Ex1: [![Jupyter Notebook Icon](https://img.icons8.com/ios-filled/20/jupyter.png)](), Ex2: [![Jupyter Notebook Icon](https://img.icons8.com/ios-filled/20/jupyter.png)](https://colab.research.google.com/drive/1StSHkF4jcyU1wsKVJKcChzNc8Z2z8AiZ?usp=sharing)|
+| Sep. 25 | Data storage: from hardware to databases               | [![PDF](https://img.icons8.com/color/20/000000/pdf.png)]() | |
+| Oct. 02 | Foundations of relational and non-relational databases | [![PDF](https://img.icons8.com/color/20/000000/pdf.png)]() | |
+| Oct. 09 | Handling complex data: document and graph databases    | [![PDF](https://img.icons8.com/color/20/000000/pdf.png)]() | |
+| Oct. 16 | Data extraction: foundations of similarity search      | [![PDF](https://img.icons8.com/color/20/000000/pdf.png)]() | |
+| Oct. 23 | Multi-dimensional similarity search                    | [![PDF](https://img.icons8.com/color/20/000000/pdf.png)]() | | 
+| Oct. 30 | Exact versus approximate search                        | [![PDF](https://img.icons8.com/color/20/000000/pdf.png)]() | |
+| Nov. 06 | Conclusion: beyond similarity-based query              | [![PDF](https://img.icons8.com/color/20/000000/pdf.png)]() | |
 
 ### Final Exam (50% of the final grade)
 
