@@ -25,7 +25,7 @@ Each lecture has two 1.5 h parts (with a 15 min break in between), starts at 9 a
 
 | Session   | Title                                                  | PDF                                                        | Exercices |
 |-----------|--------------------------------------------------------|------------------------------------------------------------|-----------|
-| Sep. 18 | Introduction: data acquisition and searching the web   | [![PDF](https://img.icons8.com/color/20/000000/pdf.png)](https://colab.research.google.com/drive/1Wb7JQgthWjckedXKfal-ZNHclOErhdUT?usp=sharing) | Ex1: [![Jupyter Notebook Icon](https://img.icons8.com/ios-filled/20/jupyter.png)](), Ex2: [![Jupyter Notebook Icon](https://img.icons8.com/ios-filled/20/jupyter.png)](https://colab.research.google.com/drive/1StSHkF4jcyU1wsKVJKcChzNc8Z2z8AiZ?usp=sharing)|
+| Sep. 18 | Introduction: data acquisition and searching the web   | [![PDF](https://img.icons8.com/color/20/000000/pdf.png)](https://colab.research.google.com/drive/1Wb7JQgthWjckedXKfal-ZNHclOErhdUT?usp=sharing) | Ex1: [![Jupyter Notebook Icon](https://img.icons8.com/ios-filled/20/jupyter.png)]() <br> Ex2: [![Jupyter Notebook Icon](https://img.icons8.com/ios-filled/20/jupyter.png)](https://colab.research.google.com/drive/1StSHkF4jcyU1wsKVJKcChzNc8Z2z8AiZ?usp=sharing)|
 | Sep. 25 | Data storage: from hardware to databases               | [![PDF](https://img.icons8.com/color/20/000000/pdf.png)]() | |
 | Oct. 02 | Foundations of relational and non-relational databases | [![PDF](https://img.icons8.com/color/20/000000/pdf.png)]() | |
 | Oct. 09 | Handling complex data: document and graph databases    | [![PDF](https://img.icons8.com/color/20/000000/pdf.png)]() | |
