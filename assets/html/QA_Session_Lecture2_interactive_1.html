@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lecture 1 Recap Q&A</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Inter:wght@400;500;600&display=swap">
+<style>
+:root {
+  --bg:#f7f5f0; --surface:#fff; --surface-2:#f1eee8;
+  --border:#ddd9d0; --text:#18171a; --text-2:#55534f; --text-muted:#9a9793;
+  --accent:#1c3d72; --accent-soft:#e4ecf7;
+  --gold:#9a6f1c; --gold-soft:#fdf3dd;
+  --green:#1f6b45; --green-soft:#e5f4ec;
+  --code-bg:#1a2030; --code-fg:#ccd6f6; --code-comment:#5f6f9a;
+  --tbl-head:#eeeae2; --tbl-alt:#f7f5f0;
+  --shadow:0 1px 3px rgba(0,0,0,.07),0 1px 2px rgba(0,0,0,.05);
+  --shadow-modal:0 24px 64px rgba(0,0,0,.22);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0d1017;--surface:#151b27;--surface-2:#1c2335;
+    --border:#252d3e;--text:#e2e0da;--text-2:#969490;--text-muted:#555350;
+    --accent:#6390d8;--accent-soft:#182240;
+    --gold:#d4a040;--gold-soft:#241d0a;
+    --green:#4caa7a;--green-soft:#0d2118;
+    --code-bg:#0c1117;--code-fg:#c9d1d9;--code-comment:#8b949e;
+    --tbl-head:#1c2335;--tbl-alt:#151b27;
+    --shadow:0 1px 3px rgba(0,0,0,.35);--shadow-modal:0 24px 64px rgba(0,0,0,.55);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0d1017;--surface:#151b27;--surface-2:#1c2335;
+  --border:#252d3e;--text:#e2e0da;--text-2:#969490;--text-muted:#555350;
+  --accent:#6390d8;--accent-soft:#182240;
+  --gold:#d4a040;--gold-soft:#241d0a;
+  --green:#4caa7a;--green-soft:#0d2118;
+  --code-bg:#0c1117;--code-fg:#c9d1d9;--code-comment:#8b949e;
+  --tbl-head:#1c2335;--tbl-alt:#151b27;
+  --shadow:0 1px 3px rgba(0,0,0,.35);--shadow-modal:0 24px 64px rgba(0,0,0,.55);
+}
+*,*::before,*::after{box-sizing:border-box;}
+html,body{margin:0;padding:0;}
+body{background:var(--bg);color:var(--text);font-family:'Inter',system-ui,sans-serif;font-size:15px;line-height:1.65;padding-inline:16px;}
+[hidden]{display:none!important;}
+
+/* Header */
+.ph{background:var(--surface);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100;box-shadow:var(--shadow);}
+.ph-inner{max-width:840px;margin:0 auto;padding:12px 0;display:flex;align-items:center;gap:14px;}
+.ph-text{flex:1;min-width:0;}
+.ph-course{font-size:10.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--text-muted);display:block;margin-bottom:2px;}
+.ph-title{font-family:'Source Serif 4',Georgia,serif;font-size:17px;font-weight:600;color:var(--text);margin:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.lock-badge{display:flex;align-items:center;gap:6px;padding:5px 12px;border-radius:20px;font-size:12px;font-weight:600;white-space:nowrap;flex-shrink:0;background:var(--gold-soft);color:var(--gold);border:1px solid rgba(154,111,28,.22);transition:background .3s,color .3s,border-color .3s;}
+.lock-badge.open{background:var(--green-soft);color:var(--green);border-color:rgba(31,107,69,.22);}
+.unlock-btn{flex-shrink:0;background:none;border:1px solid var(--border);color:var(--text-muted);border-radius:6px;padding:5px 11px;font-size:12px;font-weight:500;font-family:inherit;cursor:pointer;transition:all .18s;}
+.unlock-btn:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-soft);}
+
+/* Layout */
+main{max-width:840px;margin:0 auto;padding-block:28px 72px;display:flex;flex-direction:column;gap:18px;}
+
+/* Cards */
+.qc{background:var(--surface);border:1px solid var(--border);border-radius:10px;overflow:hidden;box-shadow:var(--shadow);}
+.qc.lab{border-color:rgba(28,61,114,.38);}
+.qc-head{display:flex;align-items:flex-start;gap:12px;padding:18px 24px 0;}
+.q-num{font-size:10.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);background:var(--accent-soft);padding:3px 8px;border-radius:4px;white-space:nowrap;flex-shrink:0;margin-top:3px;}
+.q-title{font-family:'Source Serif 4',Georgia,serif;font-size:17px;font-weight:600;color:var(--text);margin:0;line-height:1.35;}
+.qc-body{padding:14px 24px 20px;}
+
+/* Question text */
+.q-prompt{font-family:'Source Serif 4',Georgia,serif;font-size:15.5px;line-height:1.72;color:var(--text);}
+.q-prompt p{margin:0 0 10px;}.q-prompt p:last-child{margin-bottom:0;}
+.q-prompt ul,.q-prompt ol{margin:6px 0 10px 22px;padding:0;}.q-prompt li{margin-bottom:5px;}
+.q-prompt strong{font-weight:600;}.q-prompt em{font-style:italic;}
+
+/* Answer zone */
+.ans-zone{margin-top:16px;border-top:1px solid var(--border);padding-top:16px;}
+.toggle-btn{display:inline-flex;align-items:center;gap:8px;padding:7px 16px;border-radius:7px;font-family:'Inter',sans-serif;font-size:13px;font-weight:500;border:1px solid var(--border);background:var(--surface-2);color:var(--text-muted);cursor:default;pointer-events:none;transition:background .2s,color .2s,border-color .2s;user-select:none;}
+.toggle-btn.active{background:var(--accent-soft);color:var(--accent);border-color:rgba(28,61,114,.28);cursor:pointer;pointer-events:auto;}
+.toggle-btn.active:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
+.toggle-btn.active.is-open{background:var(--accent);color:#fff;border-color:var(--accent);}
+.toggle-btn.active.is-open:hover{opacity:.88;}
+.ans-panel{margin-top:16px;padding:18px 20px;background:var(--surface-2);border-radius:8px;border-left:3px solid var(--accent);}
+
+/* Answer content */
+.ac{font-family:'Source Serif 4',Georgia,serif;font-size:15px;line-height:1.77;color:var(--text);}
+.ac p{margin:0 0 11px;}.ac p:last-child{margin-bottom:0;}
+.ac ul,.ac ol{margin:6px 0 11px 22px;padding:0;}.ac li{margin-bottom:5px;}
+.ac strong{font-weight:600;}.ac em{font-style:italic;}
+.ac h4{font-family:'Inter',sans-serif;font-size:11.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--text-muted);margin:20px 0 8px;}
+.ac h4:first-child{margin-top:0;}
+
+/* Code */
+.code-wrap{overflow-x:auto;margin:12px 0;border-radius:8px;}
+pre.code-block{background:var(--code-bg);color:var(--code-fg);margin:0;padding:16px 18px;font-family:'JetBrains Mono','Fira Code','Courier New',monospace;font-size:12.5px;line-height:1.65;white-space:pre;tab-size:4;border-radius:8px;}
+
+/* Tables */
+.tbl-wrap{overflow-x:auto;margin:12px 0;border-radius:8px;border:1px solid var(--border);}
+table{border-collapse:collapse;width:100%;font-size:13.5px;font-family:'Inter',sans-serif;}
+th{background:var(--tbl-head);padding:9px 14px;text-align:left;font-weight:600;font-size:12px;color:var(--text-2);letter-spacing:.02em;border-bottom:1px solid var(--border);}
+td{padding:8px 14px;border-bottom:1px solid var(--border);vertical-align:top;color:var(--text);line-height:1.4;}
+tr:last-child td{border-bottom:none;}
+tr:nth-child(even) td{background:var(--tbl-alt);}
+
+/* Callouts */
+.lab-callout{display:flex;align-items:center;gap:8px;background:var(--accent-soft);border:1px solid rgba(28,61,114,.22);border-radius:6px;padding:9px 14px;margin-bottom:14px;font-size:13px;color:var(--accent);font-weight:500;}
+.discuss{background:var(--gold-soft);border-left:3px solid var(--gold);border-radius:0 7px 7px 0;padding:14px 16px;margin:12px 0;}
+.discuss-label{font-size:11px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--gold);margin-bottom:6px;}
+.discuss ul{margin:4px 0 0 18px;padding:0;}.discuss li{margin-bottom:5px;font-size:14px;}
+
+/* Modal */
+.modal-bg{position:fixed;inset:0;background:rgba(0,0,0,.52);z-index:2000;display:flex;align-items:center;justify-content:center;backdrop-filter:blur(4px);}
+.modal-card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:28px 30px;width:min(360px,calc(100vw - 32px));box-shadow:var(--shadow-modal);}
+.modal-card h3{font-family:'Source Serif 4',Georgia,serif;font-size:18px;font-weight:600;margin:0 0 4px;color:var(--text);}
+.modal-card p{font-size:13.5px;color:var(--text-2);margin:0 0 18px;}
+.modal-input{width:100%;padding:10px 14px;font-size:15px;font-family:'Inter',sans-serif;background:var(--surface-2);border:1.5px solid var(--border);border-radius:8px;color:var(--text);outline:none;transition:border-color .18s;letter-spacing:.2em;margin-bottom:6px;}
+.modal-input:focus{border-color:var(--accent);}
+.modal-err{font-size:12.5px;color:#c0392b;min-height:16px;margin-bottom:14px;}
+.modal-acts{display:flex;gap:10px;justify-content:flex-end;}
+.btn-cancel{padding:8px 18px;border-radius:7px;border:1px solid var(--border);background:var(--surface-2);color:var(--text-2);font-size:13.5px;font-family:inherit;font-weight:500;cursor:pointer;transition:background .15s;}
+.btn-cancel:hover{background:var(--border);}
+.btn-confirm{padding:8px 20px;border-radius:7px;border:none;background:var(--accent);color:#fff;font-size:13.5px;font-family:inherit;font-weight:600;cursor:pointer;transition:opacity .15s;}
+.btn-confirm:hover{opacity:.85;}
+
+@media(max-width:520px){
+  .ph-title{font-size:15px;}
+  .qc-head{padding:14px 16px 0;}.qc-body{padding:12px 16px 16px;}
+  .ans-panel{padding:14px;}.q-title{font-size:15.5px;}
+  .lock-badge span{display:none;}
+}
+</style>
+<script>
+window.MathJax={tex:{inlineMath:[['$','$']],displayMath:[['$$','$$']],packages:{'[+]':['ams']}},options:{skipHtmlTags:['script','noscript','style','textarea','pre']}};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" async></script>
+</head>
+<body>
+
+<header class="ph">
+  <div class="ph-inner">
+    <div class="ph-text">
+      <span class="ph-course">Data Acquisition, Extraction &amp; Storage — ENS / Inria / PSL</span>
+      <h1 class="ph-title">Lecture 1 Recap Q&amp;A</h1>
+    </div>
+    <div class="lock-badge" id="lockBadge">🔒 <span>Answers locked</span></div>
+    <button class="unlock-btn" id="unlockTrigger">Unlock</button>
+  </div>
+</header>
+
+<main>
+
+  <article class="qc">
+    <div class="qc-head"><span class="q-num">Q1</span><h2 class="q-title">What is Information Retrieval?</h2></div>
+    <div class="qc-body">
+      <div class="q-prompt">
+        <p>How would you define Information Retrieval (IR)? Give an example of an IR system you use every day.</p>
+      </div>
+      <div class="ans-zone">
+        <button class="toggle-btn" data-panel="a1">🔒 Answer locked</button>
+        <div class="ans-panel" id="a1" hidden><div class="ac">
+          <p>Information Retrieval is the task of identifying and retrieving information that is <em>relevant</em> to an information need, usually expressed as a search query. The system returns a ranked list of results ordered by relevance.</p>
+          <p>Examples: web search engines (Google, Bing), email search, Google Scholar. The core challenge is measuring <strong>relevance</strong> — what makes a document a good match for a query?</p>
+        </div></div>
+      </div>
+    </div>
+  </article>
+
+  <article class="qc">
+    <div class="qc-head"><span class="q-num">Q2</span><h2 class="q-title">Generalising the F-score</h2></div>
+    <div class="qc-body">
+      <div class="q-prompt">
+        <p>An IR system returns 80 documents; 60 are relevant. The database contains 200 relevant documents.</p>
+        <p><strong>(a)</strong> Compute Precision $P$ and Recall $R$.</p>
+        <p><strong>(b)</strong> The $F_1$ score is the harmonic mean of $P$ and $R$: $F_1 = \dfrac{2PR}{P+R}$. Propose a general family $F_\beta$ where $\beta$ controls how much more important recall is than precision. Derive from the weighted harmonic mean.</p>
+        <p><strong>(c)</strong> In a medical triage system, surfacing an irrelevant document is <strong>twice as costly</strong> as missing a relevant one. Find $\beta$ and compute the score.</p>
+      </div>
+      <div class="ans-zone">
+        <button class="toggle-btn" data-panel="a2">🔒 Answer locked</button>
+        <div class="ans-panel" id="a2" hidden><div class="ac">
+          <h4>(a)</h4>
+          <p>$$P = \frac{60}{80} = 0.75 \qquad R = \frac{60}{200} = 0.30$$</p>
+          <h4>(b)</h4>
+          <p>he weighted harmonic mean of $P$ and $R$ with weights $w_P$ and $w_R$ is:
+          $$H = \frac{w_P + w_R}{\dfrac{w_P}{P} + \dfrac{w_R}{R}}$$
+          Set $w_P=1$, $w_R=\beta^2$:
+          $$F_\beta = \frac{(1+\beta^2)\,PR}{\beta^2 P + R}$$
+          Check: $\beta=1 \Rightarrow F_1=\dfrac{2PR}{P+R}$ ✓</p>
+          <h4>(c)</h4>
+          <p>Precision should carry twice the weight of recall $\Rightarrow \beta^2=\tfrac{1}{2} \Rightarrow \beta=\tfrac{1}{\sqrt{2}}\approx 0.707$.
+          $$F_{1/\sqrt{2}} = \frac{1.5\times0.75\times0.30}{0.5\times0.75+0.30} = \frac{0.3375}{0.675} = 0.50$$</p>
+        </div></div>
+      </div>
+    </div>
+  </article>
+
+  <article class="qc">
+    <div class="qc-head"><span class="q-num">Q3</span><h2 class="q-title">TF-IDF</h2></div>
+    <div class="qc-body">
+      <div class="q-prompt">
+        <p>What are the two principles behind TF-IDF? Why is it not enough to simply count how many times a word appears in a document?</p>
+      </div>
+      <div class="ans-zone">
+        <button class="toggle-btn" data-panel="a3">🔒 Answer locked</button>
+        <div class="ans-panel" id="a3" hidden><div class="ac">
+          <ul>
+            <li><strong>Term Frequency (TF):</strong> the more a term appears in a document, the more representative it is.</li>
+            <li><strong>Inverse Document Frequency (IDF):</strong> the less a term appears <em>across the collection</em>, the more discriminative it is.</li>
+          </ul>
+          <p>Raw counts treat very common words and discriminative ones as equally informative. TF-IDF down-weights ubiquitous words:
+          $$\text{tf-idf}(t,d) = \text{tf}(t,d)\times\log\!\left(\frac{|D|}{|\{d'\in D:\text{tf}(t,d')>0\}|}\right)$$</p>
+        </div></div>
+      </div>
+    </div>
+  </article>
+
+  <article class="qc">
+    <div class="qc-head"><span class="q-num">Q4</span><h2 class="q-title">Which Similarity Measure Should You Use?</h2></div>
+    <div class="qc-body">
+      <div class="q-prompt">
+        <p>You want to rank documents by similarity to a query $q$. Each is a TF-IDF vector in $\mathbb{R}^V$. Three proposals:</p>
+        <ul>
+          <li><strong>A — Euclidean distance:</strong> $d_E(x,y)=\|x-y\|_2$</li>
+          <li><strong>B — Normalised Euclidean:</strong> $\hat{x}=x/\|x\|_2$, then $d_N(x,y)=\|\hat{x}-\hat{y}\|_2$</li>
+          <li><strong>C — Cosine similarity:</strong> $\cos(x,y)=\dfrac{x\cdot y}{\|x\|_2\|y\|_2}$</li>
+        </ul>
+        <p><strong>(a)</strong> Which measures are appropriate and which ones are not?</p>
+      </div>
+      <div class="ans-zone">
+        <button class="toggle-btn" data-panel="a4">🔒 Answer locked</button>
+        <div class="ans-panel" id="a4" hidden><div class="ac">
+          <h4>(a) Eliminating Euclidean distance</h4>
+          <p>Let $D_2=2D_1$ (same topics, twice as long). Then $d_E(q,D_1)\neq d_E(q,D_2)$ in general — Euclidean distance has a <strong>length bias</strong>.
+          <p>Both B and C are scale-invariant: for $\alpha,\beta>0$, $d_N(\alpha x,\beta y)=d_N(x,y)$ and $\cos(\alpha x,\beta y)=\cos(x,y)$.</p>
+          <h4>(b) Identical rankings</h4>
+          <p>Since $\hat{x},\hat{y}$ are unit vectors:
+          $$d_N(x,y)^2=\|\hat{x}-\hat{y}\|_2^2=1+1-2\cos(x,y)$$
+          $$\boxed{d_N(x,y)=\sqrt{2(1-\cos(x,y))}}$$
+          The map $t\mapsto\sqrt{2(1-t)}$ is strictly decreasing, so ascending $d_N$ order equals descending $\cos$ order. Cosine is preferred — normalisation is handled in the formula itself.</p>
+        </div></div>
+      </div>
+    </div>
+  </article>
+
+  <article class="qc">
+    <div class="qc-head"><span class="q-num">Q5</span><h2 class="q-title">The Limits of TF-IDF for the Web</h2></div>
+    <div class="qc-body">
+      <div class="q-prompt">
+        <p>Is using cosine similarity on TF-IDF representation an appropriate choice for ranking web documents based on relevance? Cite at least two alternatives.</p>
+      </div>
+      <div class="ans-zone">
+        <button class="toggle-btn" data-panel="a5">🔒 Answer locked</button>
+        <div class="ans-panel" id="a5" hidden><div class="ac">
+          <p><strong>Keyword stuffing</strong>: inserting many repetitions of keywords (sometimes hidden) to inflate TF-IDF scores without genuine content. TF-IDF only sees word frequencies — it cannot distinguish a quality article from a keyword-stuffed page.</p>
+          <p>(Klienberg, 1998) and (Page &amp; Brin, 1998) uses the web's <em>link structure</em>: a link from A to B is an endorsement. Pages receiving many links from authoritative pages are ranked higher. </p>
+        </div></div>
+      </div>
+    </div>
+  </article>
+
+  <article class="qc">
+    <div class="qc-head"><span class="q-num">Q6</span><h2 class="q-title">About PageRank</h2></div>
+    <div class="qc-body">
+      <div class="q-prompt">
+        <p>PageRank iterates $\pi\leftarrow M\pi$ where $M=d\tilde{G}+(1-d)U$. Here $G$ is the <strong>transition matrix</strong>: $G_{ij}=1/\deg^+(j)$ if $j\to i$, else $0$ (the column-normalised transpose of the adjacency matrix). $\tilde{G}$ is $G$ with dangling nodes repaired (i.e., probability of leaving a dangling node is uniform to any other node in the graph).</p>
+        <p><strong>(a)</strong> Prove $M$ is <strong>column-stochastic</strong> and conclude $\pi$ stays a valid probability vector.</p>
+        <p><strong>(b)</strong> Give a 3-node example where raw $G$ causes the computation to fail, with numerical evidence.</p>
+      </div>
+      <div class="ans-zone">
+        <button class="toggle-btn" data-panel="a6">🔒 Answer locked</button>
+        <div class="ans-panel" id="a6" hidden><div class="ac">
+          <h4>(a)</h4>
+          <p>Recall how $\tilde{G}$ is built from the raw transition matrix $G$ ($G_{ij} = 1/\deg^+(j)$ if $j \to i$, else $0$):
+          $$\tilde{G}_{ij} = \begin{cases} G_{ij} & \text{if page } j \text{ has at least one outgoing link} \\ 1/N & \text{if page } j \text{ is a dangling node (column of } G \text{ is all-zero)} \end{cases}$$
+          For non-dangling pages, column $j$ of $G$ already sums to 1 (it is a probability distribution over destinations). For dangling pages, the column is replaced by the uniform distribution $\tfrac{1}{N}\mathbf{1}$, which also sums to 1. In both cases every column of $\tilde{G}$ sums to 1 and all entries are $\geq 0$, so <strong>$\tilde{G}$ is column-stochastic</strong>.
+          Every column of $U$ sums to $N \cdot \tfrac{1}{N} = 1$, so <strong>$U$ is column-stochastic</strong>.
+          For column $j$ of $M$:
+          $$\mathbf{1}^\top M_{:j} = d\,\underbrace{\mathbf{1}^\top \tilde{G}_{:j}}_{=\,1} + (1-d)\,\underbrace{\mathbf{1}^\top U_{:j}}_{=\,1} = d + (1-d) = 1$$
+          All entries of $M$ are non-negative ($d \geq 0$, $1-d \geq 0$, $\tilde{G}_{ij} \geq 0$, $U_{ij} > 0$). Hence <strong>$M$ is column-stochastic</strong>.
+          If $\pi^{(k)}$ is a probability vector ($\mathbf{1}^\top \pi^{(k)} = 1$, entries $\geq 0$), then:
+          $$\mathbf{1}^\top \pi^{(k+1)} = \mathbf{1}^\top M \pi^{(k)} = (\mathbf{1}^\top M)\,\pi^{(k)} = \mathbf{1}^\top \pi^{(k)} = 1$$
+          because every entry of $\mathbf{1}^\top M$ equals 1. The iteration preserves total probability mass, and the Perron–Frobenius theorem guarantees convergence to a unique stationary distribution.</p>
+          <h4>(b)</h4>
+          <p>Three pages: pages 1 and 2 each link <strong>only</strong> to page 3, and page 3 is dangling (no outgoing links). The transition matrix $G$ (where $G_{ij} = 1/\deg^+(j)$ if $j \to i$, and note this is the <strong>transpose</strong> of the usual adjacency matrix) is:
+
+          $$G = \begin{pmatrix} 0 & 0 & 0 \\ 0 & 0 & 0 \\ 1 & 1 & 0 \end{pmatrix}$$
+
+          Columns 1 and 2 each sum to 1 (each page has one outgoing link to page 3). Column 3 sums to 0 — <strong>not</strong> column-stochastic. Form $M_{\text{bad}} = d\,G + (1-d)\,U$ with $d = 0.85$:
+
+          $$\text{column 3 of } M_{\text{bad}} = 0.85 \begin{pmatrix}0\\0\\0\end{pmatrix} + 0.15\begin{pmatrix}1/3\\1/3\\1/3\end{pmatrix} = \begin{pmatrix}0.05\\0.05\\0.05\end{pmatrix} \quad \Rightarrow \text{sum} = 0.15 \neq 1$$
+
+          Start from $\pi_0 = \bigl[\tfrac{1}{3},\,\tfrac{1}{3},\,\tfrac{1}{3}\bigr]^\top$. After one step:
+
+          $$G\pi_0 = \begin{pmatrix}0\\0\\\tfrac{1}{3}+\tfrac{1}{3}\end{pmatrix} = \begin{pmatrix}0\\0\\\tfrac{2}{3}\end{pmatrix} \quad \text{(the \(\tfrac{2}{3}\) mass concentrated on dangling page 3 vanishes!)}$$
+
+          $$\pi_1 = 0.85\begin{pmatrix}0\\0\\\tfrac{2}{3}\end{pmatrix} + 0.15\begin{pmatrix}\tfrac{1}{3}\\\tfrac{1}{3}\\\tfrac{1}{3}\end{pmatrix} = \begin{pmatrix}0.05\\0.05\\0.617\end{pmatrix} \qquad \mathbf{1}^\top\pi_1 \approx 0.717 \neq 1$$</p>
+        </div></div>
+      </div>
+    </div>
+  </article>
+
+  <article class="qc">
+    <div class="qc-head"><span class="q-num">Q7</span><h2 class="q-title">Web Crawling Basics</h2></div>
+    <div class="qc-body">
+      <div class="q-prompt">
+        <p>What are the two fundamental questions any web crawler must answer? What data structures are used to address each one?</p>
+      </div>
+      <div class="ans-zone">
+        <button class="toggle-btn" data-panel="a7">🔒 Answer locked</button>
+        <div class="ans-panel" id="a7" hidden><div class="ac">
+          <ul>
+            <li><strong>What pages to add to the frontier?</strong> — Specifically, how to avoid revisiting the same page twice. This is solved with a <strong>hash set</strong> of visited URLs: hashing gives O(1) average-case lookup, so checking membership in a collection of N URLs costs O(1) rather than O(N) for a direct search.</li>
+            <li><strong>Which page to crawl next?</strong> — This is the traversal-order decision. Two classical strategies:
+              <ul>
+                <li><strong>BFS</strong> uses a <strong>FIFO queue</strong>. It discovers pages level by level — all pages at distance 1 before distance 2, etc. Preferred for web crawling because it finds high-level pages (which tend to be broadly linked) early.</li>
+                <li><strong>DFS</strong> uses a <strong>stack</strong> (LIFO). It dives deep into one branch before backtracking. Poor for web crawling because it can get stuck exploring one corner of the web indefinitely.</li>
+              </ul>
+            </li>
+          </ul>
+        </div></div>
+      </div>
+    </div>
+  </article>
+
+  <article class="qc">
+    <div class="qc-head"><span class="q-num">Q8</span><h2 class="q-title">MinHash vs. Random Sampling of Shingles</h2></div>
+    <div class="qc-body">
+      <div class="q-prompt">
+        <p>To estimate Jaccard $J(A,B)=|A\cap B|/|A\cup B|$, two students propose:</p>
+        <ul>
+          <li><strong>Student 1 (Sampling):</strong> Draw samples $S_A,S_B$ of size $k$. Estimate $\hat{J}_S=|S_A\cap S_B|/|S_A\cup S_B|$.</li>
+          <li><strong>Student 2 (MinHash):</strong> Use $k$ hash functions; estimate $\hat{J}_{\text{MH}}=\tfrac{1}{k}\sum_i\mathbf{1}[m_i(A)=m_i(B)]$.</li>
+        </ul>
+        <p><strong>(a)</strong> Prove $\Pr[m(A)=m(B)]=J(A,B)$ for one MinHash function.</p>
+        <p><strong>(b)</strong> Derive $\operatorname{MSE}(\hat{J}_{\text{MH}})$ and show MinHash converges to $J$.</p>
+        <p><strong>(c)</strong> Let $n=|A|=|B|$. Derive the bias of $\hat{J}_S$ and show MinHash converges faster.</p>
+      </div>
+      <div class="ans-zone">
+        <button class="toggle-btn" data-panel="a8">🔒 Answer locked</button>
+        <div class="ans-panel" id="a8" hidden><div class="ac">
+          <h4>(a)</h4>
+          <p>Model $h$ as a random permutation. The minimum over $A\cup B$ is equally likely to be any element; it satisfies $m(A)=m(B)$ iff it lies in $A\cap B$:
+          $$\Pr[m(A)=m(B)]=\frac{|A\cap B|}{|A\cup B|}=J\quad\checkmark$$</p>
+          <h4>(b)</h4>
+          <p>With $k$ independent hash functions, $\hat{J}_{\text{MH}} = \tfrac{1}{k}\sum_{i=1}^k \mathbf{1}[m_i(A) = m_i(B)]$ is the average of $k$ different 0-1 random variables, each of which is one when $m_i(A) = m_i(B)$ and zero otherwise:
+
+          $$\mathbb{E}[\hat{J}_{\text{MH}}] = J \quad \Rightarrow \quad \text{Bias} = 0$$
+
+          $$\operatorname{MSE}(\hat{J}_{\text{MH}}) = \operatorname{Var}(\hat{J}_{\text{MH}}) = \frac{J(1-J)}{k}$$
+
+          The MSE vanishes as $k \to \infty$ independently of $|A|$ and $|B|$: to achieve $\operatorname{MSE} \leq \varepsilon^2$, it suffices to take $k \geq J(1-J)/\varepsilon^2$.</p>
+          <h4>(c)</h4>
+          <p>Let $|A| = |B| = n$, $|A \cap B| = m$, $|A \setminus B| = |B \setminus A| = n - m$, so $J = m/(2n-m)$.
+
+          <h4>(c.1) Expected numerator</h4>
+
+          Consider an element $x \in A \cap B$. The two samples are drawn independently: $S_A$ from $A$ and $S_B$ from $B$. Since $x$ belongs to both sets, it can be selected by either draw:
+
+          $$\Pr[x \in S_A] = \frac{k}{n}, \qquad \Pr[x \in S_B] = \frac{k}{n}$$
+
+          For $x$ to land in the **intersection** $S_A \cap S_B$ it must be selected by **both** independent draws:
+
+          $$\Pr[x \in S_A \cap S_B] = \frac{k}{n} \cdot \frac{k}{n} = \frac{k^2}{n^2}$$
+
+          Elements in $A \setminus B$ can never enter $S_B$, and elements in $B \setminus A$ can never enter $S_A$, so they contribute $0$ to the intersection. By linearity of expectation:
+
+          $$\mathbb{E}[|S_A \cap S_B|] = m \cdot \frac{k^2}{n^2}$$
+
+          <h4>(c.2) Expected denominator</h4>
+
+          We always draw exactly $k$ elements into $S_A$ and $k$ into $S_B$. Every element we pick is by definition in the union, so by inclusion–exclusion on the two fixed-size samples:
+
+          $$|S_A \cup S_B| = |S_A| + |S_B| - |S_A \cap S_B| = 2k - |S_A \cap S_B|$$
+
+          Taking expectations:
+
+          $$\mathbb{E}[|S_A \cup S_B|] = 2k - \mathbb{E}[|S_A \cap S_B|] = 2k - \frac{mk^2}{n^2}$$
+
+          For $k \ll n$ the second-order term $mk^2/n^2$ is negligible, so:
+
+          $$\mathbb{E}[\hat{J}_{\text{S}}] \approx \frac{mk^2/n^2}{2k} = \frac{mk}{2n^2}$$
+
+          Since $J \approx m/(2n)$ (for $m \ll n$), this simplifies to:
+
+          $$\mathbb{E}[\hat{J}_{\text{S}}] \approx J \cdot \frac{k}{n}$$
+
+        </p>
+          <p>MinHash's entire error is variance (zero bias), shrinking as $1/k$ regardless of $n$. Sampling has an irreducible bias that only vanishes when $k\approx n$.</p>
+        </div></div>
+      </div>
+    </div>
+  </article>
+
+  <article class="qc">
+    <div class="qc-head"><span class="q-num">Q9</span><h2 class="q-title">Crawl Ordering Policy</h2></div>
+    <div class="qc-body">
+      <div class="q-prompt">
+        <p>Define weighted coverage $\text{WC}(t)=\sum_{p\in R(t)}w(p)$ where $R(t)$ is the set of pages crawled by time $t$.</p>
+        <p><strong>(a)</strong> For general-purpose indexing, propose a principled choice of $w(p)$ and justify it.</p>
+        <p><strong>(b)</strong> What practical complication arises, and how can it be worked around?</p>
+      </div>
+      <div class="ans-zone">
+        <button class="toggle-btn" data-panel="a9">🔒 Answer locked</button>
+        <div class="ans-panel" id="a9" hidden><div class="ac">
+          <h4>(a)</h4>
+          <p>Set $w(p)=\text{PR}(p)$. PageRank captures universal authority independently of topic — pages that many authoritative pages link to are crawled first, front-loading the highest-value content within a limited budget.</p>
+          <h4>(b)</h4>
+          <p>PageRank requires the full link graph, which is still being built. Two workarounds:</p>
+          <ul>
+            <li><strong>Periodic recomputation</strong> on the partial graph, reordering the frontier every $K$ pages.</li>
+            <li><strong>OPIC</strong>: Consider an online estimation of Page Rank.</li>
+          </ul>
+        </div></div>
+      </div>
+    </div>
+  </article>
+
+  <article class="qc lab">
+    <div class="qc-head"><span class="q-num">Q10</span><h2 class="q-title">Designing a Wikipedia Path Crawler</h2></div>
+    <div class="qc-body">
+      <div class="q-prompt">
+        <p>You want to find a path from "Python (Programming language)" to "Edgar F. Codd" on Wikipedia. You can only start from the first node (i.e., Python Wikipedia page).:</p>
+        <ul>
+          <li>What kind of graph does Wikipedia form?</li>
+          <li>Propose a solution to find the shortest path <em>shortest</em>.</li>
+        </ul>
+      </div>
+      <div class="ans-zone">
+        <button class="toggle-btn" data-panel="a10">🔒 Answer locked</button>
+        <div class="ans-panel" id="a10" hidden><div class="ac">
+          <h4>Part A — Discussion</h4>
+          <div class="discuss">
+            <div class="discuss-label">Key ideas</div>
+            <ul>
+              <li>Wikipedia is a <strong>directed graph</strong>: pages → nodes, hyperlinks → directed edges.</li>
+              <li><strong>BFS</strong> guarantees the shortest path (fewest hops); explores all pages at depth $d$ before $d+1$. But such solution might visit too much pages before reaching the target.</li>
+              <li>A <strong>heuristic</strong> uses cosine similarity to the target and sort the crawl list according to the relevance.
+            </ul>
+          </div>
+        </div></div>
+      </div>
+    </div>
+  </article>
+
+</main>
+
+<div class="modal-bg" id="modalBg" hidden>
+  <div class="modal-card">
+    <h3>🔑 Professor Access</h3>
+    <p>Enter the unlock code to reveal model answers after class discussion.</p>
+    <input type="password" class="modal-input" id="codeInput" placeholder="••••••••" autocomplete="off">
+    <div class="modal-err" id="modalErr"></div>
+    <div class="modal-acts">
+      <button class="btn-cancel" id="cancelBtn">Cancel</button>
+      <button class="btn-confirm" id="confirmBtn">Unlock Answers</button>
+    </div>
+  </div>
+</div>
+
+<script>
+/* Change UNLOCK_CODE before class */
+const UNLOCK_CODE = 'ENS2026';
+
+const lockBadge=document.getElementById('lockBadge');
+const unlockTrigger=document.getElementById('unlockTrigger');
+const modalBg=document.getElementById('modalBg');
+const codeInput=document.getElementById('codeInput');
+const modalErr=document.getElementById('modalErr');
+const cancelBtn=document.getElementById('cancelBtn');
+const confirmBtn=document.getElementById('confirmBtn');
+const toggleBtns=document.querySelectorAll('.toggle-btn');
+let unlocked=false;
+
+function openModal(){if(unlocked)return;codeInput.value='';modalErr.textContent='';modalBg.hidden=false;setTimeout(()=>codeInput.focus(),50);}
+function closeModal(){modalBg.hidden=true;codeInput.value='';modalErr.textContent='';}
+function activateAnswers(){
+  unlocked=true;
+  try{sessionStorage.setItem('qa_unlocked','1');}catch(e){}
+  lockBadge.textContent='🔓 Answers unlocked';lockBadge.classList.add('open');
+  unlockTrigger.hidden=true;
+  toggleBtns.forEach(btn=>{btn.classList.add('active');btn.textContent='▸ Show answer';});
+}
+function tryUnlock(){
+  if(codeInput.value.trim()===UNLOCK_CODE){closeModal();activateAnswers();}
+  else{modalErr.textContent='Incorrect code — try again.';codeInput.select();}
+}
+
+unlockTrigger.addEventListener('click',openModal);
+modalBg.addEventListener('click',e=>{if(e.target===modalBg)closeModal();});
+cancelBtn.addEventListener('click',closeModal);
+confirmBtn.addEventListener('click',tryUnlock);
+codeInput.addEventListener('keydown',e=>{if(e.key==='Enter')tryUnlock();if(e.key==='Escape')closeModal();});
+
+toggleBtns.forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    if(!unlocked)return;
+    const panel=document.getElementById(btn.dataset.panel);
+    const isOpen=!panel.hidden;
+    if(isOpen){panel.hidden=true;btn.classList.remove('is-open');btn.textContent='▸ Show answer';}
+    else{panel.hidden=false;btn.classList.add('is-open');btn.textContent='▾ Hide answer';
+      if(window.MathJax&&MathJax.typesetPromise)MathJax.typesetPromise([panel]).catch(()=>{});}
+  });
+});
+
+try{if(sessionStorage.getItem('qa_unlocked')==='1')activateAnswers();}catch(e){}
+</script>
+</body>
+</html>
