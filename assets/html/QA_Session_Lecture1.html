@@ -3,6 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+/* IMPORTANT NOTE: This is not a cybersecurity course!! Of course you will find the unencrypted password written here in the HTML code. I will give it at the end of the lecture anyway! Please try to answer the questions without it first. */  
+  
+  
 <title>Lecture 1 Recap Q&A</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Inter:wght@400;500;600&display=swap">
 <style>
@@ -417,10 +421,10 @@ window.MathJax={tex:{inlineMath:[['$','$']],displayMath:[['$$','$$']],packages:{
     <div class="qc-head"><span class="q-num">Q10</span><h2 class="q-title">Designing a Wikipedia Path Crawler</h2></div>
     <div class="qc-body">
       <div class="q-prompt">
-        <p>You want to find a path from "Python (Programming language)" to "Edgar F. Codd" on Wikipedia. You can only start from the first node (i.e., Python Wikipedia page).:</p>
+        <p>You want to find a path from "Python (Programming language)" to "Edgar F. Codd" on Wikipedia. You can only start from the first node (i.e., the Python Wikipedia page).:</p>
         <ul>
           <li>What kind of graph does Wikipedia form?</li>
-          <li>Propose a solution to find the shortest path <em>shortest</em>.</li>
+          <li>Propose a solution to find a path (the <em>shortest</em>?).</li>
         </ul>
       </div>
       <div class="ans-zone">
@@ -431,8 +435,8 @@ window.MathJax={tex:{inlineMath:[['$','$']],displayMath:[['$$','$$']],packages:{
             <div class="discuss-label">Key ideas</div>
             <ul>
               <li>Wikipedia is a <strong>directed graph</strong>: pages → nodes, hyperlinks → directed edges.</li>
-              <li><strong>BFS</strong> guarantees the shortest path (fewest hops); explores all pages at depth $d$ before $d+1$. But such solution might visit too much pages before reaching the target.</li>
-              <li>A <strong>heuristic</strong> uses cosine similarity to the target and sort the crawl list according to the relevance.
+              <li><strong>BFS</strong> guarantees the shortest path (fewest hops); explores all pages at depth $d$ before $d+1$. But this approach might visit too many pages before reaching the target.</li>
+              <li>A <strong>heuristic</strong> uses cosine similarity to the target and sorts the crawl list according to relevance.
             </ul>
           </div>
         </div></div>
