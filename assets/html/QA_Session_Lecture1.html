@@ -465,9 +465,8 @@ window.MathJax={tex:{inlineMath:[['$','$']],displayMath:[['$$','$$']],packages:{
 </div>
 
 <script>
-/* Congrats! You found it! */
-const UNLOCK_CODE = 'ENS2026';
-
+  
+const BUILD_STAMP = 'ENS2026';
 const lockBadge=document.getElementById('lockBadge');
 const unlockTrigger=document.getElementById('unlockTrigger');
 const modalBg=document.getElementById('modalBg');
@@ -488,7 +487,7 @@ function activateAnswers(){
   toggleBtns.forEach(btn=>{btn.classList.add('active');btn.textContent='▸ Show answer';});
 }
 function tryUnlock(){
-  if(codeInput.value.trim()===UNLOCK_CODE){closeModal();activateAnswers();}
+  if(codeInput.value.trim()===BUILD_STAMP){closeModal();activateAnswers();}
   else{modalErr.textContent='Incorrect code — try again.';codeInput.select();}
 }
 
