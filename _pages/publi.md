@@ -27,6 +27,16 @@ redirect_from:
 
 #### Conferences
 
+* Roberto Stanzione, Jules Barbe, Magali Parrino, Jérémie Fourmann, Paul Boniol. **Detect, Explain, Interpret: An End-to-End Benchmark for Time Series Anomaly Detection, Explainability and Interpretability**. In the Fortieth Annual Conference on Neural Information Processing Systems (NeurIPS 2026), Sydney, Australia, December 2026. 
+[![GitHub Repo](https://img.icons8.com/ios-glyphs/20/000000/github.png)](https://github.com/scality/shad) [![PDF](https://img.icons8.com/color/20/000000/pdf.png)]()
+
+* Christos Panourgias, Roberto Stanzione, Adrien Petralia, Themis Palpanas, Paul Boniol. **Retrieval Over Training: Similarity search-based Model Selection for Time Series Anomaly Detection**. In the Fortieth Annual Conference on Neural Information Processing Systems (NeurIPS 2026), Sydney, Australia, December 2026. 
+[![GitHub Repo](https://img.icons8.com/ios-glyphs/20/000000/github.png)](https://github.com/Hendrix8/RAMSAD) [![PDF](https://img.icons8.com/color/20/000000/pdf.png)]()
+
+* Félix Chavelli, Arik Ermshaus, Fan Yang, Patrick Schäfer, John Paparrizos, Paul Boniol. **TSB-SEG: A Systematic Time-Series Segmentation Benchmark**. In the Fortieth Annual Conference on Neural Information Processing Systems (NeurIPS 2026), Sydney, Australia, December 2026. 
+[![GitHub Repo](https://img.icons8.com/ios-glyphs/20/000000/github.png)](https://github.com/fchavelli/tsseg) [![PDF](https://img.icons8.com/color/20/000000/pdf.png)]()
+
+
 * Magali Parrino, Antoine Ajenjo, Emmanuel Remy, Pierre Stephan, Pierre Senellart, Paul Boniol. **In a Streaming World, Should You Stand Still? A Comprehensive Benchmark of Anomaly Detection in Streams**. ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD), Jeju, Korea, August 2026. [![GitHub Repo](https://img.icons8.com/ios-glyphs/20/000000/github.png)](https://github.com/magaliparrino/StrAD) [![PDF](https://img.icons8.com/color/20/000000/pdf.png)](https://inria.hal.science/hal-05654228)
 
 
