@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lecture 2 Recap Q&A</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Inter:wght@400;500;600&display=swap">
+<style>
+:root{--bg:#f7f5f0;--surface:#fff;--surface-2:#f1eee8;--border:#ddd9d0;--text:#18171a;--text-2:#55534f;--text-muted:#9a9793;--accent:#1c3d72;--accent-soft:#e4ecf7;--gold:#9a6f1c;--gold-soft:#fdf3dd;--green:#1f6b45;--green-soft:#e5f4ec;--code-bg:#1a2030;--code-fg:#ccd6f6;--tbl-head:#eeeae2;--tbl-alt:#f7f5f0;--shadow:0 1px 3px rgba(0,0,0,.07);--shadow-modal:0 24px 64px rgba(0,0,0,.22);}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1017;--surface:#151b27;--surface-2:#1c2335;--border:#252d3e;--text:#e2e0da;--text-2:#969490;--text-muted:#555350;--accent:#6390d8;--accent-soft:#182240;--gold:#d4a040;--gold-soft:#241d0a;--green:#4caa7a;--green-soft:#0d2118;--code-bg:#0c1117;--code-fg:#c9d1d9;--tbl-head:#1c2335;--tbl-alt:#151b27;--shadow:0 1px 3px rgba(0,0,0,.35);--shadow-modal:0 24px 64px rgba(0,0,0,.55);}}
+:root[data-theme="dark"]{--bg:#0d1017;--surface:#151b27;--surface-2:#1c2335;--border:#252d3e;--text:#e2e0da;--text-2:#969490;--text-muted:#555350;--accent:#6390d8;--accent-soft:#182240;--gold:#d4a040;--gold-soft:#241d0a;--green:#4caa7a;--green-soft:#0d2118;--code-bg:#0c1117;--code-fg:#c9d1d9;--tbl-head:#1c2335;--tbl-alt:#151b27;--shadow:0 1px 3px rgba(0,0,0,.35);--shadow-modal:0 24px 64px rgba(0,0,0,.55);}
+*,*::before,*::after{box-sizing:border-box;}html,body{margin:0;padding:0;}
+body{background:var(--bg);color:var(--text);font-family:'Inter',system-ui,sans-serif;font-size:15px;line-height:1.65;padding-inline:16px;}
+[hidden]{display:none!important;}
+.ph{background:var(--surface);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100;box-shadow:var(--shadow);}
+.ph-inner{max-width:860px;margin:0 auto;padding:12px 0;display:flex;align-items:center;gap:14px;}
+.ph-text{flex:1;min-width:0;}
+.ph-course{font-size:10.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--text-muted);display:block;margin-bottom:2px;}
+.ph-title{font-family:'Source Serif 4',Georgia,serif;font-size:17px;font-weight:600;color:var(--text);margin:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.lock-badge{display:flex;align-items:center;gap:6px;padding:5px 12px;border-radius:20px;font-size:12px;font-weight:600;white-space:nowrap;flex-shrink:0;background:var(--gold-soft);color:var(--gold);border:1px solid rgba(154,111,28,.22);transition:background .3s,color .3s;}
+.lock-badge.open{background:var(--green-soft);color:var(--green);border-color:rgba(31,107,69,.22);}
+.unlock-btn{flex-shrink:0;background:none;border:1px solid var(--border);color:var(--text-muted);border-radius:6px;padding:5px 11px;font-size:12px;font-weight:500;font-family:inherit;cursor:pointer;transition:all .18s;}
+.unlock-btn:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-soft);}
+main{max-width:860px;margin:0 auto;padding-block:28px 72px;display:flex;flex-direction:column;gap:18px;}
+.qc{background:var(--surface);border:1px solid var(--border);border-radius:10px;overflow:hidden;box-shadow:var(--shadow);}
+.qc-head{display:flex;align-items:flex-start;gap:12px;padding:18px 24px 0;}
+.q-num{font-size:10.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);background:var(--accent-soft);padding:3px 8px;border-radius:4px;white-space:nowrap;flex-shrink:0;margin-top:3px;}
+.q-title{font-family:'Source Serif 4',Georgia,serif;font-size:17px;font-weight:600;color:var(--text);margin:0;line-height:1.35;}
+.qc-body{padding:14px 24px 20px;}
+.q-prompt{font-family:'Source Serif 4',Georgia,serif;font-size:15.5px;line-height:1.72;color:var(--text);}
+.q-prompt p{margin:0 0 10px;}.q-prompt p:last-child{margin-bottom:0;}
+.q-prompt ul,.q-prompt ol{margin:6px 0 10px 22px;padding:0;}.q-prompt li{margin-bottom:5px;}
+.q-prompt strong{font-weight:600;}.q-prompt em{font-style:italic;}
+.ans-zone{margin-top:16px;border-top:1px solid var(--border);padding-top:16px;}
+.toggle-btn{display:inline-flex;align-items:center;gap:8px;padding:7px 16px;border-radius:7px;font-family:'Inter',sans-serif;font-size:13px;font-weight:500;border:1px solid var(--border);background:var(--surface-2);color:var(--text-muted);cursor:default;pointer-events:none;user-select:none;transition:background .2s,color .2s;}
+.toggle-btn.active{background:var(--accent-soft);color:var(--accent);border-color:rgba(28,61,114,.28);cursor:pointer;pointer-events:auto;}
+.toggle-btn.active:hover{background:var(--accent);color:#fff;}
+.toggle-btn.active.is-open{background:var(--accent);color:#fff;}
+.toggle-btn.active.is-open:hover{opacity:.88;}
+.ans-panel{margin-top:16px;padding:18px 20px;background:var(--surface-2);border-radius:8px;border-left:3px solid var(--accent);}
+.ac{font-family:'Source Serif 4',Georgia,serif;font-size:15px;line-height:1.77;color:var(--text);}
+.ac p{margin:0 0 11px;}.ac p:last-child{margin-bottom:0;}
+.ac ul,.ac ol{margin:6px 0 11px 22px;padding:0;}.ac li{margin-bottom:5px;}
+.ac strong{font-weight:600;}.ac em{font-style:italic;}
+.ac h4{font-family:'Inter',sans-serif;font-size:11.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--text-muted);margin:20px 0 8px;}
+.ac h4:first-child{margin-top:0;}
+.code-wrap{overflow-x:auto;margin:12px 0;}
+pre.code-block{background:var(--code-bg);color:var(--code-fg);margin:0;padding:16px 18px;font-family:'JetBrains Mono','Fira Code','Courier New',monospace;font-size:12.5px;line-height:1.65;white-space:pre;border-radius:8px;}
+.tbl-wrap{overflow-x:auto;margin:12px 0;border-radius:8px;border:1px solid var(--border);}
+table{border-collapse:collapse;width:100%;font-size:13.5px;font-family:'Inter',sans-serif;}
+th{background:var(--tbl-head);padding:9px 14px;text-align:left;font-weight:600;font-size:12px;color:var(--text-2);border-bottom:1px solid var(--border);}
+td{padding:8px 14px;border-bottom:1px solid var(--border);vertical-align:top;color:var(--text);line-height:1.4;}
+tr:last-child td{border-bottom:none;}
+tr:nth-child(even) td{background:var(--tbl-alt);}
+td.hi{background:var(--accent-soft)!important;color:var(--accent);font-weight:600;}
+td.warn{background:var(--gold-soft)!important;color:var(--gold);font-weight:600;}
+td.r{text-align:right;font-family:monospace;font-size:13px;}
+.callout{background:var(--gold-soft);border-left:3px solid var(--gold);border-radius:0 7px 7px 0;padding:12px 16px;margin:12px 0;font-family:'Inter',sans-serif;font-size:13.5px;color:var(--text);}
+.callout strong{color:var(--gold);}
+.callout-green{background:var(--green-soft);border-left:3px solid var(--green);border-radius:0 7px 7px 0;padding:12px 16px;margin:12px 0;font-family:'Inter',sans-serif;font-size:13.5px;color:var(--text);}
+.callout-green strong{color:var(--green);}
+.modal-bg{position:fixed;inset:0;background:rgba(0,0,0,.52);z-index:2000;display:flex;align-items:center;justify-content:center;backdrop-filter:blur(4px);}
+.modal-card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:28px 30px;width:min(360px,calc(100vw - 32px));box-shadow:var(--shadow-modal);}
+.modal-card h3{font-family:'Source Serif 4',Georgia,serif;font-size:18px;font-weight:600;margin:0 0 4px;color:var(--text);}
+.modal-card p{font-size:13.5px;color:var(--text-2);margin:0 0 18px;}
+.modal-input{width:100%;padding:10px 14px;font-size:15px;font-family:'Inter',sans-serif;background:var(--surface-2);border:1.5px solid var(--border);border-radius:8px;color:var(--text);outline:none;letter-spacing:.2em;margin-bottom:6px;}
+.modal-input:focus{border-color:var(--accent);}
+.modal-err{font-size:12.5px;color:#c0392b;min-height:16px;margin-bottom:14px;}
+.modal-acts{display:flex;gap:10px;justify-content:flex-end;}
+.btn-cancel{padding:8px 18px;border-radius:7px;border:1px solid var(--border);background:var(--surface-2);color:var(--text-2);font-size:13.5px;font-family:inherit;font-weight:500;cursor:pointer;}
+.btn-cancel:hover{background:var(--border);}
+.btn-confirm{padding:8px 20px;border-radius:7px;border:none;background:var(--accent);color:#fff;font-size:13.5px;font-family:inherit;font-weight:600;cursor:pointer;}
+.btn-confirm:hover{opacity:.85;}
+@media(max-width:520px){.ph-title{font-size:15px;}.qc-head{padding:14px 16px 0;}.qc-body{padding:12px 16px 16px;}.ans-panel{padding:14px;}.q-title{font-size:15.5px;}.lock-badge span{display:none;}}
+</style>
+<script>window.MathJax={tex:{inlineMath:[['$','$']],displayMath:[['$$','$$']]},options:{skipHtmlTags:['script','noscript','style','textarea','pre']}};</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" async></script>
+</head>
+<body>
+
+<header class="ph">
+  <div class="ph-inner">
+    <div class="ph-text">
+      <span class="ph-course">Data Acquisition, Extraction &amp; Storage — ENS / Inria / PSL</span>
+      <h1 class="ph-title">Lecture 2 Recap Q&amp;A</h1>
+    </div>
+    <div class="lock-badge" id="lockBadge">🔒 <span>Answers locked</span></div>
+    <button class="unlock-btn" id="unlockTrigger">Unlock</button>
+  </div>
+</header>
+
+<main>
+
+<!-- Q1 -->
+<article class="qc">
+  <div class="qc-head"><span class="q-num">Q1</span><h2 class="q-title">SSD as Storage Layer vs. SSD as Cache</h2></div>
+  <div class="qc-body">
+    <div class="q-prompt">
+      <p>SSDs can be integrated into a storage hierarchy in two fundamentally different ways:</p>
+      <ul>
+        <li><strong>Storage layer:</strong> some relations (or partitions) are permanently stored on SSD, the rest on magnetic disk.</li>
+        <li><strong>Cache:</strong> all data lives on magnetic disk; the SSD transparently caches frequently accessed blocks, evicting cold blocks back to disk.</li>
+      </ul>
+      <p><strong>(a)</strong> You are building a system that must answer real-time queries with a <em>guaranteed maximum response time</em>. Which architecture do you choose, and why?</p>
+      <p><strong>(b)</strong> You have a very large customer relation (hundreds of GB). Query logs show that a small, <em>unpredictable</em> subset of its blocks are hot at any given moment, while the rest are rarely touched. Which architecture works better here, and why?</p>
+    </div>
+    <div class="ans-zone">
+      <button class="toggle-btn" data-panel="a1">🔒 Answer locked</button>
+      <div class="ans-panel" id="a1" hidden><div class="ac">
+        <h4>(a) Real-time guaranteed latency → SSD as storage layer</h4>
+        <p>When a strict response-time bound must be met, <strong>SSD as a storage layer</strong> is the right choice. The latency of any query touching an SSD-resident relation is bounded by SSD access times (tens of microseconds), which are predictable. With a cache architecture, a cache miss falls through to magnetic disk (5–10 ms seek + rotational latency), breaking the guarantee. You cannot control when a cache miss occurs, so worst-case latency is magnetic-disk latency — incompatible with real-time requirements.</p>
+        <h4>(b) Large relation with unpredictable hot blocks → SSD as cache</h4>
+        <p>Two problems make the storage-layer approach impractical here:</p>
+        <ul>
+          <li>The relation is too large to store entirely on SSD (cost prohibitive).</li>
+          <li>The hot blocks shift over time and are unknown in advance, so there is no static partition to place on SSD — any fixed assignment will be wrong for future access patterns.</li>
+        </ul>
+        <p>The <strong>SSD cache</strong> adapts automatically: recently accessed blocks are promoted to SSD regardless of which part of the relation they come from, and cold blocks are silently demoted to disk. This matches the workload dynamically without any manual data placement. The trade-off is that occasional cache misses incur magnetic-disk latency, which is acceptable here since no hard real-time bound is required.</p>
+      </div></div>
+    </div>
+  </div>
+</article>
+
+<!-- Q2 -->
+<article class="qc">
+  <div class="qc-head"><span class="q-num">Q2</span><h2 class="q-title">Magnetic Disk</h2></div>
+  <div class="qc-body">
+    <div class="q-prompt">
+      <p>Some database systems configure magnetic disks so that only sectors on the <strong>outer tracks</strong> are used, leaving the inner tracks completely empty — even though this wastes a significant fraction of the disk's total capacity.</p>
+      <p>What are the potential performance benefits of this strategy? Give at least two distinct reasons.</p>
+    </div>
+    <div class="ans-zone">
+      <button class="toggle-btn" data-panel="a2">🔒 Answer locked</button>
+      <div class="ans-panel" id="a2" hidden><div class="ac">
+        <h4>Reason 1 — Higher data-transfer rate on outer tracks</h4>
+        <p>A hard disk spins at a constant angular velocity (e.g., 7 200 RPM). Because outer tracks have a larger circumference, more sectors pass under the read/write head per unit time than on inner tracks. This means the <strong>linear density of data throughput is higher</strong> on outer tracks. Restricting data to outer tracks therefore gives a consistently higher sequential transfer rate.</p>
+        <h4>Reason 2 — Reduced seek distance → lower latency</h4>
+        <p>If all data lives on the outermost band of tracks, the actuator arm only ever needs to sweep across a <strong>small radial range</strong>. Seek time is proportional to the distance the arm travels; by confining it to a narrow zone, average seek time falls significantly compared to using the full disk surface. This directly reduces I/O latency.</p>
+      </div></div>
+    </div>
+  </div>
+</article>
+
+<!-- Q3 -->
+<article class="qc">
+  <div class="qc-head"><span class="q-num">Q3</span><h2 class="q-title">Disk-Scheduling Algorithm</h2></div>
+  <div class="qc-body">
+    <div class="q-prompt">
+      <p>A database engineer proposes the following disk-scheduling algorithm to handle two classes of requests: <em>system requests</em> (issued by background processes) and <em>user requests</em> (issued by queries).</p>
+      <div class="callout">
+        <strong>Proposed algorithm — Priority Proximity Scheduler (PPS):</strong><br>
+        At each scheduling step:<br>
+        1. If any system request is pending, serve the <em>system request whose target track is closest to the current head position</em>.<br>
+        2. Otherwise, serve the <em>user request whose target track is closest to the current head position</em>.
+      </div>
+      <p><strong>(a)</strong> Identify a fundamental correctness problem with this algorithm.</p>
+      <p><strong>(b)</strong> Construct a <strong>concrete example</strong>.</p>
+      <p><strong>(c)</strong> To fix the problem, a colleague proposes the following modification:</p>
+      <div class="callout">
+        <strong>Proposed fix — Aging:</strong> Add a maximum waiting time $T_{\max}$. Any user request that has been waiting for longer than $T_{\max}$ is <em>promoted</em> to system priority and becomes eligible to be selected in step 1. Among all system requests (original and promoted), the scheduler still picks the one <strong>closest to the current head</strong>.
+      </div>
+      <p>Is this fix solving the problem of the previous solution? If you think it is correct, justify it. If you think it is still wrong, construct a concrete counterexample.</p>
+      <p><strong>(d)</strong> If the fix in (c) is flawed, propose a truly correct algorithm.</p>
+    </div>
+    <div class="ans-zone">
+      <button class="toggle-btn" data-panel="a3">🔒 Answer locked</button>
+      <div class="ans-panel" id="a3" hidden><div class="ac">
+        <h4>(a) The problem with PPS</h4>
+        <p>A user request can <em>wait indefinitely</em> and never be served. As long as system requests keep arriving — even at a moderate rate — the scheduler always picks them first. A user request sitting in the queue is permanently skipped, no matter how long it has been waiting. From the user's perspective, their query appears to hang forever, even though the disk is busy. This is a fairness failure: one class of requests completely monopolises the disk at the expense of the other.</p>
+        <h4>(b) Concrete starvation example</h4>
+        <p>Head starts at track 50. One user request targets track 80. System requests keep arriving continuously near track 50:</p>
+        <div class="tbl-wrap"><table>
+          <thead><tr><th>Time</th><th>Event</th><th>Queue</th><th>Served</th></tr></thead>
+          <tbody>
+            <tr><td>t=0</td><td>User request for track 80 arrives</td><td>U:80</td><td>—</td></tr>
+            <tr><td>t=1</td><td>System request for track 52 arrives</td><td>U:80, S:52</td><td>S:52 (system priority)</td></tr>
+            <tr><td>t=2</td><td>System request for track 55 arrives</td><td>U:80, S:55</td><td>S:55</td></tr>
+            <tr><td>t=3</td><td>System request for track 48 arrives</td><td>U:80, S:48</td><td>S:48</td></tr>
+            <tr><td>t=4</td><td>System request for track 60 arrives</td><td>U:80, S:60</td><td>S:60</td></tr>
+            <tr><td colspan="4" style="text-align:center;font-style:italic;color:var(--text-muted);">… user request for track 80 is never served …</td></tr>
+          </tbody>
+        </table></div>
+        <h4>(c) The aging fix is still wrong — counterexample</h4>
+        <p>Suppose U:80 has now waited longer than $T_{\max}$ and is promoted to system priority. The scheduler now holds: <em>promoted</em> U:80 and a stream of new (non-promoted) system requests continuously arriving near track 50 (the current head position). At each step, the "closest to head" rule picks the new system request (distance ≈ 5 tracks) over the promoted U:80 (distance = 30 tracks). Promotion did not help: the user request is still farther from the head than every newly arriving system request, so it is still skipped indefinitely.</p>
+        <div class="tbl-wrap"><table>
+          <thead><tr><th>Time</th><th>Event</th><th>Queue</th><th>Served</th></tr></thead>
+          <tbody>
+            <tr><td>t=T</td><td>U:80 promoted (waited &gt; $T_{\max}$)</td><td>U*:80, S:52</td><td>S:52 ← closer (dist 2 vs 30)</td></tr>
+            <tr><td>t=T+1</td><td>System request for track 55</td><td>U*:80, S:55</td><td>S:55 ← closer</td></tr>
+            <tr><td>t=T+2</td><td>System request for track 48</td><td>U*:80, S:48</td><td>S:48 ← closer</td></tr>
+            <tr><td colspan="4" style="text-align:center;font-style:italic;color:var(--text-muted);">… U*:80 is promoted but still never served …</td></tr>
+          </tbody>
+        </table></div>
+        <p>The root cause: promotion changes the <em>priority class</em> of the request, but the "closest to head" sub-rule still allows arbitrarily many nearby requests to jump ahead of it. As long as new system requests keep arriving near the head, the promoted request never wins.</p>
+        <h4>(d) A truly correct fix — mandatory immediate service</h4>
+        <p>The key insight is that "promote to system priority" is not enough — you must make the aged request <em>unconditionally next</em>. The correct modification is:</p>
+        <ol>
+          <li>If any request (system or user) has been waiting for more than $T_{\max}$, mark it as <em>urgent</em>. Among all urgent requests, serve the one that has been waiting <strong>the longest</strong> (FIFO among urgent requests). No other request can be served until the urgent queue is empty.</li>
+          <li>If there are no urgent requests, apply the original PPS rules (system priority, then closest).</li>
+        </ol>
+        <p><strong>Why this works:</strong> any request becomes urgent after at most $T_{\max}$ time. Once urgent, it is served before any non-urgent request regardless of head distance. The waiting time of any request is therefore bounded by $T_{\max}$ plus the time to drain the urgent queue at the moment it joins.</p>
+        <p><strong>Degeneration under high load.</strong> If the arrival rate is very high and $T_{\max}$ is short, many requests age into urgent simultaneously. The urgent queue then degenerates into a pure FIFO over <em>all</em> requests, ignoring disk head position entirely. This eliminates the seek-time optimisation that motivated the original PPS design, causing excessive head movement. A practical refinement is to apply <strong>SCAN</strong> <em>within</em> the urgent queue. This preserves the starvation-freedom guarantee (every request in the urgent queue is served on the current or next sweep) while recovering much of the seek-time efficiency. For most workloads, a combination of aging (to bound waiting time) and SCAN (to bound head travel) is therefore a preferred strategy.</p>
+      </div></div>
+    </div>
+  </div>
+</article>
+
+<!-- Q4 -->
+<article class="qc">
+  <div class="qc-head"><span class="q-num">Q4</span><h2 class="q-title">Parity Placement</h2></div>
+  <div class="qc-body">
+    <div class="q-prompt">
+      <p>A <em>parity block</em> $P_i$ stores the bitwise XOR of a group of data blocks. If one disk fails, any lost data block in the group can be reconstructed: $B_{\text{lost}} = P_i \oplus B_1 \oplus B_2 \oplus \ldots$ This only works if <strong>at most one</strong> block from the group is lost.</p>
+      <p>Consider the following setup: <strong>4 disks</strong>, data blocks $B_1$–$B_{12}$ assigned round-robin ($B_j$ → Disk $((j{-}1) \bmod 4)+1$). Parity group $i$ covers $\{B_{3i-2},\, B_{3i-1},\, B_{3i}\}$, so $P_i = B_{3i-2} \oplus B_{3i-1} \oplus B_{3i}$. An engineer assigns $P_i$ to Disk $i$ (cycling $1, 2, 3, 4, 1, \ldots$), giving the following layout:</p>
+      <div class="tbl-wrap"><table>
+        <thead><tr><th></th><th>Disk 1</th><th>Disk 2</th><th>Disk 3</th><th>Disk 4</th></tr></thead>
+        <tbody>
+          <tr><td style="font-weight:600;color:var(--text-muted);font-size:12px;">Data</td><td>B1</td><td>B2</td><td>B3</td><td>B4</td></tr>
+          <tr><td style="font-weight:600;color:var(--text-muted);font-size:12px;"></td><td>B5</td><td>B6</td><td>B7</td><td>B8</td></tr>
+          <tr><td style="font-weight:600;color:var(--text-muted);font-size:12px;"></td><td>B9</td><td>B10</td><td>B11</td><td>B12</td></tr>
+          <tr><td style="font-weight:600;color:var(--text-muted);font-size:12px;">Parity</td><td class="hi">P1</td><td class="hi">P2</td><td class="hi">P3</td><td class="hi">P4</td></tr>
+        </tbody>
+      </table></div>
+      <p><strong>(a)</strong> Is this arrangement robust to disk failure?</p>
+      <p><strong>(b)</strong> If not, propose a corrected placement formula and the resulting layout.</p>
+    </div>
+    <div class="ans-zone">
+      <button class="toggle-btn" data-panel="a4">🔒 Answer locked</button>
+      <div class="ans-panel" id="a4" hidden><div class="ac">
+        <h4>(a) The flaw — Group 1 as example</h4>
+        <p>Group 1 = $\{B_1, B_2, B_3\}$ with $P_1 = B_1 \oplus B_2 \oplus B_3$. From the round-robin rule: $B_1$ → Disk 1, $B_2$ → Disk 2, $B_3$ → Disk 3. The engineer places $P_1$ on Disk 1 (since $i=1$).</p>
+        <p><strong>Both $B_1$ and $P_1$ are on Disk 1.</strong> If Disk 1 fails, we lose $B_1$ and $P_1$ simultaneously. The surviving blocks are $B_2$ (Disk 2) and $B_3$ (Disk 3), but reconstruction requires the parity: $B_1 = P_1 \oplus B_2 \oplus B_3$. Since $P_1$ is also gone, $B_1$ cannot be recovered.</p>
+        <p>The same pattern repeats: Group 2 = $\{B_4, B_5, B_6\}$. $B_6$ → Disk $((6{-}1) \bmod 4)+1$ = Disk 2. $P_2$ is also on Disk 2. If Disk 2 fails, $B_6$ and $P_2$ are both lost, making $B_6$ unrecoverable. Every group has one such co-location conflict.</p>
+        <h4>(b) Corrected placement</h4>
+        <p>The parity block for group $i$ must go to the <em>one disk that holds none</em> of $B_{3i-2}$, $B_{3i-1}$, $B_{3i}$. Because data is round-robin across 4 disks, each group of 3 data blocks occupies exactly 3 of the 4 disks, leaving exactly one disk free per group:</p>
+        <ul>
+          <li>Group 1: $B_1$(D1), $B_2$(D2), $B_3$(D3) → free disk = <strong>D4</strong> → $P_1$ on D4</li>
+          <li>Group 2: $B_4$(D4), $B_5$(D1), $B_6$(D2) → free disk = <strong>D3</strong> → $P_2$ on D3</li>
+          <li>Group 3: $B_7$(D3), $B_8$(D4), $B_9$(D1) → free disk = <strong>D2</strong> → $P_3$ on D2</li>
+          <li>Group 4: $B_{10}$(D2), $B_{11}$(D3), $B_{12}$(D4) → free disk = <strong>D1</strong> → $P_4$ on D1</li>
+        </ul>
+        <p>The general formula for $D=4$ disks: $\text{Disk of } P_i = ((D - i) \bmod D) + 1 = ((4 - i) \bmod 4) + 1$. The parity rotates in the direction opposite to the data, ensuring no disk in the cycle holds both $P_i$ and any of its data blocks.</p>
+        <div class="tbl-wrap"><table>
+          <thead><tr><th></th><th>Disk 1</th><th>Disk 2</th><th>Disk 3</th><th>Disk 4</th></tr></thead>
+          <tbody>
+            <tr><td style="font-weight:600;color:var(--text-muted);font-size:12px;">Data</td><td>B1</td><td>B2</td><td>B3</td><td>B4</td></tr>
+            <tr><td></td><td>B5</td><td>B6</td><td>B7</td><td>B8</td></tr>
+            <tr><td></td><td>B9</td><td>B10</td><td>B11</td><td>B12</td></tr>
+            <tr><td style="font-weight:600;color:var(--text-muted);font-size:12px;">Parity</td><td class="hi">P4</td><td class="hi">P3</td><td class="hi">P2</td><td class="hi">P1</td></tr>
+          </tbody>
+        </table></div>
+        <p><strong>Verification — Disk 1 failure:</strong> lose $B_1$, $B_5$, $B_9$, $P_4$. For Group 1: $P_1$(D4) and $B_2$(D2), $B_3$(D3) all survive → reconstruct $B_1 = P_1 \oplus B_2 \oplus B_3$ ✓. For Group 4: $P_4$ is lost, but Group 4 = $\{B_{10}, B_{11}, B_{12}\}$ are on D2, D3, D4 — none lost — no reconstruction needed ✓. Any single-disk failure destroys at most one data block per group (its parity is on a different disk) and possibly one parity (whose data blocks are all intact). Recovery is always possible.</p>
+      </div></div>
+    </div>
+  </div>
+</article>
+
+<!-- Q5 -->
+<article class="qc">
+  <div class="qc-head"><span class="q-num">Q5</span><h2 class="q-title">Slotted Pages and the Free-Space Map</h2></div>
+  <div class="qc-body">
+    <div class="q-prompt">
+      <p>A file consists of <strong>3 slotted pages</strong> (P1, P2, P3), each <strong>400 bytes</strong>. A page header costs 8 bytes; each slot entry costs 4 bytes. Records are packed from the right. When a new record must be inserted, the system always picks the page with the <strong>most contiguous free space</strong> (as reported by the FSM). Ccompaction is not run automatically.</p>
+      <p>Starting from three empty pages, execute the following sequence:</p>
+      <ol>
+        <li>INSERT r1 (70 B), r2 (50 B), r3 (90 B), r4 (60 B), r5 (80 B)</li>
+        <li>DELETE r2</li>
+        <li>INSERT r6 (55 B)</li>
+        <li>DELETE r4</li>
+        <li>INSERT r7 (75 B)</li>
+      </ol>
+      <p><strong>(a)</strong> After the full sequence, for each page state: the total free bytes, whether the free space is <em>contiguous</em>, and the largest single record that can be inserted.</p>
+      <p><strong>(b)</strong> We maintain a free-space map (FSM) with only <strong>$2n$ bits total</strong> for $n$ pages (2 bits per page). How do you encode the free space of each page? What precision does this give you?</p>
+      <p><strong>(c)</strong> With $k$ bits per page and a page of size $B$ bytes, what is the granularity of the free-space estimate? Give the formula.</p>
+      <p><strong>(d)</strong> What is the benefit and the drawback of using a small $k$ (e.g., $k=2$) compared to a large $k$?</p>
+    </div>
+    <div class="ans-zone">
+      <button class="toggle-btn" data-panel="a5">🔒 Answer locked</button>
+      <div class="ans-panel" id="a5" hidden><div class="ac">
+        <h4>Model: what "contiguous free" means</h4>
+        <p>In a slotted page, the slot directory grows left→right from the header; records are packed right→left from the page end. <strong>Contiguous free</strong> = distance between the end of the last slot entry and the start of the leftmost <em>live</em> record. Each INSERT costs 4 B (new slot) + record size; each DELETE nulls the slot without shrinking the directory. A hole is visible to the FSM <strong>only if</strong> deleting a record moves the leftmost-live-record pointer (i.e., the deleted record directly bordered the free zone). Otherwise the hole is invisible to the FSM and cannot be used without VACUUM.</p>
+        <p><em>Initial state:</em> all pages empty, slot_dir_end = 8 B (header only), contiguous = 392 B each.</p>
+        <p><strong>INSERT r1 (70 B) →</strong> all tied (392 B). Use P1. P1: slot_dir_end=12, leftmost_live at 330. Contiguous = 318 B. <em>P1=318, P2=392, P3=392.</em></p>
+        <p><strong>INSERT r2 (50 B) →</strong> P2 or P3 tied (392 B). Use P2. P2: 338 B. <em>P1=318, P2=338, P3=392.</em></p>
+        <p><strong>INSERT r3 (90 B) →</strong> P3 (392 B). P3: 298 B. <em>P1=318, P2=338, P3=298.</em></p>
+        <p><strong>INSERT r4 (60 B) →</strong> P2 (338 B). P2: 274 B. Layout: [hdr][slot_r2][slot_r4]…[274 B free]…[r4=60 B][r2=50 B]. <em>P1=318, P2=274, P3=298.</em></p>
+        <p><strong>INSERT r5 (80 B) →</strong> P1 (318 B). P1: 234 B. <em>P1=234, P2=274, P3=298.</em></p>
+        <p><strong>DELETE r2</strong> (on P2, at far-right, 50 B): slot nulled. r4 is still live and <em>directly borders</em> the free zone. The 50 B hole is on the far right, <strong>not</strong> adjacent to the free zone. FSM is not updated. <strong>P2 contiguous = 274 B (unchanged).</strong></p>
+        <p><strong>INSERT r6 (55 B) →</strong> P3 (298 B, most contiguous). P3: 298−59 = 239 B. <em>P1=234, P2=274, P3=239.</em></p>
+        <p><strong>DELETE r4</strong> (on P2, the <em>leftmost live</em> record, bordering the free zone, 60 B): slot nulled. Now there are <strong>no live records</strong> on P2. The leftmost-live-record pointer moves to the end of the page. Both the old free zone (274 B) and the two former record spaces (60 B + 50 B) merge into one contiguous region. <strong>P2 contiguous = 400 − 8 (hdr) − 8 (2 null slots × 4 B) = 384 B.</strong> The FSM updates to reflect this.</p>
+        <p><strong>INSERT r7 (75 B) →</strong> P2 (384 B, now the most contiguous). P2: 384−79 = 305 B. <em>P1=234, P2=305, P3=239.</em></p>
+        <h4>(a) Final state</h4>
+        <div class="tbl-wrap"><table>
+          <thead><tr><th>Page</th><th>Records</th><th>Slot dir</th><th>Contiguous free</th><th>Holes</th><th>Largest insertable (no VACUUM)</th></tr></thead>
+          <tbody>
+            <tr><td>P1</td><td>r1, r5</td><td>2 live</td><td class="r">234 B</td><td>None</td><td>230 B</td></tr>
+            <tr><td>P2</td><td>r7</td><td>2 null + 1 live</td><td class="r">305 B</td><td>None</td><td>301 B</td></tr>
+            <tr><td>P3</td><td>r3, r6</td><td>2 live</td><td class="r">239 B</td><td>None</td><td>235 B</td></tr>
+          </tbody>
+        </table></div>
+        <p>No page has any holes at the end. P2 recovered all its fragmented space when r4 (the last live record) was deleted — the FSM correctly reflected this, routing r7 there. Contrast this with a total-free FSM: it would have sent r6 to P2 (because 274+50=324 > 298), creating a hole on P2, and the FSM would never have noticed the self-healing at DELETE r4.</p>
+        <h4>(b) 2 bits per page encoding</h4>
+        <p>With 2 bits we can represent $2^2 = 4$ states. A natural encoding divides the <em>contiguous free space</em> into quartiles of the page capacity:</p>
+        <ul>
+          <li><code>00</code> → 0–25% contiguous free (nearly full)</li>
+          <li><code>01</code> → 25–50% contiguous free</li>
+          <li><code>10</code> → 50–75% contiguous free</li>
+          <li><code>11</code> → 75–100% contiguous free (mostly empty)</li>
+        </ul>
+        <p>Precision: we only know <em>which quarter</em> the contiguous free space falls in, not the exact byte count.</p>
+        <h4>(c) Granularity formula</h4>
+        <p>With $k$ bits, there are $2^k$ levels. The granularity (size of each band) is:</p>
+        <p>$$\text{granularity} = \frac{B}{2^k} \text{ bytes}$$</p>
+        <p>For $k=2$, $B=8\,192$: granularity $= 8192/4 = \mathbf{2\,048}$ bytes. The FSM can only tell us the free space within a 2 KB window.</p>
+        <h4>(d) Small $k$ vs. large $k$</h4>
+        <p><strong>Benefits of small $k$:</strong> the FSM occupies very little space (for $n$ pages, only $k \cdot n$ bits). More importantly, many inserts and deletes do not cross a quartile boundary, so the FSM rarely needs to be updated — reducing write overhead on the FSM itself.</p>
+        <p><strong>Drawback of small $k$:</strong> the free-space estimate is coarse. A page might be skipped because it falls below a quartile threshold even though it has just enough space. Both effects cause either wasted I/O or suboptimal space utilisation.</p>
+      </div></div>
+    </div>
+  </div>
+</article>
+
+<!-- Q6 -->
+<article class="qc">
+  <div class="qc-head"><span class="q-num">Q6</span><h2 class="q-title">Buffer Pool Replacement — LRU vs. MRU</h2></div>
+  <div class="qc-body">
+    <div class="q-prompt">
+      <p><strong>Background.</strong> A <em>buffer pool</em> is a fixed set of memory frames that cache disk blocks. When a block is requested:</p>
+      <ul>
+        <li><strong>Hit:</strong> the block is already in a frame — it is returned immediately (no disk I/O).</li>
+        <li><strong>Miss:</strong> the block is not in any frame — it must be read from disk. If all frames are occupied, one must be <em>evicted</em> (written back to disk if dirty, then its frame reused).</li>
+      </ul>
+      <p>Two replacement policies decide which frame to evict on a miss:</p>
+      <ul>
+        <li><strong>LRU (Least Recently Used):</strong> evict the block that was last accessed <em>furthest in the past</em>.</li>
+        <li><strong>MRU (Most Recently Used):</strong> evict the block that was last accessed <em>most recently</em>.</li>
+      </ul>
+      <p>The buffer pool has <strong>4 frames</strong>. All frames start empty. Blocks are referenced in this order (each number is a block ID):</p>
+      <p style="font-family:monospace;font-size:14px;background:var(--surface-2);padding:10px 14px;border-radius:6px;letter-spacing:.05em;">1, 2, 3, 4, 1, 2, 5, 1, 2, 3, 4, 5</p>
+      <p><strong>(a)</strong> Simulate <strong>LRU</strong>: for each reference, show the buffer contents and label it Hit or Miss. Count total misses.</p>
+      <p><strong>(b)</strong> Simulate <strong>MRU</strong>: same instructions. Count total misses.</p>
+      <p><strong>(c)</strong> Consider a <strong>nested-loop join</strong> between two relations R (outer, 2 pages: r1, r2) and S (inner, 3 pages: s1, s2, s3), with a buffer pool of <strong>3 frames</strong>. The algorithm reads: for each page of R, scan all pages of S. The resulting block-access sequence is:</p>
+      <p style="font-family:monospace;font-size:14px;background:var(--surface-2);padding:10px 14px;border-radius:6px;letter-spacing:.05em;">r1, s1, s2, s3, r2, s1, s2, s3</p>
+      <p>Simulate <strong>LRU</strong> and <strong>MRU</strong> on this sequence (3 frames, start empty). Show the buffer state and hit/miss for each access. Explain <em>why</em> the results differ, and identify which policy is better suited to this access pattern.</p>
+    </div>
+    <div class="ans-zone">
+      <button class="toggle-btn" data-panel="a6">🔒 Answer locked</button>
+      <div class="ans-panel" id="a6" hidden><div class="ac">
+        <h4>(a) LRU simulation — sequence 1,2,3,4,1,2,5,1,2,3,4,5</h4>
+        <div class="tbl-wrap"><table>
+          <thead><tr><th>Ref</th><th>F1</th><th>F2</th><th>F3</th><th>F4</th><th>Evicted</th><th>Result</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td class="hi">1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>Miss</td></tr>
+            <tr><td>2</td><td>1</td><td class="hi">2</td><td>—</td><td>—</td><td>—</td><td>Miss</td></tr>
+            <tr><td>3</td><td>1</td><td>2</td><td class="hi">3</td><td>—</td><td>—</td><td>Miss</td></tr>
+            <tr><td>4</td><td>1</td><td>2</td><td>3</td><td class="hi">4</td><td>—</td><td>Miss</td></tr>
+            <tr><td>1</td><td class="hi">1</td><td>2</td><td>3</td><td>4</td><td>—</td><td>Hit</td></tr>
+            <tr><td>2</td><td>1</td><td class="hi">2</td><td>3</td><td>4</td><td>—</td><td>Hit</td></tr>
+            <tr><td>5</td><td>1</td><td>2</td><td class="hi">5</td><td>4</td><td>3 (LRU)</td><td>Miss</td></tr>
+            <tr><td>1</td><td class="hi">1</td><td>2</td><td>5</td><td>4</td><td>—</td><td>Hit</td></tr>
+            <tr><td>2</td><td>1</td><td class="hi">2</td><td>5</td><td>4</td><td>—</td><td>Hit</td></tr>
+            <tr><td>3</td><td>1</td><td>2</td><td>5</td><td class="hi">3</td><td>4 (LRU)</td><td>Miss</td></tr>
+            <tr><td>4</td><td>1</td><td>2</td><td class="hi">4</td><td>3</td><td>5 (LRU)</td><td>Miss</td></tr>
+            <tr><td>5</td><td>1</td><td>2</td><td>4</td><td class="hi">5</td><td>3 (LRU)</td><td>Miss</td></tr>
+          </tbody>
+        </table></div>
+        <p><strong>LRU total misses: 8</strong></p>
+        <h4>(b) MRU simulation — sequence 1,2,3,4,1,2,5,1,2,3,4,5</h4>
+        <div class="tbl-wrap"><table>
+          <thead><tr><th>Ref</th><th>F1</th><th>F2</th><th>F3</th><th>F4</th><th>Evicted</th><th>Result</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td class="hi">1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>Miss</td></tr>
+            <tr><td>2</td><td>1</td><td class="hi">2</td><td>—</td><td>—</td><td>—</td><td>Miss</td></tr>
+            <tr><td>3</td><td>1</td><td>2</td><td class="hi">3</td><td>—</td><td>—</td><td>Miss</td></tr>
+            <tr><td>4</td><td>1</td><td>2</td><td>3</td><td class="hi">4</td><td>—</td><td>Miss</td></tr>
+            <tr><td>1</td><td class="hi">1</td><td>2</td><td>3</td><td>4</td><td>—</td><td>Hit (MRU=1)</td></tr>
+            <tr><td>2</td><td>1</td><td class="hi">2</td><td>3</td><td>4</td><td>—</td><td>Hit (MRU=2)</td></tr>
+            <tr><td>5</td><td>1</td><td class="hi">5</td><td>3</td><td>4</td><td>2 (MRU)</td><td>Miss</td></tr>
+            <tr><td>1</td><td class="hi">1</td><td>5</td><td>3</td><td>4</td><td>—</td><td>Hit (MRU=1)</td></tr>
+            <tr><td>2</td><td class="hi">2</td><td>5</td><td>3</td><td>4</td><td>1 (MRU)</td><td>Miss</td></tr>
+            <tr><td>3</td><td>2</td><td>5</td><td class="hi">3</td><td>4</td><td>—</td><td>Hit</td></tr>
+            <tr><td>4</td><td>2</td><td>5</td><td>3</td><td class="hi">4</td><td>—</td><td>Hit</td></tr>
+            <tr><td>5</td><td>2</td><td class="hi">5</td><td>3</td><td>4</td><td>—</td><td>Hit</td></tr>
+          </tbody>
+        </table></div>
+        <p><strong>MRU total misses: 6</strong></p>
+        <h4>(c) Nested-loop join — LRU vs MRU with 3 frames</h4>
+        <p>Access sequence: r1, s1, s2, s3, r2, s1, s2, s3 (8 accesses total). The currently-loaded frame is highlighted; the LRU/MRU label shows which frame is evicted when a miss requires it.</p>
+        <p><strong>LRU (3 frames):</strong></p>
+        <div class="tbl-wrap"><table>
+          <thead><tr><th>Step</th><th>Ref</th><th>Buffer after</th><th>LRU candidate before eviction</th><th>Evicted</th><th>Result</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>r1</td><td><strong>r1</strong>, —, —</td><td>—</td><td>—</td><td>Miss</td></tr>
+            <tr><td>2</td><td>s1</td><td>r1, <strong>s1</strong>, —</td><td>—</td><td>—</td><td>Miss</td></tr>
+            <tr><td>3</td><td>s2</td><td>r1, s1, <strong>s2</strong></td><td>—</td><td>—</td><td>Miss</td></tr>
+            <tr><td>4</td><td>s3</td><td>s1, s2, <strong>s3</strong></td><td>r1 (last used step 1)</td><td>r1</td><td>Miss</td></tr>
+            <tr><td>5</td><td>r2</td><td>s2, s3, <strong>r2</strong></td><td>s1 (last used step 2)</td><td>s1</td><td>Miss</td></tr>
+            <tr><td>6</td><td>s1</td><td>s3, r2, <strong>s1</strong></td><td>s2 (last used step 3)</td><td>s2</td><td>Miss</td></tr>
+            <tr><td>7</td><td>s2</td><td>r2, s1, <strong>s2</strong></td><td>s3 (last used step 4)</td><td>s3</td><td>Miss</td></tr>
+            <tr><td>8</td><td>s3</td><td>s1, s2, <strong>s3</strong></td><td>r2 (last used step 5)</td><td>r2</td><td>Miss</td></tr>
+          </tbody>
+        </table></div>
+        <p><strong>LRU: 8/8 misses — complete thrashing.</strong> At step 6, s1 evicts s2 (the oldest block, last used at step 3), so s2 is gone when it is needed again at step 7. The same pattern repeats: every page evicted in one step is the very page needed two steps later. LRU consistently discards what will be needed soonest.</p>
+        <p><strong>MRU (3 frames):</strong></p>
+        <div class="tbl-wrap"><table>
+          <thead><tr><th>Step</th><th>Ref</th><th>Buffer after</th><th>Evicted</th><th>Result</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>r1</td><td><strong>r1</strong>, —, —</td><td>—</td><td>Miss</td></tr>
+            <tr><td>2</td><td>s1</td><td>r1, <strong>s1</strong>, —</td><td>—</td><td>Miss</td></tr>
+            <tr><td>3</td><td>s2</td><td>r1, s1, <strong>s2</strong></td><td>—</td><td>Miss</td></tr>
+            <tr><td>4</td><td>s3</td><td>r1, s1, <strong>s3</strong></td><td>s2 (MRU)</td><td>Miss</td></tr>
+            <tr><td>5</td><td>r2</td><td>r1, s1, <strong>r2</strong></td><td>s3 (MRU)</td><td>Miss</td></tr>
+            <tr><td>6</td><td>s1</td><td>r1, <strong>s1</strong>, r2</td><td>—</td><td class="hi">Hit</td></tr>
+            <tr><td>7</td><td>s2</td><td>r1, <strong>s2</strong>, r2</td><td>s1 (MRU)</td><td>Miss</td></tr>
+            <tr><td>8</td><td>s3</td><td>r1, <strong>s3</strong>, r2</td><td>s2 (MRU)</td><td>Miss</td></tr>
+          </tbody>
+        </table></div>
+        <p><strong>MRU: 7 misses, 1 hit (s1 at step 6, start of the second inner scan).</strong></p>
+        <h4>Why MRU beats LRU here</h4>
+        <p>After scanning the inner relation (s1→s2→s3), the last page accessed is s3 — the page <em>least likely</em> to be needed at the start of the next inner scan. MRU evicts s3 first (and s2 before it, during the scan), keeping s1 in the buffer. When the second iteration of the inner loop begins with s1, it is a cache hit.</p>
+        <p>LRU does the opposite: it keeps s3 (most recently accessed) and evicts s1 (least recently accessed) — exactly the page that will be needed first next time. This is why LRU thrashes completely on repeated sequential scans, while MRU naturally keeps the "head" of each scan in the buffer for reuse.</p>
+        <p>The general rule: <strong>MRU is better when the same sequence is scanned repeatedly</strong> (nested-loop join, repeated table scans). <strong>LRU is better when recent accesses predict future accesses</strong> (point queries, random access workloads).</p>
+      </div></div>
+    </div>
+  </div>
+</article>
+
+<!-- Q7 -->
+<article class="qc">
+  <div class="qc-head"><span class="q-num">Q7</span><h2 class="q-title">Three Buffer-Write Strategies</h2></div>
+  <div class="qc-body">
+    <div class="q-prompt">
+      <p>A buffer (in RAM) sits between the application and the disk. Below are three strategies for handling <strong>READ</strong> and <strong>WRITE</strong> operations.</p>
+      <div class="tbl-wrap"><table>
+        <thead><tr><th>Strategy</th><th>On READ</th><th>On WRITE</th></tr></thead>
+        <tbody>
+          <tr><td><strong>A</strong></td><td>If block in buffer → return it. Else load from disk into buffer, return.</td><td>Write directly to disk.</td></tr>
+          <tr><td><strong>B</strong></td><td>If block in buffer → return it. Else load from disk into buffer, return.</td><td>If block is in buffer → update buffer. If not in buffer → write to disk.</td></tr>
+          <tr><td><strong>C</strong></td><td>Check disk to verify buffer copy is up-to-date. Return up-to-date copy.</td><td>Write directly to disk.</td></tr>
+        </tbody>
+      </table></div>
+      <p><strong>(a)</strong> Evaluate each strategy on three dimensions: <em>read latency</em>, <em>write consistency</em>, and <em>durability</em>. Which strategy is best overall, and why?</p>
+      <p><strong>(b)</strong> Does a better strategy exist?</p>
+    </div>
+    <div class="ans-zone">
+      <button class="toggle-btn" data-panel="a7">🔒 Answer locked</button>
+      <div class="ans-panel" id="a7" hidden><div class="ac">
+        <h4>Strategy A correctness problem</h4>
+        <p>Suppose block B is loaded into the buffer during a read, then a write updates block B's content on disk (bypassing the buffer). The buffer now holds a <strong>stale copy</strong> of B. The next read for B finds it in the buffer and returns the old value — the application silently reads outdated data. Example:</p>
+        <ol>
+          <li>READ B → buffer loads B (value = 42), returns 42. ✓</li>
+          <li>WRITE B = 99 → written to disk only. Buffer still holds B = 42.</li>
+          <li>READ B → buffer hit, returns <strong>42</strong>. ✗ (correct answer is 99)</li>
+        </ol>
+        <h4>(a) Strategy comparison</h4>
+        <div class="tbl-wrap"><table>
+          <thead><tr><th>Strategy</th><th>Read latency</th><th>Write consistency</th><th>Durability on crash</th></tr></thead>
+          <tbody>
+            <tr><td><strong>A</strong></td><td>Fast (buffer hits)</td><td class="hi">❌ Stale reads after writes</td><td>✓ (writes go straight to disk)</td></tr>
+            <tr><td><strong>B</strong></td><td>Fast (buffer hits)</td><td>✓ (buffer updated on write)</td><td class="hi">❌ Some writes not on disk </td></tr>
+            <tr><td><strong>C</strong></td><td class="hi">❌ Slow (disk check on every read)</td><td>✓</td><td>✓</td></tr>
+          </tbody>
+        </table></div>
+        <h4>(b) A new Strategy D's</h4>
+        <p>The solution is to fix Strategy B by writing to disk directly after updating the buffer.</p>
+        <div class="tbl-wrap"><table>
+        <thead><tr><th>Strategy</th><th>On READ</th><th>On WRITE</th></tr></thead>
+        <tbody>
+          <tr><td><strong>D</strong></td><td>If block in buffer → return it. Else load from disk into buffer, return.</td><td>If block is in buffer → update buffer, then disk. If not in buffer → write to disk.</td></tr>
+        </tbody>
+      </table></div>
+        <h4>Strategy D's durability risk and the WAL fix</h4>
+        <p>Strategy B writes data to the disk file on every write, which is good for durability. However, if the database needs to <em>group</em> writes (to amortise disk I/O), it may buffer multiple writes before flushing — at which point the unflushed data is lost on a crash.</p>
+        <p>Real systems use a <strong>Write-Ahead Log (WAL)</strong>: every write is first recorded sequentially in a log file on disk <em>before</em> the actual data page is modified. On crash recovery, the system replays the log to restore any changes that hadn't reached the data pages yet. The log is written sequentially (very fast), so read performance through the buffer is preserved while durability is guaranteed by the log.</p>
+      </div></div>
+    </div>
+  </div>
+</article>
+
+<!-- Q8 -->
+<article class="qc">
+  <div class="qc-head"><span class="q-num">Q8</span><h2 class="q-title">Multitable Clustering — Design and Trade-offs</h2></div>
+  <div class="qc-body">
+    <div class="q-prompt">
+      <p>Consider two relations:</p>
+      <ul>
+        <li><code>Student(sid CHAR(5), sname VARCHAR(15), dept CHAR(10))</code> — average record size <strong>30 bytes</strong></li>
+        <li><code>Enrollment(sid CHAR(5), course_id CHAR(8), grade CHAR(2))</code> — average record size <strong>15 bytes</strong></li>
+      </ul>
+      <p>The database has <strong>6 000 students</strong>, each enrolled in <strong>5 courses on average</strong>. Block size is <strong>4 096 bytes</strong>.</p>
+      <ol>
+        <li>Show a concrete file layout using <strong>multitable clustering</strong> for 3 students (s1, s2, s3, each with 3 enrollments), fitting as many records as possible into a single 4 KB block.</li>
+        <li>Compute the total number of blocks for <strong>separate heap files</strong> vs the <strong>clustered file</strong>.</li>
+        <li>Which organisation is preferable for the query <code>SELECT * FROM Student WHERE dept='CS'</code>? </li>
+        <li>The query below retrieves all course enrollments of CS students. Compare the block I/O cost for <strong>separate</strong> vs <strong>clustered</strong> layouts, assuming a simple nested-loop join with no index. Assume 20% of students are in CS (1 200 students).</li>
+      </ol>
+      <div class="code-wrap"><pre class="code-block">SELECT s.sname, e.course_id
+FROM Student s
+JOIN Enrollment e ON s.sid = e.sid
+WHERE s.dept = 'CS'</pre></div>
+    </div>
+    <div class="ans-zone">
+      <button class="toggle-btn" data-panel="a8">🔒 Answer locked</button>
+      <div class="ans-panel" id="a8" hidden><div class="ac">
+        <h4>1 — Clustered block layout</h4>
+        <p>One student group = 1 student record (30 B) + 3 enrollments (45 B) = 75 B. Three groups = 225 B — fits in one 4 KB block with room to spare.</p>
+        <div class="code-wrap"><pre class="code-block">┌──────────────────────────────────────────────┐  4 KB block
+│  S  s1  'Alice'   'CS'                       │  30 B
+│  E  s1  'CS101'   'A'                        │  15 B
+│  E  s1  'MATH201' 'B+'                       │  15 B
+│  E  s1  'PHY101'  'A-'                       │  15 B
+│  S  s2  'Bob'     'EE'                       │  30 B
+│  E  s2  'EE301'   'B'                        │  15 B
+│  E  s2  'MATH201' 'C+'                       │  15 B
+│  E  s2  'CS101'   'B+'                       │  15 B
+│  S  s3  'Carol'   'CS'                       │  30 B
+│  E  s3  'CS201'   'A'                        │  15 B
+│  E  s3  'CS301'   'A'                        │  15 B
+│  E  s3  'MATH301' 'B'                        │  15 B
+│  [ free: 4096 − 225 = 3 871 B ]              │
+└──────────────────────────────────────────────┘</pre></div>
+        <h4>2 — Block count</h4>
+        <p><strong>Separate files:</strong> Student: $\lceil 6000\times30/4096\rceil = 44$ blocks. Enrollment: $\lceil 30000\times15/4096\rceil = 110$ blocks. Total: <strong>154 blocks</strong>.</p>
+        <p><strong>Clustered file:</strong> one group = 30 + 5×15 = 105 B; groups per block = $\lfloor 4096/105\rfloor = 39$; blocks = $\lceil 6000/39\rceil =$ <strong>154 blocks</strong>. Same total — the gain is in I/O pattern for joins, not storage size.</p>
+        <h4>3 — Why the Student-only scan is slower</h4>
+        <p>Separate Student file: 44 blocks, containing only student records — 180 KB read to scan all students.</p>
+        <p>Clustered file: the 154 blocks interleave student and enrollment records. A scan for <code>dept='CS'</code> must read all 154 blocks (632 KB) and discard the 5× more enrollment records that are irrelevant. Extra I/O: $154 - 44 = 110$ extra blocks ≈ 451 KB of unnecessary data.</p>
+        <h4>4 — Join query comparison</h4>
+        <p>The join produces 1 200 CS students × 5 enrollments = 6 000 result rows.</p>
+        <p><strong>Separate files — nested-loop join (no index):</strong></p>
+        <p>For each page of Student (outer, 44 blocks), scan all pages of Enrollment (inner, 110 blocks). Cost = $44 + 44 \times 110 = 44 + 4\,840 = \mathbf{4\,884}$ block reads (44 for the first full scan of Student, then 110 Enrollment blocks re-read for each of the 44 Student pages).</p>
+        <p><strong>Clustered file — single sequential scan:</strong></p>
+        <p>The clustered file is scanned once: 154 blocks. Each student record is immediately followed by its enrollment records in the same (or adjacent) block. The join result is assembled on the fly, with no second pass and no random I/O. Cost = <strong>154 blocks</strong>.</p>
+        <div class="tbl-wrap"><table>
+          <thead><tr><th>Query</th><th>Separate layout (blocks)</th><th>Clustered layout (blocks)</th><th>Winner</th></tr></thead>
+          <tbody>
+            <tr><td><code>WHERE dept='CS'</code> (scan only)</td><td class="r">44</td><td class="r">154</td><td>Separate ✓ (3.5× fewer)</td></tr>
+            <tr><td>Join Student ⋈ Enrollment (no index)</td><td class="r">4 884</td><td class="r">154</td><td class="hi">Clustered ✓ (32× fewer)</td></tr>
+          </tbody>
+        </table></div>
+      </div></div>
+    </div>
+  </div>
+</article>
+
+<!-- Q9 -->
+<article class="qc">
+  <div class="qc-head"><span class="q-num">Q9</span><h2 class="q-title">Wear Leveling</h2></div>
+  <div class="qc-body">
+    <div class="q-prompt">
+      <p>An SSD has <strong>8 physical cells</strong> $C_0$–$C_7$, each tolerating at most $W_{\max} = 10$ writes before becoming unreliable. Let $w_j(t)$ denote the number of writes to cell $C_j$ after $t$ operations. The system stores <strong>4 logical variables</strong> (X, Y, Z, W). A program executes the following sequence of 20 operations:</p>
+      <p style="font-family:monospace;font-size:13px;background:var(--surface-2);padding:10px 14px;border-radius:6px;line-height:1.8;">
+        W(X), W(Y), W(X), W(Z), W(X), W(Y), W(X), W(W),<br>
+        W(X), W(Z), W(X), W(Y), W(X), W(W), W(X), W(Z),<br>
+        W(X), W(Y), W(X), W(W)
+      </p>
+      <p>Define the <strong>SSD lifespan</strong> at time $t$ as the number of additional write operations that can be performed before <em>any</em> cell fails:</p>
+      <p>$$\text{Lifespan}(t) = \min_{j \in \{0,\ldots,7\}} \bigl(W_{\max} - w_j(t)\bigr)$$</p>
+      <p>The objective of a wear-leveling strategy is to <strong>maximise $\text{Lifespan}(t)$</strong> for all $t$, i.e., keep all cells as equally worn as possible so that the minimum remaining capacity is as large as possible.</p>
+      <p><strong>(a) First approach:</strong> logical address = physical address (X→$C_0$, Y→$C_1$, Z→$C_2$, W→$C_3$; $C_4$–$C_7$ unused). Compute $w_j(20)$ for each cell. What is $\text{Lifespan}(20)$? After how many operations does the SSD fail?</p>
+      <p><strong>(b)</strong> Propose a better mapping strategy. Describe it in plain terms.</p>
+      <p><strong>(c)</strong> Is there any residual problem when some variables are written much more frequently than others?</p>
+    </div>
+    <div class="ans-zone">
+      <button class="toggle-btn" data-panel="a9">🔒 Answer locked</button>
+      <div class="ans-panel" id="a9" hidden><div class="ac">
+        <h4>(a) Naive approach — write counts and lifespan</h4>
+        <p>Count writes per variable in the 20-operation sequence: X appears 10 times, Y appears 4 times, Z appears 3 times, W appears 3 times. Total: 20 writes.</p>
+        <div class="tbl-wrap"><table>
+          <thead><tr><th>Cell</th><th>Variable</th><th>$w_j(20)$</th><th>$W_{\max} - w_j(20)$</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td>$C_0$</td><td>X</td><td class="r hi">10</td><td class="r hi">0</td><td class="hi">⚠ Worn out after op 19</td></tr>
+            <tr><td>$C_1$</td><td>Y</td><td class="r">4</td><td class="r">6</td><td>60% remaining</td></tr>
+            <tr><td>$C_2$</td><td>Z</td><td class="r">3</td><td class="r">7</td><td>70% remaining</td></tr>
+            <tr><td>$C_3$</td><td>W</td><td class="r">3</td><td class="r">7</td><td>70% remaining</td></tr>
+            <tr><td>$C_4$–$C_7$</td><td>—</td><td class="r">0</td><td class="r">10</td><td>100% — never used</td></tr>
+          </tbody>
+        </table></div>
+        <p>$$\text{Lifespan}(20) = \min(0,\,6,\,7,\,7,\,10,\,10,\,10,\,10) = \mathbf{0}$$</p>
+        <p>The SSD effectively fails after operation 19 (the 10th write to X, making $C_0$ worn out). At that point, 60 write-slots remain across $C_1$–$C_3$ and 40 more across $C_4$–$C_7$. A total of <strong>80 out of 100 available write-slots were never used</strong>.</p>
+        <h4>(b) Better mapping — dynamic address translation</h4>
+        <p>Introduce an <strong>indirection table</strong> (Flash Translation Layer): instead of mapping X always to $C_0$, the table dynamically routes each write of variable X to whichever physical cell has been written the fewest times so far. The procedure:</p>
+        <ol>
+          <li>On a write to variable $v$: scan all 8 cells, find $C^* = \arg\min_j w_j(t)$.</li>
+          <li>Write $v$'s new value to $C^*$.</li>
+          <li>Update the table: $v \mapsto C^*$. Mark the previous cell holding $v$ as free (its data is now stale).</li>
+        </ol>
+        <p><strong>Ideal lifespan with perfect distribution:</strong> 20 writes spread evenly across 8 cells = 2.5 writes per cell on average. Since write counts must be integers, the best possible outcome is some cells at 3 and some at 2, giving $\min_j(10 - w_j) \geq 10 - 3 = 7$. In practice, $\text{Lifespan}(20) = 7$ with an optimal strategy — compared to 0 with the naive approach.</p>
+        <p><strong>Why naive fails:</strong> because X is always written to $C_0$, $w_0$ reaches $W_{\max}$ long before any other cell is close to its limit. The naïve approach cannot redistribute writes from a "hot" variable across multiple cells.</p>
+        <h4>(c) Residual problem — static data blocking fresh cells</h4>
+        <p>With dynamic translation, X's writes are spread across many cells. But Y, Z, W are written infrequently, so the cells holding their <em>current</em> values are rarely replaced — they stay resident with low $w_j$ counts. Since those cells hold valid (live) data, they cannot be used as write targets for X. As the sequence progresses, X exhausts the remaining "free" cells (those not holding live static data), and we see:</p>
+        <p>$$\text{Lifespan}(t) = \min\bigl(\underbrace{W_{\max} - w_{j_{\text{hot}}}(t)}_{\text{X's cells, wearing fast}},\; \underbrace{W_{\max} - w_{j_{\text{cold}}}(t)}_{\text{Y/Z/W cells, nearly 0}}\bigr)$$</p>
+        <p>The minimum is determined by the <em>most written</em> cells (X's), and the cold cells never contribute their capacity.</p>
+        <p><strong>Further improvement — static wear leveling:</strong> periodically, even when no write is pending for Y, Z, or W, the system <em>proactively migrates</em> their values from low-wear cells to high-wear cells (that are still within limits), freeing the low-wear cells for X's next writes. This forces all cells to age at roughly the same rate. The cost is extra write operations for migration, but $\text{Lifespan}(t)$ is maximised by keeping $\max_j w_j(t) - \min_j w_j(t)$ small.</p>
+      </div></div>
+    </div>
+  </div>
+</article>
+
+</main>
+
+<div class="modal-bg" id="modalBg" hidden>
+  <div class="modal-card">
+    <h3>🔐 Unlock Answers</h3>
+    <p>Enter the session code provided by the instructor.</p>
+    <input class="modal-input" id="codeInput" type="password" placeholder="Session code" autocomplete="off" spellcheck="false">
+    <div class="modal-err" id="modalErr"></div>
+    <div class="modal-acts">
+      <button class="btn-cancel" id="cancelBtn">Cancel</button>
+      <button class="btn-confirm" id="confirmBtn">Unlock</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  let unlocked=false;
+  const lockBadge=document.getElementById('lockBadge');
+  const unlockTrigger=document.getElementById('unlockTrigger');
+  const modalBg=document.getElementById('modalBg');
+  const codeInput=document.getElementById('codeInput');
+  const modalErr=document.getElementById('modalErr');
+  const cancelBtn=document.getElementById('cancelBtn');
+  const confirmBtn=document.getElementById('confirmBtn');
+  const toggleBtns=document.querySelectorAll('.toggle-btn');
+  const confirmBtn_extra_backup='PSL2026';
+  try{if(sessionStorage.getItem('qa_unlocked')==='1')activateAnswers();}catch(e){}
+  function openModal(){modalBg.hidden=false;codeInput.value='';modalErr.textContent='';setTimeout(()=>codeInput.focus(),80);}
+  function closeModal(){modalBg.hidden=true;}
+  function activateAnswers(){
+    unlocked=true;
+    try{sessionStorage.setItem('qa_unlocked','1');}catch(e){}
+    lockBadge.textContent='🔓 Answers unlocked';lockBadge.classList.add('open');
+    unlockTrigger.hidden=true;
+    toggleBtns.forEach(b=>{b.classList.add('active');b.textContent='▸ Show answer';});
+  }
+  function tryUnlock(){
+    if(codeInput.value.trim()===confirmBtn_extra_backup){closeModal();activateAnswers();}
+    else{modalErr.textContent='Incorrect code — try again.';codeInput.select();}
+  }
+  unlockTrigger.addEventListener('click',openModal);
+  cancelBtn.addEventListener('click',closeModal);
+  confirmBtn.addEventListener('click',tryUnlock);
+  codeInput.addEventListener('keydown',e=>{if(e.key==='Enter')tryUnlock();if(e.key==='Escape')closeModal();});
+  modalBg.addEventListener('click',e=>{if(e.target===modalBg)closeModal();});
+  toggleBtns.forEach(btn=>{
+    btn.addEventListener('click',function(){
+      if(!unlocked)return;
+      const panel=document.getElementById(this.dataset.panel);
+      const isOpen=!panel.hidden;
+      panel.hidden=isOpen;
+      this.classList.toggle('is-open',!isOpen);
+      this.textContent=isOpen?'▸ Show answer':'▾ Hide answer';
+    });
+  });
+})();
+</script>
+</body>
+</html>
