@@ -28,7 +28,7 @@ redirect_from:
 #### Conferences
 
 * Roberto Stanzione, Jules Barbe, Magali Parrino, Jérémie Fourmann, Paul Boniol. **Detect, Explain, Interpret: An End-to-End Benchmark for Time Series Anomaly Detection, Explainability and Interpretability**. In the Fortieth Annual Conference on Neural Information Processing Systems (NeurIPS 2026), Sydney, Australia, December 2026. 
-[![GitHub Repo](https://img.icons8.com/ios-glyphs/20/000000/github.png)](https://github.com/scality/shad) [![PDF](https://img.icons8.com/color/20/000000/pdf.png)]()
+[![GitHub Repo](https://img.icons8.com/ios-glyphs/20/000000/github.png)](https://github.com/scality/shad) [![PDF](https://img.icons8.com/color/20/000000/pdf.png)](https://arxiv.org/abs/2610.01168)
 
 * Christos Panourgias, Roberto Stanzione, Adrien Petralia, Themis Palpanas, Paul Boniol. **Retrieval Over Training: Similarity search-based Model Selection for Time Series Anomaly Detection**. In the Fortieth Annual Conference on Neural Information Processing Systems (NeurIPS 2026), Sydney, Australia, December 2026. 
 [![GitHub Repo](https://img.icons8.com/ios-glyphs/20/000000/github.png)](https://github.com/Hendrix8/RAMSAD) [![PDF](https://img.icons8.com/color/20/000000/pdf.png)]()
