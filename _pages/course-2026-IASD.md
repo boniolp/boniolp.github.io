@@ -31,7 +31,7 @@ Each lecture has two 1.5 h parts (with a 15 min break in between), starts at 9 a
 | Oct. 16 | Handling complex data: document and graph databases    | [![PDF](https://img.icons8.com/ios-filled/20/pdf--v1.png)]() | |  |
 | Oct. 23 | Data extraction: foundations of similarity search      | [![PDF](https://img.icons8.com/ios-filled/20/pdf--v1.png)]() | |  |
 | Oct. 30 | Multi-dimensional similarity search                    | [![PDF](https://img.icons8.com/ios-filled/20/pdf--v1.png)]() | |  |
-| Oct. 06 | Exact versus approximate search                        | [![PDF](https://img.icons8.com/ios-filled/20/pdf--v1.png)]() | |  |
+| Nov. 06 | Exact versus approximate search                        | [![PDF](https://img.icons8.com/ios-filled/20/pdf--v1.png)]() | |  |
 | Nov. 20 | Conclusion: beyond similarity-based query              | [![PDF](https://img.icons8.com/ios-filled/20/pdf--v1.png)]() | |  |
 
 ### Final Exam (50% of the final grade)
