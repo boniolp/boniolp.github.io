@@ -28,11 +28,11 @@ Each lecture has two 1.5 h parts (with a 15 min break in between), starts at 9 a
 | Sep. 18 | Introduction: data acquisition and searching the web   | [![PDF](https://img.icons8.com/color/20/000000/pdf.png)](https://fichiers.numerique.gouv.fr/explorer/items/files/3104d04c-c79a-469e-82ce-df71ae9f97c5) | Ex1: [![Jupyter Notebook Icon](https://img.icons8.com/ios-filled/20/jupyter.png)](https://colab.research.google.com/drive/1Wb7JQgthWjckedXKfal-ZNHclOErhdUT?usp=sharing)<br>Ex2: [![Jupyter Notebook Icon](https://img.icons8.com/ios-filled/20/jupyter.png)](https://colab.research.google.com/drive/1StSHkF4jcyU1wsKVJKcChzNc8Z2z8AiZ?usp=sharing)|  [![Link](https://img.icons8.com/sf-regular/20/link.png)](https://boniolp.github.io/assets/html/QA_Session_Lecture1.html) |
 | Sep. 25 | Data storage: from hardware to databases               | [![PDF](https://img.icons8.com/color/20/000000/pdf.png)](https://fichiers.numerique.gouv.fr/explorer/items/files/2d060666-8839-431c-9dd2-dfe7e7a8f518) | Ex1: [![Jupyter Notebook Icon](https://img.icons8.com/ios-filled/20/jupyter.png)](https://colab.research.google.com/drive/1E2QHnOfouH7nZajLcLTGi7E69VsFnjTE?usp=sharing) | [![Link](https://img.icons8.com/sf-regular/20/link.png)](https://boniolp.github.io/assets/html/QA_Session_Lecture2.html) |
 | Oct. 02 | Foundations of relational and non-relational databases | [![PDF](https://img.icons8.com/color/20/000000/pdf.png)](https://fichiers.numerique.gouv.fr/explorer/items/files/fa227bbc-9a08-4576-aaec-982a8ae70555) | |  |
-| Oct. 16 | Handling complex data: document and graph databases    | [![PDF](https://img.icons8.com/ios-filled/50/pdf--v1.png)]() | |  |
-| Oct. 23 | Data extraction: foundations of similarity search      | [![PDF](https://img.icons8.com/ios-filled/50/pdf--v1.png)]() | |  |
-| Oct. 30 | Multi-dimensional similarity search                    | [![PDF](https://img.icons8.com/ios-filled/50/pdf--v1.png)]() | |  |
-| Oct. 06 | Exact versus approximate search                        | [![PDF](https://img.icons8.com/ios-filled/50/pdf--v1.png)]() | |  |
-| Nov. 20 | Conclusion: beyond similarity-based query              | [![PDF](https://img.icons8.com/ios-filled/50/pdf--v1.png)]() | |  |
+| Oct. 16 | Handling complex data: document and graph databases    | [![PDF](https://img.icons8.com/ios-filled/20/pdf--v1.png)]() | |  |
+| Oct. 23 | Data extraction: foundations of similarity search      | [![PDF](https://img.icons8.com/ios-filled/20/pdf--v1.png)]() | |  |
+| Oct. 30 | Multi-dimensional similarity search                    | [![PDF](https://img.icons8.com/ios-filled/20/pdf--v1.png)]() | |  |
+| Oct. 06 | Exact versus approximate search                        | [![PDF](https://img.icons8.com/ios-filled/20/pdf--v1.png)]() | |  |
+| Nov. 20 | Conclusion: beyond similarity-based query              | [![PDF](https://img.icons8.com/ios-filled/20/pdf--v1.png)]() | |  |
 
 ### Final Exam (50% of the final grade)
 
@@ -43,7 +43,7 @@ The questions will cover Lectures 1 (Sep. 18) to 7 (Oct. 30). There is only one 
 
 | Session   | Type                                                  | PDF                                                        |
 |-----------|--------------------------------------------------------|------------------------------------------------------------|
-| Dec. 01 | Written exam of 2.5h | [![PDF](https://img.icons8.com/ios-filled/50/pdf--v1.png)]() |
+| Dec. 01 | Written exam of 2.5h | [![PDF](https://img.icons8.com/ios-filled/20/pdf--v1.png)]() |
 
 
 ### Practice Sessions (50% of the final grade)
@@ -53,8 +53,8 @@ This course has two practice sessions covering both database systems (Lab 1) and
 
 | Session            | Title                                | topic                                                      | Notebook                                                             | Data | Deadline |
 |--------------------|--------------------------------------|------------------------------------------------------------|---------------------------------------------------------------------------|------|---|
-| Oct. 16 | Database of documents | [![PDF](https://img.icons8.com/ios-filled/50/pdf--v1.png)]() | [![Jupyter Notebook Icon](https://img.icons8.com/ios-filled/20/jupyter.png)]() | [![Data Icon](https://img.icons8.com/ios-filled/20/database.png)]() | Oct. 29 |
-| Oct. 30 | Similarity Search    | [![PDF](https://img.icons8.com/ios-filled/50/pdf--v1.png)]() | [![Jupyter Notebook Icon](https://img.icons8.com/ios-filled/20/jupyter.png)]() | [![Data Icon](https://img.icons8.com/ios-filled/20/database.png)]() | Nov. 11 |
+| Oct. 16 | Database of documents | [![PDF](https://img.icons8.com/ios-filled/20/pdf--v1.png)]() | [![Jupyter Notebook Icon](https://img.icons8.com/ios-filled/20/jupyter.png)]() | [![Data Icon](https://img.icons8.com/ios-filled/20/database.png)]() | Oct. 29 |
+| Oct. 30 | Similarity Search    | [![PDF](https://img.icons8.com/ios-filled/20/pdf--v1.png)]() | [![Jupyter Notebook Icon](https://img.icons8.com/ios-filled/20/jupyter.png)]() | [![Data Icon](https://img.icons8.com/ios-filled/20/database.png)]() | Nov. 11 |
 
 ### External Resources
 
