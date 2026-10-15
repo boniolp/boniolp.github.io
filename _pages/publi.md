@@ -31,7 +31,7 @@ redirect_from:
 [![GitHub Repo](https://img.icons8.com/ios-glyphs/20/000000/github.png)](https://github.com/scality/shad) [![PDF](https://img.icons8.com/color/20/000000/pdf.png)](https://arxiv.org/abs/2610.01168)
 
 * Christos Panourgias, Roberto Stanzione, Adrien Petralia, Themis Palpanas, Paul Boniol. **Retrieval Over Training: Similarity search-based Model Selection for Time Series Anomaly Detection**. In the Fortieth Annual Conference on Neural Information Processing Systems (NeurIPS 2026), Sydney, Australia, December 2026. 
-[![GitHub Repo](https://img.icons8.com/ios-glyphs/20/000000/github.png)](https://github.com/Hendrix8/RAMSAD) [![PDF](https://img.icons8.com/color/20/000000/pdf.png)]()
+[![GitHub Repo](https://img.icons8.com/ios-glyphs/20/000000/github.png)](https://github.com/Hendrix8/RAMSAD) [![PDF](https://img.icons8.com/color/20/000000/pdf.png)](https://arxiv.org/abs/2610.20243)
 
 * Félix Chavelli, Arik Ermshaus, Fan Yang, Patrick Schäfer, John Paparrizos, Paul Boniol. **TSB-SEG: A Systematic Time-Series Segmentation Benchmark**. In the Fortieth Annual Conference on Neural Information Processing Systems (NeurIPS 2026), Sydney, Australia, December 2026. 
 [![GitHub Repo](https://img.icons8.com/ios-glyphs/20/000000/github.png)](https://github.com/fchavelli/tsseg) [![PDF](https://img.icons8.com/color/20/000000/pdf.png)]()
