@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Database Systems Recap Q&amp;A</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Inter:wght@400;500;600&display=swap">
+<style>
+:root {
+  --bg:#f7f5f0; --surface:#fff; --surface-2:#f1eee8;
+  --border:#ddd9d0; --text:#18171a; --text-2:#55534f; --text-muted:#9a9793;
+  --accent:#1c3d72; --accent-soft:#e4ecf7;
+  --gold:#9a6f1c; --gold-soft:#fdf3dd;
+  --green:#1f6b45; --green-soft:#e5f4ec;
+  --red:#b03a2e; --red-soft:#fbe9e6;
+  --code-bg:#1a2030; --code-fg:#ccd6f6; --code-comment:#5f6f9a;
+  --tbl-head:#eeeae2; --tbl-alt:#f7f5f0;
+  --shadow:0 1px 3px rgba(0,0,0,.07),0 1px 2px rgba(0,0,0,.05);
+  --shadow-modal:0 24px 64px rgba(0,0,0,.22);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0d1017;--surface:#151b27;--surface-2:#1c2335;
+    --border:#252d3e;--text:#e2e0da;--text-2:#969490;--text-muted:#555350;
+    --accent:#6390d8;--accent-soft:#182240;
+    --gold:#d4a040;--gold-soft:#241d0a;
+    --green:#4caa7a;--green-soft:#0d2118;
+    --red:#e06c5f;--red-soft:#2a1412;
+    --code-bg:#0c1117;--code-fg:#c9d1d9;--code-comment:#8b949e;
+    --tbl-head:#1c2335;--tbl-alt:#151b27;
+    --shadow:0 1px 3px rgba(0,0,0,.35);--shadow-modal:0 24px 64px rgba(0,0,0,.55);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0d1017;--surface:#151b27;--surface-2:#1c2335;
+  --border:#252d3e;--text:#e2e0da;--text-2:#969490;--text-muted:#555350;
+  --accent:#6390d8;--accent-soft:#182240;
+  --gold:#d4a040;--gold-soft:#241d0a;
+  --green:#4caa7a;--green-soft:#0d2118;
+  --red:#e06c5f;--red-soft:#2a1412;
+  --code-bg:#0c1117;--code-fg:#c9d1d9;--code-comment:#8b949e;
+  --tbl-head:#1c2335;--tbl-alt:#151b27;
+  --shadow:0 1px 3px rgba(0,0,0,.35);--shadow-modal:0 24px 64px rgba(0,0,0,.55);
+}
+*,*::before,*::after{box-sizing:border-box;}
+html,body{margin:0;padding:0;}
+body{background:var(--bg);color:var(--text);font-family:'Inter',system-ui,sans-serif;font-size:15px;line-height:1.65;padding-inline:16px;}
+[hidden]{display:none!important;}
+
+/* Header */
+.ph{background:var(--surface);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100;box-shadow:var(--shadow);margin-inline:-16px;padding-inline:16px;}
+.ph-inner{max-width:840px;margin:0 auto;padding:12px 0;display:flex;align-items:center;gap:14px;}
+.ph-text{flex:1;min-width:0;}
+.ph-course{font-size:10.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--text-muted);display:block;margin-bottom:2px;}
+.ph-title{font-family:'Source Serif 4',Georgia,serif;font-size:17px;font-weight:600;color:var(--text);margin:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.lock-badge{display:flex;align-items:center;gap:6px;padding:5px 12px;border-radius:20px;font-size:12px;font-weight:600;white-space:nowrap;flex-shrink:0;background:var(--gold-soft);color:var(--gold);border:1px solid rgba(154,111,28,.22);transition:background .3s,color .3s,border-color .3s;}
+.lock-badge.open{background:var(--green-soft);color:var(--green);border-color:rgba(31,107,69,.22);}
+.unlock-btn{flex-shrink:0;background:none;border:1px solid var(--border);color:var(--text-muted);border-radius:6px;padding:5px 11px;font-size:12px;font-weight:500;font-family:inherit;cursor:pointer;transition:all .18s;}
+.unlock-btn:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-soft);}
+
+/* Layout */
+main{max-width:840px;margin:0 auto;padding-block:28px 72px;display:flex;flex-direction:column;gap:18px;}
+.part{font-family:'Inter',sans-serif;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--text-muted);margin:14px 0 -4px;display:flex;align-items:center;gap:10px;}
+.part::after{content:"";flex:1;height:1px;background:var(--border);}
+
+/* Cards */
+.qc{background:var(--surface);border:1px solid var(--border);border-radius:10px;overflow:hidden;box-shadow:var(--shadow);}
+.qc-head{display:flex;align-items:flex-start;gap:12px;padding:18px 24px 0;}
+.q-num{font-size:10.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);background:var(--accent-soft);padding:3px 8px;border-radius:4px;white-space:nowrap;flex-shrink:0;margin-top:3px;}
+.q-title{font-family:'Source Serif 4',Georgia,serif;font-size:17px;font-weight:600;color:var(--text);margin:0;line-height:1.35;}
+.qc-body{padding:14px 24px 20px;}
+
+/* Question text */
+.q-prompt{font-family:'Source Serif 4',Georgia,serif;font-size:15.5px;line-height:1.72;color:var(--text);}
+.q-prompt p{margin:0 0 10px;}.q-prompt p:last-child{margin-bottom:0;}
+.q-prompt ul,.q-prompt ol{margin:6px 0 10px 22px;padding:0;}.q-prompt li{margin-bottom:5px;}
+.q-prompt strong{font-weight:600;}.q-prompt em{font-style:italic;}
+
+/* Answer zone */
+.ans-zone{margin-top:16px;border-top:1px solid var(--border);padding-top:16px;}
+.toggle-btn{display:inline-flex;align-items:center;gap:8px;padding:7px 16px;border-radius:7px;font-family:'Inter',sans-serif;font-size:13px;font-weight:500;border:1px solid var(--border);background:var(--surface-2);color:var(--text-muted);cursor:default;pointer-events:none;transition:background .2s,color .2s,border-color .2s;user-select:none;}
+.toggle-btn.active{background:var(--accent-soft);color:var(--accent);border-color:rgba(28,61,114,.28);cursor:pointer;pointer-events:auto;}
+.toggle-btn.active:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
+.toggle-btn.active.is-open{background:var(--accent);color:#fff;border-color:var(--accent);}
+.toggle-btn.active.is-open:hover{opacity:.88;}
+.ans-panel{margin-top:16px;padding:18px 20px;background:var(--surface-2);border-radius:8px;border-left:3px solid var(--accent);}
+
+/* Answer content */
+.ac{font-family:'Source Serif 4',Georgia,serif;font-size:15px;line-height:1.77;color:var(--text);}
+.ac p{margin:0 0 11px;}.ac p:last-child{margin-bottom:0;}
+.ac ul,.ac ol{margin:6px 0 11px 22px;padding:0;}.ac li{margin-bottom:5px;}
+.ac strong{font-weight:600;}.ac em{font-style:italic;}
+.ac h4{font-family:'Inter',sans-serif;font-size:11.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--text-muted);margin:20px 0 8px;}
+.ac h4:first-child{margin-top:0;}
+code,.mono{font-family:'JetBrains Mono','Fira Code','Courier New',monospace;font-size:.86em;}
+.q-prompt code,.ac code{background:var(--surface-2);border:1px solid var(--border);border-radius:4px;padding:0 4px;}
+.ans-panel code{background:var(--surface);}
+
+/* Code */
+.code-wrap{overflow-x:auto;margin:12px 0;border-radius:8px;}
+pre.code-block{background:var(--code-bg);color:var(--code-fg);margin:0;padding:16px 18px;font-family:'JetBrains Mono','Fira Code','Courier New',monospace;font-size:12.5px;line-height:1.65;white-space:pre;tab-size:4;border-radius:8px;}
+pre.code-block .c{color:var(--code-comment);}
+
+/* Tables */
+.tbl-wrap{overflow-x:auto;margin:12px 0;border-radius:8px;border:1px solid var(--border);}
+table{border-collapse:collapse;width:100%;font-size:13.5px;font-family:'Inter',sans-serif;}
+th{background:var(--tbl-head);padding:9px 14px;text-align:left;font-weight:600;font-size:12px;color:var(--text-2);letter-spacing:.02em;border-bottom:1px solid var(--border);}
+td{padding:8px 14px;border-bottom:1px solid var(--border);vertical-align:top;color:var(--text);line-height:1.4;}
+tr:last-child td{border-bottom:none;}
+tr:nth-child(even) td{background:var(--tbl-alt);}
+.ans-panel tr:nth-child(even) td{background:var(--surface);}
+.ans-panel table{background:var(--surface-2);}
+th.pk,td.pk{text-decoration:underline;text-underline-offset:3px;}
+table.nest{width:auto;font-size:12px;border:1px dashed var(--border);}
+table.nest td{padding:3px 8px;border-bottom:1px dashed var(--border);background:transparent!important;white-space:nowrap;}
+.mini-tables{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px;margin:12px 0;}
+.mini-tables th,.mini-tables td{padding:6px 10px;white-space:nowrap;}
+.ans-panel td,.ans-panel th{padding:7px 10px;}
+.mini-tables .tbl-wrap{margin:0;}
+.tcap{font-family:'Inter',sans-serif;font-size:12px;font-weight:600;color:var(--accent);padding:7px 12px 0;}
+.yes{color:var(--red);font-weight:600;}
+.no{color:var(--green);font-weight:600;}
+.wait{color:var(--gold);font-weight:600;}
+
+/* Callouts */
+.discuss{background:var(--gold-soft);border-left:3px solid var(--gold);border-radius:0 7px 7px 0;padding:14px 16px;margin:12px 0;}
+.discuss-label{font-size:11px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--gold);margin-bottom:6px;font-family:'Inter',sans-serif;}
+.discuss ul{margin:4px 0 0 18px;padding:0;}.discuss li{margin-bottom:5px;font-size:14px;}
+.discuss p{font-size:14px;margin:0 0 6px;}
+.recall{background:var(--accent-soft);border:1px solid rgba(28,61,114,.18);border-radius:8px;padding:12px 16px;margin:0 0 12px;font-size:14.5px;}
+.recall-label{font-family:'Inter',sans-serif;font-size:11px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--accent);margin-bottom:4px;}
+
+/* Figures */
+.fig{margin:14px 0;overflow-x:auto;}
+.fig svg{display:block;width:100%;height:auto;min-width:540px;}
+.fig.sm svg{min-width:0;}
+.fig-cap{font-family:'Inter',sans-serif;font-size:12px;color:var(--text-muted);margin-top:6px;text-align:center;}
+.sys-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;margin:12px 0;}
+.sys{border:1px solid var(--border);border-radius:8px;padding:12px 14px;background:var(--surface);}
+.ans-panel .sys{background:var(--surface);}
+.sys h5{font-family:'Inter',sans-serif;font-size:13px;font-weight:600;margin:0 0 4px;color:var(--accent);}
+.sys p{font-size:14px;line-height:1.6;margin:0 0 8px;}
+.sys svg{display:block;width:100%;height:auto;}
+svg .s-box{fill:var(--surface);stroke:var(--text-2);stroke-width:1.1;}
+svg .s-head{fill:var(--accent-soft);stroke:var(--accent);stroke-width:1.1;}
+svg .s-txt{fill:var(--text);font-family:Inter,system-ui,sans-serif;font-size:12px;}
+svg .s-mut{fill:var(--text-2);font-family:Inter,system-ui,sans-serif;font-size:11px;}
+svg .s-acc{fill:var(--accent);font-family:Inter,system-ui,sans-serif;}
+svg .s-bold{font-weight:600;}
+svg .s-sm{font-size:11.5px;}
+svg .s-xs{font-size:10.5px;}
+svg .s-u{text-decoration:underline;}
+svg .s-mono{font-family:'JetBrains Mono','Courier New',monospace;}
+svg .s-grid{stroke:var(--border);stroke-width:1;}
+svg .s-line{stroke:var(--text-2);stroke-width:1.4;fill:none;}
+svg .s-thick{stroke-width:2.2;}
+svg .s-dash{stroke-dasharray:5 4;}
+svg .s-dot{stroke-dasharray:2 4;}
+svg .s-line-red{stroke:var(--red);stroke-width:1.5;fill:none;}
+svg .s-line-green{stroke:var(--green);stroke-width:1.6;fill:none;}
+svg .s-ahd{fill:var(--text-2);}
+svg .s-ahd-red{fill:var(--red);}
+svg .s-ahd-green{fill:var(--green);}
+svg .s-red-t{fill:var(--red);font-family:Inter,system-ui,sans-serif;}
+svg .s-green-t{fill:var(--green);font-family:Inter,system-ui,sans-serif;}
+svg .s-node{fill:var(--accent-soft);stroke:var(--accent);stroke-width:1.4;}
+svg .s-chip{fill:var(--surface-2);stroke:var(--border);}
+svg .s-zone{fill:none;stroke:var(--text-muted);stroke-dasharray:4 4;}
+svg .s-zone-ram{fill:var(--accent-soft);opacity:.45;}
+svg .s-zone-disk{fill:var(--gold-soft);opacity:.7;}
+svg .s-tri{fill:var(--surface-2);stroke:var(--text-2);stroke-width:1.4;}
+svg .s-pill{fill:var(--surface);stroke:var(--accent);stroke-width:1.2;}
+svg .s-life{stroke:var(--border);stroke-width:1.4;stroke-dasharray:3 3;}
+svg .s-win-red{fill:var(--red-soft);stroke:var(--red);stroke-width:1;}
+svg .s-win-gold{fill:var(--gold-soft);stroke:var(--gold);stroke-width:1;}
+svg .s-down{fill:var(--red-soft);stroke:var(--red);stroke-width:1;stroke-dasharray:3 2;}
+svg .s-gold-t{fill:var(--gold);font-family:Inter,system-ui,sans-serif;}
+svg .s-brace{fill:none;stroke:var(--gold);stroke-width:1.4;}
+svg .s-bar-seq{fill:var(--green);}
+svg .s-bar-rnd{fill:var(--red);}
+svg .s-bar-mem{fill:var(--accent);}
+svg .s-cell{fill:var(--surface-2);stroke:var(--border);}
+svg .s-cell-empty{fill:none;stroke:var(--border);stroke-dasharray:2 2;}
+svg .s-range{fill:var(--accent-soft);opacity:.55;}
+svg .s-key{fill:var(--surface);stroke:var(--text);stroke-width:1.5;}
+svg .s-lock{fill:var(--gold-soft);stroke:var(--gold);stroke-width:1.2;}
+svg .s-badge{fill:var(--accent);}
+svg .s-badge-t{fill:#fff;font-family:Inter,system-ui,sans-serif;font-size:11px;font-weight:700;}
+
+/* Transaction timelines */
+.tl{display:grid;grid-template-columns:44px minmax(0,1fr) minmax(0,1fr);border:1px solid var(--border);border-bottom:0;border-radius:8px;overflow:hidden;margin:12px 0;font-size:12.5px;background:var(--surface);}
+.tl.c4{grid-template-columns:44px minmax(0,1fr) minmax(0,1fr) minmax(0,.8fr);}
+.tl>div{padding:6px 10px;border-bottom:1px solid var(--border);font-family:'JetBrains Mono','Fira Code','Courier New',monospace;font-size:12px;line-height:1.5;color:var(--text);word-break:break-word;}
+.tl>div:not(.t):not(.x){border-left:1px solid var(--border);}
+.tl .h{background:var(--tbl-head);font-family:'Inter',sans-serif;font-weight:600;font-size:12px;color:var(--text-2);}
+.tl .t{font-family:'Inter',sans-serif;font-size:11px;color:var(--text-muted);text-align:center;}
+.tl .q{background:var(--gold-soft);}
+.tl .r{color:var(--text-2);font-style:italic;}
+.tl .w{color:var(--gold);font-style:italic;font-family:'Inter',sans-serif;}
+.tl .ok{background:var(--green-soft);}
+.tl .x{grid-column:1/-1;background:var(--red-soft);color:var(--red);font-family:'Inter',sans-serif;font-weight:600;text-align:center;}
+.tl .disk{font-size:11.5px;color:var(--text-2);}
+.ans-panel .tl{background:var(--surface);}
+
+/* Modal */
+.modal-bg{position:fixed;inset:0;background:rgba(0,0,0,.52);z-index:2000;display:flex;align-items:center;justify-content:center;backdrop-filter:blur(4px);}
+.modal-card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:28px 30px;width:min(360px,calc(100vw - 32px));box-shadow:var(--shadow-modal);}
+.modal-card h3{font-family:'Source Serif 4',Georgia,serif;font-size:18px;font-weight:600;margin:0 0 4px;color:var(--text);}
+.modal-card p{font-size:13.5px;color:var(--text-2);margin:0 0 18px;}
+.modal-input{width:100%;padding:10px 14px;font-size:15px;font-family:'Inter',sans-serif;background:var(--surface-2);border:1.5px solid var(--border);border-radius:8px;color:var(--text);outline:none;transition:border-color .18s;letter-spacing:.2em;margin-bottom:6px;}
+.modal-input:focus{border-color:var(--accent);}
+.modal-err{font-size:12.5px;color:#c0392b;min-height:16px;margin-bottom:14px;}
+.modal-acts{display:flex;gap:10px;justify-content:flex-end;}
+.btn-cancel{padding:8px 18px;border-radius:7px;border:1px solid var(--border);background:var(--surface-2);color:var(--text-2);font-size:13.5px;font-family:inherit;font-weight:500;cursor:pointer;transition:background .15s;}
+.btn-cancel:hover{background:var(--border);}
+.btn-confirm{padding:8px 20px;border-radius:7px;border:none;background:var(--accent);color:#fff;font-size:13.5px;font-family:inherit;font-weight:600;cursor:pointer;transition:opacity .15s;}
+.btn-confirm:hover{opacity:.85;}
+
+@media(max-width:520px){
+  .ph-title{font-size:15px;}
+  .qc-head{padding:14px 16px 0;}.qc-body{padding:12px 16px 16px;}
+  .ans-panel{padding:14px;}.q-title{font-size:15.5px;}
+  .lock-badge span{display:none;}
+  .tl>div{padding:5px 6px;font-size:11px;}
+  .tl{grid-template-columns:30px minmax(0,1fr) minmax(0,1fr);}
+  .tl.c4{grid-template-columns:30px minmax(0,1fr) minmax(0,1fr) minmax(0,.8fr);}
+}
+</style>
+<script>
+window.MathJax={tex:{inlineMath:[['$','$']],displayMath:[['$$','$$']],packages:{'[+]':['ams']}},options:{skipHtmlTags:['script','noscript','style','textarea','pre','svg']}};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-svg.js" async></script>
+</head>
+<body>
+
+<header class="ph">
+  <div class="ph-inner">
+    <div class="ph-text">
+      <span class="ph-course">Data Acquisition, Extraction &amp; Storage — ENS / Inria / PSL</span>
+      <h1 class="ph-title">Storage 2 and 3 Recap Q&amp;A — Relational vs. non-Relational</h1>
+    </div>
+    <div class="lock-badge" id="lockBadge">🔒 <span>Answers locked</span></div>
+    <button class="unlock-btn" id="unlockTrigger">Unlock</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="part">Part 1 · Normal forms</div>
+
+  <!-- ============================================================ Q1 -->
+  <article class="qc">
+    <div class="qc-head"><span class="q-num">Q1</span><h2 class="q-title">From an Unnormalised Table to 3NF</h2></div>
+    <div class="qc-body">
+      <div class="q-prompt">
+        <p>A secretariat keeps its course registrations in the following table. Each student belongs to one programme, each programme has one director, each course is taught by one lecturer, and each lecturer has one office.</p>
+        <div class="tbl-wrap"><table>
+          <tr><th>StudentID</th><th>Name</th><th>Programme</th><th>Director</th><th>Courses <span style="font-weight:400">(code, title, lecturer, office, grade)</span></th></tr>
+          <tr><td>S01</td><td>Léa Martin</td><td>Computer Science</td><td>Prof. Laurent</td><td><table class="nest">
+            <tr><td>DB101</td><td>Databases</td><td>Dr. Rossi</td><td>C-210</td><td>16</td></tr>
+            <tr><td>IR201</td><td>Information Retrieval</td><td>Dr. Rossi</td><td>C-210</td><td>14</td></tr></table></td></tr>
+          <tr><td>S02</td><td>Hugo Bernard</td><td>Mathematics</td><td>Prof. Moreau</td><td><table class="nest">
+            <tr><td>DB101</td><td>Databases</td><td>Dr. Rossi</td><td>C-210</td><td>12</td></tr></table></td></tr>
+          <tr><td>S03</td><td>Inès Petit</td><td>Computer Science</td><td>Prof. Laurent</td><td><table class="nest">
+            <tr><td>ML301</td><td>Machine Learning</td><td>Dr. Chen</td><td>B-105</td><td>18</td></tr>
+            <tr><td>DB101</td><td>Databases</td><td>Dr. Rossi</td><td>C-210</td><td>15</td></tr></table></td></tr>
+        </table></div>
+        <p><strong>(a)</strong> Is this table in first normal form? Rewrite it in 1NF and give its primary key.</p>
+        <p><strong>(b)</strong> List the functional dependencies that hold between the attributes.</p>
+        <p><strong>(c)</strong> Decompose the table into 2NF, then into 3NF. Draw the final schema with its primary and foreign keys.</p>
+        <p><strong>(d)</strong> Give one insertion, one update and one deletion anomaly that the 1NF table suffers from and that your 3NF schema avoids.</p>
+      </div>
+      <div class="ans-zone">
+        <button class="toggle-btn" data-panel="a1">🔒 Answer locked</button>
+        <div class="ans-panel" id="a1" hidden><div class="ac">
+          <h4>(a) First normal form</h4>
+          <p>No. A relation is in 1NF if and only if no attribute domain has relations as elements. Here the <em>Courses</em> attribute holds a small table (a repeating group) in each cell. To flatten it, we write one row per (student, course) pair:</p>
+          <div class="tbl-wrap"><table>
+            <tr><th class="pk">StudentID</th><th>Name</th><th>Programme</th><th>Director</th><th class="pk">CourseCode</th><th>Title</th><th>Lecturer</th><th>Office</th><th>Grade</th></tr>
+            <tr><td>S01</td><td>Léa Martin</td><td>Computer Science</td><td>Prof. Laurent</td><td>DB101</td><td>Databases</td><td>Dr. Rossi</td><td>C-210</td><td>16</td></tr>
+            <tr><td>S01</td><td>Léa Martin</td><td>Computer Science</td><td>Prof. Laurent</td><td>IR201</td><td>Information Retrieval</td><td>Dr. Rossi</td><td>C-210</td><td>14</td></tr>
+            <tr><td>S02</td><td>Hugo Bernard</td><td>Mathematics</td><td>Prof. Moreau</td><td>DB101</td><td>Databases</td><td>Dr. Rossi</td><td>C-210</td><td>12</td></tr>
+            <tr><td>S03</td><td>Inès Petit</td><td>Computer Science</td><td>Prof. Laurent</td><td>ML301</td><td>Machine Learning</td><td>Dr. Chen</td><td>B-105</td><td>18</td></tr>
+            <tr><td>S03</td><td>Inès Petit</td><td>Computer Science</td><td>Prof. Laurent</td><td>DB101</td><td>Databases</td><td>Dr. Rossi</td><td>C-210</td><td>15</td></tr>
+          </table></div>
+          <p>Primary key: <strong>(StudentID, CourseCode)</strong>. Neither attribute alone identifies a row.</p>
+          <h4>(b) Functional dependencies</h4>
+          <ul>
+            <li>StudentID → Name, Programme</li>
+            <li>Programme → Director</li>
+            <li>CourseCode → Title, Lecturer</li>
+            <li>Lecturer → Office</li>
+            <li>(StudentID, CourseCode) → Grade</li>
+          </ul>
+          <h4>(c) 2NF, then 3NF</h4>
+          <p><strong>2NF</strong> removes <em>partial</em> dependencies, meaning non-key attributes that depend on only part of the key. Name, Programme and Director depend on StudentID alone, and Title, Lecturer and Office depend on CourseCode alone:</p>
+          <ul>
+            <li>Students(<u>StudentID</u>, Name, Programme, Director)</li>
+            <li>Courses(<u>CourseCode</u>, Title, Lecturer, Office)</li>
+            <li>Enrolments(<u>StudentID</u>, <u>CourseCode</u>, Grade)</li>
+          </ul>
+          <p><strong>3NF</strong> removes <em>transitive</em> dependencies. StudentID → Programme → Director and CourseCode → Lecturer → Office are both transitive, so Director and Office move to their own tables. I also give lecturers a surrogate key, since two lecturers could share a name.</p>
+          <div class="fig"><svg viewBox="0 0 760 236" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="3NF schema: Programmes, Students, Enrolments, Courses, Lecturers"><defs><marker id="q1er-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="s-ahd"/></marker><marker id="q1er-r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="s-ahd-red"/></marker><marker id="q1er-g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="s-ahd-green"/></marker></defs><rect x="20" y="20" width="200" height="60" rx="6" class="s-box"/><path d="M20 44 V26 a6 6 0 0 1 6 -6 H214 a6 6 0 0 1 6 6 V44 Z" class="s-head"/><text x="30" y="36" class="s-txt s-bold" text-anchor="start" >Programmes</text><text x="30" y="57" class="s-txt s-sm s-u" text-anchor="start" >programme</text><text x="212" y="57" class="s-mut s-xs" text-anchor="end" >PK</text><text x="30" y="75" class="s-txt s-sm" text-anchor="start" >director</text><line x1="20" x2="220" y1="62" y2="62" class="s-grid"/><rect x="20" y="140" width="200" height="78" rx="6" class="s-box"/><path d="M20 164 V146 a6 6 0 0 1 6 -6 H214 a6 6 0 0 1 6 6 V164 Z" class="s-head"/><text x="30" y="156" class="s-txt s-bold" text-anchor="start" >Students</text><text x="30" y="177" class="s-txt s-sm s-u" text-anchor="start" >student_id</text><text x="212" y="177" class="s-mut s-xs" text-anchor="end" >PK</text><text x="30" y="195" class="s-txt s-sm" text-anchor="start" >name</text><line x1="20" x2="220" y1="182" y2="182" class="s-grid"/><text x="30" y="213" class="s-txt s-sm" text-anchor="start" >programme</text><text x="212" y="213" class="s-mut s-xs" text-anchor="end" >FK</text><line x1="20" x2="220" y1="200" y2="200" class="s-grid"/><rect x="280" y="140" width="200" height="78" rx="6" class="s-box"/><path d="M280 164 V146 a6 6 0 0 1 6 -6 H474 a6 6 0 0 1 6 6 V164 Z" class="s-head"/><text x="290" y="156" class="s-txt s-bold" text-anchor="start" >Enrolments</text><text x="290" y="177" class="s-txt s-sm s-u" text-anchor="start" >student_id</text><text x="472" y="177" class="s-mut s-xs" text-anchor="end" >PK·FK</text><text x="290" y="195" class="s-txt s-sm s-u" text-anchor="start" >course_code</text><text x="472" y="195" class="s-mut s-xs" text-anchor="end" >PK·FK</text><line x1="280" x2="480" y1="182" y2="182" class="s-grid"/><text x="290" y="213" class="s-txt s-sm" text-anchor="start" >grade</text><line x1="280" x2="480" y1="200" y2="200" class="s-grid"/><rect x="540" y="140" width="200" height="78" rx="6" class="s-box"/><path d="M540 164 V146 a6 6 0 0 1 6 -6 H734 a6 6 0 0 1 6 6 V164 Z" class="s-head"/><text x="550" y="156" class="s-txt s-bold" text-anchor="start" >Courses</text><text x="550" y="177" class="s-txt s-sm s-u" text-anchor="start" >course_code</text><text x="732" y="177" class="s-mut s-xs" text-anchor="end" >PK</text><text x="550" y="195" class="s-txt s-sm" text-anchor="start" >title</text><line x1="540" x2="740" y1="182" y2="182" class="s-grid"/><text x="550" y="213" class="s-txt s-sm" text-anchor="start" >lecturer_id</text><text x="732" y="213" class="s-mut s-xs" text-anchor="end" >FK</text><line x1="540" x2="740" y1="200" y2="200" class="s-grid"/><rect x="540" y="20" width="200" height="78" rx="6" class="s-box"/><path d="M540 44 V26 a6 6 0 0 1 6 -6 H734 a6 6 0 0 1 6 6 V44 Z" class="s-head"/><text x="550" y="36" class="s-txt s-bold" text-anchor="start" >Lecturers</text><text x="550" y="57" class="s-txt s-sm s-u" text-anchor="start" >lecturer_id</text><text x="732" y="57" class="s-mut s-xs" text-anchor="end" >PK</text><text x="550" y="75" class="s-txt s-sm" text-anchor="start" >name</text><line x1="540" x2="740" y1="62" y2="62" class="s-grid"/><text x="550" y="93" class="s-txt s-sm" text-anchor="start" >office</text><line x1="540" x2="740" y1="80" y2="80" class="s-grid"/><path d="M120,140 L120,80" class="s-line" marker-end="url(#q1er-a)"/><path d="M280,173 L220,173" class="s-line" marker-end="url(#q1er-a)"/><path d="M480,191 L510,191 L510,173 L540,173" class="s-line" marker-end="url(#q1er-a)"/><path d="M640,140 L640,98" class="s-line" marker-end="url(#q1er-a)"/></svg></div>
+          <div class="mini-tables">
+            <div class="tbl-wrap"><div class="tcap">Programmes</div><table><tr><th class="pk">programme</th><th>director</th></tr><tr><td>Computer Science</td><td>Prof. Laurent</td></tr><tr><td>Mathematics</td><td>Prof. Moreau</td></tr></table></div>
+            <div class="tbl-wrap"><div class="tcap">Lecturers</div><table><tr><th class="pk">lecturer_id</th><th>name</th><th>office</th></tr><tr><td>L1</td><td>Dr. Rossi</td><td>C-210</td></tr><tr><td>L2</td><td>Dr. Chen</td><td>B-105</td></tr></table></div>
+            <div class="tbl-wrap"><div class="tcap">Students</div><table><tr><th class="pk">student_id</th><th>name</th><th>programme</th></tr><tr><td>S01</td><td>Léa Martin</td><td>Computer Science</td></tr><tr><td>S02</td><td>Hugo Bernard</td><td>Mathematics</td></tr><tr><td>S03</td><td>Inès Petit</td><td>Computer Science</td></tr></table></div>
+            <div class="tbl-wrap"><div class="tcap">Courses</div><table><tr><th class="pk">course_code</th><th>title</th><th>lecturer_id</th></tr><tr><td>DB101</td><td>Databases</td><td>L1</td></tr><tr><td>IR201</td><td>Information Retrieval</td><td>L1</td></tr><tr><td>ML301</td><td>Machine Learning</td><td>L2</td></tr></table></div>
+            <div class="tbl-wrap"><div class="tcap">Enrolments</div><table><tr><th class="pk">student_id</th><th class="pk">course_code</th><th>grade</th></tr><tr><td>S01</td><td>DB101</td><td>16</td></tr><tr><td>S01</td><td>IR201</td><td>14</td></tr><tr><td>S02</td><td>DB101</td><td>12</td></tr><tr><td>S03</td><td>ML301</td><td>18</td></tr><tr><td>S03</td><td>DB101</td><td>15</td></tr></table></div>
+          </div>
+          <h4>(d) Anomalies avoided</h4>
+          <ul>
+            <li><strong>Update:</strong> if Dr. Rossi moves to office C-305, four rows of the 1NF table must change. If one is missed, the database holds two offices for the same person. In 3NF this is a single row in <em>Lecturers</em>.</li>
+            <li><strong>Deletion:</strong> if Hugo drops DB101, his only course, deleting the row also erases the facts that Hugo exists and that Mathematics is directed by Prof. Moreau.</li>
+            <li><strong>Insertion:</strong> a new course "NoSQL Systems" cannot be recorded before at least one student enrols, because StudentID is part of the primary key and cannot be NULL.</li>
+          </ul>
+        </div></div>
+      </div>
+    </div>
+  </article>
+
+  <!-- ============================================================ Q2 -->
+  <article class="qc">
+    <div class="qc-head"><span class="q-num">Q2</span><h2 class="q-title">Designing a Relational Schema from a Specification</h2></div>
+    <div class="qc-body">
+      <div class="q-prompt">
+        <p>A regional train operator asks you to design the database behind its booking website. The product owner sends you the following list of what must be stored:</p>
+        <ul>
+          <li><strong>Passengers:</strong> name, e-mail, date of birth, <em>age</em>, one or more phone numbers, and an optional loyalty card. Each card has a tier (Bronze, Silver, Gold), and each tier gives a fixed discount rate.</li>
+          <li><strong>Stations:</strong> a unique code (e.g. <code>RNS</code>), a name, the city it is in, and the city's region.</li>
+          <li><strong>Trains:</strong> a train number (e.g. <code>TER 8412</code>) that always follows the same route, which is an ordered list of stations with a scheduled departure time at each. Each train uses a type of rolling stock, which determines the number of 1st- and 2nd-class seats.</li>
+          <li>A train runs on many dates. The run of one train on one date is called a <em>service</em>.</li>
+          <li><strong>Bookings:</strong> a reference, the passenger who made the booking, the booking time, the payment method and the <em>total amount paid</em>. A booking contains one or more tickets. Each ticket is for one traveller (not necessarily the person who booked), on one service, from one station to another, in one class, with a coach and seat number and the price paid.</li>
+        </ul>
+        <p>Design a relational schema in <strong>3NF</strong>. For each table, give its primary key and foreign keys, and justify every split with the dependency that motivates it. Some of the requested attributes should not be stored as such. Which ones, and why?</p>
+      </div>
+      <div class="ans-zone">
+        <button class="toggle-btn" data-panel="a2">🔒 Answer locked</button>
+        <div class="ans-panel" id="a2" hidden><div class="ac">
+          <h4>A 3NF schema</h4>
+          <div class="fig"><svg viewBox="0 0 800 520" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="3NF schema for the train booking system"><defs><marker id="q2er-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="s-ahd"/></marker><marker id="q2er-r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="s-ahd-red"/></marker><marker id="q2er-g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="s-ahd-green"/></marker></defs><rect x="10" y="10" width="180" height="60" rx="6" class="s-box"/><path d="M10 34 V16 a6 6 0 0 1 6 -6 H184 a6 6 0 0 1 6 6 V34 Z" class="s-head"/><text x="20" y="26" class="s-txt s-bold" text-anchor="start" >Tier</text><text x="20" y="47" class="s-txt s-sm s-u" text-anchor="start" >tier</text><text x="182" y="47" class="s-mut s-xs" text-anchor="end" >PK</text><text x="20" y="65" class="s-txt s-sm" text-anchor="start" >discount_rate</text><line x1="10" x2="190" y1="52" y2="52" class="s-grid"/><rect x="210" y="10" width="180" height="78" rx="6" class="s-box"/><path d="M210 34 V16 a6 6 0 0 1 6 -6 H384 a6 6 0 0 1 6 6 V34 Z" class="s-head"/><text x="220" y="26" class="s-txt s-bold" text-anchor="start" >LoyaltyCard</text><text x="220" y="47" class="s-txt s-sm s-u" text-anchor="start" >card_no</text><text x="382" y="47" class="s-mut s-xs" text-anchor="end" >PK</text><text x="220" y="65" class="s-txt s-sm" text-anchor="start" >tier</text><text x="382" y="65" class="s-mut s-xs" text-anchor="end" >FK</text><line x1="210" x2="390" y1="52" y2="52" class="s-grid"/><text x="220" y="83" class="s-txt s-sm" text-anchor="start" >issued_on</text><line x1="210" x2="390" y1="70" y2="70" class="s-grid"/><rect x="410" y="10" width="180" height="114" rx="6" class="s-box"/><path d="M410 34 V16 a6 6 0 0 1 6 -6 H584 a6 6 0 0 1 6 6 V34 Z" class="s-head"/><text x="420" y="26" class="s-txt s-bold" text-anchor="start" >Passenger</text><text x="420" y="47" class="s-txt s-sm s-u" text-anchor="start" >passenger_id</text><text x="582" y="47" class="s-mut s-xs" text-anchor="end" >PK</text><text x="420" y="65" class="s-txt s-sm" text-anchor="start" >name</text><line x1="410" x2="590" y1="52" y2="52" class="s-grid"/><text x="420" y="83" class="s-txt s-sm" text-anchor="start" >email</text><text x="582" y="83" class="s-mut s-xs" text-anchor="end" >UNIQUE</text><line x1="410" x2="590" y1="70" y2="70" class="s-grid"/><text x="420" y="101" class="s-txt s-sm" text-anchor="start" >birth_date</text><line x1="410" x2="590" y1="88" y2="88" class="s-grid"/><text x="420" y="119" class="s-txt s-sm" text-anchor="start" >card_no</text><text x="582" y="119" class="s-mut s-xs" text-anchor="end" >FK·UNIQUE</text><line x1="410" x2="590" y1="106" y2="106" class="s-grid"/><rect x="610" y="10" width="180" height="60" rx="6" class="s-box"/><path d="M610 34 V16 a6 6 0 0 1 6 -6 H784 a6 6 0 0 1 6 6 V34 Z" class="s-head"/><text x="620" y="26" class="s-txt s-bold" text-anchor="start" >PassengerPhone</text><text x="620" y="47" class="s-txt s-sm s-u" text-anchor="start" >passenger_id</text><text x="782" y="47" class="s-mut s-xs" text-anchor="end" >PK·FK</text><text x="620" y="65" class="s-txt s-sm s-u" text-anchor="start" >phone</text><text x="782" y="65" class="s-mut s-xs" text-anchor="end" >PK</text><line x1="610" x2="790" y1="52" y2="52" class="s-grid"/><rect x="10" y="170" width="180" height="96" rx="6" class="s-box"/><path d="M10 194 V176 a6 6 0 0 1 6 -6 H184 a6 6 0 0 1 6 6 V194 Z" class="s-head"/><text x="20" y="186" class="s-txt s-bold" text-anchor="start" >Booking</text><text x="20" y="207" class="s-txt s-sm s-u" text-anchor="start" >booking_ref</text><text x="182" y="207" class="s-mut s-xs" text-anchor="end" >PK</text><text x="20" y="225" class="s-txt s-sm" text-anchor="start" >booker_id</text><text x="182" y="225" class="s-mut s-xs" text-anchor="end" >FK</text><line x1="10" x2="190" y1="212" y2="212" class="s-grid"/><text x="20" y="243" class="s-txt s-sm" text-anchor="start" >booked_at</text><line x1="10" x2="190" y1="230" y2="230" class="s-grid"/><text x="20" y="261" class="s-txt s-sm" text-anchor="start" >payment_method</text><line x1="10" x2="190" y1="248" y2="248" class="s-grid"/><rect x="210" y="170" width="180" height="204" rx="6" class="s-box"/><path d="M210 194 V176 a6 6 0 0 1 6 -6 H384 a6 6 0 0 1 6 6 V194 Z" class="s-head"/><text x="220" y="186" class="s-txt s-bold" text-anchor="start" >Ticket</text><text x="220" y="207" class="s-txt s-sm s-u" text-anchor="start" >ticket_id</text><text x="382" y="207" class="s-mut s-xs" text-anchor="end" >PK</text><text x="220" y="225" class="s-txt s-sm" text-anchor="start" >booking_ref</text><text x="382" y="225" class="s-mut s-xs" text-anchor="end" >FK</text><line x1="210" x2="390" y1="212" y2="212" class="s-grid"/><text x="220" y="243" class="s-txt s-sm" text-anchor="start" >passenger_id</text><text x="382" y="243" class="s-mut s-xs" text-anchor="end" >FK</text><line x1="210" x2="390" y1="230" y2="230" class="s-grid"/><text x="220" y="261" class="s-txt s-sm" text-anchor="start" >service_id</text><text x="382" y="261" class="s-mut s-xs" text-anchor="end" >FK</text><line x1="210" x2="390" y1="248" y2="248" class="s-grid"/><text x="220" y="279" class="s-txt s-sm" text-anchor="start" >from_station</text><text x="382" y="279" class="s-mut s-xs" text-anchor="end" >FK</text><line x1="210" x2="390" y1="266" y2="266" class="s-grid"/><text x="220" y="297" class="s-txt s-sm" text-anchor="start" >to_station</text><text x="382" y="297" class="s-mut s-xs" text-anchor="end" >FK</text><line x1="210" x2="390" y1="284" y2="284" class="s-grid"/><text x="220" y="315" class="s-txt s-sm" text-anchor="start" >class</text><line x1="210" x2="390" y1="302" y2="302" class="s-grid"/><text x="220" y="333" class="s-txt s-sm" text-anchor="start" >coach</text><line x1="210" x2="390" y1="320" y2="320" class="s-grid"/><text x="220" y="351" class="s-txt s-sm" text-anchor="start" >seat_no</text><line x1="210" x2="390" y1="338" y2="338" class="s-grid"/><text x="220" y="369" class="s-txt s-sm" text-anchor="start" >price_paid</text><line x1="210" x2="390" y1="356" y2="356" class="s-grid"/><rect x="410" y="170" width="180" height="78" rx="6" class="s-box"/><path d="M410 194 V176 a6 6 0 0 1 6 -6 H584 a6 6 0 0 1 6 6 V194 Z" class="s-head"/><text x="420" y="186" class="s-txt s-bold" text-anchor="start" >Service</text><text x="420" y="207" class="s-txt s-sm s-u" text-anchor="start" >service_id</text><text x="582" y="207" class="s-mut s-xs" text-anchor="end" >PK</text><text x="420" y="225" class="s-txt s-sm" text-anchor="start" >train_no</text><text x="582" y="225" class="s-mut s-xs" text-anchor="end" >FK</text><line x1="410" x2="590" y1="212" y2="212" class="s-grid"/><text x="420" y="243" class="s-txt s-sm" text-anchor="start" >run_date</text><line x1="410" x2="590" y1="230" y2="230" class="s-grid"/><rect x="610" y="170" width="180" height="60" rx="6" class="s-box"/><path d="M610 194 V176 a6 6 0 0 1 6 -6 H784 a6 6 0 0 1 6 6 V194 Z" class="s-head"/><text x="620" y="186" class="s-txt s-bold" text-anchor="start" >Train</text><text x="620" y="207" class="s-txt s-sm s-u" text-anchor="start" >train_no</text><text x="782" y="207" class="s-mut s-xs" text-anchor="end" >PK</text><text x="620" y="225" class="s-txt s-sm" text-anchor="start" >stock_type</text><text x="782" y="225" class="s-mut s-xs" text-anchor="end" >FK</text><line x1="610" x2="790" y1="212" y2="212" class="s-grid"/><rect x="10" y="410" width="180" height="78" rx="6" class="s-box"/><path d="M10 434 V416 a6 6 0 0 1 6 -6 H184 a6 6 0 0 1 6 6 V434 Z" class="s-head"/><text x="20" y="426" class="s-txt s-bold" text-anchor="start" >City</text><text x="20" y="447" class="s-txt s-sm s-u" text-anchor="start" >city_id</text><text x="182" y="447" class="s-mut s-xs" text-anchor="end" >PK</text><text x="20" y="465" class="s-txt s-sm" text-anchor="start" >name</text><line x1="10" x2="190" y1="452" y2="452" class="s-grid"/><text x="20" y="483" class="s-txt s-sm" text-anchor="start" >region</text><line x1="10" x2="190" y1="470" y2="470" class="s-grid"/><rect x="210" y="410" width="180" height="78" rx="6" class="s-box"/><path d="M210 434 V416 a6 6 0 0 1 6 -6 H384 a6 6 0 0 1 6 6 V434 Z" class="s-head"/><text x="220" y="426" class="s-txt s-bold" text-anchor="start" >Station</text><text x="220" y="447" class="s-txt s-sm s-u" text-anchor="start" >code</text><text x="382" y="447" class="s-mut s-xs" text-anchor="end" >PK</text><text x="220" y="465" class="s-txt s-sm" text-anchor="start" >name</text><line x1="210" x2="390" y1="452" y2="452" class="s-grid"/><text x="220" y="483" class="s-txt s-sm" text-anchor="start" >city_id</text><text x="382" y="483" class="s-mut s-xs" text-anchor="end" >FK</text><line x1="210" x2="390" y1="470" y2="470" class="s-grid"/><rect x="410" y="410" width="180" height="96" rx="6" class="s-box"/><path d="M410 434 V416 a6 6 0 0 1 6 -6 H584 a6 6 0 0 1 6 6 V434 Z" class="s-head"/><text x="420" y="426" class="s-txt s-bold" text-anchor="start" >RouteStop</text><text x="420" y="447" class="s-txt s-sm s-u" text-anchor="start" >train_no</text><text x="582" y="447" class="s-mut s-xs" text-anchor="end" >PK·FK</text><text x="420" y="465" class="s-txt s-sm s-u" text-anchor="start" >stop_order</text><text x="582" y="465" class="s-mut s-xs" text-anchor="end" >PK</text><line x1="410" x2="590" y1="452" y2="452" class="s-grid"/><text x="420" y="483" class="s-txt s-sm" text-anchor="start" >station_code</text><text x="582" y="483" class="s-mut s-xs" text-anchor="end" >FK</text><line x1="410" x2="590" y1="470" y2="470" class="s-grid"/><text x="420" y="501" class="s-txt s-sm" text-anchor="start" >dep_time</text><line x1="410" x2="590" y1="488" y2="488" class="s-grid"/><rect x="610" y="410" width="180" height="78" rx="6" class="s-box"/><path d="M610 434 V416 a6 6 0 0 1 6 -6 H784 a6 6 0 0 1 6 6 V434 Z" class="s-head"/><text x="620" y="426" class="s-txt s-bold" text-anchor="start" >RollingStock</text><text x="620" y="447" class="s-txt s-sm s-u" text-anchor="start" >stock_type</text><text x="782" y="447" class="s-mut s-xs" text-anchor="end" >PK</text><text x="620" y="465" class="s-txt s-sm" text-anchor="start" >seats_1st</text><line x1="610" x2="790" y1="452" y2="452" class="s-grid"/><text x="620" y="483" class="s-txt s-sm" text-anchor="start" >seats_2nd</text><line x1="610" x2="790" y1="470" y2="470" class="s-grid"/><path d="M210,61 L200,61 L200,43 L190,43" class="s-line" marker-end="url(#q2er-a)"/><path d="M410,115 L400,115 L400,43 L390,43" class="s-line" marker-end="url(#q2er-a)"/><path d="M610,43 L590,43" class="s-line" marker-end="url(#q2er-a)"/><path d="M100,170 L100,145 L480,145 L480,124" class="s-line" marker-end="url(#q2er-a)"/><path d="M210,221 L200,221 L200,203 L190,203" class="s-line" marker-end="url(#q2er-a)"/><path d="M330,170 L330,155 L520,155 L520,124" class="s-line" marker-end="url(#q2er-a)"/><path d="M390,257 L400,257 L400,203 L410,203" class="s-line" marker-end="url(#q2er-a)"/><path d="M300,374 L300,410" class="s-line" marker-end="url(#q2er-a)"/><text x="308" y="396" class="s-mut s-xs" text-anchor="start" >from / to</text><path d="M590,221 L600,221 L600,203 L610,203" class="s-line" marker-end="url(#q2er-a)"/><path d="M210,479 L200,479 L200,443 L190,443" class="s-line" marker-end="url(#q2er-a)"/><path d="M410,479 L400,479 L400,443 L390,443" class="s-line" marker-end="url(#q2er-a)"/><path d="M560,410 L560,390 L660,390 L660,230" class="s-line" marker-end="url(#q2er-a)"/><path d="M740,230 L740,410" class="s-line" marker-end="url(#q2er-a)"/></svg></div>
+          <div class="fig-cap">Arrows point from a foreign key to the primary key it references.</div>
+          <h4>Justification of the main decisions</h4>
+          <ul>
+            <li><strong>PassengerPhone</strong>: a passenger has several phone numbers. A multi-valued attribute violates 1NF, so it gets its own table with key (passenger_id, phone).</li>
+            <li><strong>Tier</strong> and <strong>LoyaltyCard</strong>: passenger → card_no → tier → discount_rate is a transitive chain. Storing discount_rate with the passenger would duplicate it and risk inconsistency when the operator changes the Gold rate. <code>card_no</code> is UNIQUE and nullable in Passenger, because the card is optional and belongs to one person.</li>
+            <li><strong>City</strong>: station → city → region is transitive, so the region is stored once per city.</li>
+            <li><strong>RollingStock</strong>: the seat counts depend on the stock type, not on the train (train_no → stock_type → seats_1st).</li>
+            <li><strong>RouteStop</strong>: a route is an ordered list. The order is itself data (<code>stop_order</code>), so the list is not packed into one column. Key (train_no, stop_order), plus UNIQUE(train_no, station_code).</li>
+            <li><strong>Service</strong>: separates the train, which is static, from its daily runs. Surrogate key, plus UNIQUE(train_no, run_date).</li>
+            <li><strong>Booking vs Ticket</strong>: the booker and the traveller are two distinct foreign keys to Passenger. The ticket carries the trip facts (service, from, to, class, seat).</li>
+          </ul>
+          <h4>Attributes that should not be stored as such</h4>
+          <ul>
+            <li><strong>Age</strong> is derived from birth_date and the current date. Stored, it becomes wrong every birthday, which is an update anomaly caused by time.</li>
+            <li><strong>Total amount paid</strong> is derived: SUM(price_paid) over the booking's tickets. Storing it creates a dependency between rows that has to be maintained. It is acceptable only as a deliberate denormalisation, kept correct by a trigger or by the application.</li>
+            <li><strong>price_paid on Ticket is not a 3NF violation.</strong> It records what was paid at that moment, and it is not a function of class or route, because fares change over time. Replacing it with a lookup into a current fare table would rewrite history.</li>
+          </ul>
+          
+        </div></div>
+      </div>
+    </div>
+  </article>
+
+  <div class="part">Part 2 · Distribution, CAP &amp; consistency</div>
+
+  <!-- ============================================================ Q3 -->
+  <article class="qc">
+    <div class="qc-head"><span class="q-num">Q3</span><h2 class="q-title">CP, AP or CA?</h2></div>
+    <div class="qc-body">
+      <div class="q-prompt">
+        <p>Three distributed key-value stores handle reads and writes as follows.</p>
+        <div class="sys-grid">
+          <div class="sys"><h5>System A: majority replicas</h5>
+            <p>A key is stored on 3 replicas. A write is acknowledged only once at least 2 of the 3 replicas have stored it. A read asks at least 2 replicas and returns the value with the highest version number. A replica that cannot reach at least one other replica answers every request with an error.</p><svg viewBox="0 0 260 170" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Architecture of system A"><defs><marker id="q3A-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="s-ahd"/></marker><marker id="q3A-r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="s-ahd-red"/></marker><marker id="q3A-g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="s-ahd-green"/></marker></defs><circle cx="130" cy="40" r="17" class="s-node"/><text x="130" y="44" class="s-txt s-sm s-bold" text-anchor="middle" >R3</text><circle cx="50" cy="125" r="17" class="s-node"/><text x="50" y="129" class="s-txt s-sm s-bold" text-anchor="middle" >R1</text><circle cx="210" cy="125" r="17" class="s-node"/><text x="210" y="129" class="s-txt s-sm s-bold" text-anchor="middle" >R2</text><rect x="8" y="152" width="84" height="14" rx="3" class="s-chip"/><text x="50" y="163" class="s-txt s-xs" text-anchor="middle" >write(x)</text><path d="M50,152 L50,144" class="s-line" marker-end="url(#q3A-a)"/><path d="M68,125 L190,125" class="s-line" marker-end="url(#q3A-a)"/><path d="M60,110 L118,55" class="s-line" marker-end="url(#q3A-a)"/><text x="130" y="118" class="s-mut s-xs" text-anchor="middle" >replicate</text><text x="160" y="165" class="s-txt s-xs s-acc" text-anchor="middle" >ack when ≥ 2 of 3 stored</text></svg></div>
+          <div class="sys"><h5>System B: local first</h5>
+            <p>Each of the 3 replicas accepts any read or write and answers immediately from its local copy. Writes are forwarded to the other replicas in the background whenever they are reachable. When two versions of a key meet, the one with the latest timestamp wins.</p><svg viewBox="0 0 260 170" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Architecture of system B"><defs><marker id="q3B-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="s-ahd"/></marker><marker id="q3B-r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="s-ahd-red"/></marker><marker id="q3B-g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="s-ahd-green"/></marker></defs><circle cx="130" cy="40" r="17" class="s-node"/><text x="130" y="44" class="s-txt s-sm s-bold" text-anchor="middle" >R3</text><circle cx="50" cy="125" r="17" class="s-node"/><text x="50" y="129" class="s-txt s-sm s-bold" text-anchor="middle" >R1</text><circle cx="210" cy="125" r="17" class="s-node"/><text x="210" y="129" class="s-txt s-sm s-bold" text-anchor="middle" >R2</text><path d="M50,163 L50,144" class="s-line" marker-end="url(#q3B-a)"/><path d="M210,163 L210,144" class="s-line" marker-end="url(#q3B-a)"/><path d="M130,4 L130,21" class="s-line" marker-end="url(#q3B-a)"/><text x="150" y="12" class="s-mut s-xs" text-anchor="start" >r/w</text><text x="66" y="165" class="s-mut s-xs" text-anchor="start" >r/w</text><text x="226" y="165" class="s-mut s-xs" text-anchor="start" >r/w</text><path d="M68,125 L190,125" class="s-line s-dot" marker-end="url(#q3B-a)" marker-start="url(#q3B-a)"/><path d="M60,110 L118,55" class="s-line s-dot" marker-end="url(#q3B-a)" marker-start="url(#q3B-a)"/><path d="M200,110 L142,55" class="s-line s-dot" marker-end="url(#q3B-a)" marker-start="url(#q3B-a)"/><text x="130" y="143" class="s-mut s-xs" text-anchor="middle" >"replicate", in background</text></svg></div>
+          <div class="sys"><h5>System C: one rack, all-or-nothing</h5>
+            <p>Two replicas sit in the same rack, linked by a dedicated cable. A write is applied on both replicas with a two-phase commit before being acknowledged, and a read can be served by either one. The designers assume the cable never fails: the protocol has no timeout and no rule for a replica that stops answering.</p><svg viewBox="0 0 260 170" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Architecture of system C"><defs><marker id="q3C-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="s-ahd"/></marker><marker id="q3C-r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="s-ahd-red"/></marker><marker id="q3C-g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="s-ahd-green"/></marker></defs><rect x="20" y="40" width="220" height="100" rx="10" class="s-zone"/><text x="130" y="132" class="s-mut s-xs" text-anchor="middle" >same rack, one dedicated cable</text><circle cx="70" cy="85" r="17" class="s-node"/><text x="70" y="89" class="s-txt s-sm s-bold" text-anchor="middle" >R1</text><circle cx="190" cy="85" r="17" class="s-node"/><text x="190" y="89" class="s-txt s-sm s-bold" text-anchor="middle" >R2</text><path d="M88,85 L172,85" class="s-line s-thick" marker-end="url(#q3C-a)" marker-start="url(#q3C-a)"/><text x="130" y="70" class="s-txt s-xs s-acc" text-anchor="middle" >2PC: both apply</text><text x="130" y="22" class="s-txt s-xs" text-anchor="middle" >write → ack only if R1 AND R2 commit</text></svg></div>
+        </div>
+        <p><strong>(a)</strong> Classify each system as CP, AP or CA. Justify each answer by describing what happens when the network between replicas is cut.</p>
+        <p><strong>(b)</strong> Which system would you pick for (i) the "like" counter of a social network, (ii) the seat inventory of a train booking system, and (iii) a bank system?</p>
+      </div>
+      <div class="ans-zone">
+        <button class="toggle-btn" data-panel="a3">🔒 Answer locked</button>
+        <div class="ans-panel" id="a3" hidden><div class="ac">
+          <div class="fig sm" style="max-width:440px;margin-inline:auto"><svg viewBox="0 0 420 270" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="CAP triangle with systems A, B, C placed on edges"><defs><marker id="q3tri-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="s-ahd"/></marker><marker id="q3tri-r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="s-ahd-red"/></marker><marker id="q3tri-g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="s-ahd-green"/></marker></defs><polygon points="210,34 60,236 360,236" class="s-tri"/><circle cx="210" cy="34" r="16" class="s-head"/><text x="210" y="39" class="s-txt s-bold" text-anchor="middle" >C</text><circle cx="60" cy="236" r="16" class="s-head"/><text x="60" y="241" class="s-txt s-bold" text-anchor="middle" >A</text><circle cx="360" cy="236" r="16" class="s-head"/><text x="360" y="241" class="s-txt s-bold" text-anchor="middle" >P</text><text x="210" y="14" class="s-mut s-xs" text-anchor="middle" >Consistency</text><text x="60" y="266" class="s-mut s-xs" text-anchor="middle" >Availability</text><text x="360" y="266" class="s-mut s-xs" text-anchor="middle" >Partition tolerance</text><rect x="270" y="118" width="128" height="22" rx="11" class="s-pill"/><text x="334" y="133" class="s-txt s-sm s-bold" text-anchor="middle" >System A → CP</text><rect x="146" y="226" width="128" height="22" rx="11" class="s-pill"/><text x="210" y="241" class="s-txt s-sm s-bold" text-anchor="middle" >System B → AP</text><rect x="22" y="118" width="128" height="22" rx="11" class="s-pill"/><text x="86" y="133" class="s-txt s-sm s-bold" text-anchor="middle" >System C → CA</text></svg></div>
+          <h4>(a) Classification</h4>
+          <ul>
+            <li><strong>System A is CP.</strong> With $N=3$, $W=2$ and $R=2$ we have $R+W&gt;N$, so every read quorum intersects every write quorum and a read always sees the latest acknowledged write (consistency). During a partition, the majority side keeps working (partition tolerance), but the isolated replica refuses requests, so some non-failing nodes do not respond (no availability).</li>
+            <li><strong>System B is AP.</strong> Every non-failing replica answers every request (availability) and the system keeps running when messages are dropped (partition tolerance). During a partition, both sides accept writes on the same key and diverge, so a read can return a stale value (no consistency). After the partition heals, last-writer-wins makes the replicas converge, which makes B <em>eventually</em> consistent, and one of the concurrent writes is silently discarded.</li>
+            <li><strong>System C is CA.</strong> As long as the cable works, two-phase commit keeps both copies identical (C) and both replicas answer (A). Nothing in the design handles a partition. If the cable is cut, the coordinator waits forever for the other vote, so the system blocks. It has no partition tolerance.</li>
+          </ul>
+          <h4>(b) Use cases</h4>
+          <ul>
+            <li><strong>Like counter → B (AP).</strong> A slightly stale count harms no one, and the page must always load.</li>
+            <li><strong>Train seats → A (CP)</strong>, at least when the train is nearly full, so that the same seat is never sold twice. When booking has just opened and the train is almost empty, an AP approach is acceptable, because the risk of conflict is negligible.</li>
+            <li><strong>Bank ledger → A (CP).</strong> An error message is better than a balance that is wrong or a double spend.</li>
+          </ul>
+        </div></div>
+      </div>
+    </div>
+  </article>
+
+  <!-- ============================================================ Q4 -->
+  <article class="qc">
+    <div class="qc-head"><span class="q-num">Q4</span><h2 class="q-title">Making Two Systems Eventually Consistent</h2></div>
+    <div class="qc-body">
+      <div class="q-prompt">
+        <p>Consider two replicated systems that store a single value <code>x</code> (initially 0). The diagrams show each system in <em>normal operation</em>.</p>
+        <p><strong>System 1.</strong> A client writes to any replica, which applies the write locally and acknowledges immediately. The replica then sends the new value to the other replica in one UDP message, without waiting for any reply.</p>
+        <div class="fig"><svg viewBox="0 0 640 338" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="System 1, normal operation: a read before the message arrives returns 0, a read after returns 5"><defs><marker id="q4a-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="s-ahd"/></marker><marker id="q4a-r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="s-ahd-red"/></marker><marker id="q4a-g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="s-ahd-green"/></marker></defs><rect x="14.0" y="8" width="112" height="26" rx="6" class="s-box"/><text x="70.0" y="25" class="s-txt s-sm s-bold" text-anchor="middle" >Client A</text><line x1="70.0" x2="70.0" y1="36" y2="330" class="s-life"/><rect x="180.66666666666666" y="8" width="112" height="38" rx="6" class="s-box"/><text x="236.66666666666666" y="25" class="s-txt s-sm s-bold" text-anchor="middle" >Replica R1</text><text x="236.66666666666666" y="39" class="s-mut s-xs" text-anchor="middle" >x = 0</text><line x1="236.66666666666666" x2="236.66666666666666" y1="48" y2="330" class="s-life"/><rect x="347.3333333333333" y="8" width="112" height="38" rx="6" class="s-box"/><text x="403.3333333333333" y="25" class="s-txt s-sm s-bold" text-anchor="middle" >Replica R2</text><text x="403.3333333333333" y="39" class="s-mut s-xs" text-anchor="middle" >x = 0</text><line x1="403.3333333333333" x2="403.3333333333333" y1="48" y2="330" class="s-life"/><rect x="514.0" y="8" width="112" height="26" rx="6" class="s-box"/><text x="570.0" y="25" class="s-txt s-sm s-bold" text-anchor="middle" >Client B</text><line x1="570.0" x2="570.0" y1="36" y2="330" class="s-life"/><text x="8" y="76" class="s-mut s-xs" text-anchor="start" >t1</text><path d="M76.0,72 L230.66666666666666,72" class="s-line" marker-end="url(#q4a-a)"/><text x="153.33333333333331" y="66" class="s-txt s-xs" text-anchor="middle" >write x = 5</text><rect x="180.66666666666666" y="86" width="112" height="18" rx="4" class="s-chip"/><text x="236.66666666666666" y="99" class="s-txt s-xs" text-anchor="middle" >x := 5</text><path d="M230.66666666666666,124 L76.0,124" class="s-line s-dash" marker-end="url(#q4a-a)"/><text x="153.33333333333331" y="118" class="s-txt s-xs" text-anchor="middle" >ack</text><path d="M242.66666666666666,140 L397.3333333333333,244" class="s-line" marker-end="url(#q4a-a)"/><text x="312" y="214" class="s-txt s-xs" text-anchor="end" >send x = 5 (UDP)</text><text x="8" y="180" class="s-mut s-xs" text-anchor="start" >t2</text><path d="M564.0,176 L409.3333333333333,176" class="s-line" marker-end="url(#q4a-a)"/><text x="486.66666666666663" y="170" class="s-txt s-xs" text-anchor="middle" >read x</text><path d="M409.3333333333333,200 L564.0,200" class="s-line s-dash" marker-end="url(#q4a-a)"/><text x="486.66666666666663" y="194" class="s-txt s-xs" text-anchor="middle" >x = 0</text><rect x="347.3333333333333" y="250" width="112" height="18" rx="4" class="s-chip"/><text x="403.3333333333333" y="263" class="s-txt s-xs" text-anchor="middle" >x := 5</text><text x="8" y="300" class="s-mut s-xs" text-anchor="start" >t3</text><path d="M564.0,296 L409.3333333333333,296" class="s-line" marker-end="url(#q4a-a)"/><text x="486.66666666666663" y="290" class="s-txt s-xs" text-anchor="middle" >read x</text><path d="M409.3333333333333,320 L564.0,320" class="s-line s-dash" marker-end="url(#q4a-a)"/><text x="486.66666666666663" y="314" class="s-txt s-xs" text-anchor="middle" >x = 5</text></svg></div>
+        <p><strong>System 2.</strong> Leader–follower with <em>synchronous</em> replication. The leader handles writes one at a time, in arrival order, and commits a write only after <em>every</em> follower has acknowledged it. Reads can go to any follower. Follower F2 is in another data centre.</p>
+        <div class="fig"><svg viewBox="0 0 720 372" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="System 2, normal operation: the second write waits for all acknowledgements of the first"><defs><marker id="q4b-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="s-ahd"/></marker><marker id="q4b-r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="s-ahd-red"/></marker><marker id="q4b-g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="s-ahd-green"/></marker></defs><rect x="14.0" y="8" width="112" height="26" rx="6" class="s-box"/><text x="70.0" y="25" class="s-txt s-sm s-bold" text-anchor="middle" >Client A</text><line x1="70.0" x2="70.0" y1="36" y2="364" class="s-life"/><rect x="159.0" y="8" width="112" height="26" rx="6" class="s-box"/><text x="215.0" y="25" class="s-txt s-sm s-bold" text-anchor="middle" >Leader L</text><line x1="215.0" x2="215.0" y1="36" y2="364" class="s-life"/><rect x="304.0" y="8" width="112" height="26" rx="6" class="s-box"/><text x="360.0" y="25" class="s-txt s-sm s-bold" text-anchor="middle" >Follower F1</text><line x1="360.0" x2="360.0" y1="36" y2="364" class="s-life"/><rect x="449.0" y="8" width="112" height="38" rx="6" class="s-box"/><text x="505.0" y="25" class="s-txt s-sm s-bold" text-anchor="middle" >Follower F2</text><text x="505.0" y="39" class="s-mut s-xs" text-anchor="middle" >far away</text><line x1="505.0" x2="505.0" y1="48" y2="364" class="s-life"/><rect x="594.0" y="8" width="112" height="26" rx="6" class="s-box"/><text x="650.0" y="25" class="s-txt s-sm s-bold" text-anchor="middle" >Client B</text><line x1="650.0" x2="650.0" y1="36" y2="364" class="s-life"/><rect x="209.0" y="80" width="12" height="184" rx="3" class="s-win-gold"/><text x="203.0" y="176.0" class="s-xs s-bold s-gold-t" text-anchor="end" >waiting for ALL acks</text><path d="M76.0,72 L209.0,72" class="s-line" marker-end="url(#q4b-a)"/><text x="142.5" y="66" class="s-txt s-xs" text-anchor="middle" >write x = 5</text><path d="M221.0,94 L354.0,94" class="s-line" marker-end="url(#q4b-a)"/><text x="287.5" y="88" class="s-txt s-xs" text-anchor="middle" >replicate x</text><path d="M354.0,114 L221.0,114" class="s-line s-dash" marker-end="url(#q4b-a)"/><text x="287.5" y="108" class="s-txt s-xs" text-anchor="middle" >ack</text><path d="M221.0,130 L499.0,172" class="s-line" marker-end="url(#q4b-a)"/><text x="366.0" y="145.0" class="s-txt s-xs" text-anchor="start" >replicate x (slow link)</text><path d="M644.0,204 L221.0,204" class="s-line" marker-end="url(#q4b-a)"/><text x="432.5" y="198" class="s-txt s-xs" text-anchor="middle" >write y = 7</text><text x="227.0" y="224" class="s-gold-t s-xs" text-anchor="start" >y = 7 must wait</text><path d="M499.0,214 L221.0,256" class="s-line s-dash" marker-end="url(#q4b-a)"/><text x="420" y="250" class="s-txt s-xs" text-anchor="middle" >ack</text><rect x="159.0" y="268" width="112" height="18" rx="4" class="s-chip"/><text x="215.0" y="281" class="s-txt s-xs" text-anchor="middle" >commit x = 5</text><path d="M209.0,304 L76.0,304" class="s-line s-dash" marker-end="url(#q4b-a)"/><text x="142.5" y="298" class="s-txt s-xs" text-anchor="middle" >ack</text><text x="227.0" y="328" class="s-mut s-xs" text-anchor="start" >now replicate y = 7, wait for all acks…</text><path d="M221.0,354 L644.0,354" class="s-line s-dash" marker-end="url(#q4b-a)"/><text x="432.5" y="348" class="s-txt s-xs" text-anchor="middle" >ack (much later)</text><path d="M20,72 H14 V304 H20" class="s-brace"/><text x="10" y="188.0" class="s-gold-t s-xs s-bold" text-anchor="middle" transform="rotate(-90 10 188.0)">latency A</text><path d="M700,204 H706 V354 H700" class="s-brace"/><text x="714" y="279.0" class="s-gold-t s-xs s-bold" text-anchor="middle" transform="rotate(-90 714 279.0)">latency B</text></svg></div>
+        <p><strong>(a)</strong> In System 1, Client B first reads 0, then reads 5. Is System 1 eventually consistent? More generally, which consistency level seen in class (strong, eventual, low) does each system provide? Think about what can go wrong, not only about the normal case shown.</p>
+        <p><strong>(b)</strong> In System 2 nothing fails, yet Client B waits a long time for its write. Where does this latency come from, and how does it grow with the number and distance of followers? Which theorem from the lecture describes this trade-off?</p>
+        <p><strong>(c)</strong> Modify <em>both</em> systems so that they become <strong>eventually consistent</strong>.</p>
+      </div>
+      <div class="ans-zone">
+        <button class="toggle-btn" data-panel="a4">🔒 Answer locked</button>
+        <div class="ans-panel" id="a4" hidden><div class="ac">
+          <h4>(a) Look at the failure cases</h4>
+          <p><strong>System 1 has low (weak) consistency, not eventual.</strong> The diagram shows convergence only because the message happened to arrive. Eventual consistency is a <em>guarantee</em>: if writes stop, every replica must end up with the last value. Here, if the single UDP message is lost, R2 keeps <code>x = 0</code> forever:</p>
+          <div class="fig"><svg viewBox="0 0 640 306" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="System 1 failure: message lost, R2 never converges"><defs><marker id="q4c-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="s-ahd"/></marker><marker id="q4c-r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="s-ahd-red"/></marker><marker id="q4c-g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="s-ahd-green"/></marker></defs><rect x="14.0" y="8" width="112" height="26" rx="6" class="s-box"/><text x="70.0" y="25" class="s-txt s-sm s-bold" text-anchor="middle" >Client A</text><line x1="70.0" x2="70.0" y1="36" y2="298" class="s-life"/><rect x="180.66666666666666" y="8" width="112" height="38" rx="6" class="s-box"/><text x="236.66666666666666" y="25" class="s-txt s-sm s-bold" text-anchor="middle" >Replica R1</text><text x="236.66666666666666" y="39" class="s-mut s-xs" text-anchor="middle" >x = 0</text><line x1="236.66666666666666" x2="236.66666666666666" y1="48" y2="298" class="s-life"/><rect x="347.3333333333333" y="8" width="112" height="38" rx="6" class="s-box"/><text x="403.3333333333333" y="25" class="s-txt s-sm s-bold" text-anchor="middle" >Replica R2</text><text x="403.3333333333333" y="39" class="s-mut s-xs" text-anchor="middle" >x = 0</text><line x1="403.3333333333333" x2="403.3333333333333" y1="48" y2="298" class="s-life"/><rect x="514.0" y="8" width="112" height="26" rx="6" class="s-box"/><text x="570.0" y="25" class="s-txt s-sm s-bold" text-anchor="middle" >Client B</text><line x1="570.0" x2="570.0" y1="36" y2="298" class="s-life"/><text x="8" y="76" class="s-mut s-xs" text-anchor="start" >t1</text><path d="M76.0,72 L230.66666666666666,72" class="s-line" marker-end="url(#q4c-a)"/><text x="153.33333333333331" y="66" class="s-txt s-xs" text-anchor="middle" >write x = 5</text><rect x="180.66666666666666" y="86" width="112" height="18" rx="4" class="s-chip"/><text x="236.66666666666666" y="99" class="s-txt s-xs" text-anchor="middle" >x := 5</text><path d="M230.66666666666666,124 L76.0,124" class="s-line s-dash" marker-end="url(#q4c-a)"/><text x="153.33333333333331" y="118" class="s-txt s-xs" text-anchor="middle" >ack</text><path d="M242.66666666666666,150 L328.3333333333333,150" class="s-line-red s-dash"/><text x="336.3333333333333" y="155" class="s-red-t s-bold" text-anchor="middle" >✕</text><text x="282.5" y="144" class="s-txt s-xs" text-anchor="middle" >send x = 5 (UDP)</text><text x="8" y="200" class="s-mut s-xs" text-anchor="start" >t2</text><path d="M564.0,196 L409.3333333333333,196" class="s-line" marker-end="url(#q4c-a)"/><text x="486.66666666666663" y="190" class="s-txt s-xs" text-anchor="middle" >read x</text><path d="M409.3333333333333,222 L564.0,222" class="s-line s-dash" marker-end="url(#q4c-a)"/><text x="486.66666666666663" y="216" class="s-txt s-xs" text-anchor="middle" >x = 0</text><text x="8" y="266" class="s-mut s-xs" text-anchor="start" >t∞</text><path d="M564.0,262 L409.3333333333333,262" class="s-line" marker-end="url(#q4c-a)"/><text x="486.66666666666663" y="256" class="s-txt s-xs" text-anchor="middle" >read x (1 h later)</text><path d="M409.3333333333333,288 L564.0,288" class="s-line s-dash" marker-end="url(#q4c-a)"/><text x="486.66666666666663" y="282" class="s-txt s-xs" text-anchor="middle" >x = 0  … forever</text></svg></div>
+          <p>Two concurrent writes on R1 and R2 can also cross each other, so that each replica ends with the other's value and they stay different forever.</p>
+          <p><strong>System 2 has strong consistency.</strong> A write is committed only when it is on every replica, so any follower returns the latest committed value. The price shows up when one follower becomes unreachable: the leader waits forever, and every later write is blocked too. The system is consistent but not available. It is CP pushed to the extreme, where the cluster is only as available as its least available node.</p>
+          <div class="fig"><svg viewBox="0 0 640 316" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="System 2 failure: one unreachable follower blocks every write"><defs><marker id="q4d-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="s-ahd"/></marker><marker id="q4d-r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="s-ahd-red"/></marker><marker id="q4d-g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="s-ahd-green"/></marker></defs><rect x="14.0" y="8" width="112" height="26" rx="6" class="s-box"/><text x="70.0" y="25" class="s-txt s-sm s-bold" text-anchor="middle" >Client A</text><line x1="70.0" x2="70.0" y1="36" y2="308" class="s-life"/><rect x="180.66666666666666" y="8" width="112" height="26" rx="6" class="s-box"/><text x="236.66666666666666" y="25" class="s-txt s-sm s-bold" text-anchor="middle" >Leader L</text><line x1="236.66666666666666" x2="236.66666666666666" y1="36" y2="308" class="s-life"/><rect x="347.3333333333333" y="8" width="112" height="26" rx="6" class="s-box"/><text x="403.3333333333333" y="25" class="s-txt s-sm s-bold" text-anchor="middle" >Follower F1</text><line x1="403.3333333333333" x2="403.3333333333333" y1="36" y2="308" class="s-life"/><rect x="514.0" y="8" width="112" height="38" rx="6" class="s-box"/><text x="570.0" y="25" class="s-txt s-sm s-bold" text-anchor="middle" >Follower F2</text><text x="570.0" y="39" class="s-mut s-xs" text-anchor="middle" >unreachable</text><line x1="570.0" x2="570.0" y1="48" y2="308" class="s-life"/><rect x="564.0" y="54" width="12" height="246" rx="3" class="s-down"/><text x="558.0" y="181.0" class="s-xs s-bold s-red-t" text-anchor="end" ></text><rect x="230.66666666666666" y="160" width="12" height="90" rx="3" class="s-win-gold"/><text x="248.66666666666666" y="209.0" class="s-xs s-bold s-gold-t" text-anchor="start" >waiting for F2&#x27;s ack… forever</text><text x="8" y="76" class="s-mut s-xs" text-anchor="start" >t1</text><path d="M76.0,72 L230.66666666666666,72" class="s-line" marker-end="url(#q4d-a)"/><text x="153.33333333333331" y="66" class="s-txt s-xs" text-anchor="middle" >write x = 5</text><path d="M242.66666666666666,98 L397.3333333333333,98" class="s-line" marker-end="url(#q4d-a)"/><text x="320.0" y="92" class="s-txt s-xs" text-anchor="middle" >replicate</text><path d="M397.3333333333333,120 L242.66666666666666,120" class="s-line s-dash" marker-end="url(#q4d-a)"/><text x="320.0" y="114" class="s-txt s-xs" text-anchor="middle" >ack</text><path d="M242.66666666666666,146 L420.0,146" class="s-line-red s-dash"/><text x="428.0" y="151" class="s-red-t s-bold" text-anchor="middle" >✕</text><text x="328.3333333333333" y="140" class="s-txt s-xs" text-anchor="middle" >replicate</text><text x="70.0" y="210" class="s-red-t s-xs s-bold" text-anchor="middle" >no ack → timeout</text><text x="8" y="284" class="s-mut s-xs" text-anchor="start" >t2</text><path d="M76.0,280 L230.66666666666666,280" class="s-line" marker-end="url(#q4d-a)"/><text x="153.33333333333331" y="274" class="s-txt s-xs" text-anchor="middle" >write y = 7</text><text x="248.66666666666666" y="300" class="s-red-t s-xs" text-anchor="start" >blocked too</text></svg></div>
+          <h4>(b) Latency without any failure: PACELC</h4>
+          <p>Each write costs a round trip to the <em>slowest</em> follower: latency ≈ max over followers of the round-trip time. With one follower in another data centre, that is tens of milliseconds instead of under a millisecond. It grows with distance, and with the number of followers, since the maximum of more round-trip times is larger. Because writes are handled in order, Client B also waits for A's write to finish: queueing adds up.</p>
+          <p>This is the <strong>PACELC</strong> theorem: if there is a <strong>P</strong>artition, choose <strong>A</strong> or <strong>C</strong>; <strong>E</strong>lse, choose <strong>L</strong>atency or <strong>C</strong>onsistency. System 2 is PC/EC: it gives up availability during a partition, and pays latency the rest of the time. CAP only describes the first half.</p>
+          <h4>(c) Fix for System 1: resend until acknowledged, and resolve conflicts deterministically</h4>
+          <div class="fig"><svg viewBox="0 0 640 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="System 1 fixed: resend until acknowledged"><defs><marker id="q4e-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="s-ahd"/></marker><marker id="q4e-r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="s-ahd-red"/></marker><marker id="q4e-g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="s-ahd-green"/></marker></defs><rect x="14.0" y="8" width="112" height="26" rx="6" class="s-box"/><text x="70.0" y="25" class="s-txt s-sm s-bold" text-anchor="middle" >Client A</text><line x1="70.0" x2="70.0" y1="36" y2="332" class="s-life"/><rect x="180.66666666666666" y="8" width="112" height="38" rx="6" class="s-box"/><text x="236.66666666666666" y="25" class="s-txt s-sm s-bold" text-anchor="middle" >Replica R1</text><text x="236.66666666666666" y="39" class="s-mut s-xs" text-anchor="middle" >x = 0</text><line x1="236.66666666666666" x2="236.66666666666666" y1="48" y2="332" class="s-life"/><rect x="347.3333333333333" y="8" width="112" height="38" rx="6" class="s-box"/><text x="403.3333333333333" y="25" class="s-txt s-sm s-bold" text-anchor="middle" >Replica R2</text><text x="403.3333333333333" y="39" class="s-mut s-xs" text-anchor="middle" >x = 0</text><line x1="403.3333333333333" x2="403.3333333333333" y1="48" y2="332" class="s-life"/><rect x="514.0" y="8" width="112" height="26" rx="6" class="s-box"/><text x="570.0" y="25" class="s-txt s-sm s-bold" text-anchor="middle" >Client B</text><line x1="570.0" x2="570.0" y1="36" y2="332" class="s-life"/><text x="8" y="76" class="s-mut s-xs" text-anchor="start" >t1</text><path d="M76.0,72 L230.66666666666666,72" class="s-line" marker-end="url(#q4e-a)"/><text x="153.33333333333331" y="66" class="s-txt s-xs" text-anchor="middle" >write x = 5</text><rect x="180.66666666666666" y="86" width="112" height="18" rx="4" class="s-chip"/><text x="236.66666666666666" y="99" class="s-txt s-xs" text-anchor="middle" >x := 5 (version 7)</text><path d="M230.66666666666666,124 L76.0,124" class="s-line s-dash" marker-end="url(#q4e-a)"/><text x="153.33333333333331" y="118" class="s-txt s-xs" text-anchor="middle" >ack</text><path d="M242.66666666666666,150 L328.3333333333333,150" class="s-line-red s-dash"/><text x="336.3333333333333" y="155" class="s-red-t s-bold" text-anchor="middle" >✕</text><text x="282.5" y="144" class="s-txt s-xs" text-anchor="middle" >send x = 5, v7</text><path d="M564.0,178 L409.3333333333333,178" class="s-line" marker-end="url(#q4e-a)"/><text x="486.66666666666663" y="172" class="s-txt s-xs" text-anchor="middle" >read x</text><path d="M409.3333333333333,200 L564.0,200" class="s-line s-dash" marker-end="url(#q4e-a)"/><text x="486.66666666666663" y="194" class="s-txt s-xs" text-anchor="middle" >x = 0 (stale)</text><text x="8" y="230" class="s-mut s-xs" text-anchor="start" >t1+τ</text><path d="M242.66666666666666,226 L397.3333333333333,226" class="s-line-green" marker-end="url(#q4e-g)"/><text x="320.0" y="220" class="s-txt s-xs" text-anchor="middle" >no ack yet → resend</text><rect x="347.3333333333333" y="238" width="112" height="18" rx="4" class="s-chip"/><text x="403.3333333333333" y="251" class="s-txt s-xs" text-anchor="middle" >x := 5</text><path d="M397.3333333333333,274 L242.66666666666666,274" class="s-line s-dash" marker-end="url(#q4e-a)"/><text x="320.0" y="268" class="s-txt s-xs" text-anchor="middle" >ack v7</text><path d="M564.0,300 L409.3333333333333,300" class="s-line" marker-end="url(#q4e-a)"/><text x="486.66666666666663" y="294" class="s-txt s-xs" text-anchor="middle" >read x</text><path d="M409.3333333333333,322 L564.0,322" class="s-line s-dash" marker-end="url(#q4e-a)"/><text x="486.66666666666663" y="316" class="s-txt s-xs" text-anchor="middle" >x = 5 ✓</text><path d="M620,150 H626 V250 H620" class="s-brace"/><text x="634" y="200.0" class="s-gold-t s-xs s-bold" text-anchor="middle" transform="rotate(-90 634 200.0)">R2 stale</text></svg></div>
+          <ul>
+            <li>Each write gets a version, for example a timestamp plus the replica id.</li>
+            <li>The receiving replica acknowledges each update. The sender keeps the update and resends it every τ seconds until it gets the acknowledgement. Periodically comparing the replicas' contents and exchanging the differences is a backstop.</li>
+            <li>All replicas apply the same rule when two versions meet, for example "the highest version wins", so they reach the same final state whatever order the messages arrive in.</li>
+          </ul>
+          <h4>(c) Fix for System 2: switch to asynchronous replication</h4>
+          <div class="fig"><svg viewBox="0 0 640 308" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="System 2 fixed: asynchronous replication, followers catch up"><defs><marker id="q4f-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="s-ahd"/></marker><marker id="q4f-r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="s-ahd-red"/></marker><marker id="q4f-g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="s-ahd-green"/></marker></defs><rect x="14.0" y="8" width="112" height="26" rx="6" class="s-box"/><text x="70.0" y="25" class="s-txt s-sm s-bold" text-anchor="middle" >Client A</text><line x1="70.0" x2="70.0" y1="36" y2="300" class="s-life"/><rect x="180.66666666666666" y="8" width="112" height="26" rx="6" class="s-box"/><text x="236.66666666666666" y="25" class="s-txt s-sm s-bold" text-anchor="middle" >Leader L</text><line x1="236.66666666666666" x2="236.66666666666666" y1="36" y2="300" class="s-life"/><rect x="347.3333333333333" y="8" width="112" height="26" rx="6" class="s-box"/><text x="403.3333333333333" y="25" class="s-txt s-sm s-bold" text-anchor="middle" >Follower F1</text><line x1="403.3333333333333" x2="403.3333333333333" y1="36" y2="300" class="s-life"/><rect x="514.0" y="8" width="112" height="26" rx="6" class="s-box"/><text x="570.0" y="25" class="s-txt s-sm s-bold" text-anchor="middle" >Follower F2</text><line x1="570.0" x2="570.0" y1="36" y2="300" class="s-life"/><rect x="564.0" y="162" width="12" height="60" rx="3" class="s-down"/><text x="558.0" y="196.0" class="s-xs s-bold s-red-t" text-anchor="end" >down</text><text x="8" y="76" class="s-mut s-xs" text-anchor="start" >t1</text><path d="M76.0,72 L230.66666666666666,72" class="s-line" marker-end="url(#q4f-a)"/><text x="153.33333333333331" y="66" class="s-txt s-xs" text-anchor="middle" >write x = 5</text><rect x="180.66666666666666" y="86" width="112" height="18" rx="4" class="s-chip"/><text x="236.66666666666666" y="99" class="s-txt s-xs" text-anchor="middle" >commit locally</text><path d="M230.66666666666666,124 L76.0,124" class="s-line s-dash" marker-end="url(#q4f-a)"/><text x="153.33333333333331" y="118" class="s-txt s-xs" text-anchor="middle" >ack (immediately)</text><path d="M242.66666666666666,150 L397.3333333333333,150" class="s-line-green" marker-end="url(#q4f-g)"/><text x="320.0" y="144" class="s-txt s-xs" text-anchor="middle" >replicate (background)</text><path d="M242.66666666666666,176 L420.0,176" class="s-line-red s-dash"/><text x="428.0" y="181" class="s-red-t s-bold" text-anchor="middle" >✕</text><text x="328.3333333333333" y="170" class="s-txt s-xs" text-anchor="middle" >replicate</text><text x="8" y="246" class="s-mut s-xs" text-anchor="start" >t2</text><path d="M564.0,242 L242.66666666666666,242" class="s-line s-dash" marker-end="url(#q4f-a)"/><text x="403.3333333333333" y="236" class="s-txt s-xs" text-anchor="middle" >back: what did I miss?</text><path d="M242.66666666666666,266 L564.0,266" class="s-line-green" marker-end="url(#q4f-g)"/><text x="403.3333333333333" y="260" class="s-txt s-xs" text-anchor="middle" >re-send missed updates</text><rect x="514.0" y="278" width="112" height="18" rx="4" class="s-chip"/><text x="570.0" y="291" class="s-txt s-xs" text-anchor="middle" >x := 5 ✓</text></div>
+          <ul>
+            <li>The leader commits locally and acknowledges immediately, then replicates to the followers in the background.</li>
+            <li>A follower that comes back asks the leader what it missed, and the leader re-sends those updates. Writes no longer wait for F2, and reads from followers may return Data(t−1).</li>
+            <li>An intermediate design is <em>semi-synchronous</em> replication: wait for one follower, not all of them.</li>
+          </ul>
+        </div></div>
+      </div>
+    </div>
+  </article>
+
+  <div class="part">Part 3 · ACID: atomicity, isolation, durability</div>
+
+  <div class="recall">
+    <div class="recall-label">Recall</div>
+    <strong>Atomicity:</strong> a transaction is either carried out entirely or not at all. If it fails, the database returns to the state before it started.<br>
+    <strong>Isolation:</strong> concurrent transactions cannot compromise each other while they are in progress. The result must be as if they ran one after the other.
+  </div>
+
+  <!-- ============================================================ Q5 -->
+  <article class="qc">
+    <div class="qc-head"><span class="q-num">Q5</span><h2 class="q-title">Breaking Atomicity</h2></div>
+    <div class="qc-body">
+      <div class="q-prompt">
+        <p>A logistics company moves 50 units of stock from its Paris warehouse (<code>A = 80</code>) to its Lyon warehouse (<code>B = 30</code>). The transfer is one transaction <code>T</code> made of two threads of execution, which the DBMS may interleave in any order. Each <code>Write</code> updates the value <em>in place</em> on disk. There is <strong>no log</strong>.</p>
+        <div class="tl">
+          <div class="h t">#</div><div class="h">Thread 1</div><div class="h">Thread 2</div>
+          <div class="t">1</div><div>Read(A)</div><div>Read(B)</div>
+          <div class="t">2</div><div>A = A − 50</div><div>B = B + 50</div>
+          <div class="t">3</div><div>Write(A)</div><div>Write(B)</div>
+        </div>
+        <p>The invariant is <code>A + B = 110</code>. The machine can lose power at any moment.</p>
+        <p><strong>(a)</strong> How many different execution orders (interleavings of the two threads) are possible?</p>
+        <p><strong>(b)</strong> Give one execution order and one moment of failure such that, after restart, the database is in a state that violates atomicity. Give the values of A and B on disk.</p>
+        <p><strong>(c)</strong> Is there an execution order that is safe <em>whatever</em> the moment of failure?</p>
+      </div>
+      <div class="ans-zone">
+        <button class="toggle-btn" data-panel="a5">🔒 Answer locked</button>
+        <div class="ans-panel" id="a5" hidden><div class="ac">
+          <h4>(a) Number of interleavings</h4>
+          <p>The order inside each thread is fixed, so we only choose which 3 of the 6 time slots belong to Thread 1: $\binom{6}{3} = 20$ orders.</p>
+          <h4>(b) A failing execution</h4>
+          <div class="tl c4">
+            <div class="h t">t</div><div class="h">Thread 1</div><div class="h">Thread 2</div><div class="h">Disk</div>
+            <div class="t">1</div><div>Read(A) → 80</div><div></div><div class="disk">A=80, B=30</div>
+            <div class="t">2</div><div></div><div>Read(B) → 30</div><div class="disk">A=80, B=30</div>
+            <div class="t">3</div><div>A = 30</div><div></div><div class="disk">A=80, B=30</div>
+            <div class="t">4</div><div class="q">Write(A)</div><div></div><div class="disk q">A=30, B=30</div>
+            <div class="t">5</div><div></div><div>B = 80</div><div class="disk">A=30, B=30</div>
+            <div class="x">⚡ power failure, before Write(B)</div>
+            <div class="t">↻</div><div class="r">restart</div><div class="r">restart</div><div class="disk q">A=30, B=30 → A+B = 60</div>
+          </div>
+          <p>Half of the transaction has been applied: 50 units have disappeared. After restart, the system cannot tell that <code>A = 30</code> is a partial result, and it has no record of the old value 80 to go back to.</p>
+          <h4>(c) No safe order exists</h4>
+          <p>In every one of the 20 orders, the two writes happen at two distinct instants, so there is always a window between the first and the second write. A failure inside that window leaves exactly one of them on disk. Reordering can shorten the window, for example by computing both values first and writing them back to back, but it can never remove it. Atomicity therefore needs extra information on disk to undo or redo the work. That is the role of the log (Q6).</p>
+        </div></div>
+      </div>
+    </div>
+  </article>
+
+  <!-- ============================================================ Q6 -->
+  <article class="qc">
+    <div class="qc-head"><span class="q-num">Q6</span><h2 class="q-title">The Write-Ahead Log: Why It Works and Why It Is Fast Enough</h2></div>
+    <div class="qc-body">
+      <div class="q-prompt">
+        <p>We now add a <strong>write-ahead log (WAL)</strong>, an append-only file on disk. For the transfer of Q5, the DBMS appends the following records:</p>
+        <div class="fig"><svg viewBox="0 0 700 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Write-ahead log records and data pages"><defs><marker id="q6log-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="s-ahd"/></marker><marker id="q6log-r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="s-ahd-red"/></marker><marker id="q6log-g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="s-ahd-green"/></marker></defs><text x="10" y="22" class="s-txt s-sm s-bold" text-anchor="start" >Transaction log (on disk, append-only)</text><rect x="10" y="34" width="112" height="30" rx="4" class="s-box"/><text x="66.0" y="53" class="s-txt s-xs s-mono" text-anchor="middle" >&lt;T, START&gt;</text><rect x="128" y="34" width="178" height="30" rx="4" class="s-box"/><text x="217.0" y="53" class="s-txt s-xs s-mono" text-anchor="middle" >&lt;T, A, old=80, new=30&gt;</text><rect x="312" y="34" width="178" height="30" rx="4" class="s-box"/><text x="401.0" y="53" class="s-txt s-xs s-mono" text-anchor="middle" >&lt;T, B, old=30, new=80&gt;</text><rect x="496" y="34" width="112" height="30" rx="4" class="s-head"/><text x="552.0" y="53" class="s-txt s-xs s-mono" text-anchor="middle" >&lt;T, COMMIT&gt;</text><path d="M618,49 L648,49" class="s-line" marker-end="url(#q6log-a)"/><text x="618" y="80" class="s-mut s-xs" text-anchor="start" >next append</text><text x="10" y="120" class="s-txt s-sm s-bold" text-anchor="start" >Data pages (on disk, updated in place, later)</text><rect x="10" y="132" width="170" height="44" rx="4" class="s-box"/><text x="20" y="150" class="s-mut s-xs" text-anchor="start" >page of A</text><text x="20" y="168" class="s-txt s-sm s-mono" text-anchor="start" >A = 80</text><rect x="200" y="132" width="170" height="44" rx="4" class="s-box"/><text x="210" y="150" class="s-mut s-xs" text-anchor="start" >page of B</text><text x="210" y="168" class="s-txt s-sm s-mono" text-anchor="start" >B = 30</text><text x="400" y="150" class="s-txt s-xs" text-anchor="start" >Rule 1 (write-ahead): a log record reaches disk</text><text x="400" y="165" class="s-txt s-xs" text-anchor="start" >before the page it describes.</text><text x="400" y="184" class="s-txt s-xs" text-anchor="start" >Rule 2: T is committed ⇔ &lt;T, COMMIT&gt; is on disk.</text></svg></div>
+        <p><strong>(a)</strong> Replay the failure from your answer to Q5(b) with the WAL. What is in the log at the time of the crash, and what does the recovery procedure do at restart? Do the same for a crash that happens just after <code>&lt;T, COMMIT&gt;</code> reaches the disk, but before any data page is written.</p>
+        <p><strong>(b)</strong> Why does the log store the old and new <em>values</em> (<code>old=80, new=30</code>) rather than the operation (<code>A −= 50</code>)?</p>
+        <p><strong>(c)</strong> In the lecture we saw that disk is slow. Yet the WAL adds <em>one more</em> disk write per update. Is WAL still a good solution?</p>
+      </div>
+      <div class="ans-zone">
+        <button class="toggle-btn" data-panel="a6">🔒 Answer locked</button>
+        <div class="ans-panel" id="a6" hidden><div class="ac">
+          <h4>(a) Recovery</h4>
+          <p><strong>Crash after Write(A), before Write(B).</strong> Because of the write-ahead rule, <code>&lt;T,START&gt;</code> and <code>&lt;T,A,80,30&gt;</code> are on disk, since A's page could not be written before its log record. There is no <code>&lt;T,COMMIT&gt;</code>, so T is a <em>loser</em>. Recovery scans its records backwards and <strong>undoes</strong> them by writing the old values: A := 80, and B := 30 if its record exists. The result is A = 80, B = 30, as if T never ran.</p>
+          <p><strong>Crash after <code>&lt;T,COMMIT&gt;</code>, before the pages are written.</strong> T is <em>successfull</em>: the client was told the transfer succeeded. Recovery scans forward and <strong>redoes</strong> it by writing the new values: A := 30, B := 80. Each outcome is all or nothing, and which one applies is decided by a single atomic event: whether the commit record is on disk.</p>
+          <h4>(b) Crash during recovery</h4>
+          <p>Recovery simply starts again. Undo and redo <em>set</em> values (A := 80) and are therefore <strong>idempotent</strong>: applying them twice gives the same result as applying them once. A logical record like <code>A −= 50</code> would be applied twice and corrupt the data. Real systems such as ARIES also store a log sequence number (LSN) on each page, so that a change already present on the page is not redone.</p>
+          <h4>(c) Why an extra disk write makes things faster</h4>
+          <p>The key insight is that the WAL turns many <strong>random in-place writes</strong> at commit time into one <strong>sequential append</strong>. The data pages are still written, but later, in the background, batched and optimized.</p>
+          <div class="fig"><svg viewBox="0 0 700 170" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Random in-place page writes versus sequential log appends"><defs><marker id="q6pat-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="s-ahd"/></marker><marker id="q6pat-r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="s-ahd-red"/></marker><marker id="q6pat-g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="s-ahd-green"/></marker></defs><text x="10" y="18" class="s-txt s-sm s-bold" text-anchor="start" >Without WAL: force k dirty pages in place at commit → k random I/Os</text><rect x="10" y="28" width="14" height="28" rx="2" class="s-cell"/><rect x="27" y="28" width="14" height="28" rx="2" class="s-cell"/><rect x="44" y="28" width="14" height="28" rx="2" class="s-cell"/><rect x="61" y="28" width="14" height="28" rx="2" class="s-bar-rnd"/><rect x="78" y="28" width="14" height="28" rx="2" class="s-cell"/><rect x="95" y="28" width="14" height="28" rx="2" class="s-cell"/><rect x="112" y="28" width="14" height="28" rx="2" class="s-cell"/><rect x="129" y="28" width="14" height="28" rx="2" class="s-cell"/><rect x="146" y="28" width="14" height="28" rx="2" class="s-cell"/><rect x="163" y="28" width="14" height="28" rx="2" class="s-bar-rnd"/><rect x="180" y="28" width="14" height="28" rx="2" class="s-cell"/><rect x="197" y="28" width="14" height="28" rx="2" class="s-cell"/><rect x="214" y="28" width="14" height="28" rx="2" class="s-cell"/><rect x="231" y="28" width="14" height="28" rx="2" class="s-cell"/><rect x="248" y="28" width="14" height="28" rx="2" class="s-bar-rnd"/><rect x="265" y="28" width="14" height="28" rx="2" class="s-cell"/><rect x="282" y="28" width="14" height="28" rx="2" class="s-cell"/><rect x="299" y="28" width="14" height="28" rx="2" class="s-cell"/><rect x="316" y="28" width="14" height="28" rx="2" class="s-cell"/><rect x="333" y="28" width="14" height="28" rx="2" class="s-cell"/><rect x="350" y="28" width="14" height="28" rx="2" class="s-cell"/><rect x="367" y="28" width="14" height="28" rx="2" class="s-cell"/><rect x="384" y="28" width="14" height="28" rx="2" class="s-bar-rnd"/><rect x="401" y="28" width="14" height="28" rx="2" class="s-cell"/><rect x="418" y="28" width="14" height="28" rx="2" class="s-cell"/><rect x="435" y="28" width="14" height="28" rx="2" class="s-cell"/><rect x="452" y="28" width="14" height="28" rx="2" class="s-cell"/><rect x="469" y="28" width="14" height="28" rx="2" class="s-bar-rnd"/><rect x="486" y="28" width="14" height="28" rx="2" class="s-cell"/><rect x="503" y="28" width="14" height="28" rx="2" class="s-cell"/><rect x="520" y="28" width="14" height="28" rx="2" class="s-cell"/><rect x="537" y="28" width="14" height="28" rx="2" class="s-cell"/><rect x="554" y="28" width="14" height="28" rx="2" class="s-cell"/><rect x="571" y="28" width="14" height="28" rx="2" class="s-cell"/><rect x="588" y="28" width="14" height="28" rx="2" class="s-cell"/><rect x="605" y="28" width="14" height="28" rx="2" class="s-bar-rnd"/><rect x="622" y="28" width="14" height="28" rx="2" class="s-cell"/><rect x="639" y="28" width="14" height="28" rx="2" class="s-cell"/><rect x="656" y="28" width="14" height="28" rx="2" class="s-cell"/><rect x="673" y="28" width="14" height="28" rx="2" class="s-cell"/><text x="10" y="106" class="s-txt s-sm s-bold" text-anchor="start" >With WAL: append k small records at the tail, one fsync → 1 sequential I/O</text><rect x="10" y="116" width="14" height="28" rx="2" class="s-cell"/><rect x="27" y="116" width="14" height="28" rx="2" class="s-cell"/><rect x="44" y="116" width="14" height="28" rx="2" class="s-cell"/><rect x="61" y="116" width="14" height="28" rx="2" class="s-cell"/><rect x="78" y="116" width="14" height="28" rx="2" class="s-cell"/><rect x="95" y="116" width="14" height="28" rx="2" class="s-cell"/><rect x="112" y="116" width="14" height="28" rx="2" class="s-cell"/><rect x="129" y="116" width="14" height="28" rx="2" class="s-cell"/><rect x="146" y="116" width="14" height="28" rx="2" class="s-cell"/><rect x="163" y="116" width="14" height="28" rx="2" class="s-cell"/><rect x="180" y="116" width="14" height="28" rx="2" class="s-cell"/><rect x="197" y="116" width="14" height="28" rx="2" class="s-cell"/><rect x="214" y="116" width="14" height="28" rx="2" class="s-cell"/><rect x="231" y="116" width="14" height="28" rx="2" class="s-cell"/><rect x="248" y="116" width="14" height="28" rx="2" class="s-cell"/><rect x="265" y="116" width="14" height="28" rx="2" class="s-cell"/><rect x="282" y="116" width="14" height="28" rx="2" class="s-cell"/><rect x="299" y="116" width="14" height="28" rx="2" class="s-cell"/><rect x="316" y="116" width="14" height="28" rx="2" class="s-cell"/><rect x="333" y="116" width="14" height="28" rx="2" class="s-cell"/><rect x="350" y="116" width="14" height="28" rx="2" class="s-cell"/><rect x="367" y="116" width="14" height="28" rx="2" class="s-cell"/><rect x="384" y="116" width="14" height="28" rx="2" class="s-cell"/><rect x="401" y="116" width="14" height="28" rx="2" class="s-cell"/><rect x="418" y="116" width="14" height="28" rx="2" class="s-cell"/><rect x="435" y="116" width="14" height="28" rx="2" class="s-cell"/><rect x="452" y="116" width="14" height="28" rx="2" class="s-cell"/><rect x="469" y="116" width="14" height="28" rx="2" class="s-cell"/><rect x="486" y="116" width="14" height="28" rx="2" class="s-cell"/><rect x="503" y="116" width="14" height="28" rx="2" class="s-cell"/><rect x="520" y="116" width="14" height="28" rx="2" class="s-cell"/><rect x="537" y="116" width="14" height="28" rx="2" class="s-cell"/><rect x="554" y="116" width="14" height="28" rx="2" class="s-cell"/><rect x="571" y="116" width="14" height="28" rx="2" class="s-bar-seq"/><rect x="588" y="116" width="14" height="28" rx="2" class="s-bar-seq"/><rect x="605" y="116" width="14" height="28" rx="2" class="s-bar-seq"/><rect x="622" y="116" width="14" height="28" rx="2" class="s-cell-empty"/><rect x="639" y="116" width="14" height="28" rx="2" class="s-cell-empty"/><rect x="656" y="116" width="14" height="28" rx="2" class="s-cell-empty"/><rect x="673" y="116" width="14" height="28" rx="2" class="s-cell-empty"/></svg></div>
+        </div></div>
+      </div>
+    </div>
+  </article>
+
+  <!-- ============================================================ Q7 -->
+  <article class="qc">
+    <div class="qc-head"><span class="q-num">Q7</span><h2 class="q-title">Isolation Levels and Their Anomalies</h2></div>
+    <div class="qc-body">
+      <div class="q-prompt">
+        <p>Recall the four isolation levels, in their lock-based implementation:</p>
+        <div class="tbl-wrap"><table>
+          <tr><th>Level</th><th>Write locks</th><th>Read locks</th><th>Range locks</th></tr>
+          <tr><td>0 · Read uncommitted</td><td>held until the end of the transaction</td><td>none</td><td>none</td></tr>
+          <tr><td>1 · Read committed</td><td>held until the end of the transaction</td><td>released right after the read</td><td>none</td></tr>
+          <tr><td>2 · Repeatable read</td><td>held until the end of the transaction</td><td>held until the end of the transaction</td><td>none</td></tr>
+          <tr><td>3 · Serializable</td><td>held until the end of the transaction</td><td>held until the end of the transaction</td><td>on ranged <code>WHERE</code> clauses</td></tr>
+        </table></div>
+        <p>A transaction (T1, T2, …) is everything between <code>BEGIN</code> and <code>COMMIT</code> or <code>ROLLBACK</code>. A <em>read lock</em> (shared) can be held by several transactions at once. A <em>write lock</em> (exclusive) excludes every other lock on the same data, so a transaction that asks for a conflicting lock waits. Level 3 adds <em>range locks</em> on top of level 2; we come back to them in Q8.</p>
+        <p>Table <code>accounts(id, owner, balance)</code> initially contains <code>(1, 'Alice', 100)</code> and <code>(2, 'Bob', 50)</code>. Each scenario below starts from this state. For each scenario:</p>
+        <ol>
+          <li>give the value marked <span class="wait">?</span> under the three first levels (and say when a transaction has to <em>wait</em>);</li>
+          <li>give the <strong>lowest</strong> isolation level that prevents it.</li>
+        </ol>
+
+        <p><strong>Scenario 1</strong></p>
+        <div class="tl">
+          <div class="h t">t</div><div class="h">T1</div><div class="h">T2</div>
+          <div class="t">1</div><div>BEGIN;</div><div></div>
+          <div class="t">2</div><div></div><div>BEGIN;<br>UPDATE accounts SET balance = 0 WHERE id = 1;</div>
+          <div class="t">3</div><div class="q">SELECT balance FROM accounts WHERE id = 1; -- ?</div><div></div>
+          <div class="t">4</div><div></div><div>ROLLBACK;</div>
+          <div class="t">5</div><div>COMMIT;</div><div></div>
+        </div>
+
+        <p><strong>Scenario 2</strong></p>
+        <div class="tl">
+          <div class="h t">t</div><div class="h">T1</div><div class="h">T2</div>
+          <div class="t">1</div><div>BEGIN;<br>SELECT balance FROM accounts WHERE id = 1; -- 100</div><div></div>
+          <div class="t">2</div><div></div><div>BEGIN;<br>UPDATE accounts SET balance = 150 WHERE id = 1;<br>COMMIT;</div>
+          <div class="t">3</div><div class="q">SELECT balance FROM accounts WHERE id = 1; -- ?</div><div></div>
+          <div class="t">4</div><div>COMMIT;</div><div></div>
+        </div>
+
+        <p><strong>Scenario 3</strong>: Bob deposits 30 (T1) while a payment of 20 is debited (T2). The application reads the balance, computes the new value, and writes it back.</p>
+        <div class="tl">
+          <div class="h t">t</div><div class="h">T1 (deposit +30)</div><div class="h">T2 (debit −20)</div>
+          <div class="t">1</div><div>BEGIN;<br>SELECT balance FROM accounts WHERE id = 2; -- 50</div><div></div>
+          <div class="t">2</div><div></div><div>BEGIN;<br>SELECT balance FROM accounts WHERE id = 2; -- 50</div>
+          <div class="t">3</div><div>UPDATE accounts SET balance = 80 WHERE id = 2;<br>COMMIT;</div><div></div>
+          <div class="t">4</div><div></div><div>UPDATE accounts SET balance = 30 WHERE id = 2;<br>COMMIT;</div>
+          <div class="t">5</div><div class="q" style="grid-column:2/4">Final balance of Bob? -- ?</div>
+        </div>
+      </div>
+      <div class="ans-zone">
+        <button class="toggle-btn" data-panel="a7">🔒 Answer locked</button>
+        <div class="ans-panel" id="a7" hidden><div class="ac">
+          <h4>Scenario 1: dirty read → Read committed</h4>
+          <div class="tbl-wrap"><table>
+            <tr><th>Level</th><th>T1 reads</th><th>Why</th></tr>
+            <tr><td>Read uncommitted</td><td class="yes">0</td><td>No read lock, so T1 sees T2's uncommitted value, which is then rolled back. This is a <strong>dirty read</strong>.</td></tr>
+            <tr><td>Read committed</td><td class="no">100</td><td>T2 holds a write lock on row 1. <span class="wait">T1 waits</span> until the ROLLBACK, then reads 100.</td></tr>
+            <tr><td>Repeatable read</td><td class="no">100</td><td>Same as above.</td></tr>
+            <tr><td>Serializable</td><td class="no">100</td><td>Same as above.</td></tr>
+          </table></div>
+          <h4>Scenario 2: non-repeatable read → Repeatable read</h4>
+          <div class="tbl-wrap"><table>
+            <tr><th>Level</th><th>2nd read</th><th>Why</th></tr>
+            <tr><td>Read uncommitted</td><td class="yes">150</td><td>The same row returns two different values within T1.</td></tr>
+            <tr><td>Read committed</td><td class="yes">150</td><td>T1's read lock was released after step 1, so T2 can update and commit.</td></tr>
+            <tr><td>Repeatable read</td><td class="no">100</td><td>T1 keeps its read lock on row 1. <span class="wait">T2's UPDATE waits</span> until T1 commits, then sets 150.</td></tr>
+            <tr><td>Serializable</td><td class="no">100</td><td>Same as above.</td></tr>
+          </table></div>
+          <h4>Scenario 3: lost update → Repeatable read</h4>
+          <p>Any serial execution gives 50 + 30 − 20 = <strong>60</strong>.</p>
+          <div class="tbl-wrap"><table>
+            <tr><th>Level</th><th>Final balance</th><th>Why</th></tr>
+            <tr><td>Read uncommitted</td><td class="yes">30</td><td>Both read 50, and T2 overwrites T1's deposit: a <strong>lost update</strong>.</td></tr>
+            <tr><td>Read committed</td><td class="yes">30</td><td>Read locks are released immediately, so nothing stops it.</td></tr>
+            <tr><td>Repeatable read</td><td class="no">60</td><td>Both hold a read lock on row 2. T1's UPDATE waits for T2 and T2's UPDATE waits for T1: a <strong>deadlock</strong>. The DBMS aborts one (say T2), which retries, reads 80 and writes 60.</td></tr>
+            <tr><td>Serializable</td><td class="no">60</td><td>Same as above.</td></tr>
+          </table></div>
+          <h4>Summary: is the anomaly possible?</h4>
+          <div class="tbl-wrap"><table>
+            <tr><th>Anomaly</th><th>Read uncommitted</th><th>Read committed</th><th>Repeatable read</th><th>Serializable</th></tr>
+            <tr><td>Dirty read</td><td class="yes">yes</td><td class="no">no</td><td class="no">no</td><td class="no">no</td></tr>
+            <tr><td>Non-repeatable read</td><td class="yes">yes</td><td class="yes">yes</td><td class="no">no</td><td class="no">no</td></tr>
+            <tr><td>Lost update</td><td class="yes">yes</td><td class="yes">yes</td><td class="no">no</td><td class="no">no</td></tr>
+          </table></div>
+        </div></div>
+      </div>
+    </div>
+  </article>
+
+  <!-- ============================================================ Q8 -->
+  <article class="qc">
+    <div class="qc-head"><span class="q-num">Q8</span><h2 class="q-title">What Exactly Should We Lock?</h2></div>
+    <div class="qc-body">
+      <div class="q-prompt">
+        <p>In Q7, level 3 (Serializable) was defined as level 2 plus <em>range locks</em> on ranged <code>WHERE</code> clauses. This question looks at why row locks are not enough, and what a range lock actually is.</p>
+        <p>Table <code>employees(id, name, dept, salary)</code> has a B-tree index on <code>salary</code> and contains:</p>
+        <div class="tbl-wrap"><table>
+          <tr><th>id</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th></tr>
+          <tr><td>name</td><td>Ana</td><td>Bilal</td><td>Chloé</td><td>David</td><td>Emma</td><td>Farid</td><td>Gaëlle</td></tr>
+          <tr><td>salary</td><td>2100</td><td>2800</td><td>3100</td><td>3400</td><td>3900</td><td>4500</td><td>6000</td></tr>
+        </table></div>
+        <p>A reporting transaction T1 runs the following query twice, and must get the same answer both times:</p>
+        <div class="code-wrap"><pre class="code-block">SELECT COUNT(*), SUM(salary) FROM employees WHERE salary BETWEEN 3000 AND 4000;  <span class="c">-- 3, 10400</span></pre></div>
+        <p>Between the two executions, the following transactions try to run:</p>
+        <ul>
+          <li><strong>T2</strong>: <code>INSERT (8, 'Hugo', 'IT', 3500)</code></li>
+          <li><strong>T3</strong>: <code>UPDATE employees SET salary = 6200 WHERE id = 7</code> (6000 → 6200)</li>
+          <li><strong>T4</strong>: <code>UPDATE employees SET salary = 3200 WHERE id = 2</code> (2800 → 3200)</li>
+          <li><strong>T5</strong>: <code>INSERT (9, 'Inès', 'HR', 5200)</code></li>
+          <li><strong>T6</strong>: <code>INSERT (10, 'Jules', 'IT', 4200)</code></li>
+        </ul>
+        <p>Two locking procedures are proposed for T1's SELECT:</p>
+        <ul>
+          <li><strong>Procedure A:</strong> take a shared lock on the <em>whole table</em> until commit. Any writer needs an exclusive lock on the table.</li>
+          <li><strong>Procedure B:</strong> take a shared lock on <em>each row that satisfies the WHERE clause</em> until commit. A writer needs an exclusive lock on the rows it modifies or inserts.</li>
+        </ul>
+        <div class="fig"><svg viewBox="0 0 720 238" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Index on salary with lock coverage per procedure"><defs><marker id="q8q-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="s-ahd"/></marker><marker id="q8q-r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="s-ahd-red"/></marker><marker id="q8q-g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="s-ahd-green"/></marker></defs><rect x="255.0" y="18" width="120.83333333333331" height="198" class="s-range"/><text x="315.41666666666663" y="14" class="s-acc s-xs s-bold" text-anchor="middle" >WHERE salary BETWEEN 3000 AND 4000</text><path d="M315.4166666666667,40 L315.4166666666667,72" class="s-line-red" marker-end="url(#q8q-r)"/><text x="315.4166666666667" y="36" class="s-red-t s-xs" text-anchor="middle" >T2 ins 3500</text><path d="M400.0,40 L400.0,72" class="s-line-red" marker-end="url(#q8q-r)"/><text x="400.0" y="36" class="s-red-t s-xs" text-anchor="middle" >T6 ins 4200</text><path d="M520.8333333333334,40 L520.8333333333334,72" class="s-line-red" marker-end="url(#q8q-r)"/><text x="520.8333333333334" y="36" class="s-red-t s-xs" text-anchor="middle" >T5 ins 5200</text><path d="M230.83333333333334,80 Q255.0,48 279.1666666666667,78" class="s-line-red s-dash" marker-end="url(#q8q-r)"/><text x="226.83333333333334" y="74" class="s-red-t s-xs" text-anchor="end" >T4 2800→3200</text><path d="M617.5,80 Q629.5833333333333,48 641.6666666666666,78" class="s-line-red s-dash" marker-end="url(#q8q-r)"/><text x="613.5" y="74" class="s-red-t s-xs" text-anchor="end" >T3 6000→6200</text><line x1="100" x2="700" y1="96" y2="96" class="s-line"/><text x="10" y="100" class="s-mut s-xs" text-anchor="start" >index(salary)</text><circle cx="146.25" cy="96" r="5" class="s-key"/><text x="146.25" y="116" class="s-txt s-xs s-mono" text-anchor="middle" >2100</text><circle cx="230.83333333333334" cy="96" r="5" class="s-key"/><text x="230.83333333333334" y="116" class="s-txt s-xs s-mono" text-anchor="middle" >2800</text><circle cx="267.0833333333333" cy="96" r="5" class="s-key"/><text x="267.0833333333333" y="116" class="s-txt s-xs s-mono" text-anchor="middle" >3100</text><circle cx="303.3333333333333" cy="96" r="5" class="s-key"/><text x="303.3333333333333" y="116" class="s-txt s-xs s-mono" text-anchor="middle" >3400</text><circle cx="363.75" cy="96" r="5" class="s-key"/><text x="363.75" y="116" class="s-txt s-xs s-mono" text-anchor="middle" >3900</text><circle cx="436.25" cy="96" r="5" class="s-key"/><text x="436.25" y="116" class="s-txt s-xs s-mono" text-anchor="middle" >4500</text><circle cx="617.5" cy="96" r="5" class="s-key"/><text x="617.5" y="116" class="s-txt s-xs s-mono" text-anchor="middle" >6000</text><text x="10" y="144" class="s-txt s-xs s-bold" text-anchor="start" >A · table lock</text><line x1="100" x2="700" y1="140" y2="140" class="s-grid"/><rect x="100" y="131" width="600" height="18" rx="4" class="s-lock"/><text x="400.0" y="144" class="s-txt s-xs" text-anchor="middle" >whole table (incl. future rows)</text><text x="10" y="188" class="s-txt s-xs s-bold" text-anchor="start" >B · row locks</text><line x1="100" x2="700" y1="184" y2="184" class="s-grid"/><rect x="259.0833333333333" y="175" width="16" height="18" rx="4" class="s-lock"/><rect x="295.3333333333333" y="175" width="16" height="18" rx="4" class="s-lock"/><rect x="355.75" y="175" width="16" height="18" rx="4" class="s-lock"/><text x="496.66666666666663" y="188" class="s-mut s-xs" text-anchor="middle" >existing rows within range</text></svg></div>
+        <p><strong>(a)</strong> For each procedure, which of T2–T6 are blocked, and what does T1's second SELECT return?</p>
+        <p><strong>(b)</strong> Show that one procedure is too strong and the other too weak.</p>
+        <p><strong>(c)</strong> Design a procedure C in between.</p>
+      </div>
+      <div class="ans-zone">
+        <button class="toggle-btn" data-panel="a8">🔒 Answer locked</button>
+        <div class="ans-panel" id="a8" hidden><div class="ac">
+          <h4>(a) Blocked transactions and results</h4>
+          <div class="tbl-wrap"><table>
+            <tr><th></th><th>T2 ins 3500</th><th>T3 6000→6200</th><th>T4 2800→3200</th><th>T5 ins 5200</th><th>T6 ins 4200</th><th>2nd SELECT</th></tr>
+            <tr><td><strong>A · table</strong></td><td class="wait">blocked</td><td class="wait">blocked ✗</td><td class="wait">blocked</td><td class="wait">blocked ✗</td><td class="wait">blocked ✗</td><td class="no">3, 10400</td></tr>
+            <tr><td><strong>B · rows</strong></td><td class="yes">passes ✗</td><td>passes</td><td class="yes">passes ✗</td><td>passes</td><td>passes</td><td class="yes">5, 17100</td></tr>
+            <tr><td><strong>C · next-key</strong></td><td class="wait">blocked</td><td>passes</td><td class="wait">blocked</td><td>passes</td><td class="wait">blocked (false positive)</td><td class="no">3, 10400</td></tr>
+          </table></div>
+          <p>✗ marks a wrong decision: blocking something unrelated (A), or letting T1's result change (B). Under B the second SELECT sees Hugo (3500) and Bilal's new salary (3200): 3100 + 3400 + 3900 + 3500 + 3200 = 17100.</p>
+          <h4>(b) Too strong, too weak</h4>
+          <p><strong>A is too strong.</strong> It is correct, but every writer on the table waits for a report that may last minutes, including T3 and T5, which have nothing to do with the range. Concurrency collapses to one transaction at a time on the table.</p>
+          <p><strong>B is too weak.</strong> It locks <em>data</em>, but the query is about a <em>predicate</em>. When T1 takes its locks, Hugo's row does not exist yet, and you cannot lock a row that does not exist. Bilal's row exists but does not match the predicate, so it is not locked either, and T4 moves it <em>into</em> the range.</p>
+          <p>Rows that appear in the result of a query re-run inside the same transaction are called <strong>phantoms</strong>, and this anomaly is a <strong>phantom read</strong>. Procedure B is exactly level 2 (Repeatable read), which is why level 2 allows phantoms. Level 3 (Serializable) must prevent them, and that is what range locks are for.</p>
+          <h4>(c) Procedure C: lock the range in the index (next-key locking)</h4>
+          <p>This is how lock-based DBMSs implement level 3, for example MySQL/InnoDB and SQL Server's key-range locks.</p>
+          <div class="fig"><svg viewBox="0 0 720 282" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Index on salary with lock coverage per procedure"><defs><marker id="q8c-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="s-ahd"/></marker><marker id="q8c-r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="s-ahd-red"/></marker><marker id="q8c-g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="s-ahd-green"/></marker></defs><rect x="255.0" y="18" width="120.83333333333331" height="242" class="s-range"/><text x="315.41666666666663" y="14" class="s-acc s-xs s-bold" text-anchor="middle" >WHERE salary BETWEEN 3000 AND 4000</text><path d="M315.4166666666667,40 L315.4166666666667,72" class="s-line-red" marker-end="url(#q8c-r)"/><text x="315.4166666666667" y="36" class="s-red-t s-xs" text-anchor="middle" >T2 ins 3500</text><path d="M400.0,40 L400.0,72" class="s-line-red" marker-end="url(#q8c-r)"/><text x="400.0" y="36" class="s-red-t s-xs" text-anchor="middle" >T6 ins 4200</text><path d="M520.8333333333334,40 L520.8333333333334,72" class="s-line-red" marker-end="url(#q8c-r)"/><text x="520.8333333333334" y="36" class="s-red-t s-xs" text-anchor="middle" >T5 ins 5200</text><path d="M230.83333333333334,80 Q255.0,48 279.1666666666667,78" class="s-line-red s-dash" marker-end="url(#q8c-r)"/><text x="226.83333333333334" y="74" class="s-red-t s-xs" text-anchor="end" >T4 2800→3200</text><path d="M617.5,80 Q629.5833333333333,48 641.6666666666666,78" class="s-line-red s-dash" marker-end="url(#q8c-r)"/><text x="613.5" y="74" class="s-red-t s-xs" text-anchor="end" >T3 6000→6200</text><line x1="100" x2="700" y1="96" y2="96" class="s-line"/><text x="10" y="100" class="s-mut s-xs" text-anchor="start" >index(salary)</text><circle cx="146.25" cy="96" r="5" class="s-key"/><text x="146.25" y="116" class="s-txt s-xs s-mono" text-anchor="middle" >2100</text><circle cx="230.83333333333334" cy="96" r="5" class="s-key"/><text x="230.83333333333334" y="116" class="s-txt s-xs s-mono" text-anchor="middle" >2800</text><circle cx="267.0833333333333" cy="96" r="5" class="s-key"/><text x="267.0833333333333" y="116" class="s-txt s-xs s-mono" text-anchor="middle" >3100</text><circle cx="303.3333333333333" cy="96" r="5" class="s-key"/><text x="303.3333333333333" y="116" class="s-txt s-xs s-mono" text-anchor="middle" >3400</text><circle cx="363.75" cy="96" r="5" class="s-key"/><text x="363.75" y="116" class="s-txt s-xs s-mono" text-anchor="middle" >3900</text><circle cx="436.25" cy="96" r="5" class="s-key"/><text x="436.25" y="116" class="s-txt s-xs s-mono" text-anchor="middle" >4500</text><circle cx="617.5" cy="96" r="5" class="s-key"/><text x="617.5" y="116" class="s-txt s-xs s-mono" text-anchor="middle" >6000</text><text x="10" y="144" class="s-txt s-xs s-bold" text-anchor="start" >A · table lock</text><line x1="100" x2="700" y1="140" y2="140" class="s-grid"/><rect x="100" y="131" width="600" height="18" rx="4" class="s-lock"/><text x="400.0" y="144" class="s-txt s-xs" text-anchor="middle" >whole table (incl. future rows)</text><text x="10" y="188" class="s-txt s-xs s-bold" text-anchor="start" >B · row locks</text><line x1="100" x2="700" y1="184" y2="184" class="s-grid"/><rect x="259.0833333333333" y="175" width="16" height="18" rx="4" class="s-lock"/><rect x="295.3333333333333" y="175" width="16" height="18" rx="4" class="s-lock"/><rect x="355.75" y="175" width="16" height="18" rx="4" class="s-lock"/><text x="496.66666666666663" y="188" class="s-mut s-xs" text-anchor="middle" >only existing matching rows</text><text x="10" y="232" class="s-txt s-xs s-bold" text-anchor="start" >C · next-key locks</text><line x1="100" x2="700" y1="228" y2="228" class="s-grid"/><rect x="235.83333333333334" y="219" width="205.41666666666666" height="18" rx="4" class="s-lock"/><text x="333.5416666666667" y="232" class="s-txt s-xs" text-anchor="middle" >(2800, 4500]  gaps + keys</text></svg></div>
+          <ol>
+            <li>Scan the index on <code>salary</code> from 3000 to 4000. Lock every index entry found <em>and the gap before it</em>, then lock the first entry <em>after</em> the range (4500) together with its gap. The locked region is (2800, 4500].</li>
+            <li>Any writer that wants to insert a key, or move a key, into a locked gap must first request an "insert-intention" lock on that gap, which conflicts with T1's lock, so it waits. T2 (3500 ∈ (3400, 3900]) and T4 (3200 ∈ (3100, 3400]) are blocked.</li>
+            <li>Keys outside (2800, 4500] are untouched: T3 and T5 proceed.</li>
+          </ol>
+          <ul>
+            <li><strong>It needs an index on the column.</strong> Without one, the DBMS has to scan the whole table, so it locks every row and every gap, which degenerates into procedure A.</li>
+          </ul>
+          <h4>(d) Why the margin? Why not lock exactly [3000, 4000]?</h4>
+          <p><strong>A lock manager can only lock things that have a name.</strong> It is essentially a hash table: <em>resource → who holds it, in which mode</em>. Checking for a conflict is one hash lookup, so it costs $O(1)$. A table, a page, a row and an index key all have names. The interval [3000, 4000] does not: no row and no key in the database is called 3000 or 4000.</p>
+          <p><strong>Next-key locking borrows names that already exist: the index keys.</strong> Each gap between two consecutive keys is named after the key that closes it, so the gap (3900, 4500] "belongs to" key 4500. To insert 4200, the writer has to walk down the B-tree to where 4200 goes anyway, and it lands right before 4500. Checking the lock on 4500 is one extra hash lookup. The price is that only <em>whole gaps</em> can be locked. The gap containing 4000 is (3900, 4500], and cutting it at 4000 would need a key 4000 that does not exist. That is the margin: (2800, 3100] at the bottom and (3900, 4500] at the top.</p>
+          <p><strong>Locking exactly the range means predicate locking.</strong> The DBMS stores the condition <code>salary BETWEEN 3000 AND 4000</code> itself, and checks every write against it. For this single interval, that would actually be cheap. In general it is not:</p>
+          <ul>
+            <li>A predicate is not a name, so a conflict cannot be found with a hash lookup. Every write has to be tested against <em>every</em> predicate held by <em>every</em> active transaction.</li>
+            <li>Predicates are arbitrary SQL, for example <code>dept = 'IT' AND salary * 1.1 &gt; bonus</code>. Deciding whether two arbitrary predicates can be true for the same row is hard in general.</li>
+          </ul>
+        </div></div>
+      </div>
+    </div>
+  </article>
+
+  <!-- ============================================================ Q9 -->
+  <article class="qc">
+    <div class="qc-head"><span class="q-num">Q9</span><h2 class="q-title">Durability: The Order of Operations</h2></div>
+    <div class="qc-body">
+      <div class="q-prompt">
+        <p>A client sends <code>UPDATE accounts SET balance = 80 WHERE id = 2; COMMIT;</code> to a modern DBMS. The arrows below are labelled with letters in <em>random</em> order (both arrows marked G belong to the same step):</p>
+        <div class="fig"><svg viewBox="0 0 680 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="DBMS components and the order of operations for a transaction"><defs><marker id="q9q-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="s-ahd"/></marker><marker id="q9q-r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="s-ahd-red"/></marker><marker id="q9q-g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="s-ahd-green"/></marker></defs><rect x="4" y="4" width="672" height="112" rx="8" class="s-zone-ram"/><rect x="4" y="126" width="672" height="118" rx="8" class="s-zone-disk"/><text x="666" y="20" class="s-mut s-xs" text-anchor="end" >RAM (volatile)</text><text x="666" y="238" class="s-mut s-xs" text-anchor="end" >Disk (persistent)</text><rect x="20" y="36" width="110" height="46" rx="6" class="s-box"/><text x="75.0" y="64" class="s-txt s-sm s-bold" text-anchor="middle" >Client</text><rect x="190" y="36" width="170" height="46" rx="6" class="s-box"/><text x="275.0" y="64" class="s-txt s-sm s-bold" text-anchor="middle" >Database process</text><rect x="450" y="36" width="200" height="46" rx="6" class="s-box"/><text x="550.0" y="64" class="s-txt s-sm s-bold" text-anchor="middle" >Buffer pool (cached pages)</text><rect x="190" y="172" width="170" height="46" rx="6" class="s-head"/><text x="275.0" y="200" class="s-txt s-sm s-bold" text-anchor="middle" >Transaction log (WAL)</text><rect x="450" y="172" width="200" height="46" rx="6" class="s-head"/><text x="550.0" y="200" class="s-txt s-sm s-bold" text-anchor="middle" >Database files</text><path d="M130,50 L190,50" class="s-line" marker-end="url(#q9q-a)"/><circle cx="160" cy="36" r="10" class="s-badge"/><text x="160" y="40" class="s-badge-t" text-anchor="middle" >C</text><path d="M190,70 L130,70" class="s-line" marker-end="url(#q9q-a)"/><circle cx="160" cy="92" r="10" class="s-badge"/><text x="160" y="96" class="s-badge-t" text-anchor="middle" >D</text><path d="M360,50 L450,50" class="s-line" marker-end="url(#q9q-a)"/><circle cx="405" cy="36" r="10" class="s-badge"/><text x="405" y="40" class="s-badge-t" text-anchor="middle" >G</text><path d="M360,70 L450,70" class="s-line" marker-end="url(#q9q-a)"/><circle cx="405" cy="92" r="10" class="s-badge"/><text x="405" y="96" class="s-badge-t" text-anchor="middle" >E</text><path d="M500,172 L500,82" class="s-line" marker-end="url(#q9q-a)"/><circle cx="486" cy="128" r="10" class="s-badge"/><text x="486" y="132" class="s-badge-t" text-anchor="middle" >G</text><path d="M600,82 L600,172" class="s-line" marker-end="url(#q9q-a)"/><circle cx="614" cy="128" r="10" class="s-badge"/><text x="614" y="132" class="s-badge-t" text-anchor="middle" >B</text><path d="M225,82 L225,172" class="s-line" marker-end="url(#q9q-a)"/><circle cx="211" cy="128" r="10" class="s-badge"/><text x="211" y="132" class="s-badge-t" text-anchor="middle" >A</text><path d="M275,82 L275,172" class="s-line" marker-end="url(#q9q-a)"/><circle cx="261" cy="128" r="10" class="s-badge"/><text x="261" y="132" class="s-badge-t" text-anchor="middle" >F</text><path d="M325,82 L325,172" class="s-line" marker-end="url(#q9q-a)"/><circle cx="339" cy="128" r="10" class="s-badge"/><text x="339" y="132" class="s-badge-t" text-anchor="middle" >H</text></svg></div>
+        <ul>
+          <li><strong>A</strong>: append <code>&lt;T, COMMIT&gt;</code> to the log and flush it to disk (fsync)</li>
+          <li><strong>B</strong>: write the "new" page to the database files</li>
+          <li><strong>C</strong>: the client sends the SQL query</li>
+          <li><strong>D</strong>: return "OK" to the client</li>
+          <li><strong>E</strong>: apply the change to the page in the buffer pool and mark the page "new"</li>
+          <li><strong>F</strong>: write a checkpoint record in the log</li>
+          <li><strong>G</strong>: look up the page in the buffer pool; if it is not there, read it from the database files and load it into the buffer</li>
+          <li><strong>H</strong>: append the change record <code>&lt;T, page, old=50, new=80&gt;</code> to the log</li>
+        </ul>
+        <p><strong>(a)</strong> Put the steps in an order that guarantees atomicity and durability. can we apply any step in the background?</p>
+        <p><strong>(b)</strong> For durability, can we keep the database only in memory? Can we keep the log only in memory?</p>
+        <p><strong>(c)</strong> What goes wrong if B happens before H? What goes wrong if D happens before A?</p>
+        <p><strong>(d)</strong> The power fails while B is writing several "new" pages, so half of them are on disk. What does the DBMS do at restart?</p>
+        <p><strong>(e)</strong> What is step F for? What would happen without it?</p>
+      </div>
+      <div class="ans-zone">
+        <button class="toggle-btn" data-panel="a9">🔒 Answer locked</button>
+        <div class="ans-panel" id="a9" hidden><div class="ac">
+          <h4>(a) The order</h4>
+          <p><strong>C → G → E → H → A → D</strong>, then in the background <strong>B → F</strong>.</p>
+          <div class="fig"><svg viewBox="0 0 680 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="DBMS components and the order of operations for a transaction"><defs><marker id="q9a-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="s-ahd"/></marker><marker id="q9a-r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="s-ahd-red"/></marker><marker id="q9a-g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="s-ahd-green"/></marker></defs><rect x="4" y="4" width="672" height="112" rx="8" class="s-zone-ram"/><rect x="4" y="126" width="672" height="118" rx="8" class="s-zone-disk"/><text x="666" y="20" class="s-mut s-xs" text-anchor="end" >RAM (volatile)</text><text x="666" y="238" class="s-mut s-xs" text-anchor="end" >Disk (persistent)</text><rect x="20" y="36" width="110" height="46" rx="6" class="s-box"/><text x="75.0" y="64" class="s-txt s-sm s-bold" text-anchor="middle" >Client</text><rect x="190" y="36" width="170" height="46" rx="6" class="s-box"/><text x="275.0" y="64" class="s-txt s-sm s-bold" text-anchor="middle" >Database process</text><rect x="450" y="36" width="200" height="46" rx="6" class="s-box"/><text x="550.0" y="64" class="s-txt s-sm s-bold" text-anchor="middle" >Buffer pool (cached pages)</text><rect x="190" y="172" width="170" height="46" rx="6" class="s-head"/><text x="275.0" y="200" class="s-txt s-sm s-bold" text-anchor="middle" >Transaction log (WAL)</text><rect x="450" y="172" width="200" height="46" rx="6" class="s-head"/><text x="550.0" y="200" class="s-txt s-sm s-bold" text-anchor="middle" >Database files</text><path d="M130,50 L190,50" class="s-line" marker-end="url(#q9a-a)"/><circle cx="160" cy="36" r="10" class="s-badge"/><text x="160" y="40" class="s-badge-t" text-anchor="middle" >1</text><path d="M190,70 L130,70" class="s-line" marker-end="url(#q9a-a)"/><circle cx="160" cy="92" r="10" class="s-badge"/><text x="160" y="96" class="s-badge-t" text-anchor="middle" >6</text><path d="M360,50 L450,50" class="s-line" marker-end="url(#q9a-a)"/><circle cx="405" cy="36" r="10" class="s-badge"/><text x="405" y="40" class="s-badge-t" text-anchor="middle" >2</text><path d="M360,70 L450,70" class="s-line" marker-end="url(#q9a-a)"/><circle cx="405" cy="92" r="10" class="s-badge"/><text x="405" y="96" class="s-badge-t" text-anchor="middle" >3</text><path d="M500,172 L500,82" class="s-line" marker-end="url(#q9a-a)"/><circle cx="486" cy="128" r="10" class="s-badge"/><text x="486" y="132" class="s-badge-t" text-anchor="middle" >2</text><path d="M600,82 L600,172" class="s-line s-dash" marker-end="url(#q9a-a)"/><circle cx="614" cy="128" r="10" class="s-badge"/><text x="614" y="132" class="s-badge-t" text-anchor="middle" >7</text><path d="M225,82 L225,172" class="s-line" marker-end="url(#q9a-a)"/><circle cx="211" cy="128" r="10" class="s-badge"/><text x="211" y="132" class="s-badge-t" text-anchor="middle" >5</text><path d="M275,82 L275,172" class="s-line s-dash" marker-end="url(#q9a-a)"/><circle cx="261" cy="128" r="10" class="s-badge"/><text x="261" y="132" class="s-badge-t" text-anchor="middle" >8</text><path d="M325,82 L325,172" class="s-line" marker-end="url(#q9a-a)"/><circle cx="339" cy="128" r="10" class="s-badge"/><text x="339" y="132" class="s-badge-t" text-anchor="middle" >4</text></svg></div>
+          <div class="tbl-wrap"><table>
+            <tr><th>#</th><th>Step</th><th>Where</th></tr>
+            <tr><td>1</td><td>C · receive the query</td><td>client → process</td></tr>
+            <tr><td>2</td><td>G · fetch the page (from disk on a miss)</td><td>buffer / disk</td></tr>
+            <tr><td>3</td><td>E · modify it in the buffer, mark it "new"</td><td>RAM</td></tr>
+            <tr><td>4</td><td>H · log record (old and new values)</td><td>log</td></tr>
+            <tr><td>5</td><td>A · COMMIT record, <strong>fsync</strong>: the commit point</td><td>disk</td></tr>
+            <tr><td>6</td><td>D · answer "OK"</td><td>process → client</td></tr>
+            <tr><td>7</td><td>B · flush "new" pages (background, batched)</td><td>disk</td></tr>
+            <tr><td>8</td><td>F · checkpoint record</td><td>log</td></tr>
+          </table></div>
+          <p>E and H may be swapped. The real constraints are that H is on disk before B (write-ahead), and that A is on disk before D (commit before acknowledging).</p>
+          <h4>(b) Memory only?</h4>
+          <p><strong>Database in memory: no.</strong> A power cut erases RAM, so the data of committed transactions would be lost. <strong>Log in memory: no.</strong> The log <em>is</em> the durable proof of the commit. If it only lives in RAM, a crash after D loses a transaction the client was told was committed, and recovery has nothing to undo or redo from. Any trade-off here might reduce consistency.</p>
+          <h4>(c) Breaking the order</h4>
+          <ul>
+            <li><strong>B before H:</strong> the disk holds an uncommitted value with no log record describing it. If the transaction then aborts or the machine crashes, recovery does not know the old value (50) and cannot undo the change, so <em>atomicity is broken</em>. This is the case the write-ahead rule exists to prevent.</li>
+            <li><strong>D before A:</strong> the client is told "committed", but the commit record is not yet on disk. A crash at that moment makes recovery treat T as a loser and undo it, so <em>durability is broken</em>.</li>
+          </ul>
+          <h4>(d) Power failure in the middle of B</h4>
+          <ol>
+            <li>Read the log from the last checkpoint.</li>
+            <li><strong>Redo</strong> every committed transaction: set the new values. Pages that were already written are simply rewritten, or skipped.</li>
+            <li><strong>Undo</strong> every transaction without a COMMIT record by restoring the old values stored in the log.</li>
+          </ol>
+          <h4>(e) Checkpoints</h4>
+          <p>A checkpoint records "every change up to this point is in the database files". Recovery can start from there, and the log before it can be recycled. Without checkpoints the log grows without bound, and recovery must replay it from the very beginning, which can take hours after a crash.</p>
+        </div></div>
+      </div>
+    </div>
+  </article>
+
+  <div class="part">Part 4 · Graph databases</div>
+
+  <!-- ============================================================ Q10 -->
+  <article class="qc">
+    <div class="qc-head"><span class="q-num">Q10</span><h2 class="q-title">Finding a Route with Relational Databases</h2></div>
+    <div class="qc-body">
+      <div class="q-prompt">
+        <p>Go back to the 3NF train schema of Q2. Routes are stored in <code>RouteStop(train_no, stop_order, station_code, dep_time)</code>, one row per stop. An excerpt:</p>
+        <div class="tbl-wrap"><table>
+          <tr><th class="pk">train_no</th><th class="pk">stop_order</th><th>station_code</th><th>dep_time</th></tr>
+          <tr><td>TER 8412</td><td>1</td><td>NTE (Nantes)</td><td>06:10</td></tr>
+          <tr><td>TER 8412</td><td>2</td><td>RNS (Rennes)</td><td>07:25</td></tr>
+          <tr><td>TGV 8612</td><td>1</td><td>RNS (Rennes)</td><td>07:40</td></tr>
+          <tr><td>TGV 8612</td><td>2</td><td>LAV (Laval)</td><td>08:07</td></tr>
+          <tr><td>TGV 8612</td><td>3</td><td>LMN (Le Mans)</td><td>08:30</td></tr>
+          <tr><td>TGV 8612</td><td>4</td><td>PMO (Paris-Montparnasse)</td><td>09:07</td></tr>
+          <tr><td>TGV 9575</td><td>1</td><td>PST (Paris-Est)</td><td>10:25</td></tr>
+          <tr><td>TGV 9575</td><td>2</td><td>STG (Strasbourg)</td><td>12:12</td></tr>
+        </table></div>
+        <p>The network has about 3,000 stations and 10,000 trains of about 15 stops each, so roughly 150,000 rows. A customer asks: <em>"How do I get from one station to another?"</em></p>
+        <p><strong>(a)</strong> Can you write a query that lists the trains going <em>directly</em> from Rennes to Le Mans?</p>
+        <p><strong>(b)</strong> Now the customer accepts changes: find <em>any</em> itinerary from Nantes to Paris-Montparnasse. Can you write such a query?</p>
+        <p><strong>(c)</strong> Can you write a query that find paths from Rennes to Strasbourg?</p>
+      </div>
+      <div class="ans-zone">
+        <button class="toggle-btn" data-panel="a10">🔒 Answer locked</button>
+        <div class="ans-panel" id="a10" hidden><div class="ac">
+          <h4>(a) Direct trains: one self-join (or a group-by).</h4>
+          <div class="code-wrap"><pre class="code-block">SELECT a.train_no
+FROM RouteStop a JOIN RouteStop b ON a.train_no = b.train_no
+WHERE a.station_code = 'RNS' AND b.station_code = 'LMN'
+  AND a.stop_order &lt; b.stop_order;              <span class="c">-- TGV 8612</span></pre></div>
+          <p>This is easy because the path has a known length: one train, so one join.</p>
+          <h4>(b) Any number of changes: recursion</h4>
+          <p>With a fixed number of joins we can only find paths up to a fixed length: 1 join for one hop, 2 for two, and so on. Reachability, meaning a path of <em>any</em> length, cannot be expressed in plain relational algebra. We need to use recursive queries.</p>
+          
+          <h4>(c) Transfers are a second kind of edge</h4>
+          <p>The schema only knows "the next stop of the same train". Walking between two stations, or changing trains with a minimum connection time, is not stored anywhere. We need a new table, for example <code>Transfer(from_station, to_station, minutes)</code>, and the recursive step must now follow <em>either</em> a Hop (that needs to be properly defined) <em>or</em> a Transfer:</p>
+          <div class="code-wrap"><pre class="code-block">    FROM reach r JOIN (SELECT src, dst FROM Hop
+                       UNION ALL
+                       SELECT from_station, to_station FROM Transfer) e
+         ON e.src = r.station</pre></div>
+          <p>Every new kind of relationship (bus, ferry, walking path) means one more table and one more branch in the recursion. If we also want the times to be consistent (the next train must leave after we arrive, plus the transfer time), the recursion must carry the current time and compare it at each step. The query quickly becomes hard to write and to optimise.</p>
+          <div class="discuss">
+            <div class="discuss-label">In general</div>
+            <p>The relational model <em>can</em> answer the question, so it is not a matter of expressiveness (since the introduction of recursive queries). It is a matter of fit: the question is about <em>relationships</em> and paths of unknown length, while the model is built around <em>sets of rows</em> combined by joins. That is the motivation for graph databases (Q11).</p>
+          </div>
+        </div></div>
+      </div>
+    </div>
+  </article>
+
+  <!-- ============================================================ Q11 -->
+  <article class="qc">
+    <div class="qc-head"><span class="q-num">Q11</span><h2 class="q-title">The Railway Network as a Graph</h2></div>
+    <div class="qc-body">
+      <div class="q-prompt">
+        <p>The operator decides to store its network in a graph database, to answer route queries like those of Q10.</p>
+        <p><strong>(a)</strong> Propose a <strong>labelled property graph</strong> (LPG) for the network. What are the nodes, the relationships, their labels and their properties? Draw the part of the network that is necessary to answer questions from Q10.</p>
+        <p><strong>(b)</strong> Can we move <em>everything</em> (passengers, bookings, tickets, payments) to the graph database?</p>
+      </div>
+      <div class="ans-zone">
+        <button class="toggle-btn" data-panel="a11">🔒 Answer locked</button>
+        <div class="ans-panel" id="a11" hidden><div class="ac">
+          <h4>(a) A labelled property graph</h4>
+          <div class="fig"><svg viewBox="0 0 860 290" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Labelled property graph of the railway network"><defs><marker id="q11g-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="s-ahd"/></marker><marker id="q11g-r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="s-ahd-red"/></marker><marker id="q11g-g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="s-ahd-green"/></marker></defs><path d="M70,210 L70,100" class="s-line" marker-end="url(#q11g-a)"/><text x="80" y="150" class="s-acc s-xs s-bold" text-anchor="start" >:NEXT</text><text x="80" y="162" class="s-mut s-xs" text-anchor="start" >TER 8412</text><path d="M116,80 L204,80" class="s-line" marker-end="url(#q11g-a)"/><text x="160.0" y="62.0" class="s-acc s-xs s-bold" text-anchor="middle" >:NEXT</text><text x="160.0" y="74.0" class="s-mut s-xs" text-anchor="middle" >TGV 8612</text><path d="M296,80 L384,80" class="s-line" marker-end="url(#q11g-a)"/><text x="340.0" y="62.0" class="s-acc s-xs s-bold" text-anchor="middle" >:NEXT</text><text x="340.0" y="74.0" class="s-mut s-xs" text-anchor="middle" >TGV 8612</text><path d="M476,80 L564,80" class="s-line" marker-end="url(#q11g-a)"/><text x="520.0" y="62.0" class="s-acc s-xs s-bold" text-anchor="middle" >:NEXT</text><text x="520.0" y="74.0" class="s-mut s-xs" text-anchor="middle" >TGV 8612</text><path d="M610,100 L610,210" class="s-line s-dash" marker-end="url(#q11g-a)" marker-start="url(#q11g-a)"/><text x="620" y="150" class="s-acc s-xs s-bold" text-anchor="start" >:WALK</text><text x="620" y="162" class="s-mut s-xs" text-anchor="start" >minutes: 35</text><path d="M656,230 L744,230" class="s-line" marker-end="url(#q11g-a)"/><text x="700.0" y="212.0" class="s-acc s-xs s-bold" text-anchor="middle" >:NEXT</text><text x="700.0" y="224.0" class="s-mut s-xs" text-anchor="middle" >TGV 9575</text><path d="M656,80 L744,80" class="s-line s-dot" marker-end="url(#q11g-a)"/><text x="700.0" y="62.0" class="s-acc s-xs s-bold" text-anchor="middle" >:IN</text><path d="M650,210 L760,100" class="s-line s-dot" marker-end="url(#q11g-a)"/><text x="735" y="150" class="s-acc s-xs s-bold" text-anchor="middle" >:IN</text><rect x="18.0" y="60" width="104" height="40" rx="8" class="s-head"/><text x="70" y="75" class="s-mut s-xs" text-anchor="middle" >:Station</text><text x="70" y="91" class="s-txt s-sm s-bold" text-anchor="middle" >RNS Rennes</text><rect x="198.0" y="60" width="104" height="40" rx="8" class="s-head"/><text x="250" y="75" class="s-mut s-xs" text-anchor="middle" >:Station</text><text x="250" y="91" class="s-txt s-sm s-bold" text-anchor="middle" >LAV Laval</text><rect x="378.0" y="60" width="104" height="40" rx="8" class="s-head"/><text x="430" y="75" class="s-mut s-xs" text-anchor="middle" >:Station</text><text x="430" y="91" class="s-txt s-sm s-bold" text-anchor="middle" >LMN Le Mans</text><rect x="551.0" y="60" width="118" height="40" rx="8" class="s-head"/><text x="610" y="75" class="s-mut s-xs" text-anchor="middle" >:Station</text><text x="610" y="91" class="s-txt s-sm s-bold" text-anchor="middle" >PMO Montparnasse</text><rect x="744.0" y="60" width="92" height="40" rx="8" class="s-box"/><text x="790" y="75" class="s-mut s-xs" text-anchor="middle" >:City</text><text x="790" y="91" class="s-txt s-sm s-bold" text-anchor="middle" >Paris</text><rect x="18.0" y="210" width="104" height="40" rx="8" class="s-head"/><text x="70" y="225" class="s-mut s-xs" text-anchor="middle" >:Station</text><text x="70" y="241" class="s-txt s-sm s-bold" text-anchor="middle" >NTE Nantes</text><rect x="558.0" y="210" width="104" height="40" rx="8" class="s-head"/><text x="610" y="225" class="s-mut s-xs" text-anchor="middle" >:Station</text><text x="610" y="241" class="s-txt s-sm s-bold" text-anchor="middle" >PST Paris-Est</text><rect x="738.0" y="210" width="104" height="40" rx="8" class="s-head"/><text x="790" y="225" class="s-mut s-xs" text-anchor="middle" >:Station</text><text x="790" y="241" class="s-txt s-sm s-bold" text-anchor="middle" >STG Strasbourg</text><text x="10" y="284" class="s-mut s-xs" text-anchor="start" >Edge properties also carry dep / arr times, class, etc. (omitted for readability).</text></svg></div>
+          <ul>
+            <li><strong>Nodes</strong> labelled <code>:Station</code> with properties <code>code</code> and <code>name</code>, and <code>:City</code> with <code>name</code> and <code>region</code>.</li>
+            <li><strong>Relationships</strong> <code>:NEXT</code> between two consecutive stops of a train, with properties <code>train_no</code>, <code>dep</code>, <code>arr</code> and <code>class</code>. <code>:WALK</code> between two stations you can walk between, with <code>minutes</code>. <code>:IN</code> from a station to its city.</li>
+            <li>Relationships are <strong>stored</strong>, not recomputed: the "next stop" from Q10's view now exists physically. A new kind of connection (bus, ferry) is a new relationship type, with no schema migration.</li>
+            <li>For timetable-exact routing ("leave after 07:00, arrive as early as possible"), an alternative is a <em>time-expanded</em> graph, with one node per (train, stop, time) event. It is bigger, but a shortest path in it is automatically consistent with the times.</li>
+          </ul>
+          <div class="discuss">
+            <div class="discuss-label">Important to note</div>
+            <ul>
+              <li>Index-free adjacency (discussed in class) is a property of the <em>storage engine</em>, not of the data model. A relational DBMS that speaks a graph query language might still uses indexes underneath.</li>
+              <li>Pointers make graph databases great at <em>local</em> traversals but poor at <em>global</em> scans and aggregates ("average ticket price per region"), and harder to partition across machines, because cutting the graph cuts pointers.</li>
+            </ul>
+          </div>
+          <h4>(d) Everything in the graph?</h4>
+          <p>It might be possible, but it is not appropriate here. Bookings, tickets and payments are <em>records</em>: they need ACID transactions, constraints (no double-booked seat), aggregates. That is exactly what the relational model is good at. The network, used for routing, is a <em>graph</em>. A common design is a multi-model approach: the relational database stays the source for tickets and passengers, and the graph of stations and connections is derived from <code>RouteStop</code> and kept in sync.</p>
+        </div></div>
+      </div>
+    </div>
+  </article>
+
+</main>
+
+<div class="modal-bg" id="modalBg" hidden>
+  <div class="modal-card">
+    <h3>🔑 Professor Access</h3>
+    <p>Enter the unlock code to reveal model answers after class discussion.</p>
+    <input type="password" class="modal-input" id="codeInput" placeholder="••••••••" autocomplete="off">
+    <div class="modal-err" id="modalErr"></div>
+    <div class="modal-acts">
+      <button class="btn-cancel" id="cancelBtn">Cancel</button>
+      <button class="btn-confirm" id="confirmBtn">Unlock Answers</button>
+    </div>
+  </div>
+</div>
+
+<script>
+
+const lockBadge=document.getElementById('lockBadge');
+const unlockTrigger=document.getElementById('unlockTrigger');
+const modalBg=document.getElementById('modalBg');
+const codeInput=document.getElementById('codeInput');
+const modalErr=document.getElementById('modalErr');
+const constcolorbutton = 'inria2026';
+const cancelBtn=document.getElementById('cancelBtn');
+const confirmBtn=document.getElementById('confirmBtn');
+const toggleBtns=document.querySelectorAll('.toggle-btn');
+let unlocked=false;
+
+function openModal(){if(unlocked)return;codeInput.value='';modalErr.textContent='';modalBg.hidden=false;setTimeout(()=>codeInput.focus(),50);}
+function closeModal(){modalBg.hidden=true;codeInput.value='';modalErr.textContent='';}
+function activateAnswers(){
+  unlocked=true;
+  try{sessionStorage.setItem('qa_unlocked_storage2','1');}catch(e){}
+  lockBadge.textContent='🔓 Answers unlocked';lockBadge.classList.add('open');
+  unlockTrigger.hidden=true;
+  toggleBtns.forEach(btn=>{btn.classList.add('active');btn.textContent='▸ Show answer';});
+}
+function tryUnlock(){
+  if(codeInput.value.trim()===constcolorbutton){closeModal();activateAnswers();}
+  else{modalErr.textContent='Incorrect code — try again.';codeInput.select();}
+}
+
+unlockTrigger.addEventListener('click',openModal);
+modalBg.addEventListener('click',e=>{if(e.target===modalBg)closeModal();});
+cancelBtn.addEventListener('click',closeModal);
+confirmBtn.addEventListener('click',tryUnlock);
+codeInput.addEventListener('keydown',e=>{if(e.key==='Enter')tryUnlock();if(e.key==='Escape')closeModal();});
+
+toggleBtns.forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    if(!unlocked)return;
+    const panel=document.getElementById(btn.dataset.panel);
+    const isOpen=!panel.hidden;
+    if(isOpen){panel.hidden=true;btn.classList.remove('is-open');btn.textContent='▸ Show answer';}
+    else{panel.hidden=false;btn.classList.add('is-open');btn.textContent='▾ Hide answer';
+      if(window.MathJax&&MathJax.typesetPromise)MathJax.typesetPromise([panel]).catch(()=>{});}
+  });
+});
+
+try{if(sessionStorage.getItem('qa_unlocked_storage2')==='1')activateAnswers();}catch(e){}
+</script>
+</body>
+</html>
