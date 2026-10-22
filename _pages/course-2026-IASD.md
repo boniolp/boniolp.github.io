@@ -21,7 +21,7 @@ include a mix of lectures and practical sessions.
 
 ### Lectures:
 
-Each lecture has two 1.5 h parts (with a 15 min break in between), starts at 9 am and ends at 12.15 pm.
+Each lecture has two 1.5 h parts (with a 15 min break in between), starts at 9 am and ends at 12.15 pm. For each lecture (except for lab days), I provide a Q/A session to serve as a recap and a technical dive into what we discussed during the corresponding lecture.
 
 | Session   | Title                                                  | PDF                                                        | Exercices | Q&A |
 |-----------|--------------------------------------------------------|------------------------------------------------------------|-----------|-----|
