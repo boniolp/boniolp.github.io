@@ -53,8 +53,8 @@ This course has two practice sessions covering both database systems (Lab 1) and
 
 | Session            | Title                                | topic                                                      | Notebook                                                             | Data | Deadline |
 |--------------------|--------------------------------------|------------------------------------------------------------|---------------------------------------------------------------------------|------|---|
-| Oct. 16 | Database of documents | [![PDF](https://img.icons8.com/color/20/000000/pdf.png)](https://boniolp.github.io/assets/PL-IASD/S1/lab_topic.pdf) | [![Jupyter Notebook Icon](https://img.icons8.com/ios-filled/20/jupyter.png)](https://boniolp.github.io/assets/PL-IASD/S1/lab_notebook.ipynb) | [![Data Icon](https://img.icons8.com/ios-filled/20/database.png)](https://boniolp.github.io/assets/PL-IASD/S1/S1.zip) | Oct. 29 |
-| Oct. 30 | Similarity Search    | [![PDF](https://img.icons8.com/ios-filled/20/pdf--v1.png)]() | [![Jupyter Notebook Icon](https://img.icons8.com/ios-filled/20/jupyter.png)]() | [![Data Icon](https://img.icons8.com/ios-filled/20/database.png)]() | Nov. 11 |
+| Oct. 16 | Database of documents | [![PDF](https://img.icons8.com/color/20/000000/pdf.png)](https://boniolp.github.io/assets/PL-IASD/S1/lab_topic.pdf) | [![Jupyter Notebook Icon](https://img.icons8.com/ios-filled/20/jupyter.png)](https://boniolp.github.io/assets/PL-IASD/S1/lab_notebook.ipynb) | [![Data Icon](https://img.icons8.com/ios-filled/20/database.png)](https://boniolp.github.io/assets/PL-IASD/S1/S1.zip) | Nov. 05 |
+| Oct. 30 | Similarity Search    | [![PDF](https://img.icons8.com/ios-filled/20/pdf--v1.png)]() | [![Jupyter Notebook Icon](https://img.icons8.com/ios-filled/20/jupyter.png)]() | [![Data Icon](https://img.icons8.com/ios-filled/20/database.png)]() | Nov. 19 |
 
 ### External Resources
 
