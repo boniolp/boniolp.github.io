@@ -29,6 +29,7 @@ redirect_from:
 
 - [International Conference on Very Large DataBases (VLDB) 2027](https://vldb.org/2027/officers.html): Research track
 - [IEEE International Conference on Data Engineering (ICDE) 2027](): Research track
+- [International Conference on Extending Data Base Technology (EDBT) 2027](): Tutorial track
 
 #### 2026
 
