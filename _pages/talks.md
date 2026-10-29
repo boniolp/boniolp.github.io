@@ -40,6 +40,11 @@ redirect_from:
 
 # Invited Talks and Seminars
 
+#### 2026
+
+- **The (very long) road to truly automatic time series anomaly detection**, Seminar at KU Leuven Bruges campus. [More info](https://set.kuleuven.be/phd/seminars/schafer-boniol).
+
+
 #### 2025
 - **Time Series Anomaly Detection: The Road to Automatic Solutions**, Invited Speaker at the 3rd Macau Symposium on Data Science.
 - **Anomaly Detection in Time Series: Overview and New Trends**, Invited speaker at Orange Innovation, [Slides](https://inriafr-my.sharepoint.com/:b:/g/personal/paul_boniol_inria_fr/EdxWO0aQzA5EunhAeY0H6oABeI-Ge6VrK8CNKBhzP4RuWA?e=MBbmhV).
