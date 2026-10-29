@@ -16,7 +16,7 @@ redirect_from:
 /* ---------- talks page (all rules scoped to .tk) ---------- */
 .tk { --tk-border: rgba(127,127,127,.22); --tk-muted: #6b7378; --tk-accent: #2f6f9f; overflow-wrap: anywhere; }
 .tk h1 { margin-bottom: .3em; }
-.tk .tk-summary { color: var(--tk-muted); font-size: .92em; margin: 0 0 .5em; }
+.tk .tk-summary { display: none; }
 .tk .tk-legend { display: flex; flex-wrap: wrap; gap: .3em 1em; font-size: .82em; color: var(--tk-muted); margin: 0 0 .4em; }
 .tk .tk-legend span::before { content: ""; display: inline-block; width: .8em; height: .8em; border-radius: 2px; margin-right: .35em; vertical-align: -1px; background: var(--tk-kind); }
 .tk .tk-years { font-size: .85em; color: var(--tk-muted); margin: 0 0 1em; }
