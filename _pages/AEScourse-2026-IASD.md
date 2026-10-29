@@ -154,7 +154,7 @@ redirect_from:
 <summary class="aes-row">
 <div class="aes-date">Oct. 30<small>Lecture 6</small></div>
 <div class="aes-title">Multi-dimensional similarity search</div>
-<div class="aes-c"><span class="aes-off"><img src="https://img.icons8.com/ios-filled/20/pdf--v1.png" alt="Not available yet"></span></div>
+<div class="aes-c"><a href="https://fichiers.numerique.gouv.fr/explorer/items/files/abf8db1d-1531-454d-bc44-bd2fa1a14124" title="Slides"><img src="https://img.icons8.com/color/20/000000/pdf.png" alt="PDF"></a></div>
 <div class="aes-labday"><a href="#practice-sessions">&#129514; Lab day &middot; Lab 2</a></div>
 </summary>
 <div class="aes-body">
