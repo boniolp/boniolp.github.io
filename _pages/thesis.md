@@ -12,6 +12,42 @@ redirect_from:
   - /thesis.html
 ---
 
+<style>
+/* ---------- thesis page (all rules scoped to .th) ---------- */
+.th { --th-border: rgba(127,127,127,.22); --th-muted: #6b7378; --th-accent: #2f6f9f; --th-soft: rgba(47,111,159,.08); overflow-wrap: anywhere; }
+.th hr { display: none; }
+.th > h1 { line-height: 1.25; margin-bottom: .2em; }
+.th > h3:first-of-type { font-weight: 400; color: var(--th-muted); font-size: 1em; margin: 0 0 1.2em; text-transform: none; letter-spacing: 0; }
+.th h2 { font-size: 1.3em; margin: 0 0 .6em; padding-bottom: .25em; border-bottom: 2px solid var(--th-border); }
+.th h3 { font-size: .8em; text-transform: uppercase; letter-spacing: .08em; color: var(--th-muted); margin: 1em 0 .4em; }
+.th img { max-width: 100%; height: auto; }
+.th .th-sec { margin: 0 0 2em; }
+/* jury */
+.th .th-jury ul { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr)); gap: .5em; }
+.th .th-jury li { margin: 0; padding: .55em .85em; border: 1px solid var(--th-border); border-radius: 8px; background: #fff; font-size: .9em; line-height: 1.45; color: #555; }
+.th .th-jury li strong { display: block; font-size: 1.05em; }
+/* abstract, pdf and video */
+.th .th-abstract p { line-height: 1.65; }
+.th .th-pdf { display: block; margin: 1em 0; padding: .7em .95em; border-radius: 8px; background: var(--th-soft); border-left: 3px solid var(--th-accent); }
+.th .th-video img { display: block; width: 100%; max-width: 480px; border-radius: 10px; border: 1px solid var(--th-border); margin-top: .5em; }
+/* chapters */
+.th .th-ch { display: flow-root; padding: 1em 1.1em; border: 1px solid var(--th-border); border-radius: 10px; background: #fff; }
+.th .th-ch h2 { border-bottom: 0; padding-bottom: 0; margin-bottom: .5em; }
+.th .th-ch .th-fig { float: right; width: 280px; max-width: 40%; margin: 0 0 .6em 1.2em !important; }
+.th .th-ch .th-fig img { width: 100%; border-radius: 8px; }
+.th .th-ch p { line-height: 1.6; }
+.th .th-ch ul { list-style: none; padding: 0; margin: 0; clear: both; }
+.th .th-ch ul li { margin: .45em 0; padding: .55em .85em; border: 1px solid var(--th-border); border-left: 3px solid var(--th-accent); border-radius: 8px; font-size: .9em; line-height: 1.5; }
+.th .th-ch ul li p { margin: 0; text-align: left !important; }
+.th .th-back { display: inline-block; padding: .35em .9em; border: 1px solid var(--th-border); border-radius: 999px; text-decoration: none; }
+@media (max-width: 640px) {
+  .th .th-ch .th-fig { float: none; width: auto; max-width: 100%; margin: 0 0 .8em 0 !important; }
+  .th .th-ch { padding: .8em .85em; }
+}
+</style>
+
+<div class="th" markdown="1">
+
 # Detection of Anomalies and Identification of their Precursors in Large Data Series Collections
 
 ### Presented by Paul Boniol on November 29 2021
@@ -124,3 +160,39 @@ In this chapter, we illustrate the applicability and the interest of our develop
 ***
 
 [Back to main page](https://boniolp.github.io/)
+
+</div>
+
+<script>
+/* Groups each "## ..." part of the page into its own block (jury, abstract, chapters) so that it can be styled.
+   The text itself is not modified. Without JavaScript the page is shown as before, with lighter styling. */
+(function () {
+  var root = document.querySelector('.th');
+  if (!root) return;
+  var kids = Array.prototype.slice.call(root.children), sec = null;
+  kids.forEach(function (el) {
+    if (el.tagName === 'H2') {
+      sec = document.createElement('section');
+      var t = el.textContent.trim();
+      sec.className = 'th-sec ' + (/^chapter/i.test(t) ? 'th-ch' : /^jury/i.test(t) ? 'th-jury' : /^abstract/i.test(t) ? 'th-abstract' : '');
+      root.insertBefore(sec, el);
+    } else if (el.tagName === 'HR') { sec = null; return; }
+    if (sec) sec.appendChild(el);
+  });
+  // jury: "**Name**, role" -> name on its own line, without the leading comma
+  root.querySelectorAll('.th-jury li').forEach(function (li) {
+    var box = li.querySelector('p') || li, s = box.querySelector('strong');
+    if (s && s.nextSibling && s.nextSibling.nodeType === 3) s.nextSibling.textContent = s.nextSibling.textContent.replace(/^[\s,]+/, '');
+  });
+  root.querySelectorAll('.th-ch > p').forEach(function (p) {
+    if (p.querySelector('img') && !p.textContent.trim()) p.classList.add('th-fig');
+  });
+  root.querySelectorAll('p').forEach(function (p) {
+    var s = p.querySelector('strong');
+    if (s && /thesis \(pdf\)/i.test(s.textContent)) p.classList.add('th-pdf');
+    if (p.querySelector('a[href*="youtube"] img')) p.classList.add('th-video');
+    var a = p.querySelector('a');
+    if (a && /back to main page/i.test(p.textContent) && p.textContent.trim() === a.textContent.trim()) a.classList.add('th-back');
+  });
+})();
+</script>
