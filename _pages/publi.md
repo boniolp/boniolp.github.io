@@ -12,10 +12,50 @@ redirect_from:
   - /publi.html
 ---
 
+<style>
+/* ---------- publications page (all rules scoped to .pubs) ---------- */
+.pubs { --pb-border: rgba(127,127,127,.22); --pb-muted: #6b7378; --pb-accent: #2f6f9f; overflow-wrap: anywhere; }
+.pubs h2 { margin-bottom: .2em; }
+.pubs .pb-summary { color: var(--pb-muted); font-size: .92em; margin: 0 0 1em; }
+.pubs .pb-toolbar { display: flex; flex-wrap: wrap; gap: .4em; align-items: center; margin: 0 0 .6em; }
+.pubs .pb-chip { font: inherit; font-size: .82em; padding: .25em .75em; border-radius: 999px; border: 1px solid var(--pb-border); background: #fff; color: #333; cursor: pointer; }
+.pubs .pb-chip span { color: var(--pb-muted); margin-left: .25em; }
+.pubs .pb-chip.on { background: var(--pb-accent); border-color: var(--pb-accent); color: #fff; }
+.pubs .pb-chip.on span { color: rgba(255,255,255,.8); }
+.pubs .pb-search { font: inherit; font-size: .85em; padding: .35em .7em; border: 1px solid var(--pb-border); border-radius: 6px; width: 100%; max-width: 280px; box-sizing: border-box; }
+.pubs .pb-years { font-size: .85em; color: var(--pb-muted); margin: .2em 0 1.2em; }
+.pubs .pb-years a { margin-right: .7em; }
+.pubs h3 { font-size: 1.35em; margin: 1.6em 0 .2em; padding-bottom: .25em; border-bottom: 2px solid var(--pb-border); scroll-margin-top: 70px; }
+.pubs h3 .pb-count { font-size: .55em; font-weight: 600; color: var(--pb-muted); margin-left: .5em; vertical-align: middle; }
+.pubs h4 { font-size: .78em; text-transform: uppercase; letter-spacing: .08em; color: var(--pb-muted); margin: 1.1em 0 .4em; }
+.pubs ul { list-style: none; padding: 0; margin: 0; }
+.pubs li { margin: .5em 0; padding: .7em .95em; border: 1px solid var(--pb-border); border-left: 3px solid var(--pb-type, var(--pb-accent)); border-radius: 8px; line-height: 1.5; background: #fff; }
+.pubs li p { margin: 0; }
+.pubs li img { vertical-align: middle; max-width: 100%; }
+.pubs .pub-title { font-weight: 600; color: #222; }
+.pubs .pub-authors { font-size: .9em; margin-top: .15em; }
+.pubs .pub-authors .me { font-weight: 600; color: #222; }
+.pubs .pub-venue { font-size: .86em; font-style: italic; color: var(--pb-muted); margin-top: .1em; }
+.pubs .pub-links { display: flex; flex-wrap: wrap; gap: .35em; margin-top: .45em; }
+.pubs .pub-btn { display: inline-flex; align-items: center; gap: .3em; font-size: .78em; padding: .12em .6em; border: 1px solid var(--pb-border); border-radius: 999px; color: #333; text-decoration: none; background: #fafafa; }
+.pubs .pub-btn:hover { border-color: var(--pb-accent); color: var(--pb-accent); }
+.pubs .pub-btn img { width: 14px; height: 14px; }
+.pubs .pub-award { display: inline-flex; align-items: center; gap: .3em; font-size: .78em; padding: .12em .6em; border-radius: 999px; background: #fff4d6; color: #8a5a00; font-weight: 600; }
+.pubs .pub-award img { width: 14px; height: 14px; }
+.pubs [data-type="conferences"] { --pb-type: #2f6f9f; }
+.pubs [data-type="journals"]    { --pb-type: #2a8a5b; }
+.pubs [data-type="tutorials"]   { --pb-type: #8a4fbf; }
+.pubs [data-type="preprints"]   { --pb-type: #9aa0a6; }
+.pubs [data-type="patents"]     { --pb-type: #d08a2c; }
+.pubs [data-type="others"]      { --pb-type: #3a9aa8; }
+.pubs .pb-hidden { display: none !important; }
+</style>
+
+<div class="pubs" markdown="1">
+
 ## Publications
 
 ### 2026
----
 
 #### Tutorials
 
@@ -53,10 +93,8 @@ redirect_from:
 
 * Felix Chavelli, Michaël Thomazo, Paul Boniol. **Vers des mesures d’évaluation interprétables pour la segmentation de séries temporelles**. 26ème Conférence Francophone sur l'Extraction et la Gestion des Connaissances (EGC 2026), Anglet, January 2026. [![GitHub Repo](https://img.icons8.com/ios-glyphs/20/000000/github.png)](https://github.com/fchavelli/seg-eval/) [![PDF](https://img.icons8.com/color/20/000000/pdf.png)](https://editions-rnti.fr/?inprocid=1003113)
 
----
 
 ### 2025
----
 
 #### Tutorials
 
@@ -96,10 +134,8 @@ redirect_from:
 
 
 
----
 
 ### 2024
----
 
 #### Tutorials
 
@@ -121,9 +157,7 @@ redirect_from:
 
 * Paul Boniol, Themis Palpanas. **Time Series Anomaly Detection**. ACM SIGMOD Blog, July 2024. [![Website](https://img.icons8.com/ios-filled/20/000000/internet--v1.png)](https://wp.sigmod.org/?p=3739)
 
----
 ### 2023
----
 
 #### Tutorials
 
@@ -139,9 +173,7 @@ redirect_from:
 
 * Adrien Petralia, Philippe Charpentier, Paul Boniol, Themis Palpanas. **Appliance Detection Using Very Low-Frequency Smart Meter Time Series**. ACM International Conference on Future Energy Systems (e-Energy), Orlando, FL (USA), June 2023. [![GitHub Repo](https://img.icons8.com/ios-glyphs/20/000000/github.png)](https://github.com/adrienpetralia/ApplianceDetectionBenchmark) [![PDF](https://img.icons8.com/color/20/000000/pdf.png)](https://www.researchgate.net/publication/370654257_Appliance_Detection_Using_Very_Low-Frequency_Smart_Meter_Time_Series)
 
----
 ### 2022
----
 
 #### Journals
 
@@ -161,9 +193,7 @@ redirect_from:
 
 * Paul Boniol, Themis Palpanas, Michele Linardi, Federico Roncallo, Mohammed Meftah, Emmanuel Remy. **Determination of Health Status of Systems Equipped with Sensors**. US Patent 11471113, 2022.
 
----
 ### 2021
----
 
 #### Journals
 
@@ -179,9 +209,7 @@ redirect_from:
 
 * Paul Boniol, Themis Palpanas, Mohammed Meftah, Emmanuel Remy. **Determining the State of Health of a System on the Basis of a Network of Measured Time Sequences**. European Patent WO2021233758, 2021.
 
----
 ### 2020
----
 
 #### Journals
 
@@ -206,3 +234,110 @@ redirect_from:
 * Paul Boniol, Themis Palpanas, Mohammed Meftah, Emmanuel Remy. **Determination de l'etat de sante d'un systeme a partir d'un reseau de sequences temporelles mesurees**. French Patent FR2005261, 2020.
 
 * Paul Boniol, Themis Palpanas, Michele Linardi, Federico Roncallo, Mohammed Meftah, Emmanuel Remy. **Determination d'etats de sante de systemes equipes de capteurs**. French Patent FR2003946, 2020.
+
+</div>
+
+<script>
+/* Turns the Markdown list into structured entries, adds filters, a search box and a year index.
+   Without JavaScript the page still shows the plain (styled) list. */
+(function () {
+  var root = document.querySelector('.pubs');
+  if (!root) return;
+  var ICONS = [['github', 'Code'], ['pdf', 'PDF'], ['internet', 'Website'], ['website', 'Website'], ['monitor', 'Demo'],
+               ['web app', 'Demo'], ['youtube', 'Video'], ['video', 'Video'], ['presentation', 'Slides'], ['slides', 'Slides']];
+  var ME = /(Paul Boniol|P\. Boniol)/g;
+  function esc(s) { return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
+  function slug(s) { return s.trim().toLowerCase().replace(/[^a-z]+/g, ''); }
+
+  // 1. tag every list with its year and type
+  var year = '', type = '', years = [], counts = {}, total = 0;
+  Array.prototype.forEach.call(root.children, function (el) {
+    if (el.tagName === 'H3') { year = el.textContent.trim(); el.id = 'y' + year; el.dataset.year = year; years.push(year); }
+    else if (el.tagName === 'H4') { type = slug(el.textContent); el.dataset.year = year; el.dataset.type = type; }
+    else if (el.tagName === 'UL') {
+      el.dataset.year = year; el.dataset.type = type;
+      Array.prototype.forEach.call(el.children, function (li) {
+        li.dataset.year = year; li.dataset.type = type; counts[type] = (counts[type] || 0) + 1; total++;
+        restructure(li);
+      });
+    }
+  });
+
+  // 2. split "Authors. **Title**. Venue. [links]" into separate lines
+  function restructure(li) {
+    var box = li.querySelector('p') || li;
+    var title = box.querySelector('strong');
+    if (!title) return;
+    var authors = '', venue = '', links = [], award = null, afterTitle = false, inLinks = false;
+    Array.prototype.slice.call(box.childNodes).forEach(function (n) {
+      if (n === title) { afterTitle = true; return; }
+      var img = n.nodeType === 1 ? (n.tagName === 'IMG' ? n : n.querySelector && n.querySelector('img')) : null;
+      if (!afterTitle) { authors += n.textContent; return; }
+      if (img) {
+        inLinks = true;
+        if (n.tagName === 'A') { if (n.getAttribute('href')) links.push([n.getAttribute('href'), img]); }
+        else award = { img: img };
+        return;
+      }
+      if (award && n.tagName === 'STRONG') { award.text = n.textContent; return; }
+      if (!inLinks) venue += n.nodeType === 1 ? n.outerHTML : esc(n.textContent);
+    });
+    authors = authors.replace(/[\s.]+$/, '');
+    venue = venue.replace(/^[\s.]+/, '').replace(/[\s.]+$/, '');
+    var html = '<div class="pub-title">' + esc(title.textContent.replace(/[\s.]+$/, '')) + '</div>' +
+               '<div class="pub-authors">' + esc(authors).replace(ME, '<span class="me">$1</span>') + '</div>' +
+               (venue ? '<div class="pub-venue">' + venue + '</div>' : '');
+    var lk = links.map(function (l) {
+      var src = l[1].getAttribute('src') || '', label = l[1].getAttribute('alt') || 'Link';
+      var key = (src + ' ' + label).toLowerCase();
+      ICONS.forEach(function (ic) { if (key.indexOf(ic[0]) >= 0) label = ic[1]; });
+      return '<a class="pub-btn" href="' + l[0] + '"><img src="' + src + '" alt="">' + esc(label) + '</a>';
+    });
+    if (award) lk.push('<span class="pub-award"><img src="' + award.img.getAttribute('src') + '" alt="">' + esc(award.text || 'Award') + '</span>');
+    if (lk.length) html += '<div class="pub-links">' + lk.join('') + '</div>';
+    li.innerHTML = html;
+  }
+
+  // 3. toolbar: type filters, search box, year index
+  var order = ['conferences', 'journals', 'tutorials', 'preprints', 'patents', 'others'];
+  var names = { conferences: 'Conferences', journals: 'Journals', tutorials: 'Tutorials', preprints: 'Preprints', patents: 'Patents', others: 'Others' };
+  var bar = document.createElement('div'); bar.className = 'pb-toolbar';
+  var chips = [['all', 'All', total]].concat(order.filter(function (t) { return counts[t]; }).map(function (t) { return [t, names[t], counts[t]]; }));
+  Object.keys(counts).forEach(function (t) { if (order.indexOf(t) < 0) chips.push([t, t, counts[t]]); });
+  var current = 'all';
+  chips.forEach(function (c) {
+    var b = document.createElement('button'); b.type = 'button'; b.className = 'pb-chip' + (c[0] === 'all' ? ' on' : '');
+    b.innerHTML = esc(c[1]) + '<span>' + c[2] + '</span>';
+    b.onclick = function () { current = c[0]; bar.querySelectorAll('.pb-chip').forEach(function (x) { x.classList.toggle('on', x === b); }); apply(); };
+    bar.appendChild(b);
+  });
+  var search = document.createElement('input'); search.type = 'search'; search.className = 'pb-search'; search.placeholder = 'Search title, author, venue…';
+  search.oninput = apply; bar.appendChild(search);
+  var summary = document.createElement('p'); summary.className = 'pb-summary';
+  var idx = document.createElement('div'); idx.className = 'pb-years';
+  idx.innerHTML = 'Jump to: ' + years.map(function (y) { return '<a href="#y' + y + '">' + y + '</a>'; }).join('');
+  var h2 = root.querySelector('h2');
+  var anchor = h2 ? h2.nextSibling : root.firstChild;
+  root.insertBefore(summary, anchor); root.insertBefore(bar, anchor); root.insertBefore(idx, anchor);
+
+  function apply() {
+    var q = search.value.trim().toLowerCase(), shown = 0, perYear = {};
+    root.querySelectorAll('li[data-type]').forEach(function (li) {
+      var ok = (current === 'all' || li.dataset.type === current) && (!q || li.textContent.toLowerCase().indexOf(q) >= 0);
+      li.classList.toggle('pb-hidden', !ok);
+      if (ok) { shown++; perYear[li.dataset.year] = (perYear[li.dataset.year] || 0) + 1; }
+    });
+    root.querySelectorAll('ul[data-type]').forEach(function (ul) {
+      var vis = ul.querySelector('li:not(.pb-hidden)'); ul.classList.toggle('pb-hidden', !vis);
+      var h = ul.previousElementSibling; if (h && h.tagName === 'H4') h.classList.toggle('pb-hidden', !vis);
+    });
+    root.querySelectorAll('h3[data-year]').forEach(function (h) {
+      var n = perYear[h.dataset.year] || 0; h.classList.toggle('pb-hidden', !n);
+      var c = h.querySelector('.pb-count'); if (!c) { c = document.createElement('span'); c.className = 'pb-count'; h.appendChild(c); }
+      c.textContent = n + (n > 1 ? ' publications' : ' publication');
+    });
+    summary.textContent = shown === total ? total + ' publications' : shown + ' of ' + total + ' publications';
+  }
+  apply();
+})();
+</script>
