@@ -14,7 +14,7 @@ header {
 }
 
 body {
-  padding: 100px;
+  padding: 100px clamp(14px, 4vw, 50px) 40px;
 }
 
 /* Navbar container width: 100%; */
@@ -93,4 +93,50 @@ body {
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+/* Wider layout on large screens */
+@media screen and (min-width: 961px) {
+  .wrapper {
+    width: auto;
+    max-width: 1160px;
+  }
+  section {
+    float: none;
+    width: auto;
+    margin-left: 320px;
+  }
+}
+
+/* Tablets and phones: full-width text, one-line scrollable navbar */
+@media screen and (max-width: 960px) {
+  body {
+    padding-top: 70px;
+  }
+  header {
+    padding-right: 0;
+  }
+  header ul {
+    position: static;
+  }
+  .navbar-right {
+    float: none;
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+  .navbar a {
+    float: none;
+    flex: none;
+    padding: 12px 12px;
+    font-size: 15px;
+  }
+  section img, section table {
+    max-width: 100%;
+  }
+  section table {
+    display: block;
+    overflow-x: auto;
+  }
 }
