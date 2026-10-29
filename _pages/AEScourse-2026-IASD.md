@@ -90,7 +90,7 @@ redirect_from:
 <div class="aes-c"><a href="https://boniolp.github.io/assets/html/QA_Session_Lecture1.html" title="Q&amp;A session"><img src="https://img.icons8.com/sf-regular/20/link.png" alt="Q&amp;A"></a></div>
 </summary>
 <div class="aes-body">
-<p>An overview of the knowledge discovery pipeline, from data acquisition to storage and extraction, and of the course organisation. We then discuss data aquisition through a Web perspective: what is information retreival for web data, and how search engines crawl, index and rank data.</p>
+<p>An overview of the knowledge discovery pipeline, from data acquisition to storage and extraction, and of the course organization. We then discuss data acquisition from a Web perspective: what information retrieval for web data is, and how search engines crawl, index, and rank data.</p>
 <ul class="aes-tags"><li>KDD pipeline</li><li>Web crawling</li><li>Semantic similarity (TF-IDF)</li><li>PageRank</li></ul>
 </div>
 </details>
@@ -118,7 +118,7 @@ redirect_from:
 <div class="aes-c"><a href="https://boniolp.github.io/assets/html/QA_Session_Lecture3.html" title="Q&amp;A session"><img src="https://img.icons8.com/sf-regular/20/link.png" alt="Q&amp;A"></a></div>
 </summary>
 <div class="aes-body">
-<p>The relational model and SQL and the limits of relational systems at scale. We then introduce the NoSQL family (key-value, column, document and graph stores) and the trade-offs between consistency, availability and partition tolerance.</p>
+<p>The relational model and SQL, and the limits of relational systems at scale. We then introduce the NoSQL family (key-value, column, document and graph stores) and the trade-offs between consistency, availability and partition tolerance.</p>
 <ul class="aes-tags"><li>Relational model</li><li>SQL</li><li>ACID</li><li>Distribution &amp; replication</li><li>CAP theorem</li><li>NoSQL families</li></ul>
 </div>
 </details>
@@ -142,10 +142,10 @@ redirect_from:
 <div class="aes-title">Data extraction: foundations of similarity search</div>
 <div class="aes-c"><a href="https://fichiers.numerique.gouv.fr/explorer/items/files/46b1eb0f-1b02-46a9-9519-bdc9d4d9b932" title="Slides"><img src="https://img.icons8.com/color/20/000000/pdf.png" alt="PDF"></a></div>
 <div class="aes-c aes-ex"><span class="aes-off">&mdash;</span></div>
-<div class="aes-c"><span class="aes-off"><img src="https://img.icons8.com/sf-regular/20/link.png" alt="Not available yet"></span></div>
+<div class="aes-c"><a href="https://boniolp.github.io/assets/html/QA_Session_Lecture5.html" title="Q&amp;A session"><img src="https://img.icons8.com/sf-regular/20/link.png" alt="Q&amp;A"></a></div>
 </summary>
 <div class="aes-body">
-<p>Introduction of data extraction and Similarity search. We first start with basic search mechanism in database systems and distributed systems. A deep dive into ordered index and B-trees, and Hash index, such as extensible hashing, and consistent hashing for distributed systems.</p>
+<p>Introduction to data extraction and Similarity search. We start with the basic search mechanisms in databases and distributed systems. We then take a deep dive into ordered indexes and B-trees, and hash indexes, such as extensible hashing and consistent hashing for distributed systems.</p>
 <ul class="aes-tags"><li>Indexing</li><li>B+-trees</li><li>Extensible Hashing</li><li>Consistent Hashing</li></ul>
 </div>
 </details>
@@ -172,7 +172,7 @@ Similarity search as a core extraction task: given a query, find the most simila
 <div class="aes-c"><span class="aes-off"><img src="https://img.icons8.com/sf-regular/20/link.png" alt="Not available yet"></span></div>
 </summary>
 <div class="aes-body">
-<p>Indexing data in many dimensions: space-partitioning and data-partitioning trees, bounding regions and best-first nearest-neighbour search, and why these structures degrade as dimensionality grows. We then dive into time series indexing techniques combning space partitioning and lower bounds for exact search.</p>
+<p>Indexing data in many dimensions: space-partitioning and data-partitioning trees, bounding regions and best-first nearest-neighbor search, and why these structures degrade as dimensionality grows. We then cover time-series indexing techniques that combine space partitioning with lower bounds for exact search.</p>
 <ul class="aes-tags"><li>k-d trees</li><li>R-trees &amp; MBRs</li><li>MINDIST</li><li>Best-first search</li><li>Curse of dimensionality</li><li>Time series indexes</li></ul>
 </div>
 </details>
