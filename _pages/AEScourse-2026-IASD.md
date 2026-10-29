@@ -1,5 +1,5 @@
 ---
-permalink: /IASD-acquisition-extraction-and-storage-2026
+permalink: /acquisition-extraction-and-storage-2026
 hidden: true
 classes: wide
 # layout: single-hf
@@ -8,8 +8,8 @@ layout: default
 title: "Data acquisition, extraction, and storage"
 author_profile: true
 redirect_from: 
-  - /IASD-acquisition-extraction-and-storage-2026
-  - /IASD-acquisition-extraction-and-storage-2026.html
+  - /acquisition-extraction-and-storage-2026
+  - /acquisition-extraction-and-storage-2026.html
 ---
 
 <style>
