@@ -70,7 +70,7 @@ Within VALDA, I am supervising the following students and researchers:</p>
 <div class="tm-card">
 <div class="tm-avatar" style="--h:44">ES</div>
 <div class="tm-info">
-<div class="tm-head"><a class="tm-name" href="https://www.linkedin.com/in/emmanouil-sylligardos/?originalSubdomain=gr">Emmanouil Sylligardos</a><span class="tm-dates">Feb 2024 - now</span></div>
+<div class="tm-head"><a class="tm-name" href="https://sylligardos.vercel.app/">Emmanouil Sylligardos</a><span class="tm-dates">Feb 2024 - now</span></div>
 <div class="tm-role">PhD student (Co-advised with Pierre Senellart)</div>
 <div class="tm-topic"><span class="tm-label">Topic</span> <em>Accuracy and Execution Time Trade-off in Ensembling and Model Selection for Time Series Analytics</em></div>
 </div>
@@ -86,7 +86,7 @@ Within VALDA, I am supervising the following students and researchers:</p>
 <div class="tm-card">
 <div class="tm-avatar" style="--h:270">MP</div>
 <div class="tm-info">
-<div class="tm-head"><a class="tm-name" href="https://www.linkedin.com/in/magali-parrino-89127021a/?originalSubdomain=fr">Magali Parrino</a><span class="tm-dates">July 2025 - now</span></div>
+<div class="tm-head"><a class="tm-name" href="https://magaliparrino.github.io/">Magali Parrino</a><span class="tm-dates">July 2025 - now</span></div>
 <div class="tm-role">PhD student (CIFRE Ph.D. co-advised with Pierre Senellart)</div>
 <div class="tm-topic"><span class="tm-label">Topic</span> <em>Unsupervised detection of anomalies in continuous streams of multivariate time series</em></div>
 </div>
