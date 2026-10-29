@@ -64,6 +64,13 @@ redirect_from:
   .aes .aes-title { grid-column: 1 / -1; }
   .aes .aes-body { padding: .2em 1em 1em 1em; }
 }
+/* tables wider than the screen scroll sideways inside their frame instead of widening the page
+   (a page wider than the screen makes phone browsers zoom out) */
+@media (max-width: 760px) {
+  .aes table.aes-simple { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .aes table.aes-simple td, .aes table.aes-simple th { padding: .5em .6em; }
+}
+.aes { overflow-wrap: anywhere; }
 </style>
 
 <div class="aes">
