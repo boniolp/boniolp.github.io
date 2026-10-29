@@ -16,7 +16,7 @@ redirect_from:
 /* ---------- publications page (all rules scoped to .pubs) ---------- */
 .pubs { --pb-border: rgba(127,127,127,.22); --pb-muted: #6b7378; --pb-accent: #2f6f9f; overflow-wrap: anywhere; }
 .pubs h2 { margin-bottom: .2em; }
-.pubs .pb-summary { color: var(--pb-muted); font-size: .92em; margin: 0 0 1em; }
+.pubs .pb-summary { display: none; }
 .pubs .pb-toolbar { display: flex; flex-wrap: wrap; gap: .4em; align-items: center; margin: 0 0 .6em; }
 .pubs .pb-chip { font: inherit; font-size: .82em; padding: .25em .75em; border-radius: 999px; border: 1px solid var(--pb-border); background: #fff; color: #333; cursor: pointer; }
 .pubs .pb-chip span { color: var(--pb-muted); margin-left: .25em; }
