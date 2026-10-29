@@ -16,7 +16,7 @@ redirect_from:
 /* ---------- service page (all rules scoped to .sv) ---------- */
 .sv { --sv-border: rgba(127,127,127,.22); --sv-muted: #6b7378; --sv-accent: #2f6f9f; overflow-wrap: anywhere; }
 .sv hr { display: none; }
-.sv .sv-summary { display: flex; flex-wrap: wrap; gap: .5em; margin: 0 0 1em; }
+.sv .sv-summary { display: none; }
 .sv .sv-stat { font-size: .85em; padding: .3em .8em; border-radius: 8px; background: rgba(47,111,159,.08); color: #333; }
 .sv .sv-stat b { color: var(--sv-accent); font-size: 1.15em; margin-right: .2em; }
 .sv h2 { font-size: 1.3em; margin: 1.6em 0 .3em; padding-bottom: .25em; border-bottom: 2px solid var(--sv-border); }
@@ -76,7 +76,7 @@ redirect_from:
 - [ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (SIGKDD) 2026](https://kdd2026.kdd.org/): Datasets and Benchmark track (Cycle 2)
 - [European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML-PKDD) 2026](https://ecmlpkdd.org/2026/submissions-ads-track/): Applied Data Science Track
 - [Conference on Neural Information Processing Systems (NeurIPS) 2026](https://neurips.cc/)
-- [42èmes journées de la conférence BDA Gestion de Données 2026]()
+- [42èmes journées de la conférence BDA Gestion de Données (BDA) 2026]()
 
 #### 2025
 
@@ -86,13 +86,13 @@ redirect_from:
 - [Conference on Neural Information Processing Systems (NeurIPS) 2025](https://neurips.cc/)
 - [European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML-PKDD) 2025](https://ecmlpkdd.org/2025/submissions-ads-track/): Applied Data Science Track
 - [IEEE International Conference on Data Engineering (ICDE) 2025](https://multisa2025.github.io/): Multisa Workshop
-- [41èmes journées de la conférence BDA Gestion de Données 2025](https://bda2025.sciencesconf.org/resource/page/id/7)
-- [NeurIPS 2025 Workshop BERT2S](https://berts-workshop.github.io/)
+- [41èmes journées de la conférence BDA Gestion de Données (BDA) 2025](https://bda2025.sciencesconf.org/resource/page/id/7)
+- [NeurIPS 2025 Workshop (BERT2S)](https://berts-workshop.github.io/)
 
 #### 2024
 - [IEEE International Conference on Data Science and Advanced Analytics (DSAA) 2024](https://dsaa2024.dsaa.co/index.html): Applications Track
 - [IEEE International Conference on Data Engineering (ICDE) 2024](https://multisa2024.org/#organizers): Multisa Workshop
-- [40èmes journées de la conférence BDA Gestion de Données 2024](https://bda2024.sciencesconf.org/resource/page/id/3)
+- [40èmes journées de la conférence BDA Gestion de Données (BDA) 2024](https://bda2024.sciencesconf.org/resource/page/id/3)
 
 #### 2023
 
