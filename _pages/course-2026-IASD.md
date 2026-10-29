@@ -1,5 +1,5 @@
 ---
-permalink: /acquisition-extraction-and-storage-2026
+permalink: /acquisition-extraction-and-storage-2026-old
 hidden: true
 classes: wide
 # layout: single-hf
@@ -8,8 +8,8 @@ layout: default
 title: "Data acquisition, extraction, and storage"
 author_profile: true
 redirect_from: 
-  - /acquisition-extraction-and-storage-2026
-  - /acquisition-extraction-and-storage-2026.html
+  - /acquisition-extraction-and-storage-2026-old
+  - /acquisition-extraction-and-storage-2026-old.html
 ---
 
 ## IASD Master: Data acquisition, extraction, and storage
