@@ -158,7 +158,7 @@ redirect_from:
 <div class="aes-labday"><a href="#practice-sessions">&#129514; Lab day &middot; Lab 2</a></div>
 </summary>
 <div class="aes-body">
-Similarity search as a core extraction task: given a query, find the most similar objects in a collection. We define distance measures (Euclidean, elastic distances such as DTW), dimensionality reduction (PAA, APCA, SAX), and the lower-bounding principle that enables exact search without scanning everything. The second part of the session is the second practice session (Lab 2).</p>
+<p>Similarity search as a core extraction task: given a query, find the most similar objects in a collection. We define distance measures (Euclidean, elastic distances such as DTW), dimensionality reduction (PAA, APCA, SAX), and the lower-bounding principle that enables exact search without scanning everything. The second part of the session is the second practice session (Lab 2).</p>
 <ul class="aes-tags"><li>Nearest-neighbour queries</li><li>Euclidean distance</li><li>Dynamic Time Warping</li><li>PAA / APCA</li><li>Lower bounds</li></ul>
 </div>
 </details>
