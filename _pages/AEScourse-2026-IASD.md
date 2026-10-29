@@ -216,8 +216,8 @@ Similarity search as a core extraction task: given a query, find the most simila
 <td class="aes-c"><a href="https://boniolp.github.io/assets/PL-IASD/S1/S1.zip" title="Data"><img src="https://img.icons8.com/ios-filled/20/database.png" alt="Data"></a></td>
 <td class="aes-deadline">Nov. 05</td></tr>
 <tr><td>Oct. 30</td><td><b>Lab 2</b> &middot; Similarity search</td>
-<td class="aes-c"><span class="aes-off"><img src="https://img.icons8.com/ios-filled/20/pdf--v1.png" alt="Not available yet"></span></td>
-<td class="aes-c"><span class="aes-off"><img src="https://img.icons8.com/ios-filled/20/jupyter.png" alt="Not available yet"></span></td>
+<td class="aes-c"><a href="https://boniolp.github.io/assets/PL-IASD/S2/topic_lab2.pdf" title="Subject"><img src="https://img.icons8.com/color/20/000000/pdf.png" alt="PDF"></a></td>
+<td class="aes-c"><a href="https://boniolp.github.io/assets/PL-IASD/S2/notebook_student_lab2.ipynb" title="Notebook"><img src="https://img.icons8.com/ios-filled/20/jupyter.png" alt="Notebook"></a></td>
 <td class="aes-c"><span class="aes-off"><img src="https://img.icons8.com/ios-filled/20/database.png" alt="Not available yet"></span></td>
 <td class="aes-deadline">Nov. 19</td></tr>
 </tbody>
