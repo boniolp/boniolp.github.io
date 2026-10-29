@@ -59,7 +59,7 @@ Within VALDA, I am supervising the following students and researchers:</p>
 <div class="tm-card">
 <div class="tm-avatar" style="--h:280">RS</div>
 <div class="tm-info">
-<div class="tm-head"><span class="tm-name">Roberto Stanzione</span><span class="tm-dates">Jan 2026 - now</span></div>
+<div class="tm-head"><span class="tm-name" href="https://roby46.github.io/Roberto_Stanzione/">Roberto Stanzione</span><span class="tm-dates">Jan 2026 - now</span></div>
 <div class="tm-role">Postdoctoral researcher</div>
 </div>
 </div>
