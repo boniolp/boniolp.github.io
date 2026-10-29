@@ -201,7 +201,7 @@ redirect_from:
 
 <h3 id="final-exam">Final Exam <span class="aes-weight">50% of the final grade</span></h3>
 
-<p>This exam lasts 2.5&nbsp;h. The only documents allowed are 6 handwritten A4 sheets (both sides). Communicating devices are strictly forbidden. When writing code, imprecision in language syntax will be tolerated. The exam is graded out of 20 points. The questions will cover Lectures 1 (Sep. 18) to 7 (Oct. 30). There is only one bonus question on Lecture 8 (Nov. 06).</p>
+<p>This exam lasts 2.5&nbsp;h. The only documents allowed are 6 handwritten A4 sheets (both sides). Communicating devices are strictly forbidden. When writing code, imprecision in language syntax will be tolerated. The exam is graded out of 20 points. The questions will cover Lectures 1 (Sep. 18) to 8 Part 1 (Nov. 20). There is only one bonus question on Lecture 8 Part 2 (Nov. 06).</p>
 
 <table class="aes-simple">
 <thead><tr><th>Session</th><th>Type</th><th class="aes-c">PDF</th></tr></thead>
