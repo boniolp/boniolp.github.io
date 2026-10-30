@@ -82,7 +82,11 @@ redirect_from:
 
 ## Experiences
 
-- **2023:** *Postdoctoral researcher, Ecole Normale Supérieurs (ENS) Paris Saclay, Centre Borelli*
+- **December 2023 - Present:** *Inria Researcher (ISFP), Inria (Paris Research Center), VALDA project-team*
+
+- **September 2026 - Present:** *Joint Faculty Professor (Professeur Attaché), École Normale Supérieure (PSL), DI-ENS*
+
+- **2023:** *Postdoctoral researcher, École Normale Supérieurs (ENS) Paris-Saclay, Centre Borelli*
 
 - **October 2022:** *Visiting Researcher, European Gravitational Observatory (EGO), the VIRGO collaboration*
   - Research project:
@@ -91,15 +95,15 @@ redirect_from:
 - **2022-2023:** *Postdoctoral researcher, Université Paris Cité, LIPADE*
   - Research projects:
     - Benchmarking and large-scale evaluation of anomaly detection methods for univariate time series. Collaboration with Dr. John Paparrizos and Prof. Michael J. Franklin from the University of Chicago.
-    - Precursors detection and time series classification for the prediction of le Piton de la fournaise volcano. Collaboration with the Institut de Physique du Globe de Paris (IPGP).
+    - Precursor detection and time series classification for the prediction of the Piton de la Fournaise volcano. Collaboration with the Institut de Physique du Globe de Paris (IPGP).
     - Ensembling unsupervised anomaly detection methods with a supervised model selection method. Evaluation on large univariate time series benchmark.
  
 
 - **2017-2018:** *Research engineer, Ecole Polytechnique, LIX*
   - Research projects:
-    - **COM4U**:  Analysis of retail data using unsupervised learning techniques in order to discover causality links between external events and web behaviors. Collaboration with start-up Realytics. Graph mining, url clustering, time series clustering. Implementation in Python. 
+    - **COM4U**:  Analysis of retail data using unsupervised learning techniques in order to discover causality links between external events and web behaviors. Collaboration with start-up Realytics. Graph mining, URL clustering, time series clustering. Implementation in Python. 
 
-    - **SMARTLAW**: Analysis of textual law data using unsupervised techniques in order to estimate the difficulty and the type of trial in the Court of Justice of France. Collaboration with the law faculty of the HEC Paris business school. Text mining, Graph modeling, Graph mining, k-core analysis. Implementation in Python.
+    - **SMARTLAW**: Analysis of textual law data using unsupervised techniques in order to estimate the difficulty and the type of trial in the Court of Justice of France. Collaboration with the law faculty at HEC Paris Business School. Text mining, Graph modeling, Graph mining, k-core analysis. Implementation in Python.
   - Supervision:
     - [Prof. Michalis Vazirgiannis](http://www.lix.polytechnique.fr/Labo/Michalis.Vazirgiannis/)
 
