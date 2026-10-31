@@ -93,7 +93,7 @@ Within VALDA, I am supervising the following students and researchers:</p>
 </div>
 </div>
 
-<h2>Research Engineers</h2>
+<!--- <h2>Research Engineers</h2>
 <div class="tm-grid">
 <div class="tm-card">
 <div class="tm-avatar" style="--h:142">LC</div>
@@ -102,7 +102,8 @@ Within VALDA, I am supervising the following students and researchers:</p>
 <div class="tm-role">Inria Research Engineer</div>
 </div>
 </div>
-</div>
+</div> 
+-->
 
 <h2>Interns</h2>
 <div class="tm-grid">
@@ -120,6 +121,7 @@ Within VALDA, I am supervising the following students and researchers:</p>
 
 <h2>Visiting Students and Researchers</h2>
 <ul class="tm-rows">
+<li class="tm-row"><div class="tm-row-main"><a class="tm-name" href="https://www.linkedin.com/in/louis-chanaron-b7112924b/">Louis Charanon</a><div class="tm-role">Research Engeineer (Inria, Paris)</div></div><span class="tm-dates">Oct 2025 - Oct 2026</span></li>
 <li class="tm-row"><div class="tm-row-main"><a class="tm-name" href="https://www.gssi.it/people/students/students-computer-science/item/24586-doan-thi-hoai-thu">Thi Hoai Thu Doan</a><div class="tm-role">Visiting PhD student (Gran Sasso Science Institute, Italy)</div></div><span class="tm-dates">Jan 2026 - Mar 2026</span></li>
 <li class="tm-row"><div class="tm-row-main"><a class="tm-name" href="https://scalab.dimes.unical.it/lindia/">Paolo Lindia</a><div class="tm-role">Visiting PhD student (University of Calabria, Italy)</div></div><span class="tm-dates">April 2025 - Sep 2025</span></li>
 <li class="tm-row"><div class="tm-row-main"><a class="tm-name" href="https://www.researchgate.net/profile/Roberto-Stanzione">Roberto Stanzione</a><div class="tm-role">Visiting PhD student (Università degli Studi di Salerno, Italy)</div></div><span class="tm-dates">Nov 2024 - May 2025</span></li>
