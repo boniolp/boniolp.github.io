@@ -38,7 +38,7 @@ I am currently looking for an **Intern** to join my group/projects. You may find
 
 
 ## News
-- **[Oct. 2026]** [TSB-SEG](https://github.com/fchavelli/TSB-SEG) (Time Series Segmentation Benchmark), [SHAD](https://arxiv.org/abs/2610.01168) (A novel dataset for time series anomaly detection, explanation, and interpretation), and [RAMSAD](https://arxiv.org/abs/2610.20243) (TSFM-based model selection with similarity search) have been accepted and will be presented at [NeurIPS 2026](https://neurips.cc/).
+- **[Oct. 2026]** Our papers [TSB-SEG](https://github.com/fchavelli/TSB-SEG) (Time Series Segmentation Benchmark), [SHAD](https://arxiv.org/abs/2610.01168) (A novel dataset for time series anomaly detection, explanation, and interpretation), and [RAMSAD](https://arxiv.org/abs/2610.20243) (TSFM-based model selection with similarity search) have been accepted and will be presented at [NeurIPS 2026](https://neurips.cc/).
 - **[May 2026]** Thanks to the [SPACERAISE](https://spaceraise.academy/) organizers for inviting me to give a lecture on Time Series Analytics. You may find the slides [here](https://boniolp.github.io/GSSI-2026).
 - **[Dec. 2025]** Thanks to the [3rd Macau Symposium on Data Science](https://dss.cds.ici.um.edu.mo/2025-landing-page/invited-speakers/) organizers for inviting me to give a talk on Automatic solutions for time series anomaly detection.
 - **[Oct. 2025]** Thanks to the [TwinODIS](https://sites.google.com/view/twinodis-summerschool1/home) organizers for inviting me to give three lectures on time series anomaly detection. You may find the slides [here](https://boniolp.github.io/TwinODIS).
