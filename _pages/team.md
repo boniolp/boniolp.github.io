@@ -119,7 +119,7 @@ Within VALDA, I am supervising the following students and researchers:</p>
 
 <h1 class="tm-former-title">Former Students and Researchers</h1>
 
-<h2>Visiting Students and Researchers</h2>
+<h2>Students and Researchers</h2>
 <ul class="tm-rows">
 <li class="tm-row"><div class="tm-row-main"><a class="tm-name" href="https://www.linkedin.com/in/louis-chanaron-b7112924b/">Louis Charanon</a><div class="tm-role">Research Engeineer (Inria, Paris)</div></div><span class="tm-dates">Oct 2025 - Oct 2026</span></li>
 <li class="tm-row"><div class="tm-row-main"><a class="tm-name" href="https://www.gssi.it/people/students/students-computer-science/item/24586-doan-thi-hoai-thu">Thi Hoai Thu Doan</a><div class="tm-role">Visiting PhD student (Gran Sasso Science Institute, Italy)</div></div><span class="tm-dates">Jan 2026 - Mar 2026</span></li>
