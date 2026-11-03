@@ -14,10 +14,34 @@ redirect_from:
 
 # Internship, Ph.D., Postdocs, and Research Engineer positions
 
-Feel free to contact me (paul.boniol@inria.fr) if you are interested in one of the positions below.
+Feel free to contact me (paul.boniol@inria.fr) if you are interested in one of the positions below. Unfortunately, I am receiving a large volume of emails, and I struggle to respond in time. I apologize in advance.
 
 
 ***
+
+## 🔬 [Research Internship Position](https://boniolp.github.io/assets/topics/Internship_Proposal_Roberto.pdf)
+
+### Role: Master's Research Intern – Evaluating Large Language Models on Time Series Analysis Tasks
+
+- Location: École Normale Supérieure (ENS), Paris, France
+- Host Institution: INRIA Paris & ENS-PSL (VALDA Team)
+- Duration: 6 months (Flexible)
+- Project: Evaluating Large Language Models on Time Series Analysis Tasks
+
+### Position Overview
+
+This project aims to systematically evaluate the capabilities of several frontier LLMs, including
+reasoning-enabled models, across three fundamental time series mining tasks: anomaly
+detection, motif discovery, and segmentation. The performance of LLMs will be compared
+against both state-of-the-art algorithms and human analysts, across diverse datasets and task-specific questions.
+Please send a detailed CV and a brief Statement of Interest to:
+
+Please send a detailed CV and a brief Statement of Interest to:
+
+- Roberto Stanzione: roberto.stanzione@inria.fr
+- Paul Boniol: paul.boniol@inria.fr
+
+
 
 ## 🔬 [Research Internship Position](https://rtavenar.github.io/assets/jobs/internship_4_differentiable_time_series_segmentation.pdf)
 
