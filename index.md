@@ -34,7 +34,7 @@ My research interests lie in the intersections between:
 
 ## Open Positions!
 
-I am currently looking for an **Intern** to join my group/projects. You may find [Here](https://boniolp.github.io/topics) the list of open positions.
+I am currently looking for **Interns** and a **Postdoc** to join my group/projects. You can find the list of open positions [Here](https://boniolp.github.io/topics).
 
 
 ## News
