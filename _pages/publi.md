@@ -74,7 +74,7 @@ redirect_from:
 [![GitHub Repo](https://img.icons8.com/ios-glyphs/20/000000/github.png)](https://github.com/Hendrix8/RAMSAD) [![PDF](https://img.icons8.com/color/20/000000/pdf.png)](https://arxiv.org/abs/2610.20243)
 
 * Félix Chavelli, Arik Ermshaus, Fan Yang, Patrick Schäfer, John Paparrizos, Paul Boniol. **TSB-SEG: A Systematic Time-Series Segmentation Benchmark**. In the Fortieth Annual Conference on Neural Information Processing Systems (NeurIPS 2026), Sydney, Australia, December 2026. 
-[![GitHub Repo](https://img.icons8.com/ios-glyphs/20/000000/github.png)](https://github.com/fchavelli/tsseg) [![PDF](https://img.icons8.com/color/20/000000/pdf.png)]()
+[![GitHub Repo](https://img.icons8.com/ios-glyphs/20/000000/github.png)](https://github.com/fchavelli/tsseg) [![PDF](https://img.icons8.com/color/20/000000/pdf.png)](https://arxiv.org/abs/2611.03039)
 
 
 * Magali Parrino, Antoine Ajenjo, Emmanuel Remy, Pierre Stephan, Pierre Senellart, Paul Boniol. **In a Streaming World, Should You Stand Still? A Comprehensive Benchmark of Anomaly Detection in Streams**. ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD), Jeju, Korea, August 2026. [![GitHub Repo](https://img.icons8.com/ios-glyphs/20/000000/github.png)](https://github.com/magaliparrino/StrAD) [![PDF](https://img.icons8.com/color/20/000000/pdf.png)](https://inria.hal.science/hal-05654228)
