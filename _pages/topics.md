@@ -19,6 +19,19 @@ Feel free to contact me (paul.boniol@inria.fr) if you are interested in one of t
 
 ***
 
+## 🔬 [Postdoc Position]()
+
+### Role: Postdoctoral Research Intern – Bridging knowledge and temporal data
+
+- Location: École Normale Supérieure (ENS) and EDF lab (Chatou)
+- Host Institution: INRIA Paris or EDF
+- Duration: 1 or 2 years
+- Project: Bridging knowledge and temporal data
+
+### Position Overview
+
+I am looking for a postdoctoral student working on temporal data analysis and on temporal knowledge representation. More details on the topic soon. If you graduate around May 2027 and you are interested in conducting research with an industrial partner (EDF), please contact me (paul.boniol@inria.fr).
+
 ## 🔬 [Research Internship Position](https://boniolp.github.io/assets/topics/Internship_Proposal_Roberto.pdf)
 
 ### Role: Master's Research Intern – Evaluating Large Language Models on Time Series Analysis Tasks
