@@ -177,7 +177,7 @@ redirect_from:
 <div class="aes-date">Nov. 06<small>Lecture 7</small></div>
 <div class="aes-title">Indexing for Similarity Search</div>
 <div class="aes-c"><a href="https://fichiers.numerique.gouv.fr/explorer/items/files/8c714ef0-ac29-4d49-a263-ace37f5bf4f8" title="Slides"><img src="https://img.icons8.com/color/20/000000/pdf.png" alt="PDF"></a></div>
-<div class="aes-c aes-ex"><span class="aes-off">&mdash;</span></div>
+<div class="aes-c aes-ex">Ex1 <a href="https://colab.research.google.com/drive/12dEuzOL_b3AMIesGDDlNF3rEh0TncPjl?usp=sharing" title="Exercise 1"><img src="https://img.icons8.com/ios-filled/20/jupyter.png" alt="Notebook"></a> Ex2 <a href="https://colab.research.google.com/drive/1ppkuBi69xF3Bgwd4IkpZHYFDeg_Hq5VK?usp=sharing" title="Exercise 2"><img src="https://img.icons8.com/ios-filled/20/jupyter.png" alt="Notebook"></a></div>
 <div class="aes-c"><span class="aes-off"><img src="https://img.icons8.com/sf-regular/20/link.png" alt="Not available yet"></span></div>
 </summary>
 <div class="aes-body">
