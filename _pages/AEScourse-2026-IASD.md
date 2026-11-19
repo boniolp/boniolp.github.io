@@ -182,7 +182,7 @@ redirect_from:
 </summary>
 <div class="aes-body">
 <p>Indexing data in many dimensions: space-partitioning and data-partitioning trees, bounding regions and best-first nearest-neighbor search, and why these structures degrade as dimensionality grows. We then cover time-series indexing techniques that combine space partitioning with lower bounds for exact search.</p>
-<ul class="aes-tags"><li>k-d trees</li><li>R-trees &amp; MBRs</li><li>MINDIST</li><li>Best-first search</li><li>Curse of dimensionality</li><li>Time series indexes</li></ul>
+<ul class="aes-tags"><li>k-d trees</li><li>R-trees &amp; MBRs</li><li>MINDIST</li><li>Best-first search</li><li>Curse of dimensionality</li><li>Time series indexes</li><li>IVF</li></ul>
 </div>
 </details>
 
@@ -190,7 +190,7 @@ redirect_from:
 <summary class="aes-row">
 <div class="aes-date">Nov. 20<small>Lecture 8</small></div>
 <div class="aes-title">Approximate Similarity Search and toward complex queries</div>
-<div class="aes-c"><span class="aes-off"><img src="https://img.icons8.com/ios-filled/20/pdf--v1.png" alt="Not available yet"></span></div>
+<div class="aes-c"><a href="https://fichiers.numerique.gouv.fr/explorer/items/files/79815dfe-b086-47dd-aa0e-b0944d5d4f9e" title="Slides"><img src="https://img.icons8.com/color/20/000000/pdf.png" alt="PDF"></a></div>
 <div class="aes-c aes-ex"><span class="aes-off">&mdash;</span></div>
 <div class="aes-c"><span class="aes-off"><img src="https://img.icons8.com/sf-regular/20/link.png" alt="Not available yet"></span></div>
 </summary>
