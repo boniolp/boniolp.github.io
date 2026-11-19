@@ -192,7 +192,7 @@ redirect_from:
 <div class="aes-title">Approximate Similarity Search and toward complex queries</div>
 <div class="aes-c"><a href="https://fichiers.numerique.gouv.fr/explorer/items/files/79815dfe-b086-47dd-aa0e-b0944d5d4f9e" title="Slides"><img src="https://img.icons8.com/color/20/000000/pdf.png" alt="PDF"></a></div>
 <div class="aes-c aes-ex"><span class="aes-off">&mdash;</span></div>
-<div class="aes-c"><span class="aes-off"><img src="https://img.icons8.com/sf-regular/20/link.png" alt="Not available yet"></span></div>
+<div class="aes-c"><a href="https://boniolp.github.io/assets/html/QA_Session_Final.html" title="Q&amp;A session"><img src="https://img.icons8.com/sf-regular/20/link.png" alt="Q&amp;A"></a></div>
 </summary>
 <div class="aes-body">
 <p>When exact answers are too expensive, approximate methods trade a little accuracy for large speed-ups. The second part of the lecture is a wrap-up of the course and an opening towards other extraction tasks built on top of similarity search, such as motif and anomaly discovery.</p>
