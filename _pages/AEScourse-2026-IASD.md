@@ -81,7 +81,7 @@ redirect_from:
 
 <h3 id="lectures">Lectures</h3>
 
-<div class="aes-note">Each lecture has two 1.5&nbsp;h parts (with a 15&nbsp;min break in between), starts at 9&nbsp;am and ends at 12:15&nbsp;pm. For each lecture (except for lab days), I provide a Q&amp;A session to serve as a recap and a technical dive into what we discussed during the corresponding lecture. <b>Click on a lecture title</b> to see its abstract and key topics.</div>
+<div class="aes-note">Each lecture has two 1.5&nbsp;h parts (with a 15&nbsp;min break in between), starts at 9&nbsp;am and ends at 12:15&nbsp;pm. For each lecture (except for lab days), I provide a Q&amp;A session to serve as a recap and a technical dive into what we discussed during the corresponding lecture. <b>Click on a lecture title</b> to see its abstract and key topics. (The passwords for the QAs are: ENS2026, PSL2026, inria2026, cnrs2026, valda2026, final2026)</div>
 
 <div class="aes-legend"><span><img src="https://img.icons8.com/color/18/000000/pdf.png" alt="">Slides</span><span><img src="https://img.icons8.com/ios-filled/18/jupyter.png" alt="">Exercise notebook (Colab)</span><span><img src="https://img.icons8.com/sf-regular/18/link.png" alt="">Q&amp;A session</span><span><img class="aes-off" src="https://img.icons8.com/ios-filled/18/pdf--v1.png" alt="">Not available yet</span></div>
 
